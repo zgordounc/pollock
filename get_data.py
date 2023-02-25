@@ -3,6 +3,7 @@ from pyspark.sql.types import StructField, StructType, StringType, IntegerType, 
 from pyspark.sql.functions import col, udf
 from pyspark.sql import functions as F
 from google.cloud import storage
+import PyPDF2
 import os
 
 spark = SparkSession.builder \
@@ -63,6 +64,15 @@ def download_public_file(bucket_name, source_blob_name, destination_file_name):
         )
     )
 
+def pdf_2_txt(src,dest):
+    reader = PyPDF2.PdfReader(src)
+    txt = ''
+    for page in reader.pages:
+        txt += page.extract_text()
+
+    with open(dest, 'w') as f:
+        f.write(txt)
+
 
 def spark_download_public_file(x):
     
@@ -74,17 +84,26 @@ def spark_download_public_file(x):
     source_blob_name = 'arxiv/'+prefix+'/pdf/'+date+'/'+suffix+'v1.pdf'
 
 
-    if not os.path.exists('/pine/scr/z/g/zgordo/articles'):
-        os.mkdir('/pine/scr/z/g/zgordo/articles')
+    if not os.path.exists('articles'):
+        os.mkdir('articles')
     if not os.path.exists('articles/'+prefix):
         os.mkdir('articles/'+prefix)
-    if not os.path.exists('/pine/scr/z/g/zgordo/articles/'+prefix+'/'+date):
-        os.mkdir('/pine/scr/z/g/zgordo/articles/'+prefix+'/'+date)
+    if not os.path.exists('articles/'+prefix+'/'+date):
+        os.mkdir('articles/'+prefix+'/'+date)
 
-    destination = '/pine/scr/z/g/zgordo/articles/'+prefix+'/'+date+'/'+suffix+'v1.pdf'
+    destination = 'articles/'+prefix+'/'+date+'/'+suffix+'v1.pdf'
+    src = destination
+    dest = src[:-3] + 'txt'
 
-    download_public_file(bucket_name, source_blob_name, destination)
+    if not os.path.exists(dest):
+        try:
+            download_public_file(bucket_name, source_blob_name, destination)
 
+            pdf_2_txt(src=src, dest=dest)
+
+            os.remove(src)
+        except:
+            print(suffix)
 
     
 ids.foreach(spark_download_public_file)
