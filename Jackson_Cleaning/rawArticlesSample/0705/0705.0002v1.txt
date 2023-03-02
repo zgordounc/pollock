@@ -1,0 +1,1041 @@
+arXiv:0705.0002v1  [astro-ph]  30 Apr 2007Astronomy& Astrophysics manuscriptno.7464for c/circlecopyrtESO 2013
+ February18,2013
+ Infrared spectroscopy of HCOOH ininterstellarice analogu es
+ S.E.Bisschop1, G.W.Fuchs1, A.C.A.Boogert2, E.F.van Dishoeck1,and H.Linnartz1
+ 1Raymond and Beverly Sackler Laboratory for Astrophysics, L eiden Observatory, Leiden University, P.O. Box 9513, 2300 R A
+ Leiden, The Netherlands
+ 2AURA/NOAO-South, Casilla603, LaSerena, Chili
+ Received; accepted
+ ABSTRACT
+ Context. HCOOH is one of the more common species in interstellar ices w ith abundances of 1–5% with respect to solid H 2O. With
+ the launch of the Spitzer Space Telescope new infrared spect ra have become available of interstellar ices in di ﬀerent environments.
+ Sofar systematic laboratorystudies onHCOOH-containing i nterstellarice analogues are lacking.
+ Aims.This study aims at characterizing the HCOOH spectral featur es in astrophysically relevant ice mixtures in order to inte rpret
+ astronomical data.
+ Methods. The ices are grown under high vacuum conditions and spectra a re recorded in transmission using a Fourier transform
+ infraredspectrometer. Pure HCOOH ices deposited at 15 K and 145 K are studied, as well as binary and tertiarymixtures con taining
+ H2O, CO, CO 2and CH 3OH. The mixture concentrations are varied from 50:50% to ∼10:90% for HCOOH:H 2O. Binary mixtures of
+ HCOOH:XandtertiarymixturesofHCOOH:H 2O:XwithX=CO,CO 2,andCH 3OH,arestudiedforconcentrations of ∼10:90% and
+ ∼7:67:26%, respectively.
+ Results.Pure HCOOH ice spectra show broad bands whichsplit around 12 0 K due to the conversion of a dimer toa chain-structure.
+ Broad single component bands are found for mixtures with H 2O. Additional spectral components are present in mixtures w ith CO,
+ CO2and CH 3OH. The resulting peak position, full width at half maximum a nd band strength depend strongly on ice structure,
+ temperature, matrixconstituents andthe HCOOHconcentrat ion. Comparison ofthe solidHCOOH5.9,7.2, and8.1 µmfeatures with
+ astronomical data toward the low mass source HH 46 and high ma ss source W 33A shows that spectra of binary mixtures do not
+ reproduce the observed ice features. However, our tertiary mixtures especially with CH 3OH match the astronomical data very well.
+ Thus interstellar HCOOH is most likely present in tertiary o r more complex mixtures with H 2O, CH 3OH and potentially also CO or
+ CO2,providing constraints onitsformation.
+ Key words. Astrochemistry, Line: pro�les, Molecular data, Molecular processes, Methods: laboratory, ISM: molecules, Infrared :
+ ISM
+ 1. Introduction
+ Formic acid is one of the few moleculesin star formingregion s
+ that is detected both in the solid state and in the gas phase (s ee
+ e.g., Schutteet al., 1999; Ikedaet al., 2001). Infrared obs erva-
+ tionsoficesinhighmassYoungStellarObjects(YSOs)witht he
+ Infrared Space Observatory (ISO) contain absorption featu res
+ that are assigned to HCOOH and that correspond to the C =O
+ stretch,νS(C=O),at5.9µmandtheOHandCHbendingmodes,
+ νB(OH) andνB(CH) at 7.2µm (Schutteet al., 1997, 1999). The
+ νS(C=O) band is the strongest spectral feature of HCOOH ice,
+ but suﬀers from partial overlap with the OH bending mode of
+ solid H 2O at 6µm,νB(OH). TheνB(OH/CH) band at 7.2µm is
+ signi�cantly weaker than the νS(C=O) band, but is present in a
+ relatively clean region and has previously been detected to ward
+ high mass star forming regions (Schutteet al., 1999). More r e-
+ cently, these features have also been observed toward low ma ss
+ YSOs and possibly toward background stars (Boogert et al. in
+ prep.; Knezet al., 2005). Typical abundances of HCOOH vary
+ between individual sources from 1 to 5% with respect to solid
+ H2O.Theaimofthispaperistostudythe νS(C=O),νB(OH/CH)
+ and other infrared features of HCOOH ices in di ﬀerent astro-
+ physically relevant laboratory matrices and to compare the re-
+ sults with astronomical spectra to infer the chemical envir on-
+ mentofHCOOH ininterstellarices.
+ Send oﬀprint requests to : S.E.Bisschop, bisschop@strw.leidenuniv.nlInthe gasphaseHCOOHis detectedinenvelopessurround-
+ inghighandlowmassstarformingregions,aswellasinshock ed
+ regions toward the galactic center (vanDishoecketal., 199 5;
+ Ikedaet al., 2001; Bottinelli etal., 2007; Requena-Torres et al.,
+ 2006; Bisschopetal., 2007). HCOOH is part of the surface
+ chemistry network leading to the formation of complex organ ic
+ molecules seen in hot cores (Tielens&Charnley, 1997) and is
+ therefore expected to be present in compact hot regions wher e
+ it has evaporated from dust grains. In contrast, interferom etric
+ observations show that gas phase HCOOH emission can be ex-
+ tended beyond the hot core and is not coincident with other
+ oxygen-bearing species such as CH 3OCHO (Liuet al., 2002;
+ Hollisetal., 2003; Remijan&Hollis, 2006). The observed ga s
+ phase HCOOH has low rotation temperatures and its abun-
+ dance is a factor of 10−4lower than that of solid HCOOH
+ (Bisschopet al., 2007). It is very likely that gaseous and so lid
+ HCOOHco-existinthesameregion.Alowlevelofnon-thermal
+ desorption due to e.g., cosmic ray spot heating is su ﬃcient to
+ explaintheobservedgasphaseabundancesofHCOOH.
+ Previously,laboratoryicespectrahavebeenstudiedforpu re
+ HCOOH and mixtures of HCOOH with H 2O and/or CH3OH
+ by Schutteet al. (1999) and Hudson&Moore (1999). These
+ studies only focused on speci�c spectral features. The data
+ clearly showed that the morphology and composition of the
+ ice matrix strongly inﬂuence the HCOOH infrared spectrum.
+ Recently,experimentshavebeenreportedforthelayeredic esys-2 S.E.Bisschop et al.:Infraredspectroscopy of HCOOHinint erstellarice analogues
+ temHCOOH/H2OinwhichtheinteractionofHCOOHandH 2O
+ in the interface is studied (see e.g., Cyriac&Pradeep, 2005 ;
+ Bahret al., 2005; Souda, 2006).
+ There is a clear need to understand the spectroscopy of
+ the main ice constituents such as HCOOH, as new observa-
+ tional tools become available for the study of infrared feat ures
+ of interstellar ices, such as the Spitzer Space Telescope, t he
+ Stratospheric Observatory For Infrared Astronomy (SOFIA) ,
+ and the James Webb Space Telescope (JWST). Solid HCOOH
+ islikelymixedwithspeciessuchasH 2O,CO,CO 2andCH 3OH
+ that are abundant in the ice and have related formation mecha -
+ nisms. Infrared ice features of mixtures with these species have
+ beenstudiedinthispaper.PureHCOOHismeasuredaswellfor
+ comparison.Quantitativeandqualitativeanalysisofthe 5 .9µm,
+ 7.2µm andotherHCOOH ice featuresallowsfor a betterdeter-
+ minationoftheamountofHCOOHpresentininterstellarices as
+ well asitsiceenvironment.
+ The paper is organized as follows: Sect. 2 explains the ex-
+ perimental method, Sect. 3 the analysis techniques, Sect. 4 dis-
+ cusses theresults ofexperimentswith pureices, aswell as m ix-
+ tures with H 2O, CH 3OH, CO and CO 2, in Sect. 5 the eﬀects
+ of ice matrix and temperature on the band strength are pre-
+ sented, Sect. 6 discusses the physical aspects of the intera ctions
+ ofHCOOH inthesolidstate withotherspecies,Sect.7presen ts
+ the astrophysical implications, and �nally Sect. 8 summari zes
+ themainconclusionsofthispaper.
+ 2. Experimentalprocedure
+ The experiments are performed in a high vacuum (HV) set-up
+ with a base pressure of ∼10−7Torr, that has been previously
+ described in detail by Gerakineset al. (1995). A CsI window
+ mountedinclosethermalcontactwithaclosedcycleHecryos tat
+ is situated at the center of the chamber. It is used as a substr ate
+ holder and can be cooled down to 14 K. The sample tempera-
+ ture is controlled to better than ±0.1 K using the cryostat cold
+ �nger, a resistive heating element and a Lakeshore 330 tempe r-
+ ature control unit. The system temperature is monitored by t wo
+ KP-type thermocouples (0.07% Au in Fe versus chromel), one
+ mountedonthesubstratefaceandthesecondclosetotheheat er
+ element. Ices are grown in situonto the substrate, by exposing
+ the cold surface to a steady ﬂow of gas that is introduced into
+ the chamber via an all metal ﬂow control valve with a modi�ed
+ outlet directed at the substrate center along the surface no rmal.
+ The ices are monitored by Fourier Transform Infrared (FTIR)
+ absorption spectroscopy with 1 cm−1spectral resolution cover-
+ ingthe4000–500cm−1range.
+ To test the eﬀect of dilution of HCOOH (98% purity, J. T.
+ Baker) by H 2O (deionized) four mixtures are prepared in a
+ glass vacuum manifold. Both HCOOH and H 2O are further
+ puri�ed by subsequently freezing and thawing the samples in
+ the vacuum manifold. The mixture ratios range from the rel-
+ ative abundances derived from observations of interstella r ices
+ of 1 to 5% (see e.g., Gibbet al., 2004) to more HCOOH-rich
+ ices with relative HCOOH:H 2O concentrations up to 50:50%.
+ The astrophysical motivation for these higher mixture rati os is
+ that other species such as CH 3OH are present in solid state
+ environments with nearly equal amounts of H 2O and/or CO2
+ (Ehrenfreundet al., 1998, 1999; Dartoiset al., 1999). The d if-
+ ferent HCOOH:H 2O mixtures that are used here are summa-
+ rized in Table 1. A pure H 2O sample is prepared for com-
+ parison. Furthermore, some features of the solid CO band
+ can be explained with mixtures or layers of CO with non-
+ hydrogen-bondingmoleculesorwith hydrogen-bondingspec iesTable 1.Overview of ice morphologies, total ice exposure and
+ depositiontime.
+ H2O HCOOH X Total exposure Deposition time
+ (%) (%) (%) (L) (min)
+ – 100 – 900 15
+ 100 – – 900 15
+ 50 50 – 900 15
+ 66 34 – 900 15
+ 80 20 – 900 15
+ 91 9 – 900 15
+ – 11 89(CO) 1800 30
+ – 9 91(C18O2)900 15
+ – 10 90(CH 3OH)1800 30
+ 62 8 30(CO) 1800 30
+ 67 6 27(C18O2)1800 30
+ 68 6 26(CH 3OH)1800 30
+ other than H 2O (e.g., Tielenset al., 1991; Pontoppidanet al.,
+ 2003; Fraser et al., in prep.). Accordingly, we have also stu d-
+ ied a set of binary mixtures of HCOOH:X and tertiary mix-
+ tures of HCOOH:H 2O:X, where X stands for CO (99.997%pu-
+ rity, Praxair), C18O2(97% purity, Praxair) or CH 3OH (99.9%
+ purity, Janssen Chimica) are prepared with concentrations of
+ ∼10:90%and∼7:67:26%,respectively.Thesemixturesarecho-
+ sen such that the matrix species determine the structure of t he
+ ice. Uncertainties on the concentrations of the ice constit uents
+ are∼10%duetoinaccuraciesinthepressurereading.TheC18O2
+ isotopologueis used to distinguish solid C18O2from regular at-
+ mosphericgasphaseCO 2.
+ A typical experiment starts with taking a background spec-
+ trum at 15 K. Subsequently, the ices are deposited with a
+ ﬂow of∼1.0×10−5Torr s−1. An exposure of 1.0 ×10−6Torr s−1
+ corresponds to 1 Langmuir (L) or equivalently 1 mono-
+ layer (ML) s−1assuming that the molecular surface density is
+ 1015molecules cm−2and the sticking probability is 1 at 15 K.
+ The deposition times and total exposures are summarized in
+ Table 1. After deposition, FTIR spectra are taken at 15 K, and
+ subsequently every 15 K for binary mixtures of HCOOH with
+ H2O or CO 2and every 30 K for all other mixtures up until a
+ temperatureof 165 K is reached. At each temperature,the sam -
+ plestabilizesfor20minutesbeforeaspectrumis recorded.
+ OnepureHCOOH experimentis performedwhereHCOOH
+ isdepositedat145K.Theaimofthisexperimentistodetermi ne
+ whether the HCOOH ice structure depends on the deposition
+ temperatureandwhetherpotentialphasechangesare revers ible.
+ Subsequently, the experiment is cooled down to 15 K and from
+ thenonFTIRspectraaretakenevery15K duringwarm-up.
+ 3. Datareductionand analysis
+ The spectral range from 4000–500cm−1is very rich in absorp-
+ tionfeaturesof complexorganicspecies,and HCOOH isno ex-
+ ception. Consequently special care has to be taken in the dat a
+ reduction.Dependingonthemixture,di ﬀerentfrequencyranges
+ areusedto�tthirdorderpolynomialbaselines(seeTable2) .An
+ additional local baseline is subtracted in the 1800–1100 cm−1
+ frequency range. This is necessary as the HCOOH νS(C=O)
+ mode around∼1700 cm−1(5.9µm) overlaps with the νB(OH)
+ mode of H 2O at 1655 cm−1(6.0µm). This H 2O feature is
+ much weaker than the HCOOH feature, even when only 10%
+ of HCOOH is present, but it is responsible for a wing on the
+ νS(C=O) band. Finally, a correctionis made on the νB(OH/CH)
+ feature around 1390 cm−1(7.2µm) as it is close to a variableS.E.Bisschop et al.:Infraredspectroscopy of HCOOHininte rstellarice analogues 3
+ Table 2.Frequencyrangesusedforbaselinesubtraction.
+ Icecomposition Baseline range
+ (cm−1)
+ HCOOH& HCOOH:H 2O 4000–3800, 1850–1800, 1050–1030, 540–500
+ HCOOH:CH 3OH& HCOOH:H 2O:Xa4000–3700, 1850–1800, 1580–1500, 950–900, 500–450
+ HCOOH:CO 4000–3800, 2440–2260, 2000–1800, 1550–1400, 600 –500
+ HCOOH:CO 2 4000–3900, 2100–1800, 1550–1430, 550–500
+ aX=CO,C18O2or CH3OH.
+ Table 4.Frequencyrangesusedforintegrationbounds.
+ Vibrationalmode Wavenumber
+ (cm−1)
+ HCOOH
+ νS(C=O) 1800–1550
+ νB(OH/CH) 1450–1370
+ νS(C–O) 1300–1150
+ H2O
+ νS(OH) 3700–3000
+ ν(lib) 1000–500
+ backgroundfeature. Spectra that comprise only the backgro und
+ feature are subtracted from the sample spectra for each temp er-
+ ature, but due to its variability, the subtraction does not f ully
+ removetheartifact.
+ The absolute band strengths are di ﬃcult to calibrate in our
+ experiment, because the number of molecules that stick to th e
+ substrate sample is not exactly known. Instead, we focus in
+ this paper on the relative band strengths that can be accurat ely
+ measured. The relative values discussed here can be combine d
+ withpreviouslymeasuredvaluesforthebandstrengthsavai lable
+ from the literature (summarized in Table 3). The absolute ba nd
+ strengthsforthevibrationalmodesdependonwhetherHCOOH
+ is in the gas phase or solid state and consequently the number s
+ inthetable donotperfectlymatch.
+ To determine the relative band strengths, the νS(C=O),
+ νB(OH/CH), andνS(C–O) features of HCOOH as well as the
+ νB(OH) and libration ( ν(lib)) bands of H 2O are integrated
+ over the frequency ranges given in Table 4. The integra-
+ tion boundaries for H 2O are identical to those used recently
+ by¨Obergetal. (2007). Since the νB(OH) band at 930 cm−1
+ (10.8µm) and the OCO bending mode ( νB(OCO)) at 705 cm−1
+ (14.2µm) of HCOOH overlap with the H 2Oν(lib) band at
+ 750cm−1(13.3µm), these two featuresare subtractedbeforein-
+ tegration.
+ TherelativebandstrengthsoftheHCOOHandH 2Ospectral
+ features are calculated with respect to pure HCOOH and H 2O
+ via:
+ A(HCOOH : H 2O=Y: 1)
+ A0(HCOOH)=Y×/integraltext
+ bandI(HCOOH : H 2O=Y: 1)
+ /integraltext
+ I0(HCOOH).(1)
+ Here Y is the HCOOH ice fraction,/integraltext
+ bandI(HCOOH : H 2O=Y: 1) the integrated absorbance
+ of the band in the mixture, A0(HCOOH) the band strength for
+ pure HCOOH ice at 15 K, and/integraltext
+ I0(HCOOH) the integrated
+ absorbance for pure HCOOH ice at 15 K. A similar formula
+ is used for H 2O. The resulting relative band strengths arestudied as a function of temperature (see Sect. 5). An extens ive
+ discussion of the uncertainties of the band strengths is giv en
+ by¨Obergetal. (2007). In short, the largest fraction of the
+ uncertainties arises from inaccuracies on the mixing ratio of
+ the ice and yields relative uncertainties that are below 10% .
+ Additionally, baseline subtraction and deposition time in accu-
+ racies are 1 to 2%. A conservative approach yields an overall
+ uncertaintyof∼12%intheresultingcalculationsfortherelative
+ band strengths. Furthermore, it is important to note that th e
+ relative uncertainty between di ﬀerent temperatures for a single
+ experiment amounts to ∼2% as only baseline inaccuracies
+ contribute. Observed temperature trends are thus much more
+ certainthanconcentrationdependencies.
+ TheνS(C=O),νB(OH/CH) andνS(C–O) bands of HCOOH
+ are�ttedwithGaussianlinepro�lesfortheastrophysicall ymost
+ relevant 1800–1100 cm−1range. To �t the asymmetric pro�le
+ of theνS(C=O) stretch around 1700 cm−1two components are
+ needed. It turned out to be di ﬃcult to disentangle the proper-
+ ties of the absorption bands of HCOOH in some mixtures, in
+ particular those containing CO and CO 2. In such cases average
+ peakpositionsaregiven.Ingeneraltheuncertaintiesofpe akpo-
+ sitions and FWHMs are ±1 cm−1and±2 cm−1, except for the
+ νB(OH/CH) feature in the 9:91% HCOOH:H 2O mixture, where
+ thevaluesare±2cm−1and±4cm−1,respectively.
+ 4. Results
+ The following section summarizes the results for the pure an d
+ mixed HCOOH ices at di ﬀerent temperatures. All spectra are
+ availableathttp://www.strw.leidenuniv.nl /∼lab/databases/.
+ 4.1. Pure HCOOH ices
+ Clearly, the pure HCOOH ice spectrum shown in Fig. 1 for
+ 15 K is complex. For completeness we summarize the spec-
+ troscopic assignments for all bands here (see Table 5), but i n
+ this paper we mainly focus on the astrophysically relevant f ea-
+ turesνS(C=O),νB(OH/CH), as well asνS(C–O). The measured
+ peakpositionsandFWHMsintheastrophysicallyrelevant18 00-
+ 1100 cm−1range are given in Table A.1 of the online material.
+ The features at 3115 cm−1, 2754 cm−1, and 2582 cm−1(3.21–
+ 3.87µm) are all due to the OH stretching mode, νS(OH). The
+ broad structure with di ﬀerent maxima of these modes are as-
+ signed to a combination of dimers and HCOOH organized in
+ long chains (Cyriac&Pradeep, 2005). The νS(OH) bands over-
+ lap with the 2953 cm−1CH stretch,νS(CH). In observations
+ these bands overlap with and are dominated by the 3 µm H2O
+ band.Theastrophysicallyimportant νS(C=O)bandhasits max-
+ imumaround1714cm−1andisbroadandasymmetric.TheC–O
+ stretch,νS(C–O),islocatedat1211cm−1.Furthermore,bending4 S.E.Bisschop et al.:Infraredspectroscopy of HCOOHinint erstellarice analogues
+ Table 3.SummaryvaluesabsolutebandstrengthsforHCOOH fromtheli terature.
+ Ice matrix νS(C=O)νS(C–O)νB(OH/CH)
+ cm molecule−1cm molecule−1cm molecules−1
+ HCOOHa6.7(-17) — 2.8(-18)
+ HCOOH:H 2O 7:93%b— 1.5(-17) —
+ HCOOH–5H 2Oc8.5(-17) 5.0(-17) 1.1(-18)
+ HCOOH–6H 2Oc7.7(-17) 4.3(-17) 3.5(-18)
+ aLaboratorygas phase data by Marechal (1987).
+ bLaboratorysolidstate data by Hudson &Moore (1999).
+ cTheoretical calculations by Park& Woon (2006).
+ Table5.SolidstatespectralfeaturesforHCOOH,H 2O,CO,CO 2,andCH 3OHat15K.Thesymbols νSandνBindicateastretching
+ orbendingmode,respectively.Thegasphasespectroscopic labelisindicatedaswell.Theastrophysicallymostreleva ntfeaturesof
+ HCOOH aremarkedinboldface.
+ Wavenumber Wavelength Mode Label Comment
+ (cm−1) (µm)
+ HCOOH
+ 3115 3.21 νS(OH) ν1 has several sub-maxima
+ 2953 3.39 νS(CH) ν2
+ 2754 3.63 νS(OH) ν1 has several sub-maxima
+ 2582 3.87 νS(OH) ν1 has several sub-maxima
+ 1714 5.83 νS(C=O) ν3 out-of-phase between adjacent chains
+ 1650 6.06 νS(C=O) ν3 in-phase between adjacent chains
+ 1387 7.21 νB(OH)&νB(CH) ν5&ν4
+ 1211 8.26 νS(C–O) ν6
+ 1073 9.32 νB(CH) ν8 out-of-plane
+ 930 10.75 νB(OH) ν5 out-of-plane
+ 705 14.18 νB(OCO) ν7
+ H2O
+ 3280 3.05 νS(OH) ν1,ν3a
+ 1655 5.88 νB(OH) ν2
+ 750 13.33 ν(lib)
+ CO
+ 2140 4.67 νS(CO) ν1
+ C18O2
+ 3671 2.72 overtone ν1+ν3
+ 3513 2.85 overtone 2 ν2+ν3
+ 2310 4.33 νS(CO) ν3
+ 645 15.50 νB(OCO) ν2
+ CH3OH
+ 3251 3.08 νS(OH) ν1
+ 2951 3.39 νS(CH) ν2,ν9
+ 2827 3.54 νS(CH) ν3
+ 1460 6.85 CH 3deformation andνB(OH)ν4,ν10,ν5,ν6b
+ 1130 8.85 CH 3rock ν7,ν11
+ 1026 9.75 νS(CO) ν8
+ 694 14.41 torsion ν12
+ aν1refers tothe symmetric stretching mode and ν3tothe anti-symmetric stretching mode of H 2O.
+ bν4andν10are anti-symmetric deformations, ν5is a symmetric deformation of CH 3OH andν6isthe OH bending mode for CH 3OH.
+ modes are present of which νB(CH) andνB(OH) at 1073 cm−1
+ and930cm−1(9.3and10.8µm),respectively,areout-of-plane.
+ The temperature evolution of the astrophysically relevant
+ HCOOH features in the 1800–1100 cm−1range is shown in
+ Fig. 2a and the corresponding peak positions are given in
+ Table A.1 of the online material. Most features are broad
+ and consist of multiple components at 15 K. At 135 K the
+ νS(C=O),νS(C–O), andνB(OH/CH) modes at∼1700, 1250,
+ and 1390 cm−1split into two components. The splitting of the
+ νS(C=O) andνS(C–O) bands is assigned to the out-of-phase
+ and in-phase motions of di ﬀerent HCOOH molecules within
+ thesamechain(Cyriac&Pradeep,2005).Theout-of-phasemo -tions are located at higher wavenumbers than the in-phase mo -
+ tions. TheνS(OH) andνS(CH) in-plane bending modes over-
+ lap at 15 K, but are clearly observed as two separate peaks at
+ higher temperatures. Our results are consistent with those of
+ Cyriac&Pradeep (2005), who assigned the splitting to a con-
+ versionofHCOOH dimerstoHCOOH organizedin chains,fol-
+ lowingand experimentalstudy by Millikan& Pitzer (1958) an d
+ calculationsbyYokoyamaet al. (1991).
+ In one experiment HCOOH is deposited at 145 K (see
+ Fig. 2b). After deposition the spectrum is similar to that of
+ HCOOH depositedat 15K and subsequentlyheatedto ≥135K.
+ When the temperature is lowered to 15 K, the general featuresS.E.Bisschop et al.:Infraredspectroscopy of HCOOHininte rstellarice analogues 5
+ Fig.1.Experimentalinfrared spectrum of pure HCOOH ice de-
+ posited at 15 K. The νS(OH) band has several sub-maxima in
+ the∼3000 cm−1range whereνS(CH) is also located. Below
+ 2000 cm−1the following absorption features are present: the
+ C=O stretching mode νS(C=O), the C–O stretch νS(C–O), the
+ CH bending mode νB(CH), the OH bending mode νB(OH) and
+ OCO bending mode νB(OCO). Peak positions and labels are
+ given in Table 5. In this study the focus is on the νS(C=O),
+ νB(OH/CH),andνS(C–O)bands.
+ remain similar to the high temperature spectrum. Upon subse -
+ quent heating to 150 K an exact copy of the original (145 K)
+ spectrum is obtained. Thus, the changes in ice matrix struct ure
+ afterheatingareirreversible.
+ 4.2. HCOOH:H 2Oices
+ Experiments with mixtures that range from 50:50% to 9:91%
+ HCOOH:H 2O have been performed. In Figure 2c, the tempera-
+ ture evolution of the mixture with 20% of HCOOH is shown.
+ Peak positions and FWHMs for the 1800–1100 cm−1range
+ are given in Table A.2 of the online material. The dilution of
+ HCOOH in H 2O clearly aﬀects the band pro�les of HCOOH.
+ TheνS(C=O) band shifts 3 cm−1to the red at 15 K and the
+ νB(OH/CH) feature is narrower than in pure HCOOH. Between
+ 105 and 120 K both the peak intensity and FWHM of the
+ νB(OH/CH) band increase. At 150 K the H 2O features change
+ due to a phase transition from amorphous to crystalline H 2O
+ ice structure. At the same time the νS(C=O),νB(OH/CH), and
+ νS(C–O) modes of HCOOH split into two components. Finally,
+ at 165K allH 2OandmostHCOOH havedesorbed.
+ Thespectrafordiﬀerentmixtureconcentrationswithrespect
+ to H2O are shown in Fig. 3 for 15 K (left) and 150 K (right).
+ TheνS(C=O) band has an additional component at 15 K in
+ HCOOH:H 2O mixtures with high HCOOH concentrations that
+ is located at lower wavenumbersand is due to the in-phase mo-
+ tionbetweenHCOOHmoleculesinthesamechain.Thisimplies
+ that there is a small fraction of HCOOH ice that is in a bulk
+ HCOOH environment.The pure HCOOH componentdecreases
+ with increasing H 2O concentration. The νB(OH/CH) andνS(C–
+ O)modesconsistofonecomponentandtheirFWHMsdecrease
+ forlowerHCOOH concentrations.
+ At 150 K, theνS(C=O),νB(OH/CH), andνS(C–O) modes
+ are split into two peaks for the three mixtures with the highe st
+ HCOOHconcentrations.The νB(OH/CH)modeisbroadercom-
+ paredtopureHCOOH.AtthelowestHCOOHconcentration,noFig.3.Absorption spectra for temperatures of 15 K (left) and
+ 150 K (right) in the 1800–1100 cm−1range for HCOOH de-
+ posited at 15 K, the HCOOH:H 2O mixtures and HCOOH de-
+ posited at 145 K. The νB(OH) band of H 2O has been removed
+ fromthespectra.
+ splittingoftheνS(C=O)spectralfeatureofHCOOHisobserved,
+ but only a broad band with a FWHM of 67 cm−1. Furthermore,
+ theνS(C=O) band is shifted to 1718 cm−1and theνB(OH/CH)
+ featureislocatedat 1404cm−1.
+ 4.3. HCOOH:CO, HCOOH:CO 2, andHCOOH:CH 3OH ices
+ Figure 4 shows the e ﬀects diﬀerent species have on the solid
+ state HCOOH infraredspectrum. Tables A.3 and A.4 of the on-
+ line material summarize the pro�le parameters.HCOOH mixed
+ with H 2O results in a relatively simple spectrum, but mixtures
+ withotherspecies,especiallyCOorCO 2,showmultiplecompo-
+ nents. In mixtureswith CO or CO 2theνS(C=O) band is shifted
+ to higher wavenumbers of which the two most prominent fea-
+ turesare located at 1717cm−1and 1735cm−1in both mixtures.
+ Afeatureispresentat1154cm−1fortheνS(C–O)bandwhichis
+ assigned to monomericHCOOH. Thisband is especially strong
+ in the HCOOH:CO 2mixture. In CH 3OH, the absorption bands
+ morecloselyresembletheoverallfeaturesofmixtureswith H2O.
+ However, theνS(C=O) andνS(C–O) modes are split into two
+ componentsat1721cm−1and1691cm−1.TheνB(OH/CH)band
+ cannot be compared to that in the other mixtures as it overlap s
+ withandisdominatedbytheCH 3deformationandνB(OH)fea-
+ turesofCH 3OHat 1460cm−1.
+ ThetemperaturebehaviorofthespectralfeaturesofHCOOH
+ ice depends strongly on the matrix species. In mixtures with
+ H2O, the HCOOH bands are similar for all temperatures. This
+ is not surprising as the H 2O ice structure does not change until
+ 135 K. HCOOH behaves di ﬀerently in mixtures with CO and
+ CO2at high temperatures, however. When CO has desorbed at
+ 45 K, theνS(C=O) andνS(C–O) features are similar to pure
+ HCOOH.Furthermore,itsintegratedintensitydoesnotdecr ease
+ after CO desorption. In the mixture of HCOOH with CO 2, the
+ 1735 cm−1and 1717 cm−1bands of HCOOH only fully disap-
+ pear between 75 K and 105 K at the same time that the features
+ for pure HCOOH start to appear and after CO 2has desorbed.
+ ThusevenwhenHCOOHispresentasaminorcomponentinCO
+ or CO2it doesnot co-desorbat low temperatures.The HCOOH
+ bandsinCH 3OHhavea similar lackoftemperaturevariationas
+ for mixtures with H 2O. Between 105 and 135 K CH 3OH has a6 S.E.Bisschop et al.:Infraredspectroscopy of HCOOHinint erstellarice analogues
+ Fig.2.The temperature dependent spectra of a) pure HCOOH ice depos ited at 15 K, b) pure HCOOH ice deposited at 145 K,
+ subsequentlycooleddown to 15 K, and c) HCOOH:H 2O 20:80%mixed ice. The spectra of the ices are shown for 15, 60 , 90, 105,
+ 135,and150K.The νB(OH)bandofH 2Oat1655cm−1hasbeenremovedfromthespectrafortheHCOOH:H 2O 20:80%mixture.
+ Table 6. The peak positions, FWHMs, and relative band
+ strengths ofνB(OH/CH) at 15 K of tertiary mixtures of
+ HCOOH:H 2O:X, where X stands for CO, CO 2, and CH 3OH.
+ The uncertainties on the peak positions and FWHMs are
+ ±1cm−1and±2cm−1,respectively.
+ Mixture Peakposition FWHM A/A0
+ (cm−1) (cm−1)
+ HCOOH:H 2O:CO 1386 19 4.2
+ HCOOH:H 2O:CO21386 19 3.0
+ HCOOH:H 2O:CH3OH 1382 13 8.3
+ phase transition that is observed around 1500 cm−1where both
+ theCH 3deformationandνB(OH)modesofCH 3OHarelocated.
+ TheHCOOHνS(C=O)andνS(C–O)bandsdonotresemblepure
+ HCOOHfeaturesat135K,whichindicatesthatbothspeciesar e
+ still mixed.
+ 4.4. Tertiarymixtures
+ Spectra of tertiary mixtures ∼7:67:26% of HCOOH:H 2O:CO,
+ HCOOH:H 2O:CO2and HCOOH:H 2O:CH3OH have been mea-
+ sured at 15 K. In Table 6 and Table A.4 of the online material
+ peak positions and FWHMs are given. The νS(C=O) andνS(C–
+ O) features are similar to those in mixtures with H 2O, but are
+ shifted by a few wavenumbers.The νB(OH/CH) bandis located
+ atlowerwavenumbers,especiallyfortheHCOOH:H 2O:CH3OH
+ mixtureandhaveFWHMs of ∼14–19cm−1.4.5. Comparisonto previouslaboratorydata
+ Prior to this study, only Schutteet al. (1999) and
+ Hudson&Moore (1999) reported infrared spectra of HCOOH
+ mixtures with H 2O and CH 3OH at 1 and 4 cm−1resolu-
+ tion, respectively. Their experiments only focused on the
+ νB(OH/CH) andνS(C–O) bands and consequently it is di ﬃcult
+ to make a full comparison with our data which also includes
+ other HCOOH bands. The peak positions of the νB(OH/CH)
+ features in pure HCOOH ice and 10:100% HCOOH:H 2O
+ mixtures by Schutteet al. (1999) are shifted and the FWHMs
+ are narrower compared to our data. However, the tertiary
+ HCOOH:H 2O:CH3OH 8:66:26% mixture results agree very
+ well within the experimental uncertainties. These discrep ancies
+ are likely due to a di ﬀerent baseline subtraction. In pure
+ HCOOH and mixtures with H 2O theνB(OH/CH) mode has a
+ wing on the blue side, which is not subtracted in the present
+ work. The peak position and FWHM for the νS(C–O) feature
+ for a 7:93% HCOOH:H 2O mixture byHudson& Moore(1999)
+ arethesame withintheuncertainties.
+ 5. Band strengthchangesin icemixtures
+ AsstatedbeforeinSect.3absolutebandstrengthsaredi ﬃcultto
+ measure in our experiment, whereas the relative band streng ths
+ can be accurately determined. The relative values discusse d in
+ this section can be used in combination with existing values in
+ the literature given in Table 3 to derive absolute band stren gths
+ indiﬀerentice environments.S.E.Bisschop et al.:Infraredspectroscopy of HCOOHininte rstellarice analogues 7
+ Fig.4.Absorptionspectrainthe1800-1100cm−1regimeformixtureswith ∼90%H 2O,CO,CO 2andCH 3OHat15(bottomcurve),
+ 45, 75, 105, and 135 K (top curve). The νB(OH) has been removed for the HCOOH:H 2O mixture. The peak positions of pure
+ HCOOHat15Kareindicatedbythedottedlines.Theintensiti esofthebandsaremultipliedbyafactor2fortheHCOOH:H 2Oand
+ HCOOH:CO 2mixturesasindicatedinthe�rst andthirdpanel,respectiv ely.
+ Fig.5.A/A0(HCOOH) with respect to temperature for the
+ HCOOHνS(C=O),νB(OH/CH), andνS(C–O) bands in
+ HCOOH:H 2O. The⋆symbols refer to the 50:50% mixture, ∗
+ to 34:66%,/squareto 20:80%,/Diamondto 9:91% HCOOH:H 2O, and△to
+ pureHCOOH. Notethedi ﬀerentscalesontheverticalaxes.
+ 5.1. HCOOH
+ When HCOOH ice is mixed with H 2O the band strengths of
+ HCOOH are strongly a ﬀected. In Figure 5 the relative bandstrengthsoftheνS(C=O),νS(C–O)andνB(OH/CH)spectralfea-
+ tures are shown with error-bars of 12% superimposed. Clearl y
+ theuncertaintiesarerelativelylarge,butstillitisposs ibletonote
+ a numberofeﬀects with concentrationandtemperature.As dis-
+ cussedin Sect. 3the error-barsin the sameexperimentatdi ﬀer-
+ ent temperatures are only 2%, and observed temperature tren ds
+ arethusmuchmoreaccuratethanconcentrationtrends.
+ All mixtures with H 2O show a similar temperature trend
+ as pure HCOOH. Even though between 135 and 150 K the
+ νS(C=O)bandsplits,its bandstrengthisconstantwithtempera-
+ ture.Incontrast,thatofthe νS(C–O)featureshowsapronounced
+ dip around 135 K, which is partly recovered at 150 K. For the
+ most diluted mixture where chain-formationdoes not occur, no
+ such dip is present. The band strength of the νB(OH/CH) mode
+ increaseswithtemperatureandpeaksat135K.Astrikingdi ﬀer-
+ encebetweenthethreeabsorptionbandsisthatthebandstre ngth
+ increasesbyafactor2to5withdecreasingHCOOHiceconcen-
+ tration for theνS(C=O) andνB(OH/CH) bands, but is the same
+ within30%forthe νS(C–O)featurein all mixtures.
+ A similar comparison for the relative band strength with re-
+ spect to temperature is made for mixtures with CO, CO 2, and
+ CH3OH(seeFig.6).ThebandstrengthsinmixtureswithCOare
+ higher compared to those in pure HCOOH, even when all CO
+ has evaporated. However, the band strengths in CO 2are close
+ to or smaller than those for pure HCOOH. The νS(C=O) and
+ νS(C–O) modes are largest around 75–90 K, decrease between
+ 90–135K and �nally increase again up to 150 K. The νS(C=O)8 S.E.Bisschop et al.:Infraredspectroscopy of HCOOHinint erstellarice analogues
+ Fig.6.A/A0(HCOOH) with respect to temperature for the
+ HCOOHνS(C=O),νB(OH/CH), andνS(C–O) bands. The /square
+ symbols refers to pure HCOOH, /Diamondto 9:91% HCOOH:H 2O,△
+ to 11:89% HCOOH:CO, ⋆to 9:91% HCOOH:CO 2, and∗to
+ 10:90%HCOOH:CH 3OH.Notethediﬀerentscalesontheverti-
+ calaxes.
+ andνS(C–O) bands are relatively little a ﬀected in the mixtures
+ withCH 3OH.
+ The relative band strengths for the νB(OH/CH) mode in the
+ tertiary mixtures are shown in Table 6 and those of the other
+ bands in Table A.4 of the online material. Clearly, the band
+ strength in the tertiary mixtures with H 2O and CO, CO 2or
+ CH3OH areenhancedat 15K.
+ In summary,the relative band strengths of the νS(C=O) and
+ νS(C–O) bands can range from 0.8–3 A0(HCOOH) and of the
+ νB(OH/CH) band from 1–12 A0(HCOOH) in diﬀerent ice envi-
+ ronments.
+ 5.2. H2O
+ Water absorptionbandsare strongly a ﬀected by the presence of
+ other ice componentslike CO 2(¨Obergetal., 2007). In Figure 7
+ therelativebandstrengthscomparedtopureH 2OoftheνS(OH)
+ and theν(lib) modes in the mixtures with HCOOH are shown
+ versus temperature. The νS(OH) band strength is signi�cantly
+ smaller in all mixtures compared to that of pure H 2O, but does
+ not dependon the mixing ratio. The ν(lib) mode behavesdi ﬀer-
+ ently. It decreases as a functionof HCOOH concentration,wi th
+ the smallest band strength for the highest HCOOH concentra-
+ tions. As the temperatureincreases the relative bandstren gth of
+ theν(lib)bandincreases,untilatemperatureof135Kisreached .
+ The diﬀerent behavior ofνS(OH) and theν(lib) mode are fur-
+ ther illustrated in the right panel of Fig. 7. For pure H 2O the
+ absorbance ratio AνS(OH)/Aν(lib)(the 3.0/13µm features) starts
+ at∼7.5 and increases with temperature to 9.5. The mixtures
+ have a higher ratio at 15 K, but decrease with temperature. Th e
+ AνS(OH)/Aν(lib)ratiofurthermoreincreaseswithHCOOHconcen-
+ tration at 15 K. In conclusion, the ratio of the relative band
+ strengths of the 3.0 /13µm features with a value larger than 10
+ implies that H 2O is present in ice with HCOOH concentrations
+ >20%,andalowervalueimpliesthattheHCOOHconcentration
+ is<20%.Fig.7.A/A0(H2O) of the H 2OνS(OH),ν(lib), and the band
+ strength ratio AνS(OH)/Alibwith respect to temperature in
+ HCOOH:H 2O mixtures and pure H 2O. The dotted line with △
+ in theAνS(OH)/Alibpanel indicates the trend for pure H 2O, the⋆
+ for the 50:50%mixture, ∗for 34:66%,/squarefor 20:80%,and/Diamondfor
+ 9:91% HCOOH:H 2O. Note the diﬀerent scales on the vertical
+ axes.
+ 6. Discussion
+ In this section, our results are discussed in the light of rec ent
+ chemical physics experiments of HCOOH-containing ices. Th e
+ behavior of HCOOH in di ﬀerent ices may lead to important
+ clues regarding the behavior of the species under interstel lar
+ conditions. Of particular relevance for interstellar chem istry is
+ the mobility in the ice and desorption behavior of the ice con -
+ stituentswithtemperature.
+ The infrared spectrum of pure HCOOH distinguishes itself
+ fromHCOOHmixturesbythepresenceofdimerstoachain-like
+ structure of HCOOH molecules at 120–135 K for HCOOH de-
+ posited on a KBr substrate at 15 K (see e.g., Cyriac&Pradeep,
+ 2005). The chain-structure at higher temperatures results in a
+ spectrum in which the νS(C=O) andνS(C–O) bands are split.
+ The transition from dimers to HCOOH-chains is irreversible as
+ evidenced by the splitting of the νS(C=O) mode at 15 K for
+ HCOOH depositedat 145K (seeFig.2andSect. 4.1).
+ In binary mixtures with H 2O, the HCOOH ice spectral fea-
+ tures remain relatively similar throughout a large tempera ture
+ regime.Onlyfrom120Konwards,changesareobservedforour
+ experiments (see Fig. 3). Initially, only the νB(OH/CH) mode
+ increases in intensity and broadens, but between 135 K and
+ 150 K theνS(C=O) band splits into the out-of-phase and in-
+ phasemodesfor>10%HCOOH,similartowhatisobservedfor
+ pure HCOOH ice. This implies that the molecules �rst reorga-
+ nizelocallyat120Kandsubsequentlybecomemobilethrough -
+ out the ice at highertemperatures.Thisis corroboratedby s tud-
+ ies of layered binary HCOOH-H 2O ices (Cyriac&Pradeep,
+ 2005; Borodinetal., 2005; Bahret al., 2005; Souda, 2006).
+ In addition to the infrared experiments by Cyriac&Pradeep
+ (2005), Metastable Impact Electron Spectroscopy (MIES) an d
+ Temperature Programmed Desorption (TPD) have been used to
+ probe the layered HCOOH /H2O ices. No mixing is observed in
+ anyoftheseexperimentsupto120K.Furthermore,thesplitt ing
+ of theνS(C=O) mode between 135 K and 150 K in our experi-
+ ments implies that H 2O and HCOOH segregate at high temper-
+ atures.ThisisconsistentwithTPDdatafromBahret al.(200 5),S.E.Bisschop et al.:Infraredspectroscopy of HCOOHininte rstellarice analogues 9
+ where HCOOH desorbs after H 2O, even in ices where H 2O has
+ beendepositedontopofHCOOH.
+ The interactions between HCOOH and CO, CO 2and
+ CH3OH are diﬀerent compared to H 2O. Very little has been
+ published about either dimers or ice mixtures of these speci es.
+ Parketal. (2002) performed experiments with HCOOH dis-
+ solved in liquid CO 2and C2H6. The dimer/monomer ratio for
+ HCOOH was higher in C 2H6than CO 2. This is due to the
+ stronger electrostatic interactions of HCOOH with CO 2com-
+ pared to C 2H6. A similar eﬀect may be responsible for the dif-
+ ference between CO and CO 2as the monomeric HCOOH fea-
+ tureat1154cm−1isstrongerinthemixturewithCO 2compared
+ to CO. When HCOOH is diluted in an ice dominated by other
+ molecules with no or very small dipole-moments like CH 4, N2
+ and O2, a similar HCOOH ice spectrum is likely obtained. The
+ monomer/dimer ratio will depend on the HCOOH concentra-
+ tion as well as the strength of the electrostatic interactio n be-
+ tween HCOOH and the other ice species. A similar behavior
+ is observed for H 2O ice diluted in CO 2, CO, N 2and O2(e.g.,
+ ¨Obergetal., 2007; Bouwman et al., in prep.; Awad et al., in
+ prep.).
+ The CH 3OH spectrum is very little a ﬀected by HCOOH.
+ This is probably due to a comparable strength of hydrogen
+ bonds between HCOOH and CH 3OH. The infrared spectra of
+ HCOOH:CH 3OH 10:90% mixtures shown in Fig. 4 clearly il-
+ lustratethatbothspeciesdonotsegregateattemperatures below
+ 135K,evenwhenCH 3OHhasaphasetransition.Itislikelythat
+ HCOOH and CH 3OH only become mobile between 135 K and
+ 150 K, as is found for mixtures of HCOOH with H 2O. Since
+ CH3OHhasasmallerdipole-momentandfewerpossibilitiesfor
+ making hydrogen-bonds compared to H 2O, it is also expected
+ to segregate from, and desorb prior to, HCOOH. Other polar or
+ hydrogen-bondingspecies such as NH 3and H2CO may interact
+ withHCOOH anda ﬀectitsinfraredspectruminthesame way.
+ 7. Astrophysicalimplications
+ 7.1. HCOOH iceidenti�cation
+ Formic acid ice has been observed in many di ﬀerent astrophys-
+ ical objects, such as high mass and low mass star-forming re-
+ gions (e.g., Schutteetal., 1997, 1999; Boogert et al., in pr ep.).
+ In this section we compare the laboratory spectra with the ob -
+ served ISO spectrum toward the low mass YSO HH 46 and the
+ highmassYSOW33A(Boogertetal.,2004;Gibbetal.,2000).
+ The5.9µm (νS(C=O))7.2µm (νB(OH/CH))and8.1µm (νS(C–
+ O))bandsareusedtodeterminethetheiceenvironmentinwhi ch
+ HCOOH is located. The 5.9 µm HCOOH feature is blended
+ with other interstellar bands and the 8.1 µm band overlaps with
+ the wing of a strong silicate feature. Nonetheless they can b e
+ used to exclude some astrophysical HCOOH ice environments.
+ InFigure8the5–9 µmrangeisshowntowardthelowmassYSO
+ HH 46 with the experimental spectra over-plotted. In Figure 8a
+ the spectra for the ∼10:90% HCOOH:CO and HCOOH:CO 2
+ mixturesare shown.Thesemixturescan clearlybe ruledout f or
+ HH46becausethe νS(C=O)featureisshiftedtoofartotheblue.
+ Similarly, pure high temperature HCOOH (Fig. 8b) can be dis-
+ cardedas the out-of-phase νS(C–O) modeat 8.1 µm band is not
+ detected. Furthermore,for all pure ices and mixtures excep t the
+ binary HCOOH:CH 3OH ice, theνS(C–O) band causes a small
+ wing on the silicate band at 8.1 µm, which is not observed due
+ tothemuchlargerintensityofthesilicate absorption.
+ The integrated absorbance and peak position is determined
+ most accurately from the νB(OH/CH) band, because it is theFig.9.Theobservedicespectruminthe7.10–7.35 µmrangeto-
+ wardW33Aindicatedbythesolidline(Gibbet al.,2000).Als o
+ included are in a) the spectra at 15 K of pure HCOOH (dotted)
+ and 20:80% HCOOH:H 2O (dashed) and in b) the tertiary mix-
+ turesHCOOH:H 2O:CO8:62:30%(dashed),HCOOH:H 2O:CO2
+ 6:67:27%(dash-dot)andHCOOH:H 2O:CH3OH6:68:26%(dot-
+ ted).
+ least blended feature of HCOOH. In Figure 9 the spectrum ob-
+ served with ISO toward W 33A is shown for the νB(OH/CH)
+ feature. The ISO data are chosen for comparison because they
+ have higher spectral resolution ( λ/∆λ≈800, or 2 cm−1at
+ 7.2µm) than the Spitzer data ( λ/∆λ≈100, or 14 cm−1at
+ 7.2µm). In Figure 9a the 15 K spectra of pure HCOOH and
+ 20:80% HCOOH:H 2O are shown. Clearly, the pure HCOOH
+ ice spectrum is too broad to �t the astronomical feature. The
+ νB(OH/CH) mode is also too far shifted to the blue for the
+ HCOOH:H 2Omixture.ThetertiarymixturesdepictedinFig.9b
+ match the observationsbetter. The HCOOH spectral features in
+ the HCOOH:H 2O:CO and HCOOH:H 2O:CO2mixtures are al-
+ most identical, but have a blue wing that is not observed for
+ W33A.However,theHCOOH:H 2O:CH3OH6:68:26%mixture
+ reproducestheobservedspectrumverywell.
+ This sensitivity of peak position and FWHM of the
+ νB(OH/CH) band at 7.2µm is further illustrated in Fig. 10,
+ together with the observed values toward the high mass YSO
+ W 33A. A Gaussian �t is made to the observations in the same
+ way as to the experimental data. The black horizontal line co r-
+ responds to the �tted peak position in the observations and
+ the black vertical line to the �tted FWHM. The dotted and
+ dashed lines represent 2 cm−1and 1 cm−1error-bars for the
+ FWHMandpeakposition,respectively.Clearly,thebinarym ix-
+ tures with H 2O as well as pure HCOOH are too broad and
+ shifted too far to the blue side compared to the observed fea-
+ ture in W 33A. The tertiary mixtures provide better �ts. The
+ 6:27:67% HCOOH:CO 2:H2O and 8:62:30% HCOOH:H 2O:CO
+ mixtures have FWHMs that are too broad compared to the ob-
+ servationswithintheiruncertainties.Furthermore,thei rpeakpo-
+ sitions are shifted to 1386 cm−1, a few wavenumbers too high.
+ Potentially, CO 2/CO:H2O ratios higher than 0.40-0.52:1 could
+ shift theνB(OH/CH) feature to lower wavenumbers and match
+ the observations toward W 33A better. This is not unlikely as
+ ¨Obergetal. (2007) �nd that they can �t the observed Spitzer
+ spectrumtowardHH46wellifalsoa0.5:1CO 2:H2Omixtureis
+ included. The 7.2µm band for the HCOOH:CH 3OH:H2O mix-
+ ture�tstheobservedspectrumverywell.10 S.E.Bisschop et al.:Infraredspectroscopy of HCOOHinin terstellarice analogues
+ Fig.8.TheobservedicespectrumtowardHH46inthe5–9 µmrange(Boogertet al.,2004).Alsoincludedareina)arethe ∼10:90%
+ mixturesofHCOOH:CO (dot-dash)andHCOOH:CO 2(dashed),inb)pureHCOOHspectraat15Kforicedepositedat 15K(dot-
+ dash) and at 145 K (dashed), in c) the ∼10:90% mixtures of HCOOH:H 2O (dash-dot) and CH 3OH (dash-dot-dot-dot) and in d)
+ the tertiary mixtures 7:67:26% of HCOOH:H 2O:CO (dash-dot-dot-dot), HCOOH:H 2O:CO2(dashed), and HCOOH:H 2O:CH3OH
+ (dot-dash)at 15K. TherelevantpeakpositionsofpureHCOOH iceat 15K areindicatedwithdottedlinesto guidetheeye.
+ 7.2. HCOOH iceformation
+ The presence of HCOOH in a complex mixture dominated by
+ H2O but also including CO, CO 2or CH3OH or a combination
+ of these three species is not unlikely when potential format ion
+ mechanism are evaluated. CO or CO 2are both potential pre-
+ cursors to HCOOH and CH 3OH is known to form from CO
+ through H-atom bombardment (Watanabeet al., 2004; Fuchs et
+ al., in prep.). H-bombardment of CO or CO 2in mixtures with
+ H2O (Fuchs et al., in prep.; Bisschop et al., in prep.) and UV-
+ irradiationofCO:H 2O andCO 2:H2O mixtures(Watanabeet al.,
+ 2004; Watanabe&Kouchi, 2002; Gerakinesetal., 2000) donot
+ give HCOOH as one of the main products. Since the UV ex-
+ periments were performed under HV conditions, they need to
+ be repeated under ultra high vacuum conditions to fully ex-
+ clude this route. In H 2O:CO mixtures that are bombarded by
+ 0.8 MeV protons, to simulate cosmic rays, HCOOH is formed
+ (Hudson&Moore, 1999).Itsformationisexplainedby:
+ H+CO→HCO
+ OH+HCO→HCOOH
+ where the H and OH result from H 2O dissociation in the ex-
+ periment. In space, H-atoms from the gas phase can react with
+ the adsorbed O to form OH. HCO is formed by H addition to
+ CO, which will further react to H 2CO and �nally to CH 3OH,unless HCO encounters an OH radical �rst. Garrod&Herbst
+ (2006) use this formation mechanism for HCOOH in the solid
+ state. However,in their model HCOOH can onlyformat higher
+ temperatures because the OH and HCO radicals are not mobile
+ at low temperatures. This would be inconsistent with the det ec-
+ tion of HCOOH ice in cold sources such as HH 46 and back-
+ ground stars unless OH is produced with excess energy. This i s
+ forexamplefoundintheoreticalcalculationsbyAndersson et al.
+ (2006)forthephoto-dissociationofH 2Oice.Thenewlyformed
+ OH radicalsare notverymobile in bulk ice, but can movemore
+ than 80 Å over the surface. Thus HCOOH formation through
+ this reaction mechanism is expected to be strongly localize d at
+ theicesurface.Anotherpotentialformationmechanismisg iven
+ byKeane(2001).
+ HCO+O→HCOO
+ HCOO+H→HCOOH
+ In this case successive H- and O-additionleads to HCOOH for-
+ mation, and HCOOH may be produced at low ice temperatures
+ at thesametime asH 2OandCH 3OHareformed.
+ In summary, both reaction pathways make it likely that
+ HCOOH is formed in an environment where H 2O and CH 3OH
+ are located. Potentially CO, CO 2, and H 2CO are present in the
+ iceaswell,ifconversiontoCH 3OHandHCOOHisincomplete.S.E.Bisschop et al.:Infraredspectroscopy of HCOOHininte rstellarice analogues 11
+ Fig.10.Comparison between the observed 7.2 µm band of
+ HCOOH in W 33A with laboratory spectra of HCOOH ice.
+ The black lines indicate the peak position and FWHM of
+ the observed feature and the dotted and dashed lines 2 cm−1
+ uncertainties on the FWHM and 1 cm−1on the peak po-
+ sition, respectively. Mixture ratios for all temperatures have
+ the same symbol. The +symbols refer to pure HCOOH, ∗
+ to 50:50% HCOOH:H 2O,/squareto 9:91% HCOOH:H 2O,△to
+ HCOOH:H 2O:CO8:62:30%,/Diamondto6:67:27%HCOOH:H 2O:CO2
+ and×to6.5:26:68%HCOOH:CH 3OH:H2O.
+ As discussed in Sect. 7.1 it is probable that H 2CO will have a
+ similar eﬀect on the ice structure as CH 3OH and H 2O and thus
+ also on the HCOOH infrared bands. In the future both reac-
+ tionpathscanbetestedexperimentallyandthusresolvewhe ther
+ HCOOH is formed during ice formation, ice processing at low
+ temperaturesorpotentiallyevenboth.
+ 8. Summaryand conclusions
+ Themainconclusionsderivedfromthisworkare:
+ –The peak positions, FWHM and pro�les of the νS(C=O),
+ νB(OH/CH) andνS(C–O) bandsare strongly a ﬀected by the
+ ice matrix. At high temperatures and when HCOOH is de-
+ posited at high temperatures, the νS(C=O),νB(OH/CH) and
+ νS(C–O) modes split into two bands. In binary mixtures
+ with H 2O, the HCOOH features have very simple pro�les,
+ whereasmultiplebandsarefoundinbinaryicemixtureswith
+ CO, CO 2and CH 3OH. The peak positions of the HCOOH
+ νS(C=O),νB(OH/CH), andνS(C–O) bands are shifted up to
+ ∼40 cm−1. The spectra for tertiary mixtures resemble the
+ spectraofbinarymixtureswith H 2O,but smallshiftsexist.
+ –The band strengths of the νS(C=O),νB(OH/CH), andνS(C–
+ O) features are strongly a ﬀected by the ice structure. They
+ are enhanced in mixtures of HCOOH with H 2O and CO by
+ factorsof2–10,but aresimilar to thoseof pureHCOOH ice
+ for binary mixtureswith CO 2and CH 3OH. Strongtempera-
+ tureeﬀectsarealsoobserved.
+ –Comparisonofourdata with the Spitzer spectrumof HH 46
+ andtheISOspectrumtowardthehighmassYSOW33Aex-
+ cludes the presence of the high temperatureHCOOH chain-
+ structure, as well as binary mixtures of HCOOH with any
+ oftheotherspeciesH 2O,CO,CO 2andCH 3OH.The7.2µm
+ featuretowardW33Aisverysimilartothatfoundintertiary
+ mixturesof∼7:67:26%HCOOH:H 2O:X,whereXstandsfor
+ CO, CO 2or CH3OH. Especially the HCOOH:H 2O:CH3OH
+ mixturereproducestheobservedW33Aspectrumverywell.Potentially,suchtertiaryorevenmorecomplexicesconsis t-
+ ingofHCOOH,H 2O,CH3OH,COandCO 2mayberespon-
+ sible for the observed spectrum. The presence of HCOOH
+ in such complex ice mixtures is consistent with its possible
+ formationmechanisms.
+ Acknowledgements. We thank the referee for useful comments on the pa-
+ per. Funding was provided by NOVA, the Netherlands Research School for
+ Astronomy, and by a Spinoza grant from the Netherlands Organ ization for
+ Scienti�c Research, NWO.
+ References
+ Andersson, S., Al-Halabi, A., Kroes, G.-J., & van Dishoeck, E. F. 2006,
+ J.Chem. Phys.,124,4715
+ Bahr, S., Borodin, A., H¨ o ﬀt, O., Kempter, V., & Allouche, A. 2005,
+ J.Chem. Phys.,122,234704
+ Bisschop, S. E., Jørgensen, J. K., van Dishoeck, E. F., & de Wa chter, E. B. M.
+ 2007, A&A,465, 913
+ Boogert, A.C. A.,Pontoppidan, K.M.,Lahuis, F.,et al. 2004 , ApJS,154, 359
+ Borodin, A., H¨ oﬀt, O., Bahr, S., Kempter, V., & Allouche, A. 2005, Nucl.
+ Instrum. Meth. B, 232, 79
+ Bottinelli, S.,Ceccarelli, C.,Williams, J.P.,&Leﬂoch,B .2007,A&A,463,601
+ Cyriac, J.& Pradeep, T.2005, Chem. Phys.Lett.,402, 116
+ Dartois, E.,Schutte, W.,Geballe, T.R.,etal. 1999, A&A,34 2, L32
+ Ehrenfreund, P.,Dartois, E., Demyk, K., & D’Hendecourt, L. 1998, A&A, 339,
+ L17
+ Ehrenfreund, P.,Kerkhof, O.,Schutte, W.A.,et al. 1999, A& A,350, 240
+ Garrod, R. T.&Herbst, E.2006, A&A,457, 927
+ Gerakines, P.A.,Moore, M. H.,& Hudson,R. L.2000, A&A,357, 793
+ Gerakines, P.A., Schutte, W.A., Greenberg, J.M., & van Dish oeck, E.F. 1995,
+ A&A,296, 810
+ Gibb, E. L., Whittet, D. C. B., Boogert, A. C. A., & Tielens, A. G. G. M. 2004,
+ ApJS,151, 35
+ Gibb, E.L.,Whittet, D.C.B.,Schutte, W.A.,et al. 2000, ApJ ,536, 347
+ Hollis, J.M.,Pedelty, J.A.,Snyder, L.E.,et al. 2003, ApJ, 588, 353
+ Hudson, R.L.&Moore, M.H.1999, Icarus, 140,451
+ Ikeda, M.,Ohishi, M.,Nummelin, A.,et al. 2001, ApJ,560, 79 2
+ Keane, J.V. 2001, PhD thesis, Rijks Universiteit Groningen
+ Knez, C.,Boogert, A.C.A.,Pontoppidan, K.M.,et al. 2005, A pJ,635, L145
+ Liu,S.-Y.,Girart, J.M.,Remijan, A.,&Snyder, L.E.2002, A pJ, 576,255
+ Marechal, Y. 1987, J.Chem. Phys.,87, 6344
+ Millikan, R. C.&Pitzer, K. S.1958, J.Am.Chem. Soc.,80, 351 5
+ ¨Oberg, K.I.,Fraser, H.J.,Boogert, A.C. A.,etal. 2007, A&A ,462, 1187
+ Park, J.-Y.&Woon, D.E.2006, ApJ,648, 1285
+ Park, Y., Gupta, R. B., Curtis, C. W., & Roberts, C. B. 2002, J. Phys. Chem.,
+ 106, 9696
+ Pontoppidan, K.M.,Fraser, H.J.,Dartois, E.,et al. 2003, A &A,408, 981
+ Remijan, A.J.& Hollis, J.M. 2006, ApJ,640, 842
+ Requena-Torres, M. A., Mart´ ın-Pintado, J., Rodr´ ıguez-F ranco, A., et al. 2006,
+ A&A,455, 971
+ Schutte, W. A.,Boogert, A. C. A., Tielens, A. G. G. M., et al. 1 999, A&A,343,
+ 966
+ Schutte, W.A.,Greenberg, J.M.,van Dishoeck, E.F.,et al. 1 997, Ap&SS,255,
+ 61
+ Souda, R. 2006, Surface Science, 600, 3135
+ Tielens, A. G.G.M.&Charnley, S.B. 1997, Origins LifeEvol. B.,27, 23
+ Tielens,A.G.G.M.,Tokunaga,A.T.,Geballe,T.R.,&Baas,F .1991,ApJ,381,
+ 181
+ van Dishoeck, E. F.,Blake, G. A.,Jansen, D. J.,& Groesbeck, T. D. 1995, ApJ,
+ 447, 760
+ Watanabe, N. &Kouchi, A.2002, ApJ, 567, 651
+ Watanabe, N.,Nagaoka, A.,Shiraki, T.,& Kouchi, A.2004, Ap J, 616,638
+ Yokoyama, I.,Miwa, Y., &Machida, K. 1991, J.Am.Chem.Soc., 113, 6458S.E.Bisschopet al.:Infraredspectroscopy of HCOOH ininte rstellar iceanalogues ,OnlineMaterial p1
+ OnlineMaterialS.E.Bisschopet al.:Infraredspectroscopy of HCOOH ininte rstellar iceanalogues ,OnlineMaterial p2
+ AppendixA: Lineparametersof HCOOH in the
+ 1800-1000cm−1rangeS.E.Bisschopet al.:Infraredspectroscopy of HCOOH ininte rstellar iceanalogues ,OnlineMaterial p3
+ Table A.1. Peak positions, FWHMs and A/A0for the HCOOHνS(C=O),νB(OH/CH), andνS(C–O) bandsfor all temperaturesfor
+ pure HCOOH. The peak positions are given in both wavenumbers and wavelengths for the ice deposited at 15 K and 145 K. The
+ uncertaintiesonthepeakpositionsandFWHMsare ±1and±2cm−1,respectively.
+ νS(C=O) νB(OH/CH) νB(C–O)
+ out-of-phase in-phase
+ TνS FWHMνS FWHM A/Aa
+ 0νS FWHM A/A0aνS FWHM A/Aa
+ 0
+ (K)(cm−1(µm)) (cm−1) (cm−1(µm)) (cm−1) (cm−1(µm)) (cm−1) (cm−1(µm)) (cm−1)
+ HCOOH deposited at15 K
+ 151714(5.84) 45 1650(6.06) 69 1.0 1387(7.21) 37 1.0 1211(8.26) 64 1.0
+ 301713(5.84) 43 1651(6.06) 71 1.0 1387(7.21) 37 1.1 1213(8.24) 61 1.0
+ 601710(5.85) 41 1644(6.08) 65 1.1 1387(7.21) 35 1.2 1219(8.20) 53 1.0
+ 751710(5.85) 40 1641(6.09) 65 1.1 1387(7.21) 33 1.2 1221(8.19) 51 1.0
+ 901709(5.85) 39 1637(6.11) 64 1.1 1387(7.21) 31 1.3 1223(8.18) 50 1.0
+ 1051709(5.85) 39 1634(6.12) 63 1.1 1387(7.21) 30 1.3 1224(8.17) 50 1.0
+ 1201709(5.85) 41 1625(6.15) 56 1.1 1386(7.21) 29 1.8 1228(8.15) 51 1.0
+ 1351703(5.87) 10 1615(6.19) 43 1.1 1391(7.19) 8 2.7 1255(7.97) 22 0.9
+ 1716(5.83) 39 1375(7.27) 14 1221(8.19) 21
+ 1501703(5.87) 11 1615(6.19) 40 1.1 1391(7.19) 7 2.5 1254(7.97) 22 0.9
+ 1719(5.82) 34 1374(7.28) 13 1221(8.19) 17
+ 1651704(5.87) 11 1617(6.18) 36 — 1391(7.19) 7 — 1253(7.98) 20 —
+ 1722(5.81) 32 1373(7.28) 12 1220(8.20) 15
+ HCOOHdeposited at 145K
+ 151699(5.89) 10 1606(6.23) 36 1.5 1390(7.19) 6 3.7 1256(7.96) 18 1.3
+ 1712(5.84) 32 1371(7.29) 9 1222(8.18) 15
+ 301699(5.89) 9 1606(6.23) 36 1.5 1390(7.19) 6 3.7 1256(7.96) 18 1.3
+ 1712(5.84) 32 1371(7.29) 9 1222(8.18) 15
+ 451699(5.89) 9 1606(6.22) 36 1.5 1390(7.19) 6 3.7 1255(7.97) 18 1.3
+ 1713(5.84) 32 1371(7.29) 9 1222(8.18) 15
+ 601699(5.89) 8 1607(6.22) 36 1.5 1390(7.19) 6 3.6 1255(7.97) 18 1.3
+ 1712(5.84) 32 1371(7.29) 9 1222(8.19) 15
+ 751699(5.88) 8 1608(6.22) 36 1.5 1390(7.19) 6 3.6 1255(7.97) 18 1.3
+ 1713(5.84) 32 1371(7.29) 9 1222(8.19) 15
+ 901700(5.88) 8 1608(6.22) 37 1.5 1390(7.19) 6 3.5 1254(7.97) 18 1.3
+ 1713(5.84) 32 1371(7.29) 10 1221(8.19) 15
+ 1051700(5.88) 9 1609(6.21) 37 1.5 1390(7.19) 6 3.5 1254(7.98) 18 1.3
+ 1713(5.84) 32 1371(7.29) 10 1221(8.19) 15
+ 1201700(5.88) 9 1610(6.21) 38 1.4 1390(7.19) 6 3.4 1253(7.98) 18 1.3
+ 1713(5.84) 32 1371(7.29) 10 1220(8.19) 15
+ 1351700(5.88) 9 1611(6.21) 39 1.4 1390(7.20) 6 3.3 1252(7.99) 18 1.3
+ 1714(5.84) 32 1371(7.29) 11 1220(8.10) 15
+ 1501701(5.88) 9 1612(6.20) 39 1.4 1390(7.20) 6 3.2 1252(7.99) 19 1.3
+ 1714(5.83) 31 1371(7.29) 11 1219(8.20) 14
+ 1651701(5.88) 9 1614(6.20) 38 1.3 1390(7.20) 6 2.8 1250(8.00) 19 1.2
+ 1715(5.83) 31 1371(7.30) 11 1219(8.20) 14
+ aA0refers tothe band strength inpure HCOOHat 15K.S.E.Bisschopet al.:Infraredspectroscopy of HCOOH ininte rstellar iceanalogues ,OnlineMaterial p4
+ Table A.2. Peak positions, FWHMs and A/A0for the HCOOHνS(C=O),νB(OH/CH), andνS(C–O) bandsfor all temperaturesfor
+ mixturesofHCOOH withH 2O.TheuncertaintiesonthepeakpositionsandFWHMsare ±1and±2cm−1,respectively.
+ νS(C=O) νB(OH/CH) νS(C–O)
+ out-of-phase in-phase
+ TνS FWHMνS FWHM A/Aa
+ 0νS FWHM A/Aa
+ 0νS FWHM A/Aa
+ 0
+ (K)(cm−1(µm)) (cm−1) (cm−1(µm)) (cm−1) (cm−1(µm)) (cm−1) (cm−1(µm)) (cm−1)
+ 50:50% HCOOH:H 2O
+ 151708(5.85) 48 1658(6.03) 103 1.4 1391(7.19) 37 1.1 1215(8.23) 50 1.3
+ 301709(5.85) 39 1675(5.97) 75 1.5 1391(7.19) 37 1.2 1220(8.20) 58 1.3
+ 451711(5.85) 36 1665(6.01) 78 1.5 1391(7.19) 36 1.3 1223(8.18) 55 1.3
+ 601710(5.85) 33 1672(5.98) 83 1.5 1391(7.19) 35 1.3 1223(8.17) 54 1.3
+ 751709(5.85) 35 1668(6.00) 77 1.5 1391(7.19) 34 1.4 1224(8.17) 52 1.3
+ 901709(5.85) 34 1670(6.00) 78 1.5 1391(7.19) 33 1.5 1225(8.17) 51 1.2
+ 1051709(5.85) 35 1669(5.99) 75 1.5 1392(7.19) 34 1.7 1225(8.16) 51 1.2
+ 1201710(5.85) 37 1671(5.98) 75 1.5 1395(7.17) 42 3.1 1224(8.17) 50 1.2
+ 1351713(5.84) 45 1670(5.99) 69 1.5 1403(7.13) 59 6.4 1223(8.17) 51 0.95
+ 1501707(5.86) 10 1616(6.19) 40 1.5 1391(7.19) 7 3.8 1255(7.97) 19 1.2
+ 1720(5.82) 16 1372(7.29) 13 1222(8.18) 17
+ 1651706(5.86) 12 1619(6.18) 34 — 1391(7.19) 6 — 1253(7.98) 18 —
+ 1723(5.80) 32 1373(7.29) 12 1222(8.19) 14
+ 34:66% HCOOH:H 2O
+ 151707(5.86) 44 1652(6.05) 95 1.6 1391(7.19) 35 1.5 1216(8.23) 46 1.3
+ 301706(5.86) 38 1688(5.92) 94 1.7 1391(7.19) 35 1.6 1224(8.17) 56 1.3
+ 451707(5.86) 36 1667(6.00) 83 1.7 1391(7.19) 33 1.7 1226(8.16) 51 1.3
+ 601706(5.86) 37 1668(6.00) 77 1.7 1391(7.19) 32 1.8 1226(8.15) 50 1.3
+ 751706(5.86) 36 1669(5.99) 75 1.7 1391(7.19) 32 1.9 1227(8.15) 49 1.3
+ 901706(5.86) 36 1670(5.99) 74 1.7 1391(7.19) 32 2.1 1227(8.15) 49 1.3
+ 1051706(5.86) 36 1671(5.98) 73 1.7 1393(7.18) 34 2.5 1227(8.15) 48 1.3
+ 1201708(5.85) 39 1674(5.98) 73 1.7 1399(7.15) 46 4.3 1226(8.16) 48 1.2
+ 1351714(5.84) 47 1670(5.99) 69 1.7 1406(7.11) 62 7.5 1224(8.17) 51 1.0
+ 1501711(5.84) 4 1617(6.18) 42 1.6 1391(7.19) 7 4.7 1256(7.96) 18 1.2
+ 1719(5.82) 34 1371(7.29) 13 1223(8.17) 16
+ 165——— – 1621(6.17) 32 — 1391(7.19) 5 — 1255(7.97) 16 —
+ 1726(5.79) 28 1372(7.29) 11 1224(8.17) 13
+ 20:80% HCOOH:H 2O
+ 151707(5.86) 40 1643(6.09) 81 1.8 1391(7.19) 35 2.1 1215(8.23) 44 1.2
+ 301704(5.87) 43 1667(6.00) 89 1.8 1390(7.19) 33 2.2 1227(8.15) 55 1.3
+ 451703(5.87) 44 1660(6.02) 77 1.9 1390(7.19) 31 2.3 1230(8.13) 47 1.3
+ 601703(5.87) 40 1669(5.99) 83 1.9 1390(7.19) 31 2.5 1229(8.13) 48 1.3
+ 751703(5.87) 42 1664(6.01) 76 1.9 1391(7.19) 31 2.7 1229(8.13) 47 1.3
+ 901703(5.87) 39 1670(5.99) 79 1.9 1391(7.19) 32 2.9 1229(8.14) 46 1.3
+ 1051705(5.87) 40 1668(5.99) 75 1.9 1393(7.18) 35 3.5 1228(8.14) 46 1.2
+ 1201709(5.85) 39 1675(5.97) 76 1.9 1403(7.13) 51 5.6 1227(8.15) 47 1.1
+ 1351714(5.83) 45 1673(5.98) 72 1.9 1413(7.08) 61 8.2 1225(8.16) 49 0.93
+ 150——— – 1619(6.17) 51 1.7 1392(7.19) 8 6.1 1256(7.96) 19 1.0
+ 1717(5.82) 41 1372(7.29) 17 1223(8.17) 19
+ 165———- – -1622(6.16) 31 – 1392(7.18) 4 — 1255(7.97) 15 —
+ 1730(5.78) 27 1375(7.27) 11 1226(8.16) 11
+ 9.4:91% HCOOH:H 2O
+ 151708(5.86) 38 1636(6.11) 70 2.5 1391(7.19) 35 4.9 1214(8.24) 42 1.4
+ 301706(5.86) 40 1680(5.95) 128 2.5 1388(7.21) 31 4.9 1233(8.11) 59 1.4
+ 451698(5.89) 45 1662(6.02) 94 2.6 1389(7.20) 29 5.2 1231(8.12) 42 1.4
+ 601699(5.89) 55 1649(6.06) 90 2.6 1388(7.20) 28 5.6 1231(8.12) 46 1.4
+ 751698(5.89) 49 1655(6.04) 100 2.6 1388(7.20) 28 5.8 1231(8.12) 45 1.4
+ 901700(5.88) 52 1641(6.10) 88 2.6 1389(7.20) 30 6.2 1230(8.13) 44 1.4
+ 1051701(5.88) 50 1645(6.08) 89 2.6 1391(7.19) 34 7.2 1230(8.13) 44 1.4
+ 1201706(5.86) 47 1664(6.01) 94 2.6 1402(7.13) 52 9.5 1228(8.14) 45 1.3
+ 1351713(5.84) 46 1658(6.03) 76 2.5 1415(7.06) 59 11.3 1226(8.15) 47 1.1
+ 1501718(5.82) 43 1674(5.97) 93 2.3 1404(7.12) 67 10.5 1223(8.18) 51 1.1
+ aA0refers tothe band strength inpure HCOOHat 15K.S.E.Bisschopet al.:Infraredspectroscopy of HCOOH ininte rstellar iceanalogues ,OnlineMaterial p5
+ Table A.3. Peak positions, FWHMs and A/A0for the HCOOHνS(C=O) andνS(C–O) bands for all temperatures for ∼10:90%
+ HCOOH:CH 3OH.TheuncertaintiesonthepeakpositionsandFWHMsare ±1and±2cm−1,respectively.
+ νS(C=O) νS(C–O)
+ out-of-phase in-phase out-of-phase in-phase
+ Tν FWHMν FWHM A/Aa
+ 0ν FWHMν FWHM A/Aa
+ 0
+ (K)(cm−1(µm)) (cm−1) (cm−1(µm)) (cm−1) (cm−1(µm)) (cm−1) (cm−1(µm)) (cm−1)
+ 151721(5.81) 15 1691(5.91) 31 1.2 1231(8.12) 29 1198(8.35) 26 0.86
+ 451717(5.82) 18 1690(5.92) 34 1.2 1235(8.10) 24 1203(8.31) 21 0.85
+ 751716(5.83) 11 1689(5.92) 33 1.2 1234(8.10) 24 1201(8.33) 18 0.85
+ 1051716(5.83) 13 1686(5.93) 28 1.2 1234(8.10) 21 1202(8.32) 18 0.86
+ 1351725(5.80) 13 1696(5.90) 44 1.2 1230(8.13) 27 1201(8.33) 22 0.63
+ aA0refers tothe band strength inpure HCOOHat 15K.
+ Table A.4. Peak positions and band strengths for the νS(C=O) andνS(C–O) bands for the binary ∼10:90% HCOOH:CO and
+ HCOOH:CO 2mixtures and tertiary ∼7:67:26% HCOOH:H 2O:CO, HCOOH:H 2O:CO2and HCOOH:H 2O:CH3OH mixtures at
+ 15K.Theuncertaintiesonthepeakpositionsare ±1cm−1.
+ Modeν A/Aa
+ 0
+ (cm−1)
+ 11:89% HCOOH:CO
+ νS(C=O)1743,1735, 1721, 1702 1.9
+ νB(OH/CH)1390 3.0
+ νS(C–O) 1250, 1235, 1227, 1218, 1185, 1172, 1130 2.1
+ 9:91% HCOOH:C18O2
+ νS(C=O)1744, 1734, 1717, 1612 0.72
+ νB(OH/CH)1387 1.4
+ νS(C–O) 1227, 1187, 1157, 1132 0.63
+ 8:62:30% HCOOH:H 2O:CO
+ νS(C=O)1705, 1685 4.7
+ νS(C–O) 1227 2.4
+ 6:67:27% HCOOH:H 2O:C18O2
+ νS(C=O)1695 4.2
+ νS(C–O) 1229 1.5
+ 6:68:26% HCOOH:H 2O:CH3OH
+ νS(C=O)1703 3.7
+ νS(C–O) 1223 1.5
+ aA0refers tothe band strength inpure HCOOHat 15K.

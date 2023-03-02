@@ -1,0 +1,809 @@
+arXiv:0706.0005v1  [astro-ph]  31 May 2007Draft version August 11, 2013
+ Preprint typeset using L ATEX style emulateapj v. 11/26/04
+ GRAVITATIONAL STABILITY OF CIRCUMNUCLEAR DISKS IN ELLIPTI CAL GALAXIES
+ Daisuke Kawata1,2, Renyue Cen3, and Luis C. Ho1
+ Draft version August 11, 2013
+ ABSTRACT
+ A signi�cant fraction of nearby elliptical galaxies are kno wn to have high-density gas disks in their
+ circumnuclear (CN) region (0.1 to a few kpc). Yet, elliptica ls, especially luminous ones, show little
+ signs of recent star formation. To investigate the possible cause of the dearth of star formation in
+ these systems, we study the gravitational stability of CN ga s disks embedded within the gravitational
+ potentials of both the stellar bulge component and the centr al massive black hole (BH) in elliptical
+ galaxies. We �nd that CN disks in higher mass galaxies are gen erally more stable than those in
+ lower mass galaxies, because higher mass galaxies tend to ha ve more massive BHs and more centrally
+ concentrated stellar density pro�les. We also consider the case in which the central stellar density
+ pro�le has a core, which is often observed for ellipticals wh ose total stellar mass is higher than about
+ 1011M⊙. Such a cored stellar density pro�le leads to more unstable C N disks than the power-law
+ stellar density pro�le characteristic of less massive gala xies. However, the more massive BHs in high-
+ mass galaxies act to stabilize the CN disk. Our results demon strate that the gravitational potentials
+ ofboththe central BH and the stellar component should be taken into account when studying the
+ properties of CN disks, as their stability is sensitive to bo th the BH mass and the stellar density
+ pro�le. Our results could explain the observed trend that le ss luminous elliptical galaxies have a
+ greater tendency to exhibit ongoing star formation than gia nt ellipticals.
+ Subject headings: galaxies: kinematics and dynamics —galaxies: formation —g alaxies: stellar content
+ 1.INTRODUCTION
+ Elliptical galaxies were believed to be completely dor-
+ mant and therefore to consist of old stellar populations,
+ due to the galactic wind which had blown the gas out
+ and stopped star formation (Johnson & Axford 1971;
+ Mathews & Baker 1971; Faber & Gallagher 1976). The
+ discovery of an X-ray-emitting hot interstellar medium
+ (ISM) in these objects has dramatically renewed our view
+ of their physical properties and formation history (e.g.,
+ Forman et al. 1979, 1985). Warm gas is also detected in
+ a signi�cant fraction of ellipticals (55% −60%), although
+ the estimated mass is small (103−104M⊙) (Phillips et al.
+ 1986; Ho et al. 1997a). In addition, multiwavelength ob-
+ servations from optical to radio reveal the existence of
+ the fair amount of H Igas (e.g., Knapp et al. 1985; Breg-
+ man et al. 1992; Huchtmeier 1994; Knapp 1999; Morganti
+ et al. 2006), dust (e.g., Knapp et al. 1989; van Dokkum &
+ Franx 1995; Wiklind & Henkel 1995; Tomita et al. 2000;
+ Colbert et al. 2001; Tran et al. 2001; Martel et al. 2004),
+ and molecular gas (e.g., Wiklind et al. 1995; Knapp &
+ Rupen 1996; Vila-Vilar´ o et al. 2003; Young 2005; Nakan-
+ ishi et al. 2007) in a signi�cant fraction of ellipticals. Pa r-
+ ticularly, some of the cold gas appears as a disk at the
+ center of the galaxies. High-resolution images with Hub-
+ ble Space Telescope (HST) uncovered that the majority
+ of elliptical galaxies possess such dusty cold disks, with
+ a typical mass of 104−106M⊙and sizes of 100 −500 pc
+ (e.g., Tomita et al. 2000). Molecular gas disks are also
+ observed in the central region, with estimated masses of
+ 106−109M⊙and extents up to a few kpc (Knapp 1999;
+ 1The Observatories of the Carnegie Institution of Washingto n,
+ 813 Santa Barbara Street, Pasadena, CA 91101
+ 2Swinburne University of Technology, Hawthorn VIC 3122, Aus -
+ tralia
+ 3Department of Astrophysical Sciences, Princeton Universi ty,
+ Peyton Hall, Ivy Lane, Princeton, NJ 08544Okuda et al. 2005; Young 2005; Nakanishi et al. 2007). In
+ this paper we call such observed central cold structures
+ “circumnuclear� (CN) disks. So far, there is no evidence
+ of a correlation between the mass of the CN disk and
+ the total stellar mass of ellipticals (e.g., van Dokkum &
+ Franx 1995).
+ The estimated densities of the CN disks are relatively
+ high. CN disks in gas-rich disk galaxies obviously har-
+ bor star formation (e.g., Phillips et al. 1986; Ho et al.
+ 1997b; Koda et al. 2005). However, it is still a matter
+ of debate whether or not the CN disks in ellipticals have
+ star formation. Ho et al. (1997a, 2003) and Ho (2005)
+ suggest that there is no clear evidence of star formation
+ in the central region of bright elliptical galaxies. On the
+ other hand, Phillips et al. (1986) show that less luminous
+ ellipticals tend to have star formation. It also seems that
+ the properties of the ISM of ellipticals depend on galaxy
+ mass: the detection rates of H Iand molecular gas are
+ higher in less luminous galaxies (Lake & Schommer 1984;
+ Lees et al. 1991; Sadler et al. 2000; Sage et al. 2007).
+ Okuda et al. (2005) measured the density and rotation of
+ the CN disk in the radio galaxy 3C 31, and suggest that
+ its disk is stable against local gravitational instability ,
+ consistent with the lack of evidence for star formation
+ in this system (Owen et al. 1990). Young (2005) also
+ performed a similar analysis for NGC 83 and NGC 2320.
+ Therefore, the gravitational stability of the disk may be
+ a key factor for the star formation condition in the CN
+ disk (Kennicutt 1989) (but see also Koda et al. 2005).
+ In the central region of elliptical galaxies, there are
+ two empirical trends as a function of their mass. One
+ is a well-established correlation between the black hole
+ (BH) mass and the stellar mass of bulge (Magorrian et al.
+ 1998; Marconi & Hunt 2003; H¨ aring & Rix 2004). The
+ other one is the fact that the central stellar density pro-
+ �le loosely depends on the mass of galaxies (Faber et al.2 Kawata, Cen, and Ho
+ 1997; Ravindranath et al. 2001; Stiavelli et al. 2001; Fer-
+ rarese et al. 2006; Lauer et al. 2007). The high-resolution
+ images from the HSTenable the measurement of the stel-
+ lar density pro�le in the central region of galaxies (Crane
+ et al. 1993; Grillmair et al. 1994; Jaﬀe et al. 1994; Lauer
+ et al. 1995). Faber et al. (1997) suggest two diﬀerent
+ categories for the inner pro�le of elliptical galaxies: lu-
+ minous galaxies have a “core� and less luminous galaxies
+ have a “power-law� pro�le without any evidence of a
+ core. On the other hand, Ravindranath et al. (2001) and
+ Rest et al. (2001) found galaxies with “intermediate� in-
+ ner pro�les that cannot be categorized as either cores or
+ power laws. Trujillo et al. (2004b) attempt to link the
+ central and global pro�les of early-type galaxies by not-
+ ing that the outer pro�les of ellipticals are well known
+ to be �tted by the S´ ersic law ( r1/nlaw S´ ersic 1968), and
+ whose index nis well-correlated with the global proper-
+ ties of galaxies, such as the eﬀective radius and the total
+ luminosity (e.g., Caon et al. 1993; Graham & Guzm´ an
+ 2003). They suggest that the inner power-law pro�le can
+ be explained as the extension of the outer S´ ersic pro-
+ �le, except for galaxies with central cores. Therefore,
+ among power-law galaxies, the brighter members have
+ pro�les with larger n, and hence steeper power-law slope
+ for the inner pro�le. On the other hand, Trujillo et al.
+ (2004b) propose that luminous galaxies with cores can
+ be described with a “core-S´ ersic� pro�le, which is a com-
+ bination of a core, approximated as an inner power-law
+ pro�le with a shallow slope, and an outer S´ ersic pro�le.
+ Motivated by these facts, we study the gravitational
+ stability of the CN disk for elliptical galaxies with diﬀer-
+ ent masses. The stability of a rotating disk can be de-
+ scribed by the so-called Toomre’s Q-parameter (Toomre
+ 1964; Goldreich & Lynden-Bell 1965). This parameter
+ also provides a criterion for star formation in rotating
+ disks (e.g., Kennicutt 1989). Tan & Blackman (2005)
+ study the stability of the CN disk analytically. They con-
+ clude that CN disks are inevitably unstable, and should
+ have star formation activity even in giant ellipticals, suc h
+ as M87. However, so far, no indication of star formation
+ has been observed in M87. Although Tan et al. (2007)
+ report the detection of the molecular gas in the central
+ region of M87, the optical spectral features of M87’s CN
+ disk are not consistent with star formation. The nu-
+ clear spectrum of M87 shows classical signatures of low-
+ ionization nuclear emission-line regions (Ho et al. 1997c) ,
+ which as a group are consistent with being active galac-
+ tic nuclei (AGNs) accreting at a low rate (Ho et al. 2003;
+ Ho 2004).
+ The gravitational potential in the CN region is gov-
+ erned by the central BH as well as the stars in the inner
+ bulge. The study of Tan & Blackman (2005), however,
+ ignores the potential of the stellar bulge component. Our
+ analysis of the stability of the CN disk in ellipticals takes
+ into account both contributions to the potential and their
+ dependence on the global mass of the system. Section 2
+ summarizes our method to analyze the stability and de-
+ scribes models of the CN disk and the stellar potential
+ in the CN region. Section 3 shows the results, and in
+ Section 4 we discuss how our results �t with the recent
+ observed properties of the central region of ellipticals.
+ 2.METHODThe stability of a self-gravitating disk can be analyzed
+ by Toomre’s Q-parameter (Toomre 1964; Goldreich &
+ Lynden-Bell 1965). The de�nition of Toomre’s Qpa-
+ rameter is
+ Q≡csκ
+ πGΣd, (1)
+ where cs,κ, and Σ dare the sound velocity, epicycle fre-
+ quency, and surface density of the gas disk. If Q <1,
+ the disk is unstable. The speci�c frequency for a disk is
+ described as
+ κ2=RdΩ2
+ dR+ 4Ω2, (2)
+ where Ω is the circular frequency.
+ We assume that the disk is steady, i.e. the accretion
+ rate is the same at diﬀerent radii. The accretion rate can
+ be written as
+ ˙M(R) =−2πRαacccs[Ω(R)′/Ω(R)2]Σd(R) = const .,
+ (3)
+ where αaccis the dimensionless viscosity parameter
+ (Shakura & Sunyaev 1973; Pringle 1981; Frank et al.
+ 2002). This allows us to derive the density pro�le of
+ the CN disk, Σ d(R), once the total mass, Md, and the
+ radius, Rd, of the disk are �xed. The circular density
+ pro�le Ω( R) is determined by the gravitational poten-
+ tial. For simplicity, we assume that the gravitational
+ potential is dominated by the central BH and the stellar
+ component, and that the contribution from the CN disk
+ is negligible. We also assume that the stellar density is
+ much higher than the dark matter density in the central
+ region.
+ We examine the stability of the CN disk within the
+ potential of the central region of spherical galaxies with
+ diﬀerent total masses of the stellar bulge, Ms. We adopt
+ the relation between the BH mass and the stellar mass
+ from H¨ aring & Rix (2004),
+ log(MBH/M⊙) = 8.20 + 1 .12log( Ms/1011M⊙).(4)
+ Hence, once Msis �xed, we can calculate the potential
+ from the BH with the mass of MBH.
+ As mentioned in Section 1, the mass dependence of
+ the inner stellar density pro�le is discussed by a number
+ of authors. The �rst thorough study was carried out
+ by the “Nuker team,� who introduced the “Nuker law�
+ to describe the observed surface brightness pro�le of the
+ central regions of galaxies. The Nuker law (Lauer et al.
+ 1995; Faber et al. 1997) is given by
+ I(R) =Ib2(β−γ)/α(R/R b)−γ[1 + (R/R b)α](γ−β)/α.(5)
+ The asymptotic logarithmic slope inside Rbisγ;
+ the asymptotic logarithmic outer slope is β; and α
+ parametrizes the sharpness of the break. The break ra-
+ dius,Rb, is the point of maximum curvature in log-log
+ coordinates. The break surface brightness, Ib, is the sur-
+ face brightness at Rb. This function is designed to �t the
+ surface brightness pro�le in the inner region, and not to
+ describe the entire pro�le. Graham et al. (2003) pro-
+ posed a new formula that is a combination of an inner
+ power-law pro�le and an outer S´ ersic law. They call it
+ the “core-S´ ersic law,� which is described as
+ I(R)=I′[1 + (Rb/R)α]γ/α
+ exp/braceleftBig
+ −b[(Rα+Rα
+ b)/Rα
+ e]1/(nsα)/bracerightBig
+ , (6)Stability of Circumnuclear Disk in Ellipticals 3
+ with
+ I′=Ib2−γ/αexp/bracketleftBig
+ b21/(nsα)(Rb/Re)1/ns/bracketrightBig
+ .(7)
+ The parameter Rbis the break radius to separate the
+ inner power law with a slope of γfrom the outer S´ ersic
+ law with eﬀective radius Reand index ns, and Ibis the
+ surface brightness at Rb. The parameter αcontrols the
+ sharpness of the transition between the inner and outer
+ pro�les, where a higher value leads to sharper transitions.
+ Trujillo et al. (2004b) suggest that the core-S´ ersic law
+ can be simpli�ed with α→ ∞ and still provide a good
+ description to the observed pro�les (see also Ferrarese
+ et al. 2006). In this limit,
+ I(R)=Ib[(Rb/R)γu(Rb−R)
+ +eb(Rb/Re)1/nse−b(R/Re)1/nsu(R−Rb)/bracketrightBig
+ ,(8)
+ where u(x−a) is the Heaviside step function.
+ It is still controversial which of the two formalisms bet-
+ ter describes the surface brightness pro�le in the cen-
+ tral region of galaxies (Ferrarese et al. 2006; Lauer et al.
+ 2007). In this paper, we adopt the core-S´ ersic law simply
+ for computational convenience to link the density pro�les
+ in the inner region to the total mass of the stellar bulge.
+ Although the simpli�ed version of the core-S´ ersic law as
+ given in equation (8) has been adopted to �t recent ob-
+ servations (Trujillo et al. 2004b; Ferrarese et al. 2006),
+ we use equation (6) by setting αto 5.0, for computa-
+ tional convenience. Lauer et al. (2007) demonstrate how
+ the sharp transition generated from equation (8) leads
+ to poor �ts to the observed surface brightness pro�les.
+ The adopted αprovides a less sharp transition. This
+ assumption also guarantees that the deprojected density
+ pro�le does not increase with radius with our adopted
+ parameters (see below), but the pro�les is still close to
+ the simpli�ed formula of equation (8) used in the obser-
+ vations.
+ As a comparison between the Nuker law (eq. 5) and
+ the core-S´ ersic law (eq. 6), we brieﬂy mention how the
+ logarithmic gradient, γ′(R′), at radius of R′can be de-
+ scribed for each �tting function (see also Trujillo et al.
+ 2004b). Rest et al. (2001) show that for the Nuker law
+ γ′(R′)≡ −/bracketleftbiggdlogI(R)
+ dlogR/bracketrightbigg
+ R′=γ+β(R′/Rb)α
+ 1 + (R′/Rb)α.(9)
+ For the core-S´ ersic law (eq. 6), Trujillo et al. (2004b)
+ show that the slope can be written as
+ γ′(R′) =b
+ ns(1/Re)1/nsR′α(R′α+Rα
+ b)1/(nsα)−1+γ(Rb/R′)α
+ 1 + (Rb/R′)α.
+ (10)
+ The core-S´ ersic law (eq. 6) is equivalent to the S´ ersic
+ law, when Rb= 0 and γ= 0. Then, the S´ ersic law is
+ described as
+ I(x)=Asexp(−bsx1/ns), (11)
+ withx=R/R e. Prugniel & Simien (1997) derive the
+ numerical solutions
+ As=Itotb2nss
+ 2πnsΓ(2ns), (12)
+ bs=2ns−1
+ 3+ 0.009876 /ns, (13)where Itotis the total bulge luminosity of the integration
+ for 0≤x≤ ∞ (see also Graham & Driver 2005, and
+ references therein). For simplicity, we de�ne the total
+ bulge mass, Ms, as the total mass of the integration of the
+ S´ ersic law of equation (11), regardless of the existence of
+ the core. Then, assuming a constant mass-to-luminosity
+ ratio Υ at the diﬀerent radii, we can describe the surface
+ brightness at the break radius, Ib, for the core-S´ ersic law
+ (eq. 6) as
+ Ib=Ms
+ Υb2nss
+ 2πnsΓ(2ns)e−bs(Rb/Re)1/ns. (14)
+ It is well known that Reandnscorrelate with the to-
+ tal luminosity of galaxies (e.g., Kormendy 1977; Caon
+ et al. 1993; Graham 2002). From their �ts of HSTim-
+ ages of Virgo early-type galaxies using equation (8), Fer-
+ rarese et al. (2006) �nd that the pro�les of bright galax-
+ ies (MB≤ −20.5 mag) require a core, while those of
+ less luminous galaxies can be described with the S´ ersic
+ law. They also derive the following relations between the
+ g-band eﬀective radius and B-band absolute magnitude:
+ logRe=−0.055(MB+ 18) + 1 .14 (15)
+ for the S´ ersic galaxies, and
+ logRe=−0.22(MB+ 18) + 1 .5 (16)
+ for the core-S´ ersic galaxies (Ferrarese et al. 2006, for er ror
+ estimates, see). The units of Reis arcseconds, which for
+ Virgo corresponds to 1′′= 80.1 pc. In addition, they
+ suggest that the S´ ersic index nsand the B-band absolute
+ magnitude are related by
+ logns=−0.10(MB+ 18) + 0 .39, (17)
+ valid for galaxies of both classes. In this paper we adopt
+ these relations for computational convenience.
+ We further assume that the stellar mass-to-light ra-
+ tio for early-type galaxies in the B-band is Υ B=
+ Ms/(LB/LB,⊙) = 7, with MB,⊙= 5.48 mag, and that
+ ΥBis independent of mass; these assumptions are suf-
+ �ciently accurate for early-type galaxies (Trujillo et al.
+ 2004a). With some exceptions, Ferrarese et al. (2006)
+ �nd that there is a critical luminosity that separates
+ the S´ ersic galaxies from the core-S´ ersic galaxies. With
+ the assumptions made above, their critical luminosity of
+ MB,c=−20.5 mag corresponds to Ms,c= 1.73×1011
+ M⊙; systems with masses lower than Ms,care assumed to
+ follow the S´ ersic law. Then, we derive the half-mass ra-
+ dius using equations (15) and (16), with the assumption
+ that the g-band half-light radius is similar to the half-
+ mass radius. Once we �x Ms, all the parameters of equa-
+ tion (6) can be determined, and equation (6) provides
+ the projected mass density pro�le of Σ s(R) =IB(R)ΥB.
+ Assuming spherical symmetry, we can derive the three-
+ dimensional stellar mass density �s(r) through (e.g., Bin-
+ ney & Tremaine 1987)
+ �s(r) =−1
+ π/integraldisplay∞
+ rdΣs(R)
+ dRdR√
+ R2−r2. (18)
+ 3.RESULTS
+ 3.1.Stability of CN Disks with Fixed Mass and Radius
+ As mentioned in Section 1, so far no correlation has
+ been found between the mass or size of CN disks and4 Kawata, Cen, and Ho
+ TABLE 1
+ Stellar Bulge Density Profiles for the Host Galaxies
+ Model Ms Pro�le Re nsRbγ M Ba
+ (M⊙) (kpc) (pc) (mag)
+ S10 1010S´ ersic 1.03 2.14 − − − 17.4
+ S11 1011S´ ersic 1.41 3.81 − − − 19.9
+ cS11 1011core-S´ ersic 6.66 3.81 9.32 0.1 −19.9
+ cS12 1012core-S´ ersic 23.6 6.77 331 0.1 −22.4
+ aB-band luminosity estimated with a stellar mass-to-light ra tio of
+ ΥB=Ms/(LB/LB,⊙) = 7.
+ Fig. 1.— Stellar density pro�le as a function of three-dimensional
+ radius ( top) and the total mass of stars and BH within the radius
+ (bottom ) for four diﬀerent models indicated in the upper panel.
+ the host galaxy mass. In this section we study how the
+ stability of CN disks with �xed mass and radius depends
+ on the total mass of the host galaxies. Here, we focus on
+ a disk with mass log( Md/M⊙) = 8 and radius Rd= 2.5
+ kpc, which is roughly the same as the CN disk observed
+ in NGC 4476 by Young (2002). Disks with a range of
+ diﬀerent masses and radii will be discussed in the next
+ section. Note that once MdandRdare �xed, Σ d(R)
+ does not depend on αaccorcs. Hence, Q(R) described
+ by equation (1) is independent of αaccand is simply pro-
+ portional to cs=/radicalbig
+ γdkBTd/(µmp), where γd,kB,Td,
+ µ, and mpare the speci�c heat, Boltzmann’s constant,
+ the gas disk temperature, the mean molecular mass, and
+ the proton mass, respectively. Throughout the paper, we
+ �xedcsto a value corresponding to µ= 0.6,γd= 1, and
+ Td= 30 K, which is a typical temperature of observed
+ CN disks (e.g., Wiklind et al. 1995; Tran et al. 2001).
+ Stability of the CN disk is examined for host galaxy
+ models with stellar bulge masses of log( Ms/M⊙) = 10,
+ 11, and 12. We apply the S´ ersic law to the model with
+ log(Ms/M⊙) = 10 (model S10), and the core-S´ ersic law
+ to the model with log( Ms/M⊙) = 12 (model cS12). Since
+ the adopted scaling relation used in Section 2 is known to
+ have signi�cant scatter and the model of log( Ms/M⊙) =11 is close to the critical mass of Ms,c= 1.73×1011M⊙
+ for the two stellar density pro�les, we consider two cases
+ of the S´ ersic (model S11) law and the core-S´ ersic (model
+ cS11) laws for host galaxies with log( Ms/M⊙) = 11. All
+ the parameter values for the stellar density pro�les and
+ the estimated B-band absolute magnitude are summa-
+ rized in Table 1. We choose γ= 0.1 for the core-S´ ersic
+ law of equation (6), which is a relatively low value among
+ observed cores (e.g., Ferrarese et al. 2006); this is a con-
+ servative choice because it leads to a maximally unstable
+ CN disk.
+ Figure 1 shows that the stellar density pro�le and the
+ total mass of stars and BH as a function of radius for the
+ four models. Comparison between models S11 and S10
+ shows that the density pro�le is steeper for higher mass
+ galaxies, which have a larger ns. The core-S´ ersic models
+ lead to a lower density in the inner region. Consequently,
+ model cS12 has even lower density than model S11 and
+ a similar density to model S10 within the break radius of
+ cS12. However, higher mass galaxies have a more massive
+ BH. As a result, the total mass within a given radius
+ is generally higher for the higher mass galaxies, except
+ around the break radius for the core-S´ ersic models.
+ Figure 2 presents the values of Toomre’s Q-parameter
+ at diﬀerent radii of the CN disk for the four models.
+ We also examine two additional cases for each model;
+ one is the case assuming no BH (dotted line), and the
+ other one (dashed line) ignores the stellar potential (i.e. ,
+ only the Keplerian potential of the BH is considered).
+ As described in Section 2, the circular velocity (Fig. 3)
+ is calculated purely by the BH and/or stellar potential,
+ and the gas disk density pro�le (Fig. 4) is derived from
+ the condition of ˙M(R) = constant in equation (3).
+ The BH-only potential results (dashed lines) demon-
+ strate that since higher mass galaxies have a more mas-
+ sive BH, CN disks are more stable in higher mass galax-
+ ies. However, for the assumed CN disk, even model cS12
+ still has Q < 1—i.e., the CN disk is unstable. The
+ stellar+BH potential results clearly demonstrate that
+ the stellar potential greatly helps to stabilize the CN
+ disk. Moreover, comparison between the results for the
+ stellar+BH potential and the results of the case of stellar-
+ only potential indicates that the BH helps to stabilize the
+ CN disk only in the inner region (a few 100 pc, depending
+ on the BH mass and the stellar density pro�les). There-
+ fore, the stellar potential cannot be ignored in studying
+ the dynamics of the CN disk.
+ For the S´ ersic models, the stellar potential stabilizes
+ the CN disk more in the higher mass galaxies, because
+ higher mass galaxies have larger ns, i.e. higher central
+ concentration of the stellar potential (see also Fig. 1). AtStability of Circumnuclear Disk in Ellipticals 5
+ Fig. 2.— Toomre’s Q-value as a function of radius for the CN disk
+ withMd= 108M⊙andRd= 2.5 kpc in galaxy models indicated
+ in the panels. The black solid line presents the Q-value calculated
+ by taking into account both the BH and the stellar potential. The
+ dotted line only includes the stellar potential, while the d ashed line
+ takes into account only the potential of the central BH, whic h is
+ correlated with the mass of the stellar component as assumed in
+ equation (4). The gray solid line marks Q= 1.
+ Fig. 3.— The circular velocity, vc, as a function of the radius of
+ the CN disk with Md= 108M⊙andRd= 2.5 kpc in galaxy models
+ indicated in the panels. The solid line takes into account bo th the
+ BH and the stellar potential. The dotted line only includes t he
+ stellar potential, while the dashed line takes into account only the
+ potential of the central BH.
+ a �xed stellar mass of log( Ms/M⊙) = 11 the core-S´ ersic
+ model leads to a lower Q-value and a more unstable disk.
+ The surface density pro�le of the CN disk is sensitive to
+ this change of the stellar potential pro�le (Fig. 4). The
+ stellar-only potential results clearly demonstrate that t he
+ disk gas density has a peak around the break radius. Due
+ to this peak density, the Q-value becomes as low as the
+ case of the BH-only potential. However, the BH can
+ stabilize the disk in the inner region, and the stellar+BH
+ potential case is much more stable. As a result, model
+ cS11 is more stable than model S10.
+ In general, CN disks in higher mass galaxies are more
+ stabilized, due to higher mass BH and more centrally
+ concentrated pro�le of the stellar component. However,
+ if the host galaxy has the core-S´ ersic law pro�le, the CN
+ disk is more unstable, compared with the CN disk in
+ a galaxy with the same stellar mass and BH mass, but
+ having S´ ersic pro�le.Fig. 4.— The surface density pro�le, Σ d(R), of the CN disk with
+ Md= 108M⊙andRd= 2.5 kpc in galaxy models indicated in
+ the panels. The solid line takes into account both the BH and t he
+ stellar potential. The dotted line only includes the stella r potential,
+ while the dashed line takes into account only the potential o f the
+ central BH.
+ Fig. 5.— The minimum Q-value for the CN disk with diﬀer-
+ ent masses and radii. The upper-left, upper-right, lower-l eft, and
+ lower-right panels show the results of model S10, S11, cS11, and
+ cS12, respectively. The thick solid line indicates Q= 1. The dot-
+ ted lines and thin solid lines correspond to contours for Q <1 and
+ Q >1. The levels are separated by δlogQ= 1.0. Open circles
+ denote CN disks observed in CO emission by Young (2002, 2005) .
+ The rest of the symbols show the mass and size of the CN disk es-
+ timated from the optical color excess of dusty disks observe d with
+ HST(Tomita et al. 2000). Solid triangles and open squares cor-
+ respond to the galaxies whose pro�le has been �tted with a S´ e rsic
+ law and a core-S´ ersic law, respectively (Ferrarese et al. 2 006; Lauer
+ et al. 2007); open diamonds mark galaxies with unclassi�ed p ro�les.
+ NGC 4476, which has been observed both in CO (Young 2002) and
+ withHST(Tomita et al. 2000), is connected with a dotted line.
+ 3.2.Stability of CN Disks with Various Masses and
+ Radii
+ In this section, we again consider the four models
+ shown in Table 1, but study the stability of the CN disks
+ with diﬀerent masses and radii. Figure 5 shows the Q-
+ value for the CN disks with radii in the range of 0 .05−15
+ kpc and masses spanning log( Md/M⊙) = 4−10. Here,
+ the �gure shows the minimum Q-value in each model.
+ For example, Qmin≈3.15 atrd= 380 pc for model cS12
+ in Figure 2.6 Kawata, Cen, and Ho
+ As expected, CN disks with higher gas mass and
+ smaller radii are more unstable. Comparison between
+ S10 and S11 demonstrates that for two CN disks with
+ the same mass and radius in a S´ ersic-law galaxy, the disk
+ in the higher mass galaxy is always more stable, due to
+ the higher mass BH and the more centrally concentrated
+ stellar density pro�le. If the CN disk is smaller than the
+ break radius, the highest mass model (i.e. model cS12)
+ is the most stable. For a CN disk with a size compara-
+ ble to the break radius, model cS12 leads to a less stable
+ condition than model S11, and for the larger CN disk
+ model cS12 is as stable as model S11. Therefore, for
+ large CN disks in high mass galaxies, the size of the disk
+ with respect to the break radius of the host galaxies is
+ an important factor for the stability.
+ 4.DISCUSSION AND CONCLUSIONS
+ Our analysis of the stability of CN disks reveals the
+ following trends.
+ (1) The CN disk is stabilized by the presence of the
+ central BH. Since higher mass galaxies tend to have
+ more massive BHs, the CN disk is more stable in
+ higher mass galaxies in general.
+ (2) The stellar potential is also important for the sta-
+ bility of the CN disk.
+ (3) For S´ ersic-law galaxies, the CN disk is more stable
+ in higher mass galaxies because they tend to have
+ more centrally concentrated stellar density pro�les.
+ (4) The existence of a central stellar core in luminous
+ ellipticals makes the CN disk unstable, especially
+ around the break radius.
+ As discussed in Section 2, the central surface bright-
+ ness pro�les for relatively low-mass galaxies ( Ms≤1011
+ M⊙) are generally described by the S´ ersic law, with the
+ trend of higher mass galaxies tending to have larger ns.
+ Points (1)–(3) above indicate that CN disks in lower mass
+ galaxies are more unstable. On the other hand, rela-
+ tively high-mass galaxies (log( Ms/M⊙)≥11) tend to
+ have stellar density pro�les that contain a central core,
+ which leads to a more unstable CN disk compared to the
+ S´ ersic law. On the other hand, since such systems also
+ have more massive BHs, CN disks in higher mass galax-
+ ies are kept stable, especially within the break radius.
+ These trends can explain the observational trends out-
+ lined in Section 1. Because CN disks are more stable in
+ more luminous ellipticals, this provides a natural expla-
+ nation for central star formation to be curtailed in giant
+ ellipticals, whereas less luminous ellipticals apparentl y
+ have host nuclear star formation with greater ease, even
+ though cold ISM in the form of dusty nuclear disks are
+ observed to be just as prevalent in both environments.
+ It is also worth stressing that, as seen in Figure 4, the
+ CN disk can remain stable even if the density of the disk
+ is more than 100 M⊙pc−2within 100 pc. This is because
+ the BH stabilizes the CN disk in the central region, as
+ seen in Figure 2. This density is much higher than the
+ canonical density threshold for star formation suggested
+ by both observations (Kennicutt 1989) and theory (e.g.,
+ Schaye 2004), Σ th∼3−10M⊙pc−2. Our stability
+ analysis oﬀers a simple explanation for the lack of starformation (e.g., Okuda et al. 2005; Young 2005) in CN
+ disks that otherwise have high densities.
+ At a �xed total stellar mass for the host galaxy, galax-
+ ies with higher nsS´ ersic law have more stable CN disks,
+ while the core-S´ ersic law leads to more unstable CN disks
+ than the S´ ersic law. Therefore, the frequency of central
+ star formation activity should depend on both the cen-
+ tral stellar density pro�le as well as the BH mass. Re-
+ cent near-ultraviolet observations performed with Galaxy
+ Evolution Explorer (GALEX) indicate that some frac-
+ tion of early-type galaxies have a small amount of recent
+ star formation (Yi et al. 2005). Based on semi-analytic
+ model predictions Schawinski et al. (2006) demonstrate
+ that the observed near-ultraviolet color distributions of
+ early-type galaxies can be explained if there is a criti-
+ cal BH mass at the �xed velocity dispersion for galaxies
+ that have recent star formation. They suggested that the
+ critical BH mass likely comes from strong AGN heating
+ created by the massive BH (e.g., Binney & Tabor 1995;
+ Silk & Rees 1998; Kawata & Gibson 2005; Springel et al.
+ 2005; Croton et al. 2006; Bower et al. 2006; Ciotti & Os-
+ triker 2007). However, our study demonstrates that the
+ existence of a critical condition for star formation at the
+ �xed velocity dispersion can be due to the stability of the
+ CN disk, which is governed by both the stellar density
+ pro�le andthe BH mass.
+ As mentioned in Section 1, the size and mass of the CN
+ disk have been measured by several observational stud-
+ ies. Some of these measurements are plotted in Figure
+ 5 to compare with our model predictions. The circles in
+ Figure 5 correspond to objects whose CN disk mass and
+ radius were estimated from CO emission observed with
+ interferometers in Young (2002, 2005). Figure 5 also con-
+ tains objects whose disk properties were estimated from
+ the color excess of dust features measured in optical im-
+ ages of the central region of early-type galaxies observed
+ with the HST(Tomita et al. 2000)4. The stellar density
+ pro�les of the central region for the majority of the galax-
+ ies in Tomita et al. (2000) have been studied by Ferrarese
+ et al. (2006) and/or Lauer et al. (2007). This allows us
+ to further distinguish the objects by their central pro�le
+ type.
+ Following Section 2, we estimated the stellar mass
+ from the B-band luminosity, assuming a stellar mass-
+ to-light ratio of Υ B=Ms/(LB/LB,⊙) = 7. The B-band
+ luminosities come from the NASA/IPAC Extragalactic
+ Database (NED). We plot the data for galaxies with
+ masses log( Ms/M⊙)<10.5 and log( Ms/M⊙)>11.5 in
+ the upper-left and lower-right panels of the �gure, re-
+ spectively; the rest of galaxies are shown in both the
+ upper-right and lower-left panels.
+ Only one object—NGC 4476— has been measured
+ with both techniques (CO from Young (2002) and dust
+ from Tomita et al. (2000)); the two data points are con-
+ nected with the dotted line. Young (2002) obtained a
+ much higher gas mass of 1 .1×108M⊙within 2.4 kpc,
+ compared with a mass of 1 .0×107M⊙within 1.8 kpc
+ in Tomita et al. (2000). The order-of-magnitude discrep-
+ ancy in mass cannot be explained by the slightly diﬀerent
+ distances adopted by these authors (18 Mpc by Young
+ 4Tomita et al. (2000) �nd that some galaxies in their sample
+ have irregular dust morphology. Figure 5 only shows data for galax-
+ ies whose dust morphology is classi�ed a disk.Stability of Circumnuclear Disk in Ellipticals 7
+ (2002) and 16.8 Mpc by Tomita et al. (2000)). It is note-
+ worthy that allof the CO-measured CN disks have sys-
+ tematically larger disk masses than the dust-measured
+ systems, suggesting that at least part of the discrepancy
+ may be due to systematic errors in the estimated gas
+ masses. Both sets of observations require a conversion
+ factor to arrive at a gas mass. In the case of the CO
+ observations, a standard Galactic CO-to-H 2conversion
+ factor was adopted. The CO-to-H 2conversion factor,
+ however, may be systematically lower in regions of high
+ metallicity (Arimoto et al. 1996), as is the case in the cen-
+ tral regions of massive galaxies, a suggestion supported
+ by radiative transfer calculations in numerical simula-
+ tions of CN disks (Wada & Tomisaka 2005). If this is
+ the case, then the gas masses from Young (2002, 2005)
+ are overestimated.
+ A similar caveat applies to the gas masses estimated
+ from the dust extinction, which assume a Galactic gas-
+ to-dust mass ratio (Tomita et al. 2000). However, dust
+ mass estimated from optical extinction should be consid-
+ ered as lower limit to the true dust masses (Goudfrooij
+ & de Jong 1995; Tran et al. 2001; Martel et al. 2004).
+ For example, Goudfrooij & de Jong (1995) show that
+ the dust masses derived from the far-infrared emission
+ are roughly an order of magnitude higher than those es-
+ timated from optical extinction alone. They argue that
+ the optical extinction may underestimate the dust mass
+ by about factor of 2 due to the assumption that the dust
+ is in front of the stars (see also Martel et al. 2000, who
+ claim that this eﬀect is more signi�cant). Goudfrooij &
+ de Jong (1995) also discuss that the discrepancy in the
+ estimated dust mass is mainly due to the presence of dif-
+ fusely distributed dust, which cannot be seen as optical
+ extinction. We note, however, that such a diﬀuse com-
+ ponent is unlikely to be present as a rotating disk, as it
+ is more likely to be supported by velocity dispersion. In
+ any case, it seems plausible that the gas masses derived
+ from the optical dust features may be an underestimate
+ of the true gas mass, thereby narrowing the disagree-
+ ment with the CO-based masses. Until more accurategas masses are available, it is diﬃcult to draw more quan-
+ titative comparisons between our model predictions and
+ observations.
+ It is clear from inspection of Figure 5 that once the
+ mass of the CN disk becomes high enough, the disk will
+ inevitably become unstable for star formation, one of the
+ consequences of which may be to aid gas fueling to the
+ AGN (Wada 2004). This type of situation is likely to
+ be realized in the aftermath of a gas-rich major merger,
+ whereby the large amount of the gas dissipated toward
+ the center can generate a high-mass CN disk. High-
+ resolution millimeter observations of luminous infrared
+ galaxies indeed suggest that systems with larger cen-
+ tral gas surface densities tend to either form stars with
+ greater eﬃciency or have a higher probability of hosting
+ an AGN (Bryant & Scoville 1999).
+ Finally, we speculate that star formation induced in an
+ unstable CN disk may be directly related to the forma-
+ tion of kinematically decoupled cores (KDCs) that are
+ often seen in the centers of early-type galaxies (e.g., Ko-
+ rmendy 1984; Bender 1988; Bender & Surma 1992; Caon
+ et al. 2000). One of the intriguing clues regarding the ori-
+ gin of KDCs is that large cores are always old (McDermid
+ et al. 2006). If KDCs are a by-product of unstable CN
+ disks, then large KDCs require large, massive CN disks,
+ which probably can only be formed through major, gas-
+ rich mergers, which are most prevalent at earlier epochs.
+ This research has made use of the NASA/IPAC Extra-
+ galactic Database (NED) which is operated by the Jet
+ Propulsion Laboratory, California Institute of Technol-
+ ogy, under contract with the National Aeronautics and
+ Space Administration. This work is supported in part
+ by grants NNG05GK10G and AST-0507521. The work
+ of L. C. H. is supported by the Carnegie Institution of
+ Washington and by NASA grants from the Space Tele-
+ scope Science Institute (operated by AURA, Inc., under
+ NASA contract NAS5-26555).
+ REFERENCES
+ Arimoto, N., Sofue, Y., & Tsujimoto, T. 1996, PASJ, 48, 275
+ Bender, R. 1988, A&A, 202, L5
+ Bender, R., & Surma, P. 1992, A&A, 258, 250
+ Binney, J., & Tabor, G. 1995, MNRAS, 276, 663
+ Binney, J., & Tremaine, S. 1987, Galactic Dynamics (Princet on,
+ NJ: Princeton University Press), 747
+ Bower, R. G., Benson, A. J., Malbon, R., Helly, J. C., Frenk, C . S.,
+ Baugh, C. M., Cole, S., & Lacey, C. G. 2006, MNRAS, 370, 645
+ Bregman, J. N., Hogg, D. E., & Roberts, M. S. 1992, ApJ, 387, 48 4
+ Bryant, P. M., & Scoville, N. Z. 1999, AJ, 117, 2632
+ Caon, N., Capaccioli, M., & D’Onofrio, M. 1993, MNRAS, 265,
+ 1013
+ Caon, N., Macchetto, D., & Pastoriza, M. 2000, ApJS, 127, 39
+ Ciotti, L., & Ostriker, J. P. 2007, ApJ, in press
+ Colbert, J. W., Mulchaey, J. S., & Zabludoﬀ, A. I. 2001, AJ, 12 1,
+ 808
+ Crane, P., et al. 1993, AJ, 106, 1371
+ Croton, D. J., et al. 2006, MNRAS, 365, 11
+ Faber, S. M., et al. 1997, AJ, 114, 1771
+ Faber, S. M., & Gallagher, J. S. 1976, ApJ, 204, 365
+ Ferrarese, L., et al. 2006, ApJS, 164, 334
+ Forman, W., Jones, C., & Tucker, W. 1985, ApJ, 293, 102
+ Forman, W., Schwarz, J., Jones, C., Liller, W., & Fabian, A. C .
+ 1979, ApJ, 234, L27Frank, J., King, A., & Raine, D. J. 2002, Accretion Power
+ in Astrophysics: Third Edition (Cambridge, UK: Cambridge
+ University Press)
+ Goldreich, P., & Lynden-Bell, D. 1965, MNRAS, 130, 97
+ Goudfrooij, P., & de Jong, T. 1995, A&A, 298, 784
+ Graham, A. W. 2002, MNRAS, 334, 859
+ Graham, A. W., & Driver, S. P. 2005, PASA, 22, 118
+ Graham, A. W., Erwin, P., Trujillo, I., & Asensio Ramos, A. 20 03,
+ AJ, 125, 2951
+ Graham, A. W., & Guzm´ an, R. 2003, AJ, 125, 2936
+ Grillmair, C. J., Faber, S. M., Lauer, T. R., Baum, W. A., Lynd s,
+ R. C., O’Neil, Jr., E. J., & Shaya, E. J. 1994, AJ, 108, 102
+ H¨ aring, N., & Rix, H.-W. 2004, ApJ, 604, L89
+ Ho, L. C. 2004, in Carnegie Observatories Astrophysics Seri es,
+ Vol. 1: Coevolution of Black Holes and Galaxies, ed. L. C. Ho
+ (Cambridge: Cambridge Univ. Press), 292
+ ——. 2005, ApJ, 629, 680
+ Ho, L. C., Filippenko, A. V., & Sargent, W. L. W. 1997a, ApJ,
+ 487, 568
+ ——. 1997b, ApJ, 487, 579
+ ——. 1997c, ApJS, 112, 315
+ ——. 2003, ApJ, 583, 159
+ Huchtmeier, W. K. 1994, A&A, 286, 389
+ Jaﬀe, W., Ford, H. C., O’Connell, R. W., van den Bosch, F. C., &
+ Ferrarese, L. 1994, AJ, 108, 1567
+ Johnson, H. E., & Axford, W. I. 1971, ApJ, 165, 3818 Kawata, Cen, and Ho
+ Kawata, D., & Gibson, B. K. 2005, MNRAS, 358, L16
+ Kennicutt, R. C. 1989, ApJ, 344, 685
+ Knapp, G. R. 1999, in Star Formation in Early-Type Galaxies, ed.
+ P. Carral & J. Cepa (San Francisco: ASP), 119
+ Knapp, G. R., Guhathakurta, P., Kim, D.-W., & Jura, M. A. 1989 ,
+ ApJS, 70, 329
+ Knapp, G. R., & Rupen, M. P. 1996, ApJ, 460, 271
+ Knapp, G. R., Turner, E. L., & Cunniﬀe, P. E. 1985, AJ, 90, 454
+ Koda, J., Okuda, T., Nakanishi, K., Kohno, K., Ishizuki, S., Kuno,
+ N., & Okumura, S. K. 2005, A&A, 431, 887
+ Kormendy, J. 1977, ApJ, 218, 333
+ ——. 1984, ApJ, 287, 577
+ Lake, G., & Schommer, R. A. 1984, ApJ, 280, 107
+ Lauer, T. R., et al. 1995, AJ, 110, 2622
+ ——. 2007, ApJ, in press
+ Lees, J. F., Knapp, G. R., Rupen, M. P., & Phillips, T. G. 1991,
+ ApJ, 379, 177
+ Magorrian, J., et al. 1998, AJ, 115, 2285
+ Marconi, A., & Hunt, L. K. 2003, ApJ, 589, L21
+ Martel, A. R., et al. 2004, AJ, 128, 2758
+ Martel, A. R., Turner, N. J., Sparks, W. B., & Baum, S. A. 2000,
+ ApJS, 130, 267
+ Mathews, W. G., & Baker, J. C. 1971, ApJ, 170, 241
+ McDermid, R. M., et al. 2006, MNRAS, 373, 906
+ Morganti, R., et al. 2006, MNRAS, 371, 157
+ Nakanishi, H., Tosaki, T., Kohno, K., Sofue, Y., & Kuno, N. 20 07,
+ PASJ, 59, 61
+ Okuda, T., Kohno, K., Iguchi, S., & Nakanishi, K. 2005, ApJ, 6 20,
+ 673
+ Owen, F. N., O’Dea, C. P., & Keel, W. C. 1990, ApJ, 352, 44
+ Phillips, M. M., Jenkins, C. R., Dopita, M. A., Sadler, E. M., &
+ Binette, L. 1986, AJ, 91, 1062
+ Pringle, J. E. 1981, ARA&A, 19, 137
+ Prugniel, P., & Simien, F. 1997, A&A, 321, 111
+ Ravindranath, S., Ho, L. C., Peng, C. Y., Filippenko, A. V., &
+ Sargent, W. L. W. 2001, AJ, 122, 653
+ Rest, A., van den Bosch, F. C., Jaﬀe, W., Tran, H., Tsvetanov, Z.,
+ Ford, H. C., Davies, J., & Schafer, J. 2001, AJ, 121, 2431Sadler, E. M., Oosterloo, T. A., Morganti, R., & Karakas, A. 2 000,
+ AJ, 119, 1180
+ Sage, L. J., Welch, G. A., & Young, L. M. 2007, ApJ, 657, 232
+ Schawinski, K., et al. 2006, Nature, 442, 888
+ Schaye, J. 2004, ApJ, 609, 667
+ S´ ersic, J. L. 1968, Atlas de galaxias australes (Cordoba, A rgentina:
+ Observatorio Astronomico)
+ Shakura, N. I., & Sunyaev, R. A. 1973, A&A, 24, 337
+ Silk, J., & Rees, M. J. 1998, A&A, 331, L1
+ Springel, V., Di Matteo, T., & Hernquist, L. 2005, ApJ, 620, L 79
+ Stiavelli, M., Miller, B. W., Ferguson, H. C., Mack, J., Whit more,
+ B. C., & Lotz, J. M. 2001, AJ, 121, 1385
+ Tan, J. C., Beuther, H., Walter, F., & Blackman, E. G. 2007, Ap J,
+ in press
+ Tan, J. C., & Blackman, E. G. 2005, MNRAS, 362, 983
+ Tomita, A., Aoki, K., Watanabe, M., Takata, T., & Ichikawa, S .-i.
+ 2000, AJ, 120, 123
+ Toomre, A. 1964, ApJ, 139, 1217
+ Tran, H. D., Tsvetanov, Z., Ford, H. C., Davies, J., Jaﬀe, W., van
+ den Bosch, F. C., & Rest, A. 2001, AJ, 121, 2928
+ Trujillo, I., Burkert, A., & Bell, E. F. 2004a, ApJ, 600, L39
+ Trujillo, I., Erwin, P., Asensio Ramos, A., & Graham, A. W. 20 04b,
+ AJ, 127, 1917
+ van Dokkum, P. G., & Franx, M. 1995, AJ, 110, 2027
+ Vila-Vilar´ o, B., Cepa, J., & Butner, H. M. 2003, ApJ, 594, 23 2
+ Wada, K. 2004, in Carnegie Observatories Astrophysics Seri es,
+ Vol. 1: Coevolution of Black Holes and Galaxies, ed. L. C. Ho
+ (Cambridge: Cambridge Univ. Press), 186
+ Wada, K., & Tomisaka, K. 2005, ApJ, 619, 93
+ Wiklind, T., Combes, F., & Henkel, C. 1995, A&A, 297, 643
+ Wiklind, T., & Henkel, C. 1995, A&A, 297, L71+
+ Yi, S. K., et al. 2005, ApJ, 619, L111
+ Young, L. M. 2002, AJ, 124, 788
+ ——. 2005, ApJ, 634, 258

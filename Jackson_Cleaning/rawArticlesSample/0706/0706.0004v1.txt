@@ -1,0 +1,990 @@
+arXiv:0706.0004v1  [astro-ph]  31 May 2007SUBMITTED TO THE ASTROPHYSICAL JOURNAL: MAY22, 2007
+ Preprint typesetusing L ATEX styleemulateapj v.26/01/00
+ THEACCRETIONORIGINOF THEMILKYWAY’S STELLARHALO
+ ERICF. BELL1, DANIELB. ZUCKER2, VASILYBELOKUROV2, SANJIBSHARMA3, KATHRYNV. JOHNSTON3,
+ JAMESS. BULLOCK4, DAVIDW. HOGG5, KNUDJAHNKE1, JELTET. A.DEJONG1, TIMOTHYC. BEERS6, N.
+ W. EVANS2, EVAK. GREBEL7,8, ŽELJKOIVEZI´C9, SERGEYE. KOPOSOV1, HANS-WALTERRIX1, DONALD
+ P. SCHNEIDER10, MATTHIAS STEINMETZ11,ANDADIZOLOTOV5
+ 1Max-Planck-Institut für Astronomie, Königstuhl 17, D-691 17 Heidelberg, Germany; bell@mpia.de
+ 2Institute ofAstronomy, University of Cambridge, Madingle y Road, Cambridge CB3 0HA,UK
+ 3Department of Astronomy, Columbia University, 550 West120 th Street, New York, NY10027, USA
+ 4Center for Cosmology, Department of Physics and Astronomy, University of California, Irvine, CA 92697, USA
+ 5Center for Cosmology and Particle Physics,Department ofPh ysics, New YorkUniversity, 4 Washington Place #424, New
+ York,NY 10003, USA
+ 6Department of Physics and Astronomy, Center for the Study of CosmicEvolution and Joint Institute for Nuclear
+ Astrophysics, Michigan State University, E.Lansing, MI 48 824, USA
+ 7Astronomical Institute, Department of Physics &Astronomy , University of Basel, Venusstrasse 7, CH-4102 Binningen,
+ Switzerland
+ 8Astronomisches Rechen-Institut, Zentrum für Astronomie, Universität Heidelberg, Mönchhofstr. 12–14, D-69120
+ Heidelberg, Germany
+ 9University of Washington, Dept. ofAstronomy, Box 351580, S eattle, WA98195, USA
+ 10Department of Astronomy and Astrophysics, ThePennsylvani a State University, University Park, PA,USA
+ 11Astrophysical Institute Potsdam, An der Sternwarte 16,D-1 4482 Potsdam, Germany
+ SUBMITTED TO THE ASTROPHYSICAL JOURNAL:May 22, 2007
+ ABSTRACT
+ We have used data from the Sloan Digital Sky Survey (SDSS) Dat a Release 5 to explore the overall structure
+ and substructure of the stellar halo of the Milky Way using ∼4 million color-selected main sequence turn-off
+ stars with 0 .2<g−r<0.4 and 18 .5≤r<22.5. We �t oblate andtriaxial brokenpower-lawmodelsto the da ta,
+ and found a ‘best-�t’ oblateness of the stellar halo c/a∼0.6, and halo stellar masses between Galactocentric
+ radii of 1 and 40kpc of ∼4×108M⊙. The density pro�le of the stellar halo is approximately ��r−3; it is
+ possible that the power law slope is shallower inside 20kpc a nd steeper outside that radius. Yet, we found that
+ all smooth and symmetric models were very poor �ts to the dist ribution of stellar halo stars because the data
+ exhibit a great deal of spatial substructure. We quanti�ed d eviations from a smooth oblate/triaxial model using
+ theRMSofthedataaroundthemodelpro�leonscales /greaterorsimilar100pc,afteraccountingforthe(known)contributionof
+ Poissonuncertainties. WithintheDR5areaoftheSDSS,thef ractionalRMSdeviation σ/totaloftheactualstellar
+ distribution from any smooth, parameterized halo model is /greaterorsimilar40%: hence, the stellar halo is highly structured.
+ We compared the observations with simulations of galactic s tellar halos formed entirely from the accretion of
+ satellites in a cosmological context by analysing the simul ations in the same way as the SDSS data. While the
+ masses, overall pro�les, and degree of substructure in the s imulated stellar halos show considerable scatter, the
+ propertiesanddegreeofsubstructurein theMilkyWay’s hal omatchwell thepropertiesofa ‘typical’stellar halo
+ built exclusively out of the debris from disrupted satellit e galaxies. Our results therefore point towards a picture
+ in whichan importantfractionofthestellar halooftheMilk yWay hasbeenaccretedfromsatellite galaxies.
+ Subjectheadings: Galaxy: halo— Galaxy: formation—Galaxy: evolution—galax ies: halo—Galaxy:
+ structure— Galaxy: general
+ 1.INTRODUCTION
+ ThestellarhalooftheMilkyWayhasanumberofdistinctive
+ characteristics which make it a key probe of galaxy formatio n
+ processes. Milky Way halo stars have low metallicity, alpha
+ element enhancement, a high degree of support from random
+ motions, and a roughly r−3power law distribution in an oblate
+ halo (Eggen, Lynden-Bell & Sandage 1962; Chiba & Beers
+ 2000; Yanny et al. 2000; Larsen & Humphreys 2003; Lemon
+ etal.2004;Newberg&Yanny2005;Juri ´cetal.2007). Thelow
+ metallicities and alpha element enhancements suggest that the
+ starsformedrelativelyearlyinthehistoryoftheUniverse. Yet,
+ there has been disagreement about where these stars formed:
+ did they form in situin the early phases of the collapse of the
+ MilkyWay (e.g.,Eggen,Lynden-Bell& Sandage1962),ordid
+ the stars form outside the Milky Way in satellite galaxies on ly
+ to be accreted by the Milky Way at a later date (e.g., Searle
+ & Zinn 1978; Bullock, Kratsov, & Weinberg 2001; Bullock &
+ Johnston2005;Abadi,Navarro,& Steinmetz2006)?
+ A keydiscriminantbetweenthese picturesisthestructureo fthe stellar halo. In situformationwould predict relativelylittle
+ substructure,astheformationepochwasmanydynamicaltim es
+ ago. Incontrast,currentmodelsofgalaxyformationinahie rar-
+ chicalcontextpredictthat the vast majorityof stellar hal ostars
+ should be accreted from disrupted satellite galaxies (John ston
+ 1998; Bullock, Kratsov, & Weinberg 2001; Bullock & John-
+ ston 2005; Abadi, Navarro, & Steinmetz 2006). The accumu-
+ lated debris from ancient accretion episodes rapidly dispe rses
+ inreal space(althoughin phasespace,someinformationabo ut
+ initial conditions persists; e.g., Helmi & White 1999), for m-
+ inga relativelysmoothstellar halo. Thedebrisfromaccret ions
+ in the last few Gyr can remain in relatively distinct structu res.
+ Simulations predict quite a wide range in ‘lumpiness’ of ste l-
+ lar halos, with a general expectationof a signi�cant amount of
+ recognisable halo substructure (Bullock, Kratsov, & Weinb erg
+ 2001;Bullock& Johnston2005).
+ Consequently, a number of groups have searched for sub-
+ structure in the Milky Way’s stellar halo, identifying at le ast
+ 3 large-scale features — tidal tails from the disruption of t he
+ 12 Bell et al.
+ Sagittarius dwarf galaxy, the Low-Latitude stream, and the
+ Virgo overdensity (Ibata, Gilmore, & Irwin 1995; Yanny et al .
+ 2000; Ivezi ´c et al. 2000; Newberg et al. 2002; Majewski et al.
+ 2003;Yannyetal.2003;Ibataetal.2003;Juri ´cetal.2007;Duf-
+ fauetal.2006;Belokurovetal.2006a;Newbergetal.2007,a l-
+ thoughseeMomanyetal.2006foradiscussionofpossibledis -
+ rupteddiskoriginofmuchof theLow-Latitudestream)— and
+ a host of tidal tails from globular clusters (e.g., Odenkirc hen
+ et al. 2003; Grillmair & Johnson 2006), dwarf galaxies (e.g. ,
+ Irwin & Hatzidimitriou 1995; Martínez-Delgado et al. 2001) ,
+ and of unknownorigin(e.g.,Belokurovet al. 2006b;Grillma ir
+ 2006a;Grillmair&Dionatos2006;Belokurovetal.2007). Fu r-
+ thermore,substructurehasbeenobservedin thestellarhal osof
+ othergalaxies(e.g.,Shanget al.1998;Ibataet al. 2001). T hus,
+ it isclearthataccretionofstarsfromsatellite galaxiesi sacon-
+ tributortothestellar halosofgalaxies.
+ Yet, it remains unclear whether accretion is the dominant
+ mechanism for halo build-up. A key observable is the fractio n
+ ofstars insubstructure(oraquantitativemeasureof thede gree
+ of substructure): if much of the halo mass is held in substruc -
+ tures, this argues for an accretion origin; if instead a tiny frac-
+ tionofhalostarsisheldinsubstructures,thisplaces(ver y)tight
+ constraintsonanyrecent accretionscenario. However,it i s not
+ clear howbest to addressthis question. One possible approa ch
+ istode�ne‘overdense’areasofthehalobyhandoralgorithm ic
+ means,andto�ttherestwithasmoothhalocomponent;there-
+ mainder would be in ‘overdensities’ (e.g., Newberg & Yanny
+ 2005). Here, we take a different approach. Since one does
+ not know a prioriwhich stars should be ‘smooth halo’ stars
+ andwhicharein‘overdensities’,wetreat allhalostarsequ ally,
+ �t a smooth model, and examine the RMS of the data around
+ thatsmoothmodel(accountingforthecontributiontotheRM S
+ from counting statistics). In this way, we obtain a quantita tive
+ measureofthedegreeofhalostructureon /greaterorsimilar100pcscaleswith-
+ out having to make uncomfortabledecisions about which star s
+ should be �t with a smooth component and which should be
+ includedinoverdensities.
+ In this paper, we apply this technique to explore the struc-
+ ture of the stellar halo of the Milky Way, and place constrain ts
+ on the fraction of stars in stellar halo under- or over-densi ties
+ using imaging data from the Fifth Data Release (DR5) of the
+ Sloan Digital Sky Survey (SDSS; York et al. 2000; Adelman-
+ McCarthy et al. 2007). Under the assumption that the bulk of
+ the stellar populationin thestellar haloisrelativelymet al-poor
+ andold,we isolate a sample dominatedbyhalo mainsequence
+ turn-offstarsandexplorethedistributionofhalostarsas afunc-
+ tion of Galactic latitude, longitude and distance from the S un
+ (§2). In §3, we generatea grid of smooth halo modelsto com-
+ pare with the data, and in §4 we constrainthe ‘best-�t’smoot h
+ stellarhaloparametersandquantifythefractionofhalost arsin
+ stellar halo under- or over-densities. We compare the obser va-
+ tions with models of stellar halo formation in a cosmologica l
+ contextin §5,andpresenta summaryin§6.
+ 2.DATA
+ SDSSisanimagingandspectroscopicsurveythathasmapped
+ ∼1/4ofthesky. Imagingdataareproducedsimultaneouslyin
+ �ve photometricbands, namely u,g,r,i, andz(Fukugitaet al.
+ 1996; Gunn et al. 1998; Hogg et al. 2001; Gunn et al. 2006).
+ Thedataareprocessedthroughpipelinestomeasurephotome t-
+ ric and astrometric properties (Lupton, Gunn, & Szalay 1999 ;
+ Stoughtonetal.2002;Smithetal.2002;Pieretal.2003;Ive zi´c
+ etal.2004;Tuckeretal.2006)andtoselecttargetsforspec tro-scopic follow-up. DR5 covers ∼8000 square degrees around
+ the Galactic North Pole, together with 3 strips in the Galact ic
+ southernhemisphere. Weusethecatalogueofobjectsclassi �ed
+ asstarswithartifactsremoved1,togetherwithmagnitudelimits
+ r<23.5andg<24.5. Photometricuncertaintiesas a function
+ of magnitude are discussed in Sesar et al. (2007). We choose
+ to analyse only the largely contiguous ∼8000 square degree
+ area around the Galactic North Pole in this work, giving a to-
+ tal sample of ∼5×107stars, of which ∼3.6×106stars meet
+ the selection criteria we apply later. In what follows, we us e
+ Galactic extinctioncorrectedmagnitudesandcolors,foll owing
+ Schlegel et al. (1998); such a correction is appropriate for the
+ stars of interest in this paper owing to their large heliocen tric
+ distances Dheliocentric /greaterorsimilar8kpc.
+ 2.1.Color–magnitudediagrams: anintroduction
+ To help get one’s bearings, it is instructive to examine some
+ color–magnitudediagrams(CMD)derivedfromthesedata(Fi g.
+ 1). The color–magnitude diagram of all stars with b>30◦is
+ showninthetopleftpanel,wherethegreylevelsshowthelog -
+ arithmofthenumberofstarsinthatbinpersquaredegreefro m
+ 10−3stars/deg2to 7.1 stars/deg2; such a scaled CMD is fre-
+ quentlycalled a Hess diagram. To help interpret this Hess di a-
+ gram, we show two additional Hess diagrams for two globular
+ clusters covered by these data: Pal 5 and NGC 5024 (in what
+ follows,distancesandmetallicitiesfortheseandallothe rglob-
+ ular clusters are adopted from Harris 1996). The top middle
+ panel of Fig. 1 shows a Hess diagram for stars in the globular
+ clusterPal5(acircleofradius0 .◦5aroundtheposition l=0.◦85
+ andb=45.◦9). Thegreylevelsshow:
+ (NonA−1
+ on−NoffA−1
+ off)/NoffA−1
+ off, (1)
+ whereNdenotesthenumberofstarsinthe�eldofinterest(de-
+ noted by the subscript ‘on’) and a control �eld ‘off’, and Ais
+ the area of that �eld. In this case the control �eld is nearby:
+ a circle of radius 4◦around the position l= 6◦andb= 46◦.
+ Onecanclearlysee themainsequenceturnoffwith g−r∼0.2
+ andr∼21, with the lower main sequence extending redwards
+ towards fainter magnitudes and the subgiant branch extendi ng
+ redwards towards brighter magnitudes. In the top right pane l
+ we show a similar Hess diagram for NGC 5024; because this
+ clusterisratherbrighterthanPalomar5theCMDisbetterpo p-
+ ulated and shows a more prominent red giant branch (extend-
+ ingtowardsbrightermagnitudeswith g−r∼0.5)andhorizonal
+ branch(with g−r/lessorsimilar0 andr∼17).
+ There are a few points to note about Fig. 1. Firstly, for
+ old populations such as those in globular clusters it is clea r
+ that the color of the main sequence turn-off (MSTO) is a
+ metallicity indicator (this point is discussed in more deta il for
+ SDSS isochrones in Girardi et al. 2004). Comparing Pal 5
+ ([Fe/H]∼−1.4,(g−r)MSTO∼0.3)withNGC5024([Fe /H]∼−2.1,
+ (g−r)MSTO∼0.15),onecanseethatoldverymetal-poorpopu-
+ lations([Fe /H]/lessorsimilar−2)havebluermainsequenceturn-offscom-
+ pared to less metal-poor populations ([Fe /H]∼−1.5). Sec-
+ ond, MSTO stars are a reasonably good distance indicator, al -
+ beit with signi�cant scatter. In Fig. 2, we show the absolute
+ magnitude distribution of all stars with 0 .2<g−r<0.4 in
+ Pal 5 (solid line: distance=22 .6kpc), NGC 5024 (dashed line:
+ distance=18 .4kpc)andathirdglobularclusterNGC5053(dot-
+ tedline: [Fe /H]∼−2.3,distance=16 .2kpc). Themean r-band
+ absolute magnitudes of the distributions are (4.3,4.7,5.0 ) re-
+ spectively, and all distributions individually have RMS ∼0.9
+ 1Seehttp://cas.sdss.org/astro/en/help/docs/realquery.as p#flaThestellar halooftheMilkyWay 3
+ FIG. 1.—Hess diagrams in terms of g−rcolor and r-band magnitude derived fromthe SDSSdata. In these Hessdia grams, weshow for completeness the data to
+ the very faintest limits r/greaterorsimilar23, where the S/N is low and there is signi�cant contaminatio n by misclassi�ed galaxies, spurious detections, etc. Thes e diagrams show
+ in general two plumes in the stellar density distribution th at reﬂect main sequence turn-off stars with g−r∼0.3 and intrinsically faint and low-mass disk dwarf
+ stars with g−r∼1.4. Welimit ouranalysis to 18 .5≤r<22.5 in this paper for themain sequence turn-off dominated colo r bin 0 .2<g−r<0.4, inthe areawhere
+ the data quality is still excellent. Top left: The density of stars per square degree per color interval per magnitude for b>30◦, scaled logarithmically. This Hess
+ diagram contains 4 ×107stars.Top middle: The Hess diagram for the (sparsely-populated) globular clu ster Pal 5 (within a circle of radius 0 .◦5).Top right: The
+ Hess diagram for the globular cluster NGC 5024. Bottom left: A difference Hess diagram (following Eqn. 1) differencing t wo lines of sight ( l,b) = (300 ,70) and
+ (l,b) =(60 ,70). The grey scales saturate at ±100%. In an axisymmetric halo, this difference should equal zero within the shot noise: it clearly does not. Bottom
+ middle:Adifference Hessdiagram differencing twolines ofsight( l,b) =(44 ,40)and (l,b)=(15 ,45). Thegreyscales saturate at ±50%. ThisHessdiagram should
+ be close to,butnot exactly equal to, zero. Bottom right: A difference Hessdiagram differencing two lines of sight( l,b) =(167 ,35) and (l,b) =(193 ,35). Thegrey
+ scales saturate at ±50%. Again, in asymmetric halo, this difference should equa l zero.
+ mag. Thus, modulo a metallicity-dependent /lessorsimilar0.5 systematic
+ uncertainty, the MSTO is a good distance indicator with ∼0.9
+ magscatter.
+ ExaminingthetopleftpanelofFig.1,inthelightoftheglob -
+ ular cluster CMDs, it is possible to interpret some of the fea -
+ turesofthe b>30◦Hessdiagram. At all distances,the MSTO
+ is visible as a clearly-de�nedas a sharp ‘blue edge’ to the di s-
+ tribution, indicating to �rst order that the stars in the gal actic
+ disk at largescale heightsand in the stellar haloare domina ted
+ by a metal-poorold populationwith ages not that dissimilar to
+ those of globular clusters; this is the assumption that we wi ll
+ adopt in the remainder of this paper. At g−r<0.5, one sees
+ the MSTO for stars in the stellar disk at /greaterorsimilarkpcscale heights(at
+ r<18; often the disk at such scale heightsis referredto as the
+ thick disk) and in the stellar halo (at r>18). One can see a
+ ‘kink’ in the MSTO at r∼18, as highlighted by the contours;
+ we interpret this as signifying a metallicity differencebe tween
+ the disk at ∼kpc scale heights and stellar halo (this transition
+ is also very prominent in Fig. 4 of Lemon et al. 2004 and in
+ Chen et al. 2001, who interpret this CMD feature in the sameway). The MSTO in the stellar halo has g−r∼0.3, similar
+ to that of Pal 5 ([Fe /H]∼−1.4) and ∼0.15mag redder than
+ those of NGC 5024 and NGC 5053 with ([Fe /H]/lessorsimilar−2). This
+ suggests a halo metallicity [Fe /H]∼−1.5, in excellent agree-
+ ment with measured halo metallicity distributions, which p eak
+ at[Fe/H]∼−1.6(e.g.,Lairdetal. 1998;Vennet al.2004).
+ 2.2.Hessdiagramsofstructure inthestellarhalo
+ One of the main goals of this paper is to explore the degree
+ ofsubstructureinthestellarhalooftheMilkyWay. Onewayo f
+ visualizingthisissueisthroughtheinspectionofHessdia grams
+ where pairs of lines of sight are subtracted, following Eqn. 12.
+ We have done this exercise for three such lines of sight in Fig .
+ 1, where we have chosen three line-of-sight pairs where the
+ subtraction shouldhave been close to zero, if the stellar halo
+ oftheMilkyWay weresymmetricandsmooth.
+ 2An extension of this methodology was used by Xu et al. (2006), who use
+ the SDSSDR4 to study stellar halo structure using star count s and color distri-
+ butions of stars atGalactic latitudes b≥55◦.4 Bell et al.
+ FIG. 2.—Ahistogram oftheabsolute magnitudes ofstarswith0 .2<g−r<
+ 0.4 in three globular clusters: Pal 5, NGC 5053, and NGC 5024. Th ese dis-
+ tributions give an impression of the actual convolution ker nel suffered by the
+ 0.2<g−r<0.4 MSTO stars in the halo of the Milky Way when going from
+ distance to apparent magnitude. In this work, we choose to ap proximate this
+ distribution for modeling the stellar halo with a Gaussian d istribution with
+ /angbracketleftMr/angbracketright=4.5mag and σMr=0.9mag,an appropriate choice for astellar popula-
+ tion with [Fe/H] ∼−1.5.
+ The lower left panel of Fig. 1 shows the difference of two
+ differentlinesofsight( l,b)=(300 ,70)—alineofsighttowards
+ the Virgo overdensity and a part of the Sagittarius stream —
+ and (l,b) = (60 ,70); in a symmetric model such a subtraction
+ should come out to zero. The grey levels saturate at deviatio ns
+ of±100%. It is clear that the ( l,b) = (300 ,70) line-of sight
+ has strong order-of-unity overdensities at MSTOs fainter t han
+ r>21, or distances of >20kpc assuming a MSTO absolute
+ magnitudeof Mr∼4.5. Onecansee alsoa weaksub-giantand
+ red giant branch feature at g−r∼0.5 and 18 <r<20, again
+ indicatingdistances >20kpc.
+ The lower middle shows a line of sight towards ( l,b) =
+ (44,37)minustheHessdiagramforstarstowards( l,b)=(15 ,41).
+ This subtraction would be expected to come out close to, but
+ not exactly, zero. It would be ideal to be able to subtract off
+ the ‘correct’ pairing of ( l,b) = (316 ,37); however, SDSS has
+ not mapped that area of sky owing to its southern declination ,
+ δ=−25. Thegreyscalesaturatesat ±50%. Thereareminorar-
+ tifacts in the subtraction;however,onecan clearlysee an o ver-
+ density of main sequence stars with a MSTO with r∼20.5,
+ correspondingtoa distanceof ∼16kpc.
+ The lower-right panel shows a line of sight towards ( l,b) =
+ (167,35) — a line of sight towards part of the Low-Latitude
+ overdensity — minus that of ( l,b)=(193 ,35). In a symmetric
+ halo this subtractionshouldbe identicallyzero. The greys cale
+ saturates at ±50%. There is a weak MSTO overdensityat r∼
+ 19mag,some ∼7kpcfromtheobserver.
+ While these lines of sight have been selected to show (vary-ing degrees) of halo inhomogeneity3, they suf�ce to illustrate
+ two key points. First, the halo is far from homogeneous,
+ with strong order-of-unity overdensities as well as weaker ∼
+ 10−20% features. Second, owing to the partial sky coverage
+ of the SDSS, it is dif�cult to visualize and quantitatively e x-
+ plore the structure of the Milky Way’s stellar halo using CMD
+ subtractions.
+ 2.3.Mainsequenceturn-offstarmapsofthe stellarhalo
+ One more intuitive approach to the distribution of stars in
+ the stellar halo is to construct maps of the number of MSTO
+ starsindifferentmagnitude(therefore,roughlydistance )slices.
+ We select MSTO stars with foreground extinction-corrected
+ 0.2<g−r<0.4; this color range was selected empirically
+ to encompass the most densely-populated bins of color space
+ for the halo MSTO stars in Fig. 1. In §2.1, we showed that in
+ such a color bin the average absolute magnitude of the MSTO
+ stars in that bin were 4.3 and 4.7 respectively for Palomar 5
+ ([Fe/H]∼−1.4)andNGC5024([Fe /H]∼−2.1);accordingly,
+ we adopt an average MSTO Mr=4.5 in what follows for stars
+ inthecolorbin0 .2<g−r<0.4. Suchanabsolutemagnitudeis
+ in agreementwith modelCMDs, whichsuggest Mr=4.7±0.2
+ for stars with metallicities [Fe /H]∼−1.5±0.5. We make the
+ assumption that all stars in the stellar halo are ‘old’ (i.e. , ap-
+ proximatelythesameageasthecalibratingglobularcluste rs).
+ We show 0.5mag wide bins of r-band magnitude between
+ 18.5≤r<22.5, corresponding to heliocentric distances of
+ 7/lessorsimilard/kpc/lessorsimilar40. At such heliocentric distances, the vertical
+ distance above the Galactic plane is /greaterorsimilar5kpc along all lines of
+ sight, or at /greaterorsimilar5 scale heightsfollowingthe ∼900pc thick disk
+ scale height estimated by Larsen & Humphreys (2003). Thus,
+ thedominantcontributiontotheMSTOmapsisfromthestella r
+ halo. TheresultingLambertazimuthalequal-areapolarpro jec-
+ tions,logarithmically-scaled,areshowninFig.34.
+ While one loses the ability to probe for population differ-
+ encesin the stellar halobecauseofthebroadcolorbinadopt ed
+ to derive these densities, it is much more straightforward t o
+ visualize the distribution of halo MSTO stars using this tec h-
+ nique. From Figs. 1 and 2, one can see that MSTO stars at a
+ single distancewill showup in multipledistancebins: the b ins
+ are0.5magwide,andtheRMS ofasingledistancestellarpop-
+ ulation is ∼0.9mag. This can be seen easily from inspection
+ of some of the ‘hot pixels’ in Fig. 3, corresponding to known
+ globularclustersordwarfgalaxies. Thesefeaturespersis tfrom
+ map-to-mapdespitetherebeingasinglepopulationat auniq ue
+ distance, giving a visual impression of the covariance betw een
+ thedifferentmaps.
+ 3Although, in fact, we found it impossible to avoid at least lo w-level inho-
+ mogeneity along any pair of lines of sight.
+ 4This presentation is similar to that of Fig. 24 of Juri ´c et al. (2007), who
+ present this kind of analysis for 20 <r<21, and Newberg et al. (2007), who
+ present asimilar diagram with slightly morerestrictive co lor cuts for 20 <g<
+ 21.Thestellar halooftheMilkyWay 5
+ FIG. 3.— The stellar halo of the Milky Way as seen by SDSS. The grey scale denotes the logarithm of the number density of 0 .2≤g−r≤0.4 stars per square
+ degree ineightdifferent magnitude (therefore meandistan ce) slices; aLambertazimuthal equal-area polar projectio n isused. Theblack areas arenotcovered bythe
+ SDSSDR5,andreﬂect thegreatcircle scanning adopted bythe SDSSwhencollecting itsimaging data. Apparent ‘hotpixels ’ arestellar overdensities fromglobular
+ clusters and dwarf galaxies.6 Bell et al.
+ Focusing on the brightest bins, 18 .5≤r<20, correspond-
+ ingtoheliocentricdistancesbetween ∼7kpcand ∼11kpc,the
+ stellar distribution appears rather smooth, with higher de nsity
+ towardsthe Galactic centerandGalactic anticenter. Inthe case
+ oftheGalacticcenter,theinterpretationisstraightforw ard: one
+ is probing lines of sight which pass ∼5kpc from the Galactic
+ center,andprobethedenserinnerpartsofthestellarhalo. Inthe
+ case of the Galactic anticenter,such a structure is not expe cted
+ in a oblate/triaxial halo model, and recalling the /lessorsimilar1kpc scale
+ height of the thick disk cannot be a thick disk; this is the wel l-
+ knownLow-Latitudestream (e.g.,Newberget al. 2002;Peñar -
+ rubiaetal.2005;Momanyetal.2006). Inthisvisualization ,the
+ streamappearstobespreadoutbetweenafewdifferentmagni -
+ tude bins: at b<30◦some of that spread may be real, but the
+ well-de�ned structure at ( l,b)∼(165,35) has a relatively nar-
+ rowdistancespread(seetheHessdiagramresidualinthelow er
+ right-hand panel of Fig. 1, showing a reasonably narrow main
+ sequence;seealso thediscussioninGrillmair2006b).
+ Focusing on the more distant bins, 20 ≤r<22.5, corre-
+ sponding to heliocentric distances between ∼14kpc and ∼
+ 35kpc, one �nds little contribution from the Low-Latitude
+ stream. Instead, superimposed on a reasonably smooth back-
+ ground is a prominent contribution from large tidal tails fr om
+ the ongoing interaction of the Milky Way with the Sagittariu s
+ dwarf galaxy(see Belokurovet al. 2006a,fora muchmorede-
+ tailed discussion). As quanti�ed by Belokurov et al. (2006a ),
+ onecandiscernadistancegradientinthestream,fromthecl os-
+ estpopulationstowardstheGalacticanticenter( l,b)∼(200,20)
+ to themostdistantpopulationstowards( l,b)∼(340,50).
+ While it is clear from these maps that the stellar halo of the
+ Milky Way is not completely smooth, there is a ‘smooth’ (i.e. ,
+ not obviously structured) component which dominates these
+ maps: if there are variations in this component, these must b e
+ onspatial scales /greaterorsimilar10◦onthesky(orscales /greaterorsimilar1kpcat thedis-
+ tances of interest for this paper). A number of methods could
+ be devised to probe halo structures on such scales. In this pa -
+ per, we choose to construct models of a smooth stellar halo to
+ represent the Milky Way, and to ask about the fraction of star s
+ deviating from this smooth global model as a measure of sub-
+ structureinthehalo. Thisexerciseisthetopicoftheremai nder
+ ofthispaper.
+ 3.MODELSOF ASMOOTHLY-DISTRIBUTEDSTELLARHALO
+ The stellar halo of the Milky Way is modeled using an tri-
+ axial broken power-law, where we explore oblate and prolate
+ distributions as special cases of triaxial. The minor axis o f the
+ ellipsoid is constrained to be aligned with the normal to the
+ Galactic disk (this is is contrast with Newberg & Yanny 2005
+ and Xu et al. 2006, who allow the minor axis to vary freely).
+ There are 7 free parameters: the normalization A(constrained
+ directlythroughrequiringthatthemodelandobservations have
+ thesamenumberofstarsinthemagnitudeandcolorrangecon-
+ sidered in this paper), the two power laws αinandαout, the
+ break radius rbreak,b/a,c/a, and the Galactocentric longitude
+ of the major axis Lmajor. We adopt a grid search, with between
+ 4 and 10 values in each parameter of interest, yielding typi-
+ callyseveralhundredtoseveralthousandsmoothmodelstot est
+ against the data. In what follows, we assume a distance to the
+ Galacticcenterof8kpcanda Mr=4.5fortheMSTOstarswith
+ 0.2<g−r<0.4,witha σMr=0.9mag.
+ We de�ne the best �t to be the �t for which the RMS de-
+ viation of the data σaround the model is minimised, taking
+ account of the expected Poisson counting uncertainty in themodel,summedoverallbinsin l,b,andmagnitude:
+ �angbracketleftσ2�angbracketright=1
+ n/summationdisplay
+ i(Di−Mi)2−1
+ n/summationdisplay
+ i(M′
+ i−Mi)2(2)
+ σ/total=/radicalbig
+ �angbracketleftσ2�angbracketright
+ 1
+ n/summationtext
+ iDi, (3)
+ whereDiis the observed number of main-sequence turn-off
+ stars in bin i,Miis the exact model expectation of that bin,
+ M′
+ iisarealizationofthatmodeldrawnfromaPoissondistribu-
+ tion with mean Mi, andnis the number of pixels. The metric
+ σ/totalhastwoconvenientproperties: �rstly, σ/totalisindepen-
+ dentofpixelscale,5providedthatthesubstructureinthehalois
+ well-sampledbythechosenbinningscale; andsecond,that t he
+ contribution of Poisson noise to σhas been removed, leaving
+ only the contribution of actual halo structure to the varian ce6.
+ Thus, even though we have adopted a pixel size of 0 .5◦×0.5◦
+ in what follows (corresponding to >100pc scales at the dis-
+ tances of interest), our results are to �rst order independe nt of
+ binningscale (becauseempiricallywe �nd that the vast majo r-
+ ity of the variance is contained on ∼kpc scales and greater).
+ We defer to a future paper the exercise of understanding and
+ interpreting the scale dependence of stellar halo substruc ture.
+ The main uncertaintyin the estimated valuesof σ/total is from
+ the major contributions of a few large structures on the sky t o
+ σ/total,boththroughinﬂuencingthe‘best�t’andthroughth eir
+ direct contribution to the residuals. Later, we attempt to q uan-
+ tifythisuncertaintythroughexclusionofthemostobvious sub-
+ structures from consideration before �tting and estimatio n of
+ σ/total.
+ The model parameters(includingthe normalization)give an
+ estimate of the total number of stars in the halo. We cal-
+ culate the total number of stars contained in the model with
+ Galactocentric radius 1 ≤rGC/kpc≤40. In order to inter-
+ pret this value as a mass, it is necessary to convert the numbe r
+ of 0.2<g−r<0.4 stars into a mass by calculating a mass-
+ to-number ratio. We adopt an empirical approach, following
+ Newberg & Yanny (2005). Given that the Pal 5 MSTO color
+ seems to be a good match to the stellar halo MSTO color, we
+ use the mass of Pal 5 ( ∼5000M ⊙; Odenkirchen et al. 2002)
+ and the number of stars in Pal 5 above background ( ∼1069
+ stars with 0 .2<g−r<0.4) to de�ne a mass-to-number ra-
+ tio∼4.7M⊙/MSTO star7. This ratio is in excellent agree-
+ ment with values derived using stellar population models fo r
+ populations with [Fe /H]≤−1.5; these models have values of
+ ∼4M⊙/MSTOstar.
+ As is clear from Figs. 3 and 8, a signi�cant part of the de-
+ viations from a smooth stellar halo is driven by the Sagittar -
+ ius and Low-Latitude streams, and by the Virgo overdensity.
+ We therefore run the whole minimization twice, once allow-
+ ing allb>30◦data to de�ne the �t, and a second time mask-
+ ing out most of the Sagittarius and Low-Latitude streams, an d
+ the Virgo overdensity, by masking regions with b<35◦and
+ 0<X<30, where Xis the abscissa of the equal-area projec-
+ tion:X=63.63961√2(1−sinb). This masking is done to con-
+ 5The quantityp
+ /angbracketleftσ2/angbracketrightis inversely proportional to nin the presence of in-
+ trinsic structure in the dataset, as is the quantity1
+ nP
+ iDi, thus making σ/total
+ pixel scale independent.
+ 6We have con�rmed by rebinning the data by factors of 16 in area that
+ σ/total is indeed independent of pixel scale; thus, the domin ant contribution to
+ the intrinsic structure of the stellar halo mustbe on linear scales /greaterorsimilar400pc.
+ 7Kochetal.(2004) �ndade�citoflow-massstarsinthecentra l parts ofPal
+ 5,suggesting that this ratio may bealower limit.Thestellar halooftheMilkyWay 7
+ FIG. 4.— The σ/total of a large number of oblatehalo models. Each point
+ represents the value of σ/total for a different oblate halo model: open dia-
+ monds show the residuals when no clipping is applied, points show the result
+ when areas with contributions Sgr/Low-Latitude stream/Vi rgo are excised be-
+ fore carrying out the analysis. In each case, we show the valu es ofσ/total
+ as a function of αin,αout,rbreakandc/a, marginalized over all other model
+ parameters. Recall that our de�nition of σ/total subtracted off the Poisson un-
+ certainties already, and is a measure of the degree of substr ucture on scales
+ /greaterorsimilar100pc. It is clear that the oblateness c/aof the halo is the best-constrained
+ parameter; combinations of all of the other parameters can p rovide equally-
+ good �ts,given anoblateness. Smallrandomoffsets areappl ied tothediscrete
+ values of αin,αout,rbreakandc/ato aid visibility.
+ strain the importance of these larger structures in driving the
+ modelparametersandresidualfraction.
+ 4.RESULTS
+ In this section, we present the �tting results for a large set
+ of smooth, symmetric stellar halos. In §4.1 we present the re -
+ sults from oblate stellar halos (i.e., the two longest axes h ave
+ equallengths). In§4.2,wediscussthe�ttingresultsfortr iaxial
+ stellar halos (where all three axes can have different lengt hs),
+ comparingthisgeneralcase tothecase ofanoblatehalo.
+ 4.1.The ‘best�t’smoothoblatehalomodel
+ In Fig. 4, we show how the residual fraction dependson the
+ halo parameters for a survey of parameter space for oblate ha -
+ los. It is immediately clear that these smooth models are a
+ verypoor representationofthestructureofthestellarhalo,with
+ values of σ/total/greaterorsimilar0.4 for the best-�tting models for the case
+ where all b>30◦data are �t, and σ/total/greaterorsimilar0.33 for the case
+ whereSagittarius,VirgoandtheLow-Latitudeoverdensiti esare
+ clipped. Prolatemodelswereattempted,andwereall consid er-
+ ably poorer �ts than the oblate case shown here (i.e., the tre nd
+ towards poorer �ts in Fig. 4 with increasing c/acontinues for
+ c/a>1).
+ InFig.5,weshowwiththeblacklinesthedistributionofthe
+ differences between observed and smooth model distributio ns
+ in 0.5◦×0.5◦bins for both the case where Sagittarius, VirgoFIG. 5.— The distribution of differences between the observed s tar counts
+ per 0.5◦×0.5◦pixel and that predicted by the best-�tting smooth model, di -
+ vided by the σpredicted by Poisson uncertainties (black lines). The gray line
+ shows the expected distribution from Poisson ﬂuctuations a round the smooth
+ model. The left panel shows the distributions for the case in which sky areas
+ of the Sagittarius, Virgo and Low-Latitude overdensities h ave been excised
+ before this analysis; the right panel shows the results for a llb>30◦data.
+ Note that ∼1/2 of the excess variance is in the ‘peak’ of the histogram (wit h
+ |∆�|<3σ),andtherestoftheexcessvariancereﬂectsanumberofpixe lswith
+ |∆�|>3σ(predominantly towards overdensities, rather than toward s under-
+ densities).
+ FIG. 6.— Covariance between different model parameters, for th e ‘best’
+ oblate�ts (σ/total<0.45) for which all data with b>30◦were �t. Small
+ random offsets are applied to thediscrete values of αin,αout,rbreakandc/ato
+ aid visibility.
+ and Low-Latitude structures were masked out (left panel) an d
+ for allb>30◦data (right panel). In grey, we show the dis-
+ tribution expected for Poisson noise around the smooth mode l
+ alone. The difference between the observed histograms and8 Bell et al.
+ FIG. 7.— Data �tting results for the triaxial model halos, anala gous to Fig.
+ 4. In this �gure, weshow only the behavior of the ‘extra’ para meters required
+ for a triaxial �t, as the behavior of αin,αout,rbreakandc/ais similar to the
+ oblate case shown in Fig. 4. Again, diamonds show the results for all data
+ withb>30◦, and the points for the case where Sagittarius, the Low-Lati tude
+ stream and the Virgo Overdensity were masked out. The top two panels show
+ howRMSdependson b/a(whereb/a=1istheoblate caseandisnotshown),
+ andLmajor, the angle between the long axis of and the GC-Sun line. In the
+ bottom two panels, we show covariance between Lmajorandb/a, andb/aand
+ c/aformodel�tswith σ/total<0.45forwhichalldatawith b>30◦werebeen
+ �t. Small random offsets are applied to the discrete values o fb/a,Lmajorand
+ b/ato aid visibility. Including triaxiality does not signi�ca ntly improve the
+ quality of�t;whentriaxiality isincluded thenvaluesof Lmajor∼0arefavored,
+ reﬂecting an attempt by the triaxial smooth halo model to �to ut contributions
+ from the Sagittarius tidal stream.
+ the Poissonexpectationisthesignal whichweobserve( σ/total
+ ∼0.33,0.43 for the clipped and unclipped datasets, respec-
+ tively)8.
+ From inspection of Fig. 4, it is clear that a variety of dif-
+ ferent combinations of parameters are able to provide equal ly
+ valid values of σ/total. The oblateness of the halo is best-
+ constrained, with values of c/a∼0.6 preferred9. This deter-
+ mination of halo oblatenessis in excellentagreementwith t hat
+ of previouswork (e.g., Chiba & Beers 2000; Chen et al. 2001;
+ Larsen & Humphreys 2003; Lemon et al. 2004; Newberg &
+ Yanny 2005; Juri ´c et al. 2007; Xu et al. 2006). Other parame-
+ tersarelesswell-constrained: variouscombinationsof αin,αout
+ andrbreakare capable of �tting the halo equally well. Best �t
+ stellar halo masses (overa radius range of 1–40kpc) come out
+ 8Notethattheappearance ofFig.5dependsontheadoptedbinn ing,through
+ the contribition of Poisson uncertainties to the histogram of∆�/σ. The value
+ ofσ/total is both in principle and in practice independent of bi nning scale.
+ Largerangularbinsreducethecontribution ofPoissonnois esigni�cantly, mak-
+ ing thedistribution of ∆�/σsigni�cantly broader, while thevalue of σ/total is
+ unchanged.
+ 9The halo oblateness is affected by the assumed value of Mr. Variations of
+ Mrof±0.5magleadtochangesinoblateness of ∓0.1. Furthermore,ifthestel-
+ lar halo hasabinary fraction different fromthatof theglob ular clusters usedto
+ calibrate the absolute magnitude and scatter of turn-off st ars, thevalues for ab-
+ solute magnitude and scatter would be affected at the /lessorsimilar0.3mag level, leading
+ to modestchanges in recovered oblateness (Larsen &Humphre ys 2003).at∼4±0.8×108M⊙forthe modelswith σ/total<0.45,with
+ considerableuncertaintyfromthe mass-to-numberratio.
+ The covariance of the different �tting parameters of the
+ oblate case is illustrated in Fig. 6. Models yielding σ/total
+ <0.45 are shown, where all data with b>30◦are used. It
+ is clear that the degeneracies in αin,αoutandrbreakindicate
+ that there are a number of different ways to construct reason -
+ able halo models, with the general features of a power law
+ αout∼−3.2in the outer parts and a similar or shallower power
+ law in the very inner parts of the halo at Galactocentric radi i
+ rGC/lessorsimilar20kpc10. It is important to note that the constraints on
+ the‘best�t’halomodelareveryweak,owingtothesigni�can t
+ degreeofhalosubstructure.
+ 4.2.Triaxialmodels
+ The results for triaxial models are shown in Fig. 7. We do
+ notshowtheresultsforthepower-lawparameters αin,αoutand
+ rbreak, nor the run of σ/total vs. c/a, as the results for these
+ parametersis verysimilar tothe oblatehalocase. We focusi n-
+ steadontheresultsforthe‘new’parameters b/aandLmajor(the
+ angle between the long axis and the line between the Galactic
+ Center[GC]andSun).
+ The best triaxial �t is only very marginally better than the
+ best oblate �t, with σ/total= 0 .42; in particular, the best tri-
+ axial �t is still a very poor �t to the stellar halo of the Milky
+ Way. Inspection of Fig. 7 shows that the best models are only
+ mildly triaxial with b/a/greaterorsimilar0.8, and with Lmajor∼−10 (roughly
+ lining up with the Sagittarius stream). In the bottom panels
+ we show the covariance of the parameters of all models with
+ σ/total<0.45. There is little obvious covariance between the
+ ‘triaxiality’ parameters, or between the power law paramet ers
+ and the triaxiality parameters. This stresses the dif�cult y in
+ �tting a unique model to the halo; owing to the signi�cant de-
+ greeofhalosubstructure,therearemanywaysto�tthehalob y
+ balancing problems in one part of the halo against a better �t
+ elsewhere.
+ 4.3.A highlystructuredstellarhalo
+ The key point of this paper is that a smooth and symmetric
+ (eitheroblate/prolateortriaxial)modelisapoorreprese ntation
+ ofthestructureofthestellarhaloofourMilkyWay. The σ/total
+ of theb>30◦data around the model is >42%; even if the
+ largest substructures are clipped, the values of σ/total are >
+ 33% (i.e., the largest substructures contain ∼40% of the total
+ variance).
+ Onecanobtainavisualimpressionofhowpoorly�tthestel-
+ larhaloisbyasmoothmodelbyexaminingFig.8,whichshows
+ themeanstellardensityresidualsfromthe best�toblatemodel.
+ The residuals are smoothed by a 42′Gaussian kernel to sup-
+ press Poisson noise. One can see that the residuals are highl y
+ structured on a variety of spatial scales. Particularly pro mi-
+ nent are contributions from the well-known Sagittarius tid al
+ stream(dominatingallresidualsfor20 .5≤r<22.5),theLow-
+ Latitudestream(Galacticanticenterdirectionand b<35◦),and
+ theVirgooverdensity(particularlyprominentinthe19 .5≤r<
+ 20sliceasthediffuseoverdensitycenteredat( l,b)∼(280,70):
+ see Juri´cetal. 2007andNewbergetal. 2007).
+ 10Itis interesting in this context that there have been claims of abreak in the
+ powerlawofthestellarhaloat rGC∼20kpcfromcountsofRRLyraestars(see
+ Preston et al. 1991, although other analyses see no evidence for a break, e.g.,
+ Chiba & Beers 2000), and a claim that the stellar halo has a tra nsition from
+ oblate with c/a∼0.6 to more nearly spherical at such radii (Chiba & Beers
+ 2000).Thestellar halooftheMilkyWay 9
+ FIG. 8.— Residuals of the mean stellar density (data −model) from the best oblatemodel ( αin,αout,rbreak,c/a) = (−2.6,−3.2,20kpc ,0.6). The panels show
+ 8 different distance slices, and have been smoothed using a σ= 42′Gaussian. The gray scale saturates at ±60% deviation from the model density, and white
+ represents an observed excess over thesmooth model predict ion.10 Bell et al.
+ There are a number of other less obvious structures. In the
+ last threemagnitudebins,onecandiscernthe‘OrphanStrea m’
+ (Belokurov et al. 2006b; Grillmair 2006a), starting at ( l,b)∼
+ (250,50) and stretching to ( l,b)∼(170,40) before disappear-
+ ingintothenoise(thereisacleardistancegradient,sucht hatas
+ ldecreases the distance increases). Visible also is a recent ly-
+ identi�ed structure of stars stretching from ( l,b)∼(180,75)
+ towards ( l,b)∼(45,45). This structure, called the Hercules-
+ Aquila Overdensity by Belokurov et al. (2007), extends sout h
+ of the Galactic plane (as shown in that paper) and is at a dis-
+ tance of ∼16kpc from the Sun. The Hercules-Aquila Over-
+ densityisreﬂectedasadistinctoverdensityincolor–magn itude
+ space, shown in the lower middle panel of Fig. 1. This CMD,
+ obtained by subtracting a background �eld at ( l,b)∼(15,45)
+ fromanoverdensity�eldat( l,b)∼(44,40),showsasomewhat
+ broadened MSTO with turn-off color g−r∼0.3 (i.e., a simi-
+ lar color to the rest of the stellar halo). Fig. 8 illustrates that
+ this very diffuse overdensity lies in a ‘busy’ area of the hal o,
+ making its extent dif�cult to reliably estimate. There are o ther
+ potential structures visible, in particular in the most dis tant
+ 22≤r<22.5 bin. Some of the structure has low-level strip-
+ ing following the great circles along which the SDSS scans11,
+ indicating that the structure is an artifact of uneven data q ual-
+ ity in different stripes. Other structures have geometry mo re
+ suggestiveof genuinesubstructure; we choose to not specul ate
+ on the reality(or‘distinctness’)of these structuresat th isstage
+ owingtothedecreasingdataqualityat thesefaint limits.
+ 4.4.Structureasafunctionofdistance
+ ThevisualimpressiongivenbyFig.8suggestsanincreasing
+ amount of deviation from a smooth halo at larger heliocentri c
+ distances. WequantifythisinFig.9,whereweshowthe σ/total
+ as a function of apparent magnitude for all stars with b>30◦
+ (diamonds). While it is clear that the exact values of σ/total
+ will depend somewhat on which smooth model happens to �t
+ best, the value of σ/total doubles from distances of ∼5kpc to
+ ∼30kpc. FromcomparisonwiththecasewhenSagittarius,the
+ Low-Latitude stream and the Virgo overdensity are removed
+ before calculation of the RMS, one can see that much of this
+ increaseinRMSisdrivenbythefewlargestructures;i.e.,m uch
+ of the RMS is contained in a few very well-de�ned structures
+ at largeradii.
+ 5.COMPARISON WITHEXPECTATIONSFROM A ΛCDM UNIVERSE
+ In this paper, we have attempted to �t smooth models to the
+ stellar halo of the Milky Way. Models containing 4 ±0.8×
+ 108M⊙in the radial range 1–40kpc with power-law density
+ distributions �∼r−3were favored, although all smooth mod-
+ els were a very poor �t to the data . We have found that the
+ stellar haloof the MilkyWay halo is richlysubstructured,w ith
+ σ/total/greaterorsimilar0.4. Thefractionalamountofsubstructureappearsto
+ increase with radius; this increase is driven primarily by a few
+ largestructures.
+ To put our results into a cosmological context, we compare
+ the observations to predictions for stellar halo structure from
+ appropriatemodels. Bullock, Kratsov, & Weinberg(2001)an d
+ 11This striping has a modest effect on our measurement of σ/total, as illus-
+ trated in Fig. 9. There are two main effects, working in count eracting direc-
+ tions: on one hand, the striping will introduce a small amoun t of excess vari-
+ ance, ontheother hand, galaxies misclassi�ed asstarsares moothly distributed
+ across the sky, reducing the variance. We chose to include th e 22≤r<22.5
+ bin in theanalysis, noting thatits exclusion would notaffe ct our results orcon-
+ clusions.FIG. 9.— The substructure in the Milky Way stellar halo, compare d to
+ predictions from cosmological models. The σ/total as a function of apparent
+ magnitude (distance assuming Mr∼4.5) for the ‘best �t’ oblate model. Dia-
+ mondsdenote theSDSSresults forall b>30◦data; crosses denote analagous
+ results when the bulk of the Sagittarius and Low-Latitude ti dal streams, and
+ the Virgo overdensity, have been excised from consideratio n. The ensemble
+ of solid gray lines show the predictions for σ/total from 11 models of stellar
+ halogrowthinacosmologicalcontextfromBullock&Johnsto n(2005);dotted
+ lines are used at small radii where the simulations are likel y to be less robust.
+ In these simulations the entire halo arises, by model constr uction, from the
+ disruption of satellite galaxies.
+ Bullock & Johnston (2005) studied the structure of stellar h a-
+ los created exclusively through the merging and disruption of
+ reasonably realistic satellite galaxies.12These studies found
+ that the debris from disrupted satellite galaxies produced stel-
+ lar halos with: i)roughlypower-law pro�les with α∼−3 over
+ 10–30kpc from the galactic center (e.g., Fig. 9 of Bullock &
+ Johnston2005), ii)totalstellarhalomassesfrom ∼109M⊙(in-
+ tegrated over all radii), and iii)richly substructured halos with
+ increasinglyevidentsubstructureat largerdistances(e. g.,Figs.
+ 13and14ofBullock&Johnston2005).
+ 5.1.A quantitativecomparisonwith simulatedstellarhalos
+ We quantify the last statement through comparison of the
+ SDSS data for the stellar halo with 11 simulated stellar halo s
+ from Bullock & Johnston (2005)13. These 11 simulated halos
+ weregeneratedat randomusingsemi-analyticmergertreesa p-
+ propriate for a ΛCDM cosmology for a Milky-Way mass dark
+ matterhalo. MapsofMSTOstars(analagoustoourSDSSdata)
+ were constructed from the simulated N-body stellar halos, ac-
+ countingforallimportantobservationaleffects,asfollo ws. The
+ numberof MSTOstars per particlewas estimated using a ratio
+ 12Abadi, Navarro, & Steinmetz (2006) analyzed the properties of the stellar
+ haloofadiskgalaxyformedinaself-consistent cosmologic al simulation. Such
+ aself-consistent simulation does notrequire that stellar halos bebuiltup solely
+ through accretion; yet, the �nal halos produced were very si milar to those of
+ Bullock, Kratsov, & Weinberg (2001) and Bullock &Johnston ( 2005).
+ 13Thenumber of particles in the stellar halo of theAbadi, Nava rro, & Stein-
+ metz(2006)modelgalaxy was unfortunately too smallto perm itaproper com-
+ parison with theSDSS data.Thestellar haloofthe MilkyWay 11
+ of 1 main sequence turn off star for every 8 L⊙, as calibrated
+ empirically using Palomar 5. MSTO stars were distributed in
+ space by smoothingoverthe 64nearest N-bodyparticle neigh-
+ bors, using a Epanechnikov kernel of the form (1 −r2). Each
+ star was assigned a simulated Galactic latitude, longitude , and
+ heliocentric distance assuming that the Sun is 8kpc from the
+ Galactic center. The heliocentric distance is used to gener ate
+ r-band apparent magnitudes for the MSTO stars assuming an
+ absolute magnitude Mr= 4.5 and scatter σMr= 0.9 (following
+ §3). ThemodelswerethenplacedinaLambertequal-areapro-
+ jection, and the survey limits of the SDSS DR5 data analyzed
+ in this paper applied to the simulated maps. These simulatio ns
+ were analysedin the sameway asthe SDSS data,by�tting the
+ same grid of oblate models. The results are shown in Fig. 9,
+ andFigs. 10and11.
+ Fig. 9 shows the main result of this analysis: all simulation s
+ predict a great deal of halo substructure, with values of σ/total
+ /greaterorsimilar0.2. The typical smooth halo �tting parameters (where we
+ quote the average and scatter derived from the �ts to the 11
+ simulated stellar halos) are similar to that of the Milky Way ’s
+ halowith αout∼−3.4±0.6,M1<r/kpc<40∼2.8±1.5×108M⊙,
+ andc/a∼0.65±0.25;valuesof αinwithinrbreak∼25kpctend
+ tobehigherthanthatobservedfortheMilkyWayat −1.3±0.7.
+ At small Galactocentric radii /lessorsimilar15kpc, the simulationsare ex-
+ pected to be much too structured (owing to the lack of a live
+ Galactic potential, see §4.2 of Bullock & Johnston 2005); ac -
+ cordingly, we show results for heliocentric distances /lessorsimilar10kpc
+ asdottedlines,andplacelittleweightontherelativelyhi ghval-
+ ues of αinrecoveredby the best-�tting models. At largerradii,
+ where the simulation results are expected to be more robust,
+ there are model halos with both less structure and more struc -
+ ture than the Milky Way’s stellar halo. We illustrate this re sult
+ inFigs.10and11. Fig.10showstheresiduals(simulation −best
+ �t smooth halo) for a model with very similar σ/total to the
+ MilkyWayonthesamegreyscaleusedforFig.8ineightdiffer -
+ ent apparent magnitude slices. Fig. 11 illustrates the dive rsity
+ of simulated halos, showing the 20 ≤r<20.5 apparent mag-
+ nitude slice (correspondingto heliocentric distances ∼14kpc)
+ fortheSDSSandthe11 ΛCDMrealisationsofMilkyWaymass
+ stellar halos. A number of the general characteristics of th e
+ simulationsmatchthecharacteristicsoftheSDSS data: the an-
+ gular extent of ‘features’ in the nearest bins is typically v ery
+ large, whereas the angular width of streams in the distant bi ns
+ tendstobesmaller. Inthedistantbins,thehalosubstructu reisa
+ combinationofwell-con�ned,relativelyyoungstreamsand dif-
+ fusesheetsofstarsfrombotholderdisruptioneventsandyo ung
+ events on almost radial orbits (K. Johnston et al., in prepar a-
+ tion), with large-scale overdensities and underdensities being
+ seen.
+ This comparison shows that the the overall level of the sub-
+ structureseenintheMilkyWay’sstellarhalofallsintothe mid-
+ dleoftherangeofpredictionsfromsimulations— simulatio ns
+ in which the stellar halo arises exclusively from the mergin g
+ and disruption of satellite galaxies. Furthermore, the cha rac-
+ ter of the structures in the simulated stellar halos is very s im-
+ ilar to those observed in the Milky Way. The models clearly
+ have some shortcomings; in particular, the use of a slowly-
+ growing rigid potential for the central disk galaxy in the Bu l-
+ lock&Johnston(2005)simulationsleadstoexcessstructur ein
+ the central parts. Furthermore, it is possible that the real stel-
+ lar halo has a ‘smooth’ component formed either in situin the
+ potential well of the galaxy or accreted so early that no spa-tial structure remains. Our analysisshowsthat there is no n eed
+ for such a smooth componentto explain the data, and suggests
+ that a smooth component does not dominate the halo at radii
+ 5<rGC/kpc<45. Yet, we have not tested quantitatively how
+ largeasmoothcomponentcouldlieinthisradialrangeandst ill
+ lead to the observed RMS: such an exercise will be the object
+ ofafuturework.
+ 5.2.Limitationsofthiscomparison
+ While there are steps which can and will be taken with this
+ dataset to sharpen the comparison with the simulations (e.g .,
+ a quantitative comparison of the morphology and spatial sca le
+ of substructure, and the investigation of substructure met allic-
+ ities), it is nonetheless clear that ‘small number statisti cs’ is a
+ key limitation of this work. The SDSS DR5 contiguouslycov-
+ ers only 1/5 of the sky, encompassing some 5–10% of all halo
+ stars, with Galactocentric radii between 5 and 45kpc (as est i-
+ matedbycomparisonofthesmoothhalostellarmasseswithth e
+ actual mass contained in the maps). Larger and deeper multi-
+ color imaging surveys will be required to expand the coverag e
+ of the Milky Way’s stellar halo, probing to larger halo radii
+ where models predict that halo substructure should be easie r
+ to discern(see,e.g.,the prominentsubstructuresdiscove redby
+ Sesar et al. 2007 using RR Lyrae stars in the multiply-imaged
+ ‘Stripe 82’ of the SDSS). Yet, there is signi�cant halo-to-h alo
+ scatterinthesimulatedstellarhalos;thus,matchingthep roper-
+ tiesofasinglestellarhalowillalwaysbearelativelyeasytask.
+ More powerful constraints will come from studies of the stel -
+ larhalosofstatisticalsamplesofgalaxiesusinghigh-res olution
+ ground-basedorHSTdata(seeencouragingprogressfrome.g .,
+ Fergusonet al.2002anddeJonget al.2007).
+ 6.CONCLUSIONS
+ Inthispaper,wehavequanti�edthedegreeof(sub-)structu re
+ in the Milky Way’s stellar halo. We have used a sample of
+ stellar halo main sequence turn-offstars, isolated using a color
+ cutof0 .2<g−r<0.4,and�toblateandtriaxialbrokenpower-
+ lawmodelsofthedensitydistributionto thedata.
+ We �nd that the ‘best’ �t oblateness of the stellar halo is
+ c/a∼0.6±0.1overtheGalactocentricradialrange5to40kpc.
+ Other halo parameters are signi�cantly less well-constrai ned;
+ manydifferentcombinationsof parameters(includingmild tri-
+ axiality)canprovidecomparablygood�ts. Asinglepowerla w
+ ��rαwithα=−3providesanacceptable�t;halopro�leswith
+ somewhat shallower slopes at r/lessorsimilar20kpc and steeper slopes
+ outside that range are also acceptable. The halo stellar mas s
+ ofsuch modelsbetweenGalactocentricradiiof 1 and40kpcis
+ ∼4×108M⊙, with considerable uncertainty from the conver-
+ sionofthenumberof0 .2<g−r<0.4turn-offstarstomass.
+ Importantly,we�ndthat allsmoothmodelsareverypoor�ts
+ to the spatial distribution of stellar halo stars. Deviatio ns from
+ smooth parameterized distributions, quanti�ed using the R MS
+ of the data around the model �t in 0 .5◦×0.5◦bins (>100pc
+ scales at the distancesof interest) give σ/total/greaterorsimilar0.4, after sub-
+ tracting the (known) contribution of Poisson counting unce r-
+ tainties. Furthermore, the halo seems signi�cantly more st ruc-
+ turedatlargerradiithanintheinner ∼10kpc;afewindividual
+ structuresdominatethisincreasein σ/total atlargerradii.12 Bell et al.
+ FIG. 10.—Residuals (simulation −smooth model) smoothed using a σ=42′Gaussian from thebest oblatemodelfor Model2 fromBullock &Johnston (2005) in
+ 8 different distance slices. Thegray scale saturates at ±60% fromthe smooth model density.Thestellar haloofthe MilkyWay 13
+ FIG. 11.— Residuals (SDSS or simulations minus the smooth model ) smoothed using a σ=42′Gaussian from the best oblatemodel �ts for the SDSS data (top
+ left panel) and for the 11 simulations from Bullock & Johnsto n (2005). We show only the 20 ≤r<20.5 slice, corresponding to heliocentric distances ∼14kpc.
+ Thegray scale saturates at ±60% from the smooth modeldensity.14 Bell et al.
+ Qualitatively,theseresultsshowthatthestellar‘substr ucture’
+ foundin the Milky Way’s halo is not at all a small perturturba -
+ tionontopofasmoothhalo. Remarkably,thissameconclusio n
+ holds when excising the most prominent known substructures
+ fromtheanalysis,suchasthe Sagittariusstream,andthenc on-
+ sideringtheremainingareaofthesky.
+ Wecomparedtheseobservationalresultswithmodelsofstel -
+ lar halo growth in a cosmological context taken from Bullock
+ & Johnston (2005). In these models, the stellar halo arises
+ exclusively from the disruption of and mergers with satelli te
+ galaxies. The models were analysed in the same way as the
+ SDSS data. Their models predict α∼−3 in the radial range
+ 10–30kpc, halo masses ∼109M⊙integrated over all radii (or
+ masses ∼3×108M⊙in theradialrange1–40kpc),andrichly-
+ structured stellar halos with σ/total/greaterorsimilar0.2. At radii where the
+ model predictions are most robust, the models show a range
+ of degreesofsubstructure,fromsubstantiallyless thanth atob-
+ served for the Milky Way to substantially more. Furthermore ,
+ the character of the substructure appears very similar to th at
+ showed by the Milky Way’s stellar halo. While it is clear that
+ the models are not perfect, this comparison lends considera ble
+ quantitative weight to the idea that a dominant fraction of t he
+ stellar halo of the Milky Way is composed of the accumulated
+ debrisfromthedisruptionofdwarfgalaxies.
+ We thank Jun-Hwan Choi and Martin Weinberg for useful
+ discussions. E. F. B. thanks the Deutsche Forschungsgemein -
+ schaftfortheirsupportthroughtheEmmyNoetherProgram. D .
+ B.Z.wassupportedbyaPPARC-fundedrollinggrantposition .
+ V.B.wassupportedbyaPPARCFellowship. T.C.B.acknowl-
+ edges partial support for this work from grant PHY 02-16783,
+ PhysicsFrontierCenter/JointInstituteforNuclearAstro physics
+ (JINA),awardedbytheUS NationalScienceFoundation.
+ Funding for the SDSS and SDSS-II has been provided by
+ the Alfred P. Sloan Foundation, the Participating Institut ions,
+ the National Science Foundation, the U.S. Department of En-
+ ergy, the National Aeronautics and Space Administration, t he
+ Japanese Monbukagakusho, the Max Planck Society, and the
+ Higher Education Funding Council for England. The SDSS
+ Web Site ishttp://www.sdss.org/.
+ The SDSS is managed by the Astrophysical Research Con-
+ sortium for the Participating Institutions. The Participa ting In-
+ stitutions are the American Museum of Natural History, As-
+ trophysical Institute Potsdam, University of Basel, Cambr idge
+ University, Case Western Reserve University, University o f
+ Chicago, Drexel University, Fermilab, the Institute for Ad -
+ vanced Study, the Japan Participation Group, Johns Hopkins
+ University, the Joint Institute for Nuclear Astrophysics, the
+ Kavli Institute for Particle Astrophysics and Cosmology, t he
+ Korean Scientist Group, the Chinese Academy of Sciences
+ (LAMOST),LosAlamosNationalLaboratory,theMax-Planck-
+ Institute for Astronomy (MPIA), the Max-Planck-Institute for
+ Astrophysics(MPA),NewMexicoStateUniversity,OhioStat e
+ University,Universityof Pittsburgh,Universityof Ports mouth,
+ PrincetonUniversity,theUnitedStatesNaval Observatory ,and
+ the UniversityofWashington.
+ REFERENCES
+ Abadi, M.G.,Navarro, J.F.,& Steinmetz, M. 2006, MNRAS,365 , 747
+ Adelman-McCarthy, J.K.,etal. 2007, submitted to ApJS
+ Belokurov, V.,etal. 2006a, ApJ,642, L137Belokurov, V.,et al. 2007, ApJ,658, 337
+ Belokurov, V.,et al. 2007, ApJ,657, L89
+ Bullock, J.S.,Kratsov, A.V., &Weinberg, D. H.2001, ApJ,54 8, 33
+ Bullock, J.S.,&Johnston, K.V.2005, ApJ,635, 931
+ Chen, B.,et al. 2001, ApJ,553, 184
+ Chiba, M.,& Beers, T.C. 2000, AJ,119,2843
+ de Jong, R. S., et al. 2007, to appear in the proceedings of IAU Symposium
+ 241 (astro-ph/0702168)
+ Duffau, S., Zinn, R., Vivas, A. K., Carraro, G., Méndez, R., W innick, R., &
+ Gallart, C.2006, ApJ, 636,L97
+ Eggen, O.J.,Lynden-Bell, D.,&Sandage, A.R.,1962, ApJ, 13 6,748
+ Ferguson, A. M. N., Irwin, M. J., Ibata, R. A., Lewis, G. F., & T anvir, N. R.
+ 2002, AJ,124, 1452
+ Font,A.S.,Johnston, K.V.,Bullock, J.S.,&Robertson, B.E .2006,ApJ,638,
+ 585
+ Fukugita, M.,Ichikawa, T.,Gunn, J.E.,Doi, M.,Shimasaku, K.,&Schneider,
+ D.P.1996, AJ,111, 1748
+ Girardi, L., Grebel, E. K., Odenkirchen, M., & Chiosi, C. 200 4, A&A, 422,
+ 205
+ Grillmair, C. J.2006a, ApJ,645, L37
+ Grillmair, C. J.2006b, ApJ, 651,L29
+ Grillmair, C. J.,&Dionatos, O.2006, ApJ,643, L17
+ Grillmair, C. J.,&Johnson, R.2006, ApJ, 639,L17
+ Gunn, J.E.etal. 1998, AJ,116,3040
+ Gunn, J.E.etal. 2006, AJ,131,2332
+ Harris, W.E.1996, AJ,112,1487
+ Helmi, A.,&White, S.D.M.1999, MNRAS, 307,495
+ Hogg, D.W.,Finkbeiner, D.P.,Schlegel, D.J.,Gunn, J.E.20 01, AJ,122, 2129
+ Ibata, R.A.,Gilmore, G.,& Irwin, M.J.1995, MNRAS,277, 781
+ Ibata, R.A.,Irwin, M.J.,Lewis,G.F.,Ferguson, A.M.N.,&T anvir, N.2003,
+ MNRAS, 340,L21
+ Ibata, R.A.,Irwin, M.J.,Lewis,G.F.,Ferguson, A.M.N.,&T anvir, N.2001,
+ Nature, 412, 49
+ Irwin, M.,&Hatzidimitriou, D.1995, MNRAS, 277, 1354
+ Ivezi´c, Ž.,etal. 2000, AJ,120, 963
+ Ivezi´c, Ž.et al. 2004, AN,325, 583
+ Johnston, K.V. 1998, ApJ,495, 297
+ Juri´cM.,et al. 2007, ApJ,submitted (astro-ph/0510520)
+ Koch, A.,Grebel, E.K.,Odenkirchen, M.,Martínez-Delgado , D.,& Caldwell,
+ J.A.R. 2004, AJ,128, 2274
+ Larsen, J.A.,& Humphreys, R.M. 2003, AJ,125, 1958
+ Laird, J.B.,Carney, B.W.,Rupen, M.P.,& Latham, D.W.1988, AJ,96,1908
+ Lemon, D. J., Wyse, R. F. G., Liske, J., Driver, S. P., & Horne, K. 2004,
+ MNRAS, 347,1043
+ Lupton, R.,Gunn, J.,& Szalay, A.1999, AJ,118, 1406
+ Majewski, S. R.,Skrutskie, M. F.,Weinberg, M.D., & Ostheim er, J.C. 2003,
+ ApJ,599, 1082
+ Martínez-Delgado, D., Alonso-García, J., Aparicio, A., & G ómez-Flechoso,
+ M.A. 2001, ApJ,549, L63
+ Momany, Y., Zaggia, S.,Gilmore, G.,Piotto, G., Carraro, G. , Bedin, L.R., &
+ deAngeli, F.2006, A&A,451, 515
+ Newberg, H.J.,et al. 2002, ApJ,569, 245
+ Newberg, H. J., & Yanny, B., Journal of Physics: Conf. series , Volume 47,
+ Issue1, pp.195-204
+ Newberg, H.J.,& Yanny, B.,Cole, N.2007, in preparation
+ Odenkirchen, M.,Grebel, E. K.,Dehnen, W.,Rix, H.-W.,& Cud worth, K. M.
+ 2002, AJ,124, 1497
+ Odenkirchen, M.,etal. 2003, AJ,126,2385
+ Peñarrubia, J.,et al. 2005, ApJ,626, 128
+ Pier, J.R., Munn, J.A., Hindsley, R.B, Hennessy, G.S., Kent , S.M., Lupton,
+ R.H.,Ivezic, Z.2003, AJ,125, 1559
+ Preston, G.W.,Shectman, S.A.,&Beers, T.C. 1991, ApJ,375, 121
+ Schlegel, D.,Finkbeiner, D.,&Davis, M.1998, ApJ,500, 525
+ Searle, L.,& Zinn,R. 1978, ApJ,225, 357
+ Sesar, B.,et al. 2007, submitted to AJ(arXiv:0704.0655)
+ Shang, Z.,et al. 1998, ApJ,504, L23
+ Smith, J.A.,et al. 2002, AJ,123, 2121
+ Stoughton, C. etal. 2002, AJ,123, 485
+ Tucker, D.,etal. 2006, AN,327, 821
+ Venn, K. A., Irwin, M., Shetrone, M. D., Tout, C. A., Hill, V., & Tolstoy, E.
+ 2004, AJ,128, 1177
+ Xu,Y.,Deng, L.C.,& Hu,J.Y. 2006, MNRAS,368, 1811
+ Yanny B.,etal 2000, ApJ,540, 825
+ Yanny B.,etal 2000, ApJ,588, 824
+ York D.G.,etal. 2000, AJ,120,1579

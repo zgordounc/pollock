@@ -1,0 +1,794 @@
+arXiv:0705.0005v1  [hep-th]  1 May 2007YITP-SB-07-17
+ Path Integration in QCD with Arbitrary Space-Dependent Sta tic
+ Color Potential
+ Gouranga C. Nayak1,∗
+ 1C. N. Yang Institute for Theoretical Physics,
+ Stony Brook University, SUNY, Stony Brook, NY 11794-3840, U SA
+ (Dated: August 9, 2013)
+ Abstract
+ We perform the path integral for a quark (antiquark) in the pr esence of an arbitrary space-
+ dependent static color potential Aa
+ 0(x)(=−/integraltextdxEa(x)) with arbitrary color index a=1,2,...8 in
+ SU(3) and obtain an exact non-perturbative expression for t he generating functional. We show
+ that such a path integration is possible even if one can not so lve the Dirac equation in the presence
+ of arbitrary space-dependent potential. It may be possible to further explore this path integral
+ technique to study non-perturbative bound state formation .
+ PACS numbers: PACS: 12.38.-t, 11.15.-q, 11.15.Tk, 11.15.M e
+ ∗Electronic address: nayak@max2.physics.sunysb.edu
+ Typeset by REVT EX 1I. INTRODUCTION
+ In QED and in Newtonian gravity the potential (due to charge a nd mass respectively)
+ is inversely proportional to distance. However, the exact f orm of the potential due to color
+ charge is not known in QCD. This is a fundamental problem in ph ysics. Quarks and gluons
+ which carry color charges are con�ned inside hadrons.
+ Lattice QCD simulation attempts to compute the form of the st atic potential between
+ quark and antiquark inside quarkonium [1, 2]. The static pot ential inside heavy quarkonia
+ can be approximated to be a Coulomb plus linear form [3]. Howe ver, the exact form of the
+ potential inside light q¯qmesons and inside other hadrons is expected to be quite compl icated.
+ The long distance con�nement physics is non-perturbative, and one can not perform path
+ integrations analytically. On the other hand the lattice QC D method implements extensive
+ numerical simulations and hence the physical picture is not as clear as it could be if one
+ had explicit analytic results. From this point of view path i ntegration in the presence of
+ arbitrary space-dependent static color potential would be desirable.
+ In this paper we present an analytical method to perform the p ath integral for a quark
+ (antiquark) in the presence of arbitrary space-dependent s tatic color potential Aa
+ 0(x)(=
+ −/integraltextdxEa(x)) with arbitrary color index a=1,2,..8 in SU(3). We show that such a path
+ integration is possible even if one can not solve the Dirac eq uation in the presence of
+ arbitrary space-dependent potential. Unlike QED, the abov e potential in QCD is moti-
+ vated because the color quark-antiquark potential may be on e dimensional. In particular
+ we obtain the following exact non-perturbative expression for the generating functional
+ for a quark (antiquark) in the presence of arbitrary space-d ependent static color potential
+ Aa
+ 0(x) =−/integraltextdxEa(x):
+ Z[A]
+ Z[0]=/integraltext[d¯ψ][dψ]ei/integraltext
+ d4x¯ψj(x)(δjkˆp /−gTa
+ jkA /a−δjkm)ψk(x)
+ /integraltext[d¯ψ][dψ]ei/integraltext
+ d4x¯ψj(x)(ˆp /−m)ψk(x)=
+ exp{i
+ 8π23/summationdisplay
+ j=1/integraldisplay
+ dt/integraldisplay
+ d3x/integraldisplay∞
+ 0ds
+ s2e−is(m2−iǫ)[gΛj(x) coth(gsΛj(x))−1
+ 3sg2Λ2
+ j(x)−1
+ s]}.
+ (1)
+ The gauge invariant Λ j(x)’s are given by
+ Λ1(x) =/radicalBigg
+ C1(x)
+ 3cosθ(x),Λ2,3(x) =/radicalBigg
+ C1(x)
+ 3cos(2π
+ 3±θ(x)),cos23θ(x) =3C2(x)
+ C3
+ 1(x)
+ (2)
+ 2whereC1(x) = [Ea(x)Ea(x)] andC2(x) = [dabcEa(x)Eb(x)Ec(x)]2are two independent
+ space-dependent casimir/gauge invariants in SU(3). The co lor indicesa,b,c=1,2,...8.
+ We will present a derivation of eq. (1) in this paper. It may be possible to further explore
+ this path integral technique to study non-perturbative bou nd state formation, for example,
+ by studying various non-perturbative correlation functio ns.
+ II. PATH INTEGRATION WITH ARBITRARY SPACE-DEPENDENT STATI C
+ COLOR POTENTIAL
+ The Lagrangian density for quark in a classical chromo�eld Aa
+ µis given by
+ L=¯ψj[(δjkˆp /−gTa
+ jkA /a)−mδjk]ψk=¯ψjMjk[A]ψk(3)
+ where ˆpµ=1
+ i∂
+ ∂xµis the momentum operator and Ta
+ jkis the generator in the fundamental rep-
+ resentation of gauge group SU(3) with a=1,2...8 and j,k= 1,2,3. The generating functional
+ is given by
+ Z[A]
+ Z[0]=/integraltext[d¯ψ][dψ]ei/integraltext
+ d4x¯ψjMjk[A]ψk
+ /integraltext[d¯ψ][dψ]ei/integraltext
+ d4x¯ψjMjk[0]ψk=Det[M[A]]
+ Det[M[0]]=eiW. (4)
+ This gives
+ W=−i
+ 2Tr ln[(δjkˆp /−gTa
+ jkA /a)2−m2δjk] +i
+ 2Tr ln[δjk(ˆp2−m2)] (5)
+ where
+ TrO= tr Diractrcolor/integraldisplay
+ dt/integraldisplay
+ dx/integraldisplay
+ dy/integraldisplay
+ dz <t |<x|<y|<z|O|z>|y>|x>|t>. (6)
+ Eq. (5) can be written as
+ W=i
+ 2/integraldisplay∞
+ 0ds
+ sTr[eis[(δjkˆp−gTa
+ jkAa)2+g
+ 2σµνTa
+ jkFa
+ µν−δjkm2+iǫ]−eis[δjk(ˆp2−m2)+iǫ]]. (7)
+ A. Suitable Gauge Choice for Evaluation of this Path Integra l
+ A physical quantity constructed from the arbitrary space-d ependent static color potential
+ Aa
+ µ(x) =−δµ0/integraldisplay
+ dxEa(x) (8)
+ 3may be expressed in terms of two space-dependent casimir/ga uge invariants in SU(3)
+ C1(x) = [Ea(x)Ea(x)],and, C 2(x) = [dabcEa(x)Eb(x)Ec(x)]2. (9)
+ However, it is not possible to perform the above path integra tion by directly using eq. (8)
+ in eq. (7). For this reason we use the gauge invariance argume nt. SinceAa
+ µ(x) is not gauge
+ invariant we can work in a diﬀerent gauge to obtain the same Ea(x). For example, if we
+ choose
+ Aa
+ µ(t,x) =−δµ1Ea(x)t (10)
+ then we reproduce the same chromo-electric �eld Ea(x) as in eq. (8). Note that both the
+ equations (8) and (10) are related by a gauge transformation and reproduce the same Ea(x)
+ but eq. (10) is preferred to do path integration because the ’ t’ variable will allow us to
+ cast this as a harmonic oscillator problem. This is not possi ble by eq. (8). Hence we can
+ use eq. (10) instead of eq. (8) to perform path integration in the presence of arbitrary
+ space-dependent static color potential.
+ Using eq. (10) in (7) we �nd
+ W=i
+ 2trDiractrcolor/integraldisplay∞
+ 0ds
+ s/integraldisplay
+ dt/integraldisplay
+ dx/integraldisplay
+ dy/integraldisplay
+ dz<t |<x|<y|<z|
+ [eis[−(δjkˆp1+gTa
+ jkE(x)t)2+δjk(ˆp2
+ 0−ˆp2
+ y−ˆp2
+ z)+igγ0γ1Ta
+ jkEa(x)−δjkm2+iǫ]−eis(δjk(ˆp2−m2)+iǫ)]
+ |z>|y>|x>|t>. (11)
+ Inserting complete set of |p>states (/integraltextdp|p>< p |= 1) as appropriate we obtain (we use
+ the normalization <q|p>=1√
+ 2πeiqp)
+ W=i
+ 2(2π)2TrDiracTrcolor[/integraldisplay∞
+ 0ds
+ s/integraldisplay+∞
+ −∞dy/integraldisplay+∞
+ −∞dz/integraldisplay
+ dpy/integraldisplay
+ dpze−is(p2
+ y+p2
+ z+m2−iǫ)/integraldisplay
+ dx/integraldisplay
+ dt
+ [<x|<t|eis[−(δjk
+ id
+ dx+gTa
+ jkEa(x)t)2+δjkˆp2
+ 0+igγ0γ1Ta
+ jkEa(x)]|t>|x>−δjk
+ s]]. (12)
+ To perform the Dirac trace we use the eigenvalues of the Dirac matrix
+ (γ0γ1)eigenvalues = (λ1,λ2,λ3,λ4) = (1,1,−1,−1) (13)
+ and �nd
+ W=i
+ 2(2π)24/summationdisplay
+ l=1/integraldisplay∞
+ 0ds
+ s/integraldisplay+∞
+ −∞dy/integraldisplay+∞
+ −∞dz/integraldisplay
+ dpy/integraldisplay
+ dpze−is(p2
+ y+p2
+ z+m2−iǫ)/integraldisplay
+ dx/integraldisplay
+ dt
+ [Fl−3
+ s], (14)
+ 4where
+ Fl= tr color/integraldisplay+∞
+ −∞dx<x |/integraldisplay+∞
+ −∞dt<t|eis[−(δjk
+ id
+ dx+gTa
+ jkEa(x)t)2+δjkˆp2
+ 0+igλlTa
+ jkEa(x)]|t>|x>.(15)
+ In the matrix notation we write the above equation as
+ Fl= tr color[/integraldisplay+∞
+ −∞dx<x |/integraldisplay+∞
+ −∞dt<t|eis[−(1
+ id
+ dx+gM(x)t)2+ˆp2
+ 0+igλlM(x)]|t>|x>]jk (16)
+ where
+ Mjk(x) =Ta
+ jkEa(x). (17)
+ B. Trouble with the Color Trace Evaluation in this Path Integ ral
+ Unlike the constant chromo-electric �eld case [5] it is not s traight forward to take the
+ color trace by diagonalizing the anti-symmetric color matr ixTa
+ jkEa(x) by an orthogonal
+ matrixUjk(x). This is because the orthogonal matrix Ujk(x) isxdependent and does not
+ commute withd
+ dx. This was not a problem for constant chromo-electric �eld Eacase [5]
+ because the orthogonal matrix Ujkwas space-time independent. This trouble was also not
+ there in Schwinger mechanism study in QED [6] because there a re no colors in QED. This
+ implies that as long as the derivative operatord
+ dxis present in the expression for Flwe can
+ not take the color trace by diagonalizing the space-depende nt anti-symmetric color matrix
+ Mjk(x) =Ta
+ jkEa(x) by an orthogonal matrix Ujk(x). We will come back to this color trace
+ issue later.
+ We note that since M(x) andtin eq. (16) commutes with each other one can not change
+ the integration variable from ttot′via:t=t′−1
+ igM(x)d
+ dxin color space. This is because
+ M(x) andd
+ dxdo not commute with each other. To deal with the x-dependent color matrix
+ Mjk(x) andδjkd
+ dxwe use the similarity transformation of tin the color space
+ [t±1
+ igM(x)d
+ dx]jk= [e±1
+ igM(x)d
+ dxd
+ dtte∓1
+ igM(x)d
+ dxd
+ dt]jk (18)
+ which gives
+ [gM(x)t+1
+ id
+ dx]jk= [e1
+ igM(x)d
+ dxd
+ dt[e−1
+ igM(x)d
+ dxd
+ dtgM(x)e1
+ igM(x)d
+ dxd
+ dtt]e−1
+ igM(x)d
+ dxd
+ dt]jk.(19)
+ Using this in eq. (16) we �nd
+ Fl= tr color[/integraldisplay+∞
+ −∞dx<x |/integraldisplay+∞
+ −∞dt<t|e1
+ igM(x)d
+ dxd
+ dt
+ 5eis[−[e−1
+ igM(x)d
+ dxd
+ dtgM(x)e1
+ igM(x)d
+ dxd
+ dtt]2+ˆp2
+ 0+igλle−1
+ igM(x)d
+ dxd
+ dtM(x)e1
+ igM(x)d
+ dxd
+ dt]
+ e−1
+ igM(x)d
+ dxd
+ dt|t>|x>]jk. (20)
+ At this stage tandM(x) in the above equation can not be interchanged. Hence we can
+ change the integration variable ttot′via:t=t′−1
+ igM(x)d
+ dxin the color space. Since the t
+ integration limit is from −∞to +∞, thet′integration limit also remains from −∞to +∞.
+ Hence we �nd from eq. (20)
+ Fl= tr color[/integraldisplay+∞
+ −∞dx<x |/integraldisplay+∞
+ −∞dt<t −1
+ igM(x)d
+ dx|e1
+ igM(x)d
+ dxd
+ dt
+ eis[−[e−1
+ igM(x)d
+ dxd
+ dtgM(x)e1
+ igM(x)d
+ dxd
+ dt(t−1
+ igM(x)d
+ dx)]2+ˆp2
+ 0+igλle−1
+ igM(x)d
+ dxd
+ dtM(x)e1
+ igM(x)d
+ dxd
+ dt]
+ e−1
+ igM(x)d
+ dxd
+ dt|t−1
+ igM(x)d
+ dx>|x>]jk. (21)
+ Using the similarity transformation of [ t−1
+ igM(x)d
+ dx]jkfrom eq. (18) we �nd from the above
+ equation
+ Fl= tr color[/integraldisplay+∞
+ −∞dx<x |/integraldisplay+∞
+ −∞dt<t −1
+ igM(x)d
+ dx|e1
+ igM(x)d
+ dxd
+ dt
+ eis[−[e−1
+ igM(x)d
+ dxd
+ dtgM(x)e1
+ igM(x)d
+ dxd
+ dte−1
+ igM(x)d
+ dxd
+ dtte1
+ igM(x)d
+ dxd
+ dt]2+ˆp2
+ 0+igλle−1
+ igM(x)d
+ dxd
+ dtM(x)e1
+ igM(x)d
+ dxd
+ dt]
+ e−1
+ igM(x)d
+ dxd
+ dt|t−1
+ igM(x)d
+ dx>|x>]jk (22)
+ which gives
+ Fl= tr color[/integraldisplay+∞
+ −∞dx<x |/integraldisplay+∞
+ −∞dt<t −1
+ igM(x)d
+ dx|eis[−g2M2(x)t2+ˆp2
+ 0+igλlM(x)]|t−1
+ igM(x)d
+ dx>
+ |x>]jk. (23)
+ It has to be remembered that eq. (23) is not valid if the tintegration limit was �nite [4].
+ Hence we must perform the tintegration from −∞to +∞inFlwhich we will do later in
+ the derivation.
+ Inserting complete set of |p0>states we �nd
+ Fl= tr color[/integraldisplay+∞
+ −∞dx<x |/integraldisplay+∞
+ −∞dt/integraldisplay
+ dp′
+ 0/integraldisplay
+ dp′′
+ 0<t−1
+ igM(x)d
+ dx|p′
+ 0>
+ <p′
+ 0|eis[−g2M2(x)t2+ˆp2
+ 0+igλlM(x)]|p′′
+ 0><p′′
+ 0|t−1
+ igM(x)d
+ dx>|x>]jk
+ =1
+ 2πtrcolor[/integraldisplay+∞
+ −∞dx<x |/integraldisplay+∞
+ −∞dt/integraldisplay
+ dp′
+ 0/integraldisplay
+ dp′′
+ 0eitp′
+ 0e−p′
+ 0
+ gM(x)d
+ dx<p′
+ 0|eis[−g2M2(x)t2+ˆp2
+ 0+igλlM(x)]|p′′
+ 0>
+ e−itp′′
+ 0ep′′
+ 0
+ gM(x)d
+ dx|x>]jk. (24)
+ 6The above equation containsd
+ dxand hence we can not perform the color trace by diagonal-
+ izing the anti-symmetric color matrix Mjk(x) by an orthogonal matrix Ujk(x).
+ Inserting complete sets of states as appropriate we �nd
+ Fl=1
+ 2πtrcolor[/integraldisplay+∞
+ −∞dx/integraldisplay
+ dx′/integraldisplay
+ dx′′/integraldisplay
+ dpx/integraldisplay
+ dp′
+ x/integraldisplay
+ dp′′
+ x/integraldisplay
+ dp′′′
+ x<x|px>/integraldisplay+∞
+ −∞dt/integraldisplay
+ dt′/integraldisplay
+ dt′′
+ /integraldisplay
+ dp′
+ 0/integraldisplay
+ dp′′
+ 0eitp′
+ 0<px|e−1
+ gM(x)d
+ dxp′
+ 0|p′
+ x><p′
+ 0|t′><p′
+ x|x′><x′|<t′|eis[−g2M2(x)t2+ˆp2
+ 0+igλlM(x)]
+ |t′′>|x′′><x′′|p′′
+ x><t′′|p′′
+ 0><p′′
+ x|e1
+ gM(x)d
+ dxp′′
+ 0|p′′′
+ x>e−itp′′
+ 0<p′′′
+ x|x>]jk. (25)
+ Since the matrix [ < p′′
+ x|e1
+ gM(x)d
+ dxp′′
+ 0|p′′′
+ x>]jkis inside the trace and is independent ofd
+ dx(it
+ depends on c-numbers p′′
+ xandp′′′
+ x), we can move it to the left. We �nd
+ Fl=1
+ (2π)4trcolor[/integraldisplay+∞
+ −∞dx/integraldisplay
+ dx′/integraldisplay
+ dpx/integraldisplay
+ dp′
+ x/integraldisplay
+ dp′′
+ x/integraldisplay
+ dp′′′
+ xeixpx/integraldisplay+∞
+ −∞dt/integraldisplay
+ dt′/integraldisplay
+ dt′′
+ /integraldisplay
+ dp′
+ 0/integraldisplay
+ dp′′
+ 0eitp′
+ 0<p′′
+ x|e1
+ gM(x)d
+ dxp′′
+ 0|p′′′
+ x><px|e−1
+ gM(x)d
+ dxp′
+ 0|p′
+ x>e−ip′
+ 0t′e−ix′p′
+ x
+ <t′|eis[−g2M2(x′)t2+ˆp2
+ 0+igλlM(x′)]|t′′>eix′p′′
+ xeip′′
+ 0t′′e−itp′′
+ 0e−ixp′′′
+ x]jk. (26)
+ The matrix [ <p′′
+ x|e1
+ gM(x)d
+ dxp′′
+ 0|p′′′
+ x>]jkis also independent of x. This can be shown as follows
+ <p′′
+ x|f(x)d
+ dx|p′′′
+ x>=/integraldisplay
+ dx′/integraldisplay
+ dx′′/integraldisplay
+ dp′′′′
+ x<p′′
+ x|x′><x′|f(x)|x′′><x′′|p′′′′
+ x><p′′′′
+ x|d
+ dx|p′′′
+ x>
+ =/integraldisplay
+ dx′e−ix′(p′′
+ x−p′′′
+ x)f(x′)ip′′′
+ x (27)
+ which is independent of xandd
+ dx. Hence all the expressions in eq. (26) are independent of
+ xexcepteix(px−p′′′
+ x). This implies that we can easily perform the xintegration in eq. (26)
+ (by using/integraltext+∞
+ −∞dx eix(px−p′′′
+ x)= 2πδ(px−p′′′
+ x)) to obtain
+ Fl=1
+ (2π)3trcolor[/integraldisplay
+ dx′/integraldisplay
+ dpx/integraldisplay
+ dp′
+ x/integraldisplay
+ dp′′
+ x/integraldisplay+∞
+ −∞dt/integraldisplay
+ dt′/integraldisplay
+ dt′′/integraldisplay
+ dp′
+ 0/integraldisplay
+ dp′′
+ 0
+ eitp′
+ 0<p′′
+ x|e1
+ gM(x)d
+ dxp′′
+ 0|px><px|e−1
+ gM(x)d
+ dxp′
+ 0|p′
+ x>e−ip′
+ 0t′
+ e−ix′p′
+ x<t′|eis[−g2M2(x′)t2+ˆp2
+ 0+igλlM(x′)]|t′′>eix′p′′
+ xeip′′
+ 0t′′e−itp′′
+ 0]jk. (28)
+ Since/integraltextdpx|px><px|= 1 we �nd from the above equation
+ Fl=1
+ (2π)3trcolor[/integraldisplay
+ dx′/integraldisplay
+ dp′
+ x/integraldisplay+∞
+ −∞dt/integraldisplay
+ dt′/integraldisplay
+ dt′′/integraldisplay
+ dp′
+ 0/integraldisplay
+ dp′′
+ 0eitp′
+ 0e−it′p′
+ 0
+ <t′|eis[−g2M2(x′)t2+ˆp2
+ 0+igλlM(x′)]|t′′>e−itp′′
+ 0eit′′p′′
+ 0]jk. (29)
+ 7C. Evaluation of the Color Trace
+ As the above equation does not contain any derivatived
+ dxoperator we can perform the
+ color trace by diagonalizing the space-dependent anti-sym metric color matrix Mjk(x) by a
+ space-dependent orthogonal matrix Ujk(x). In the fundamental representation the matrix
+ Mjk(x) has three eigenvalues:
+ [Mjk(x)]eigenvalues = [Ta
+ jkEa(x)]eigenvalues = (Λ 1(x),Λ2(x),Λ3(x)). (30)
+ Evaluating the traces of Mjk(x),M2
+ jk(x) andM3
+ jk(x) we �nd
+ Λ1(x) + Λ 2(x) + Λ 3(x) = 0,
+ Λ2
+ 1(x) + Λ2
+ 2(x) + Λ2
+ 3(x) =Ea(x)Ea(x)
+ 2,
+ Λ3
+ 1(x) + Λ3
+ 2(x) + Λ3
+ 3(x) =1
+ 4[dabcEa(x)Eb(x)Ec(x)] (31)
+ the solution of which is given by eq. (2).
+ Using the eigenvalues of Mjk(x) from eq. (2) we perform the color trace in eq. (29) and
+ �nd
+ Fl=1
+ (2π)33/summationdisplay
+ j=1[/integraldisplay
+ dx/integraldisplay
+ dpx/integraldisplay+∞
+ −∞dt/integraldisplay
+ dt′/integraldisplay
+ dt′′/integraldisplay
+ dp′
+ 0/integraldisplay
+ dp′′
+ 0eitp′
+ 0e−it′p′
+ 0
+ <t′|eis[−g2Λ2
+ j(x)t2+ˆp2
+ 0+igλlΛj(x)]|t′′>e−itp′′
+ 0eit′′p′′
+ 0]. (32)
+ Since the eigenvalues Λ j’s are c-numbers, the above equation involves one harmonic o s-
+ cillator
+ [1
+ 2ω2(x)t2+1
+ 2ˆp2
+ 0]|n>= (n+1
+ 2)ω(x)|n> (33)
+ with space-dependent frequency ω(x). The harmonic oscillator wave function
+ <t|n>=ψn(t) = (ω(x)
+ π)1/41
+ (2nn!)1/2Hn(t/radicalBig
+ ω(x))e−ω(x)
+ 2t2(34)
+ with space dependent frequency ω(x) is normalized,
+ /integraldisplay
+ dt|<t|n>|2= 1, (35)
+ whereHnis the Hermite polynomial. Inserting complete set of harmon ic oscillator states
+ (by using/summationtext
+ n|n><n |= 1) in eq. (32) we �nd
+ Fl=1
+ (2π)33/summationdisplay
+ j=1/summationdisplay
+ n/integraldisplay
+ dx/integraldisplay
+ dpx/integraldisplay+∞
+ −∞dt/integraldisplay
+ dt′/integraldisplay
+ dt′′/integraldisplay
+ dp′
+ 0/integraldisplay
+ dp′′
+ 0eitp′
+ 0e−it′p′
+ 0
+ <t′|n>e−s[gΛj(x)(2n+1)+gλlΛj(x)]<n|t′′>e−itp′′
+ 0eit′′p′′
+ 0. (36)
+ 8As advocated earlier in eq. (23) we must integrate over tfrom−∞to +∞inFl. Thet
+ integration is now easy which gives a Delta function:/integraltextdteit(p′
+ 0−p′′
+ 0)= 2πδ(p′
+ 0−p′′
+ 0). We �nd
+ from eq. (36)
+ Fl=1
+ (2π)23/summationdisplay
+ j=1/summationdisplay
+ n/integraldisplay
+ dx/integraldisplay
+ dpx/integraldisplay
+ dt′/integraldisplay
+ dt′′/integraldisplay
+ dp′
+ 0e−it′p′
+ 0<t′|n>e−s[gΛj(x)(2n+1)+gλlΛj(x)]
+ <n|t′′>eit′′p′
+ 0=1
+ 2π3/summationdisplay
+ j=1/integraldisplay
+ dx/integraldisplay
+ dpx/integraldisplay
+ dt|<t|n>|2e−sgλlΛj(x) 1
+ sinh(sgΛj(x))
+ =1
+ 2πtrcolor[/integraldisplay
+ dx/integraldisplay
+ dpxe−sgλlM(x)
+ sinh(sgM(x))]jk. (37)
+ where we have used eq. (35). The Lorentz force equation: δjkdpµ=gTa
+ jkFaµν(x)dxν, of
+ the quark in color space becomes (when Ea(x) is along the x-axis, eq. (10))
+ δjkdpx=gTa
+ jkEa(x)dt=gMjk(x)dt. (38)
+ Implementing this in eq. (37) we �nd
+ Fl=1
+ 4π3/summationdisplay
+ j=1/integraldisplay
+ dx/integraldisplay
+ dtgΛj(x)e−sgλlΛj(x)
+ sinh(sgΛj(x)). (39)
+ D. The Generating Functional
+ Using the above expression of Flin eq. (14) we obtain
+ W=i
+ 32π34/summationdisplay
+ l=13/summationdisplay
+ j=1/integraldisplay∞
+ 0ds
+ s/integraldisplay
+ dt/integraldisplay
+ d3x/integraldisplay
+ d2pTe−is(p2
+ T+m2−iǫ)[gΛj(x)e−sgλlΛj(x)
+ sinh(sgΛj(x))−1
+ s] (40)
+ wherep2
+ T=p2
+ y+p2
+ z. Summing over l, by using the eigenvalues ( λl) of the Dirac matrix γ0γ1
+ from eq. (13) and integrating over pTwe �nd
+ W=1
+ 8π23/summationdisplay
+ j=1/integraldisplay
+ dt/integraldisplay
+ d3x/integraldisplay∞
+ 0ds
+ s2e−is(m2−iǫ)[gΛj(x) coth(gsΛj(x))−1
+ s]. (41)
+ This equation is divergent as s→0. This ultraviolet divergence can be removed by charge
+ renormalization [7] by subtracting also the term linear in sin the expansion ofcosh(sgΛj(x))
+ sinh(sgΛj(x)).
+ Hence after renormalization we obtain
+ W=1
+ 8π23/summationdisplay
+ j=1/integraldisplay
+ dt/integraldisplay
+ d3x/integraldisplay∞
+ 0ds
+ s2e−is(m2−iǫ)[gΛj(x) coth(gsΛj(x))−1
+ 3sg2Λ2
+ j(x)−1
+ s].(42)
+ 9Using eq. (42) in (4) we �nd the following expression for the g enerating functional
+ of quark (antiquark) in the presence of arbitrary space-dep endent static color potential
+ Aa
+ 0(x) =−/integraltextdxEa(x) with arbitrary color index a=1,2,...8 in SU(3),
+ Z[A]
+ Z[0]=/integraltext[d¯ψ][dψ]ei/integraltext
+ d4x¯ψj(x)(δjkˆp /−gTa
+ jkA /a−δjkm)ψk(x)
+ /integraltext[d¯ψ][dψ]ei/integraltext
+ d4x¯ψj(x)(ˆp /−m)ψk(x)=
+ exp{i
+ 8π23/summationdisplay
+ j=1/integraldisplay
+ dt/integraldisplay
+ d3x/integraldisplay∞
+ 0ds
+ s2e−is(m2−iǫ)[gΛj(x) coth(gsΛj(x))−1
+ 3sg2Λ2
+ j(x)−1
+ s]}
+ (43)
+ which reproduces eq. (1). The gauge invariant expressions f or Λj(x)’s are given in eq. (2).
+ III. CONCLUSION
+ To conclude we have performed the path integral for a quark (a ntiquark) in the presence
+ of arbitrary space-dependent static color potential Aa
+ 0(x)(=−/integraltextdxEa(x)) with arbitrary
+ color index a=1,2,...8. We have shown that such a path integration is poss ible even if one
+ can not solve the Dirac equation in the presence of arbitrary space-dependent potential. In
+ particular we have obtained an exact expression of the non-p erturbative generating func-
+ tional of quark (antiquark) in the presence of arbitrary spa ce-dependent color potential
+ Aa
+ 0(x)(=−/integraltextdxEa(x)) with arbitrary color index a=1,2,...8 in SU(3).
+ It may be possible to further explore this path integral tech nique to study non-
+ perturbative bound state formation, for example, by studyi ng various non-perturbative cor-
+ relation functions.
+ Acknowledgments
+ I thank Robert Shrock, Jack Smith and George Sterman for usef ul discussions. I also
+ thank Jack Smith and George Sterman for careful reading of th e manuscript. This work
+ was supported in part by the National Science Foundation, gr ants PHY-0354776 and PHY-
+ 0345822.
+ [1] K. G. Wilson, Phys. Rev. D10 (1974) 2445.
+ 10[2] H. J. Rothe, �Lattice Gauge Theories�, world scienti�c lecture notes in physics -vol. 74, (2005);
+ and references therein.
+ [3] J. D. Stack, Phys. Rev. D27 (1983) 412; Phys. Rev. D29 (198 4) 1213; H.-Q. Ding, Phys. Rev.
+ D42 (1990) 2350; M. Baker, J. S. Ball and F. Zachariasen, Phys . Rev. D56 (1997) 4400; and
+ and references therein.
+ [4] F. Cooper and G. C. Nayak, hep-th/0609192.
+ [5] G. C. Nayak, Phys. Rev. D72 (2005) 125010; G. C. Nayak and P . van Nieuwenhuizen, Phys.
+ Rev. D 71 (2005) 125001; F. Cooper and G. C. Nayak, Phys. Rev. D 73 (2006) 065005.
+ [6] F. Cooper and G. C. Nayak, hep-th/0611125; hep-th/06122 92.
+ [7] J. Schwinger, Phys. Rev. 82 (1951) 664.
+ 11

@@ -1,0 +1,429 @@
+arXiv:0705.0009v1  [astro-ph]  30 Apr 2007Astronomy& Astrophysics manuscriptno.6836 c�circlecopyrtESO 2013
+ December3,2013
+ Lettertothe Editor
+ XMM-Newtonobservations of the �rstunidenti�ed TeV gamma- ray
+ source TeVJ2032+4130⋆
+ D.Horns1, A.I.D.Hoﬀmann1, A.Santangelo1,F.A.Aharonian2,and G.P.Rowell3
+ 1Institute for Astronomy andAstrophysics T¨ ubingen (IAAT) Sand 1,D-72076 T¨ ubingen, Germany
+ 2Max-Planck Institut f¨ urKernphysik (MPIK)P.O.Box103980 , D-69117 Heidelberg, Germany
+ 3School of ChemistryandPhysics,University of Adelaide, Au stralia
+ Received/Accepted
+ ABSTRACT
+ Context. The �rst unidenti�ed very high energy gamma ray source (TeV J 2032+4130) in the Cygnus region has been the subject of
+ intensive searchfor a counterpart source at other waveleng ths. In particular,observations inradio andX-rays are imp ortant totrace a
+ population of non-thermal electrons.
+ Aims.A deep (≈50 ksec) exposure of TeV J2032 +4130 with XMM-Newton has been obtained. The large collection area and the
+ �eld of view of the X-ray telescopes on-board of XMM-Newton allow to search for faint extended X-ray emission possibly l inked to
+ TeVJ2032+4130.
+ Methods. The contribution of point sources to the observed X-ray emis sion from TeV J2032 +4130 is subtracted from the data. The
+ point-source subtracted X-ray data are analyzed using blan k sky exposures and regions adjacent to the position of TeV J2 032+4130
+ inthe �eldof view covered by the XMM-Newton telescopes tose arch for diﬀuse X-rayemission.
+ Results. An extended X-ray emission region with a full width half maxi mum (FWHM) size of ≈12 arc min is found. The centroid
+ of the emission is co-located with the position of TeV J2032 +4130. The angular extension of the X-ray emission region is s lightly
+ smallerthantheangular sizeofTeVJ2032 +4130 (FWHM=14±3arcmin).Theenergyspectrumoftheemissioncoincidingwi ththe
+ positionandextensionofTeVJ2032 +4130canbemodeledbyapower-lawmodelwithaphotonindex Γ=1.5±0.2stat±0.3sysandan
+ energyﬂuxintegratedbetween2and10keV of f2−10 keV≈7·10−13ergs/(cm2s)whichislowerthantheveryhighenergygamma-ray
+ ﬂux observed from TeV J2032 +4130. The energy ﬂux detected from the extended emission reg ion is about a factor of two smaller
+ than the summed contribution of the point sources present. T he energy spectrum can also be �t with a thermal emission mode l from
+ anionized plasma witha temperature kBT≈10 keV.
+ Conclusions. We conclude that the faint extended X-ray emission discover ed in this observation is the X-ray counterpart of
+ TeV J2032+4130. Formally, it can not be excluded that the extended emis sion is due to an unrelated population of faint, hot
+ (kBT≈10 keV) unresolved point-sources which by chance coincides with the position and extension of TeV J2032 +4130. We
+ discuss our �ndings inthe frame of bothhadronic andleptoni c gamma-rayproduction scenarios.
+ 1. Introduction
+ GroundbasedairCherenkovtelescopeshavedetectedinthel ast
+ 6 years a number of unidenti�ed sources of very high energy
+ (VHE,E>100GeV)gamma-rayslocatedintheGalacticplane.
+ The�rst representativeof these sources(TeV J2032 +4130)was
+ discovered serendipitously with the HEGRA telescope syste m
+ in the Cygnus region (Rowell& Horns, 2002; Aharonianet al.,
+ 2002).
+ In a subsequent deep exposure for a total of ≈280 hours
+ of observation time the source detection was con�rmed and
+ its properties were studied in detail (Horns&Rowell, 2004;
+ Aharonianet al.,2005a).
+ A remarkable feature of TeV J2032 +4130 is the fact that
+ the angular extension of the source is (6 .2±1.2stat±0.9sys)
+ arc min in radius which corresponds to a FWHM =14 arc min.
+ Gamma-ray emission from TeV J2032 +4130 has been con-
+ �rmedindependentlybythe Whipplecollaboration(Langet a l.,
+ 2004; Konopelkoetal., 2006). A gamma-ray excess from the
+ ⋆Based on observations obtained with XMM-Newton, an ESA sci-
+ ence mission with instruments and contributions directly f unded by
+ ESAMember StatesandNASA.Cygnus region albeit more extended was recently reported by
+ the Milagro collaboration(Abdoet al., 2006). The properti esof
+ TeV J2032+4130 are common to most of the other unidenti-
+ �ed VHE gamma-ray sources that have been discovered with
+ the H.E.S.S. telescopes so far (Aharonianetal., 2005b, 200 6a):
+ TeV J2032+4130 can be considered as the proto-type of the
+ unidenti�edVHE gamma-raysourcesknowntoday.
+ So far, a number of point-like or moderately extended candi-
+ dates for counterparts of TeV J2032 +4130 have been identi-
+ �edat radio(Paredeset al.,2006; Buttet al.,2006b)andX-r ays
+ (Buttet al.,2003, 2006a; Mukherjeeet al., 2003,2006).
+ The origin and nature of TeV J2032 +4130 remains unclear. It
+ has been suggested that the nearby ( d=1.7 kpc) massive
+ stellar OB association Cyg OB2 (see e.g. Kn¨ odlseder (2000) )
+ could be an accelerator of charged cosmic rays and conse-
+ quentlyasite ofgamma-rayproduction(Aharonianet al.,20 02;
+ Butt etal., 2006a; Aharonianet al., 2006b). This scenario h as
+ been strengthenedby the recently discoveredspatially ext ended
+ VHEgamma-rayemissionfromthedirectionoftheopenstella r
+ clusterWesterlund2(Aharonianet al., 2007).
+ Other possible explanations for the nature of TeV J2032 +4130
+ have been brought forward including gamma-ray production i n2 Horns et al.:XMM-Newton observation of TeVJ2032 +4130
+ possible jet lobes of Cyg X-3 (Aharonianet al., 2002), an un-
+ known pulsar wind nebula (Bednarek, 2003), or even extra-
+ galactic source candidates as suggested by Mukherjeeet al.
+ (2003)andButtet al. (2006b).
+ Independent of the nature of the source, two di ﬀerent gamma-
+ ray production mechanisms are generally considered. In the
+ hadronic scenario , gamma-rays are produced mainly via in-
+ elastic scattering of accelerated nuclei with the ambient
+ medium(seee.g.Aharonianet al.(2005a);Reimeretal.(200 6);
+ Domingo-Santamar´ ıa&Torres (2006)). Alternatively, in t he
+ leptonicscenariogamma-raysareproducedviainverseCompton
+ scattering of ambient photons from a population of ener-
+ getic electrons (Aharonianet al., 2005a; Reimeret al., 200 6).
+ Recently, it has been suggested, that excitation of giant di pole
+ resonances of relativistic heavy nuclei in radiation domin ated
+ environmentscouldberesponsibleforgamma-rayproductio nin
+ CygOB2 (Anchordoquiet al.,2006).
+ Whilethegamma-rayobservationssofarhavebeeninconclus ive
+ with respecttothe originof theobservedsignal,X-rayobse rva-
+ tionscanprovideadditionalinformationtoidentifytheor iginof
+ theemissionandtodiscernbetweenthetwoproposedscenari os.
+ InthisLetter,wereportthedetectionofspatiallyextendedX-ray
+ emissioncoincidingwith thepositionofTeVJ2032 +4130.
+ 2. ObservationsandDataanalyses
+ The data were taken during two separate pointings of XMM-
+ Newton. Table 1 summarizes the available data and con�gura-
+ tions of the instruments used. The data were screened for sof t
+ protonﬂaresfollowingthemethodsuggestedinRead &Ponman
+ (2003). The detectors performed almost nominally: CCD #6 of
+ theMOS1camerahadbeenswitchedo ﬀandCCD#5ofMOS2
+ showsanincreasedinstrumentalbackgroundbelow1keVwhic h
+ is two times larger than the background seen in the adjacent
+ CCDs #4 and#6. However,above1 keV the backgroundrate in
+ CCD #5 appeared consistent with the other detectors. The dat a
+ suﬀer from contamination of single scattering events from the
+ brightX-raysourceCygX-3.Thecontaminationismostpromi -
+ nent in the energybandabove5 keV. For this reason,the analy -
+ sesthathavebeenperformedareconstrainedontheenergyra nge
+ from1–5keVwheretheinstrumentalbackgroundandstraylig ht
+ contaminationfromCygX-3areminimal.Acloserinspection of
+ the contamination using ray-tracing simulations has shown that
+ the contribution of scattered light from Cyg X-3 to the X-ray
+ emission seen fromTeV J2032 +4130is negligible.At the same
+ time, the vignetting of the telescopes is smallest in this en ergy
+ range(Kirsch, 2006;Pradas&Kerp,2005).
+ Data reductionandanalyseswereperformedusingtheStanda rd
+ XMM-NewtonScienceAnalysisSoftware SASv7.0.
+ 2.1. Search fordiffuseX-rayemission
+ In an initial step of the data analyses, a catalogue of source s
+ detected in the 1-5 keV energy range is assembled using the
+ edetectchaintasksimultaneouslyfortheMOS1,MOS2,and
+ EPIC pn cameras for each of the two exposures. The minimum
+ detectionlikelihoodis set to a low valueof 2. This way, 13.5 %
+ ofthedetectedsourcesareduetostatisticalﬂuctuationsw hileat
+ the same time, more and fainter sources are detected than wit h
+ thedefaultvalueof10.Adetailedstudyofthepointsources de-
+ tected in this XMM-Newtonobservationwill be presented els e-
+ where. Here, the source catalogue has been used to generate
+ model images of the point sources separately for each camera
+ and pointing taking into account the position dependent poi ntspread functionof the XMM-Newtonmirrors.These model im-
+ ages are then subtracted o ﬀthe individual frames of the three
+ cameras and for the two pointings. Within the 6.2′region cov-
+ ered by the extension of the TeV source, a total energy ﬂux of
+ f1−5 keV≈10−12ergs/(cm2s) associated with point sources is
+ observed. Inordertosubtracttheparticleandextragalact icpho-
+ ton background blank sky event �les for the corresponding ob -
+ servation modes and �lter settings have been obtained from t he
+ XMM guest observers’facility1. The blank�eld data have been
+ processed to match the observational data and the resulting im-
+ ages are subtracted o ﬀthe pointings towards TeV J2032 +4130.
+ TheimagesfortheMOS1andMOS2camerasobtainedfromthe
+ two exposures are combined to form a background subtracted
+ mosaic. The images of the EPIC pn camera have been omit-
+ ted becauseof artefactsresultingfromover-subtractingt he con-
+ tribution of point sources. For each of the four remaining im -
+ ages, exposure maps have been generated using the SAS task
+ eexpmap. The exposure maps are combined in a mosaic which
+ isthentrimmedtoaminimumexposureof5kseccorresponding
+ to roughly 5 % of the peak value. The background subtracted
+ mosaic is then divided by the exposure map to obtain an expo-
+ sure corrected, background subtracted, and source free ima ge.
+ Fig. 1 shows three images of the combined exposures of the
+ MOS1 and MOS2 cameras before the subtraction of the model
+ imagesofthepointsources(a),afterthesubtractionandsm ooth-
+ ing with Gaussian of �xed width of 45 arc sec (b), and �nally,
+ the image after convolving it with a Gaussian of �xed width of
+ 1.5 arc min (c). Note the presence of scattered light along ri ng
+ segments in the southern part of Fig. 1a. While Fig. 1b shows
+ indicationsfor the presenceof a rim-like featureresembli ngthe
+ morphologyobservedinradiobyParedeset al.(2006),itsho uld
+ be noted that the subtraction of point-sources has an impact on
+ the observed morphology on angular scales small compared to
+ the extensionof the detectedextendedemission.Fora compa ri-
+ sonwiththeextensionandmorphologyofthegamma-raysourc e
+ TeV J2032+4130, contours are overlaid to Fig. 1c. The X-ray
+ image shows an extended emission region which is co-located
+ with TeV J2032+4130 and of similar extension. The exposure
+ corrected image of the di ﬀuse emission is �t by a Gaussian
+ with a width of (5 .1±0.3) arc min which corresponds to a
+ FWHM=(11.7±0.6)arcmin2.
+ 2.2. Energyspectrum of the diffuseX-rayemission
+ In order to determine the energy spectrum of the di ﬀuse X-ray
+ emission,thecontributionofthepointsourceshastoberem oved
+ by excising regions around the sources. We use an excising re -
+ gion adapted to the point spread function and brightness of t he
+ source. The size of the region is chosen such that the relativ e
+ contribution of the source to the local background is less th an
+ 20 % at the boundary of the excised region. The wings of the
+ pointspreadfunctionleadtoacontaminationofthedetecte ddif-
+ fuse emissionwhich amountsto 27% ofthe excesssignal seen.
+ Thiseﬀect ofcontaminationwouldbehowevercompensatedby
+ the opposite eﬀect caused by the di ﬀuse emission present in the
+ excised region (≈25 % ) and therefore excluded from the re-
+ constructedenergyspectrum.We estimatethesystematicun cer-
+ taintyofthiscontaminationtobe 10% ofthetotal ﬂux.Theen -
+ ergyspectraof a sourceregionwith a radiusof 6 .2′centeredon
+ the position of TeV J2032 +4130 from the MOS2 and EPIC pn
+ 1ftp://xmm.esac.esa.int
+ 2all errors given throughout the paper are to the con�dence of one
+ standard deviationHorns et al.:XMM-Newton observation of TeVJ2032 +4130 3
+ Fig.1.Background subtracted and exposure corrected images obtai ned from the combined exposures of the MOS1 and MOS2
+ cameras (in units of counts /(sec arcmin2). While the left image shows the emission including all poin t sources, the middle image
+ shows the image after subtractingo ﬀall point sources and smoothed with a Gaussion of 45 arc sec wi dth. Finally, the right image
+ is obtained by smoothing the source subtracted image with a G aussian of 1.5 arc min width and changing the scaling to highl ight
+ the extended X-ray emission present. The green contours ind icate (in linear spacing) the signi�cance contour of the HEG RA
+ observations(startingat3 σ).
+ cameras of the second pointing (ObsID 0305560201) are ex-
+ tracted. The secondpointingis centered 5′north of the centroid
+ ofTeVJ2032+4130andtherefore,we canchooseabackground
+ region which is mirroredthrough the center of the �eld of vie w
+ and has a similar acceptance as the source extraction region .
+ Usingthebackgroundregioninthesame�eldofview,theback -
+ ground estimate includes all relevant background componen ts
+ including X-ray emission from the Galactic ridge and the par -
+ ticle and instrumental background speci�c to this observat ion.
+ The small azimuthal modulation of the acceptance of the MOS
+ cameras can be neglectedalong this direction. The MOS1 cam-
+ era is not used because the disabled CCD#6 unfortunatelydoe s
+ notallowtocovertheentiresource.
+ Theresponse�lesaregeneratedfortheseparticularobserv ations
+ using the standard tools arfgenandrmfgen. Finally, the ge-
+ ometrical areas of the source and background regions are cal -
+ culated taking gaps between the CCDs, bad pixels, and point
+ sourceexclusionregionsintoaccount.Theresultingbackg round
+ subtracted X-ray spectrum is �t with a power-law as well as an
+ optically thin hot plasma model ( apec) including photoelectric
+ absorption (phabs). The spectral �tting of the two spectra was
+ doneusingthexspecv11.3.2pspectral�ttingpackage(Arnaud,
+ 1996).The�tdescribesthedatawell(seeTable2forasummar y
+ ofthe�t parameters;onlystatistical 1 σerrorsarequoted).
+ In order to estimate the inﬂuence of faint, unresolved point
+ sources present in the stellar cluster, we have reduced X-ra y
+ imaging data taken with the Chandra satellite (Obs.# 4501 fo r
+ 48.6 ksec on TeV J2032 +4130 and Obs.# 4511 for 98.7 ksec
+ in the south-west of TeV J2032 +4130, centered on the core of
+ CygOB2).BaseduponacomparisonoftheChandraandXMM-
+ NewtonsourcecataloguesandthestudyoftheX-raysourcepo p-
+ ulation present in the Cyg OB2 cluster (Colomboetal., 2006) ,
+ we estimate that point sources below the XMM-Newton detec-
+ tion limit can contribute up to ≈30 % of the observed di ﬀuse
+ emission. It is however not straight-forward to correct the ob-
+ served excess for the unresolved point sources detected wit h
+ Chandra as the ﬂux of the sources is generally found to vary
+ with time. We estimate the systematic uncertainty on the ﬂux
+ conservatively to be 50 % combining the inﬂuence of the unre-Table 1. Summary of observation times and con�gurations on
+ the target “TeV J2032 +4130�.All instrumentswere operatedin
+ full frame mode with a medium �lter. The exposure quoted in
+ parenthesisisfortheEPICpncamera.
+ ObsID Date R.A. Dec. Exposure
+ J2000 J2000 [ksec]
+ 0305560101 2005-10-21 20:31:57 41:29:58 27.3(23.6)
+ 0305560201 2005-10-25 20:31:57 41:34:55 25.8(20.5)
+ Table2.Summaryofthe�tresultsoftheX-rayenergyspectrum
+ withapower-lawmodel( powerlaw )orthermalemission( apec
+ with �xed solar abundances of the plasma) including photo-
+ electricabsorption( phabs).
+ Parameter Value (powerlaw) Value (apec)
+ NH[1021cm−2] 3 .5±1.6 3.2±1.1
+ Γ,kBT[keV] 1 .5±0.2 10.5±3.2
+ f2−10 keV[10−13ergs/(cm2s)] 7.3±1.1 7.4±1.1
+ χ2
+ red(d.o.f.) 1.02 (862) 1.01 (861)
+ solved point sources ( ≈30 %), uncertaintieson the background
+ subtraction(≈10%),aswellasthetailsofthepointspreadfunc-
+ tions of excised point sources ( ≈10 %). The total, unabsorbed
+ energy ﬂux derived from the model �t (see Table 2) is found to
+ bef2−10=(7.3±3.5sys±1.1stat)×10−13ergs/(cm2s).
+ 3. Conclusions
+ The XMM-Newton observations presented here indicate the
+ presence of an extended (FWHM =11.7 arc min) X-ray source
+ co-located with the �rst unidenti�ed VHE gamma-ray source
+ TeV J2032+4130 discovered with the HEGRA air Cherenkov
+ telescope system. The size of the X-ray source is similar to t he
+ one of TeV J2032+4130. The energy spectrum can be �t by a
+ power-lawmodelorbyathermalemissionmodelwithaplasma
+ temperature of kBT≈10 keV. The unabsorbed energy ﬂux of4 Horns et al.:XMM-Newton observation of TeVJ2032 +4130
+ 10-1510-1410-1310-1210-1110-10
+ 10-510010510101015νfν [erg/(cm2 s)]
+ E [eV]CXHAMI
+ MI3EG J2033+4118
+ ISGRIγ from pp
+ νeνµSynchrotron (sec. e) 
+ Fig.2.ThespectralenergydistributionofTeV J2032 +4130:the
+ bow-tie indicatesthe energyspectrumas measuredwith XMM-
+ Newton including systematic and statistical uncertaintie s. The
+ lines indicate the result of a model calculation for a hadron ic
+ gamma-rayandneutrinoproductionscenariofora continuou sly
+ active accelerator of protonsup to a maximumenergyof 5 PeV
+ at an age of tage=2500 yrs and magnetic �eld B=1 mG.
+ The radio ﬂux point of a possible non-thermal extended radio -
+ source atλ=20 cm (Paredesetal., 2006) is assumed to be
+ an upper limit to the actual radio emission associated with
+ TeV J2032+4130. The upper limits between 0.5–5 keV (CX,
+ Chandra) and 20–40 keV (ISGRI, INTEGRAL) are taken from
+ Butt etal. (2006a). The energy spectrum of the EGRET source
+ 3EG J2030+4118 (Hartmanet al., 1999) is considered to be an
+ upperlimit.TheMilagro(MI)upperlimitistheintegratede mis-
+ sionina3x3(◦)2region(Abdoet al.,2006)whilethelowerlimit
+ (MI) is scaled to the solid angle covered by TeV J2032 +4130
+ assuming a uniform surface brightness. The upper limit from
+ the HEGRA-AIROBICC (HA) wide angle Cherenkov detector
+ istakenfromAharonianet al.(2002).
+ 10-1510-1410-1310-1210-1110-10
+ 10-510010510101015νfν [erg/(cm2 s)]
+ E [eV]CXHAMI
+ MI3EG J2033+4118
+ ISGRIYoung source (1500 yrs)
+ Old source (35 kyrs)
+ Fig.3.In the leptonic scenario, the data are described well by a
+ youngsourceofanageof1500yrs,amagnetic�eldof B=3µG
+ andanenergydensityoftheseedphoton�eldof wIR=3eV/cm3
+ withagreybodytemperatureof T=10K.Asanalternative,an
+ older source at an age of 35 kyrs is shown ( B=3µG,wIR=
+ 1 eV/cm3). For a description of the multi-wavelength data see
+ thecaptionofFig.2.the X-ray source in the energyrangefrom 2–10 keV is a factor
+ of 2–3 smaller than the one observed from TeV J2032 +4130at
+ energiesfrom1–10TeV.
+ We note that the observed extended X-ray emission could in
+ principlebe a so far unknownpopulationof faint X-raysourc es
+ that are by chance distributed at an angular size which is sim -
+ ilar to the one of TeV J2032 +4130. The energy spectrum of
+ these sources would have to be di ﬀerent from the bulk of the
+ stellar X-ray sources detected from Cyg OB2 (Colomboet al.,
+ 2006) which on average show a thermal spectrum with kBT≈
+ 1...3 keV. Taking these considerations into account, we con-
+ clude that the observed extended X-ray emission is the X-ray
+ counterpartofTeVJ2032 +4130.
+ InitialmodelingoftheX-rayandgamma-rayenergyspectrau s-
+ ingahadronicgamma-rayproductionscenarioindicatestha tthe
+ observed spectra can be naturally explained by a young (a few
+ kyrs)“Pevatron�accelerator.Theobservationofsynchrot ronX-
+ ray emission upto ≈5 keV constrainsthe productof the square
+ ofmaximumenergyofacceleratedprotons( E2
+ max)andmagnetic
+ �eld (B) to exceed E2
+ max·B>∼5 PeV2mG. In this picture, the
+ gamma-ray energy spectra would continue without cut-o ﬀwell
+ beyond 10 TeV. The hard X-ray emission from a similar source
+ size region as the gamma-ray emission is a natural predictio n
+ withinthismodelwheretheX-raysareproducedbysynchrotr on
+ emission of secondary electrons. Notably, in the frame of th is
+ model,the extendedgamma-rayemission foundby the Milagro
+ collaboration would be explained by gamma-rays produced by
+ accelerated particlesof energies >∼100 TeV which have already
+ escapedthe accelerator.
+ A leptonicscenarioprovidesa validexplanationof the obse rva-
+ tions as well (see Fig. 3). In this scenario, a young accelera tor
+ withalowmagnetic�eldofafew µGacceleratingelectronsfol-
+ lowingapower-lawdistributionwith dN/dE�E−2reachingup
+ to energies of a few 100 TeV can provide a good �t to the X-
+ ray and gamma-ray data. In contrary to the hadronic scenario ,
+ the gamma-ray energy spectrum above 10 TeV is expected to
+ be rather soft due to un-avoidableKlein-Nishina suppressi onof
+ inverse Compton scattering. Furthermore, the seed photon d en-
+ sity has to be higher than the average value in the interstell ar
+ medium (which is not unlikely given the possible proximity t o
+ the Cyg OB2 stellar association and the large stellar extinc tion
+ towards that region indicating high density of dust). In the lep-
+ tonic scenario, the X-ray spectrum can be expected to vary at
+ diﬀerent parts of the source due to cooling e ﬀects. More X-ray
+ observationswill berequiredtodetectspectralvariabili ty.
+ Finally, neutrinoobservationswill provedecisive to disc ern be-
+ tween the two emission scenarios (since neutrinos are only e x-
+ pected in the hadronic scenario). Even though the neutrino ﬂ ux
+ calculatedhereisverylikelynotdetectablewiththecomin ggen-
+ eration of neutrino telescopes like IceCube (Achterberget al.,
+ 2006), it may be that the gamma-rayﬂux detected with Milagro
+ from the same region is tracing the high energy particles whi ch
+ havealreadylefttheacceleratorand�llamuchlargervolum e.In
+ this case, the region aroundTeV J2032+4130would be a pow-
+ erful high energy neutrino source and would be detectable wi th
+ futureneutrinotelescopes(Beacom&Kistler, 2007).
+ ItshouldbenotedthattheobservationsofTeVJ2032 +4130car-
+ ried out with XMM-Newton are so far the deepest observations
+ available for any of the unidenti�ed VHE gamma-ray sources.
+ It will be interesting to perform similar observations to se arch
+ forfaint,extendedX-raycounterpartsofotherunidenti�e dVHE
+ gamma-raysources.Horns et al.:XMM-Newton observation of TeVJ2032 +4130 5
+ Acknowledgements. We acknowledge the support of the Deutsches Zentrum
+ f¨ ur Luft- und Raumfahrt under grant number 50OR0302 and the support of
+ the Eberhard Karls Universit¨ at T¨ ubingen. We wish to thank Olaf Reimer and
+ Facundo Albacete for providing the source lists found in the Chandra observa-
+ tions and Josep Paredes for making their results available p rior to publication.
+ Thisresearch has madeuseof NASA’sAstrophysics DataSyste m. Wethank the
+ anonymous referee for valuable comments.
+ References
+ Abdo, A.A.et al. 2007, ApJ,658, L33
+ Achterberg, A. et al. (Icecube Collaboration), 2006, Astro particle Physics, 26,
+ 155
+ Aharonian, F.,etal. (HEGRAcoll.) 2002, A&A,393, L37
+ Aharonian, F.,etal. (HEGRAcoll.) 2005a, A&A,431, 197
+ Aharonian, F.,etal. (HESScoll.) 2005b, Science, 307, 1938
+ Aharonian, F.,etal. (H.E.S.S.coll.) 2006a, ApJ,636, 777
+ Aharonian, F.,etal. (HEGRAcoll.) 2006b, A&A,454, 775
+ Aharonian, F., et al. (H.E.S.S. coll.) 2007, ArXiv Astrophy sics e-prints,
+ arXiv:astro-ph/0703427
+ Albacete Colombo,J.F.,Flaccomio, E.,Micela, G.,Damiani , F.,&Sciortino, S.
+ 2007, A&A,464, 211
+ Anchordoqui, L.A.,Beacom, J.F.,Goldberg, H.,Palomares- Ruiz, S.,&Weiler,
+ T.J.2007, Phys.Rev. D75, 063001
+ Arnaud, K.A.1996, ASPConf. Ser.101: Astronomical DataAna lysis Software
+ and Systems V,101, 17
+ Beacom, J.F. & Kistler, M.D. 2007, submitted to Phys. Rev. DA rXiv
+ Astrophysics e-prints, arXiv: astro-ph /0701751
+ Bednarek, W.2003, MNRAS, 345, 847
+ Butt, Y.M.,et al. 2003, ApJ,597, 494
+ Butt, Y. M., Drake, J., Benaglia, P., Combi, J. A., Dame, T., M iniati, F., &
+ Romero, G.E.2006a, ApJ,643, 238
+ Butt, Y. M., Combi, J.A., Drake, J., Finley, J.P., Konopelko , A., Lister, M., &
+ Rodriguez, J. 2006b, submitted to ApJ, ArXiv Astrophysics e -prints, arXiv:
+ astro-ph/0611731
+ Domingo-Santamar´ ıa, E.,& Torres,D.F.2006, A&A,448, 613
+ Hartman, R.C.,et al. 1999, ApJS,123, 79
+ Horns, D., Aharonian, F., Santangelo, A., Ho ﬀmann, A. I. D., & Masterson, C.
+ 2006, A&A,451, L51
+ Horns,D.,& Rowell, G.2004, New Astronomy Review, 48, 489
+ Kelner,S.R.,Aharonian,F.A.,&Bugayov,V.V.2006,Phys.R ev.D,74,034018
+ Kirsch, M.in internal report XMM-SOC-CAL-TN-0018, 2006
+ Konopelko, A. et al. 2006 , accepted for publ. in ApJ, ArXiv As trophysics e-
+ prints, arXiv:astro-ph /0611730
+ Kn¨ odlseder, J.2000, A&A,360,539
+ Lang, M.J.,etal. 2004, A&A,423, 415
+ Mukherjee,R.,Halpern,J.P.,Gotthelf,E.V.,Eracleous,M .,&Mirabal,N.2003,
+ ApJ,589, 487
+ Mukherjee, R., Gotthelf, E. V., & Halpern, J. P. 2006, ArXiv A strophysics e-
+ prints, arXiv:astro-ph /0610299
+ Paredes, J.M.,Marti, J, Ishwara Chandra C.H.,& Bosch-Ramo n, V. 2007, ApJ,
+ 654, 135
+ Pradas, J.,&Kerp, J. 2005, A&A,443, 721
+ Read, A.M.,&Ponman, T.J.2003, A&A,409,395
+ Reimer, A.,Pohl, M.,&Reimer, O.2006, ApJ,644, 1118
+ Rowell, G. & Horns, D. In Proceedings of The Gamma-Ray Universe , ed. A.
+ Goldwurm, LesArcs, France 2002, 385
+ Waldron, W.L.,Corcoran, M.F.,Drake, S.A.,&Smale, A.P.19 98,ApJS,118,
+ 217

@@ -1,0 +1,945 @@
+arXiv:0705.0001v1  [astro-ph]  30 Apr 2007UFIFT-HET-07-6
+ Does the Second Caustic Ring of Dark Matter
+ Cause the Monoceros Ring of Stars?
+ A. Natarajanaand P. Sikiviea,b
+ aDepartment of Physics, University of Florida, Gainesville , FL 32611, USA
+ bTheoretical Physics Division, CERN, CH-1211 Gen` eve 23, Sw itzerland
+ (Dated: April 30, 2007)
+ Abstract
+ Caustic rings of dark matter were predicted to exist in the pl ane of the Galaxy at radii an≃
+ 40 kpc /nforn= 1,2,3... The recently discovered Monoceros Ring of stars is located near the
+ n= 2 caustic, prompting us to consider a possible connection b etween these two objects. We
+ identify two processes through which the Monoceros Ring of s tars may have formed. One process
+ is the migration of gas to an angular velocity minimum at the c austic leading to enhanced star
+ formation there. The other is the adiabatic deformation of s tar orbits as the caustic slowly grows
+ in mass and radius. The second process predicts an order 100% enhancement of the density of disk
+ stars at the location of the caustic ring.
+ PACS numbers: 95.35.+d
+ 1I. INTRODUCTION
+ The Monoceros Ring is an overdensity of stars in the plane of t he Galaxy at a galacto-
+ centric distance of approximately 20 kpc. It was discovered by the Sloan Digital Sky Survey
+ (SDSS) [1, 2] and its existence was promptly con�rmed by two i ndependent collaborations
+ [3, 4]. The Monoceros Ring has been observed over 170 degrees in galactic longitude lin the
+ Galactic anti-center direction (100◦<∼l<∼270◦), and appears to be circular. Assuming it is a
+ complete circle, the total mass in the Ring is estimated to be in the range 2 ·107−5·108M⊙
+ in ref. [2], and 2 ·108−109M⊙in ref. [3]. The scale height of the Ring stars in the directio n
+ perpendicular to the Galactic plane is estimated to be 1 .6±0.5 kpc in ref. [2], 0 .75±0.04
+ kpc in ref. [3] and 1 .3±0.4 kpc in ref. [4]. The scale height in the direction parallel t o the
+ plane is also of order kpc. The stars in the Ring move with spee d approximately 220 km/s
+ in the direction of galactic rotation [5, 6]. Their velocity dispersion along the line of sight
+ is small. It was estimated to be between 20 and 30 km/s in ref. [ 2], and 20 ±4 km/s in ref.
+ [5].
+ The most widely discussed interpretation of the Monoceros R ing is that it is a stream
+ of stars resulting from the tidal disruption of a Galactic sa tellite [7, 8, 9]. An alternative
+ proposal is that the Ring is a manifestation of the Galactic w arp [10, 11]. In this paper we
+ explore a diﬀerent proposal altogether, namely that the Mon oceros Ring of stars formed as
+ a result of the gravitational forces exerted by the second ca ustic ring of dark matter in the
+ Milky Way [12].
+ Caustic rings of dark matter had been predicted [13], prior t o the discovery of the Mono-
+ ceros Ring, to lie in the Galactic plane at radii given by the a pproximate law an≃40 kpc/ n
+ where n= 1, 2, 3 ... Since the Monoceros Ring is located near the secon d (n= 2) caustic
+ ring of dark matter, it is natural to ask whether the former is a consequence of the latter.
+ In our proposal, the position of the Monoceros Ring in the Gal actic plane and its 20 kpc
+ radius are immediately accounted for.
+ Dark matter caustics are an unavoidable consequence of the f act that cold collisionless
+ dark matter (CDM) lies on a 3-dim. hypersurface in 6-dim. pha se space [14, 15, 16, 17].
+ The ﬂow of dark matter in and out of the gravitational potenti al well of a galaxy necessarily
+ produces caustics. These caustics are of two types, inner an d outer. The inner caustics
+ are rings when the angular momentum distribution of the dark matter is dominated by net
+ overall rotation [18]. The singularity structure of causti c rings was discussed in detail in ref.
+ [15]. The ring radii were predicted in ref. [13] using the sel f-similar infall model of galactic
+ halo formation [19, 20], generalized to allow the dark matte r particles to have non-zero
+ angular momentum [21]. Evidence for caustic rings of dark ma tter distributed according to
+ the prediction of the self-similar infall model was found in the rotation curves of exterior
+ galaxies [22] and the rotation curve of the Milky Way [12].
+ Fig. 1 shows the transverse section of a caustic ring. Fig. 1( a) shows the ﬂow of dark
+ matter in the neighborhood of the caustic, whereas Fig. 1(b) shows the de�nition of its
+ radius aand its transverse sizes pandq. As was mentioned already, the self-similar infall
+ model predicts that the radius a2of the second caustic ring of dark matter is approximately
+ 20 kpc in our galaxy. The transverse sizes pandqare not predicted by the self-similar infall
+ model. However, for reasons explained in Section II, the exp ectation for pandqis that they
+ are of order 1 kpc for n= 2. So the transverse sizes of the second caustic ring of dark matter
+ are of order the transverse sizes of the Monoceros Ring. More over, for q= 1 kpc, the caustic
+ ring mass enclosed within the triangular shape of Fig. 1(b) i s approximately 6 ·108M⊙(see
+ 2Section II). Thus the total mass of the n= 2 caustic ring of dark matter is of the same order
+ of magnitude as the observed total mass of the Monoceros Ring .
+ One might ask whether it is possible to interpret the Monocer os Ring as a caustic in a
+ ﬂow of stars. Indeed it is reasonable to assume that the ﬂow of dark matter that forms the
+ n= 2 caustic ring is accompanied by a ﬂow of stars occupying the same 3-dim. hypersurface
+ in phase space. Thus the proposal that the Monoceros Ring is a caustic in a ﬂow of stars
+ would explain equally well why the Monoceros Ring is in the Ga lactic plane and why its
+ radius is 20 kpc. However, the proposal runs into diﬃculties . The �rst diﬃculty is that the
+ self-similar infall model, which predicts the 20 kpc radius of the n= 2 caustic ring, also
+ predicts that the matter in that caustic moves with a velocit y of approximately 515 km/s
+ in the direction of Galactic rotation (see Section II). This is inconsistent with the 220 km/s
+ observed velocity of Monoceros Ring stars in the direction o f galactic rotation. A second
+ diﬃculty is that the matter in the caustic ring has an eﬀectiv e radial velocity dispersion of
+ order 100 km/s, whereas the radial velocity dispersion of Mo noceros Ring stars is only of
+ order 20 km/s. Thus the proposal that the Monoceros Ring is a c austic of stars appears
+ untenable. As mentioned already, the proposal we explore in stead is that the Monoceros
+ Ring is caused by the gravitational �eld of the n= 2 caustic ring of dark matter.
+ We will �nd that there are two apparently viable mechanisms b y which the n= 2 caustic
+ ring of dark matter may cause the Monoceros Ring of stars. The �rst mechanism is enhanced
+ star formation at the caustic radius because viscous forces on the gas in the neighborhood
+ of the caustic drive it towards r=a. The second mechanism is the adiabatic deformation of
+ the orbits of ordinary disk stars by the caustic ring of dark m atter. We will show that the
+ increase in star density at the location of the caustic as a re sult of this second mechanism
+ is of order 100%.
+ The paper is organized as follows: In Section II, we give a sel f-contained and hopefully
+ pedagogical description of the properties of caustic rings of dark matter, including the pre-
+ dictions of the self-similar infall model for the parameter s that characterize the caustic rings,
+ the observational evidence for caustic rings of dark matter , and the expected properties of
+ then= 2 ring. In Section III, we describe the gravitational �eld o f a caustic ring of dark
+ matter and the perturbation it causes to the galactic rotati on curve. We then analyze two
+ mechanisms by which the second caustic ring of dark matter ma y cause the Monoceros
+ Ring: the migration of gas to a sharp minimum in the angular ve locity at r=aimplying
+ enhanced star formation there, and the adiabatic deformati on of ordinary disk star orbits
+ by the slowly growing caustic. Section IV provides concludi ng remarks. Axial symmetry is
+ assumed throughout unless stated otherwise.
+ II. CAUSTIC RING PROPERTIES
+ Cold collisionless dark matter (CDM) particles lie on a 3-di m. hypersurface in phase
+ space [14, 15, 16]. We refer to this 3-dim. hypersurface as th e “phase space sheet�. At the
+ location of a galactic halo, the phase space sheet is wound up so as to cover physical space
+ multiple times. This phase space structure implies that the velocity distribution of CDM
+ particles is everywhere discrete and that there are surface s in physical space, called caustics,
+ where the density of dark matter particles is very large. Dis crete ﬂows and caustics are a
+ robust prediction of cold dark matter cosmology [17]. The re ader may wish to consult ref.
+ [17] for background information and a list of references.
+ Galactic halos have outer caustics and inner caustics. The o uter caustics are a set of
+ 3simple fold ( A2) catastrophes located on topological spheres surrounding the galaxy at radii
+ of order hundreds of kpc. Our focus, however, is on the inner c austics, which are much
+ closer to the galactic center. The physical shape and catast rophe structure of inner caustics
+ depend on the angular momentum distribution of CDM particle s falling onto the halo [18]. If
+ that angular momentum distribution is dominated by net over all rotation, the inner caustics
+ are a set of ring-like closed tubes, called “caustic rings�, in or near the galactic plane. In
+ cross-section each tube is a section of the elliptic umbilic (D−4) catastrophe [15].
+ In this section we give a detailed desciption of caustic ring s in the limit of axial symmetry
+ and where their cross-sectional sizes, pandq, are much smaller than their radius a. Under
+ these assumptions, the distribution of CDM particles in the vicinity of the caustic ring is
+ determined in terms of a relatively small number of paramete rs, which we identify. Next,
+ we summarize the predictions of the self-similar infall mod el for the caustic ring properties.
+ We brieﬂy review the evidence for caustic rings of dark matte r, at the radii predicted by the
+ self-similar infall model, in the Milky Way and in other isol ated spiral galaxies. Finally, we
+ list the expected properties of the second caustic ring of da rk matter in our galaxy.
+ A. Catastrophe structure
+ The caustic ring singularity was analyzed in ref. [15] which the reader may wish to consult
+ for details. In the limit of axial symmetry and where the tran sverse sizes, pandq, of a caustic
+ ring are much smaller than its radius a, the distribution of CDM in the vicinity of the caustic
+ is given by the particle positions
+ z(α, τ) =bατ
+ �(α, τ) =a+1
+ 2u(τ−τ0)2−1
+ 2sα2. (1)
+ We use cylindrical coordinates ( z, �, φ ) for position in physical space. Eqs. (1) give particle
+ positions at a particular time, say t= 0. The particles are labeled by parameters ( α, τ).
+ α≡π
+ 2−θwhere θis the polar angle of the particle at the time of its last turna round. τis
+ the time when the particle crosses the z= 0 plane. t−τcan be thought of as the age of
+ the particle. The particles labeled ( α, τ) form a circle of radius �(α, τ) at a height z(α, τ)
+ above the z= 0 plane.
+ b,a,u,τ0andsare constants characterizing the caustic ring. Each has phy sical meaning.
+ See ref. [15] for more precise descriptions than we give here .ais the radius of the caustic
+ ring.|τ0|is of order the time a constituent particle spends in the caus tic.bis of order
+ the speed of the particles in the caustic. uis of order their centrifugal acceleration. s
+ characterizes the α-dependence of speci�c angular momentum near the equator ( α= 0).
+ Fig. 1 describes the caustic ring cross-section. Fig. 1(a) p lots (�(α, τ), z(α, τ)) for contin-
+ uousτ, and discrete values of α. The lines in Fig. 1(a) are the trajectories of the particles
+ forming the ﬂow, except that positions are plotted as a funct ion of age, whereas for ordinary
+ trajectories position is plotted as a function of time. Let u s call the lines of Fig. 1(a) “age
+ trajectories�. Fig. 1(a) shows that particle density diver ges on a closed line which has the
+ shape of a isosceles triangle, but with cusps instead of angl es. We call that shape a“tricusp�.
+ The location of the tricusp is shown in Fig. 1(b) for the ﬂow of Fig. 1(a). It is the envelope
+ of the age trajectories. There are four ﬂows everywhere insi de the tricusp and two ﬂows
+ everywhere outside. The caustic, i.e. the surface where the density diverges, lies at the
+ boundary between the region with four ﬂows and the region wit h two ﬂows.
+ 4The physical space density is given by
+ d(�, z) =1
+ �N(�,z)/summationdisplay
+ j=1dM
+ dΩdτ(α, τ)cosα
+ |D(α, τ)|/vextendsingle/vextendsingle/vextendsingle/vextendsingle
+ (αj(�,z),τj(�,z))(2)
+ where αj(�, z) and τj(�, z), with j= 1... N(�, z), are the solutions of �(α, τ) =�and
+ z(α, τ) =z.N(�, z) is the number of ﬂows at position ( �, z); thus, N= 4 inside the tricusp
+ andN= 2 outside. D(α, τ) is the Jacobian determinant of the map ( α, τ)→(�, z):
+ D(α, τ)≡det/parenleftBigg∂(�, z)
+ ∂(α, τ)/parenrightBigg
+ =−b[uτ(τ−τ0) +sα2]. (3)
+ dM
+ dΩdτ=dM
+ 2πcosαdαdτis the mass falling in per unit solid angle and unit time. The t ricusp
+ perimeter is the locus of points ( �(α, τ), z(α, τ)) for which D(α, τ) = 0. We call pandqthe
+ sizes of the tricusp in the �andzdirections respectively; see Fig. 1(b). They are given by
+ p=1
+ 2uτ2
+ 0, q=√
+ 27
+ 4b√usp . (4)
+ One of the cusps of the tricusp points away from the galactic c enter.
+ Consider the 3-dim. space spanned by the two physical coordi nates �andzplus the
+ constant τ0.τ0can be positive or negative. In ( �, z, τ 0) space, the tricusp is perpendicular to
+ theτ0axis with one cusp pointing in the positive �direction. As τ0varies from negative to
+ positive values, the size of the tricusp, which varies as τ2
+ 0, shrinks to zero and then increases
+ again. The structure in the neighborhood of τ0= 0 is the (full) elliptic umbilic catastrophe
+ (D−4), one of the elementary catastrophes in three dimensions. T hus the tricusp, i.e. the
+ cross-section of a caustic ring, is a section of the elliptic umbilic.
+ If the z-axis is rescaled relative to the �-axis so as to make the tricusp equilateral, the
+ tricusp has a Z3symmetry [15] consisting of rotations by multiples of2π
+ 3about the point of
+ coordinates ( �c, zc) = (a+p/4,0). This point may thus be called the center of the tricusp. It
+ is indicated by a star in Fig. 1(b). As an example of how the abo ve formalism is to be used,
+ let us derive a formula for the density dcat the center of the tricusp. Using Eqs. (1), one �nds
+ that the four ﬂows there have parameter values ( α, τ) = (0 ,3
+ 2τ0),(0,1
+ 2τ0),(+/radicalBig
+ 3p
+ 2s,0) and
+ (−/radicalBig
+ 3p
+ 2s,0). The corresponding values of the Jacobian determinant ar eD=−3
+ 2bp,1
+ 2bp,−3
+ 2bp
+ and−3
+ 2bp. Inserting these in Eq. (2), one �nds
+ dc=4
+ abpdM
+ dΩdτ. (5)
+ In obtaining this result, we approximated �byaand cos αby 1 in Eq. (2), and neglected
+ theα-dependence ofdM
+ dΩdτ. These approximations are appropriate since we assume that p
+ andqare small relative to a. For the mass per unit length enclosed within the tricusp, we
+ �nd by numerical integration
+ λ= 0.6pqdc. (6)
+ Note that some of the mass associated with the caustic ring li es outside the tricusp. In
+ particular, when p=q= 0, λ= 0 but there is still a caustic ring and an associated
+ overdensity. In that limit, the tricusp has collapsed to a po int, and the particle density
+ diverges as the inverse distance to that point [15].
+ 5Finally, we describe the velocities of the particles that co nstitute the caustic ring. Let us
+ write the velocity of particle labeled ( α, τ) as/vector v(α, τ) =vφ(α, τ)ˆφ+v�(α, τ)ˆ�+vz(α, τ)ˆz. For
+ p, q≪a, all the particles in the caustic have the same speed vbecause they have come to the
+ caustic from a small region (near the equator) of the turnaro und sphere, along neighboring
+ trajectories. The main component of velocity is in the ˆφdirection: vφ≃v. The speed vis
+ related to the centrifugal acceleration uby
+ u=v2
+ a. (7)
+ In the case of a stationary ﬂow, the velocity components in th e ˆ�and ˆzdirections are
+ v�=−∂�
+ ∂τ=−u(τ−τ0), v z=−∂z
+ ∂τ=−bα . (8)
+ Here we use the fact that, in case of stationary ﬂow, the parti cle positions are func-
+ tions only of their age t−τ. For the four ﬂows within the tricusp, v�andvzare
+ of order uτ0=v/radicalBig
+ 2p
+ a. For the four ﬂows at the center, for example, ( v�, vz) =
+ (−1
+ 2uτ0,0),(+1
+ 2uτ0,0),(uτ0,−1
+ 2/radicalBig3
+ ζuτ0),(uτ0,+1
+ 2/radicalBig3
+ ζuτ0), where ζ≡us
+ b2=16p2
+ 27q2.
+ Caustic rings grow in mass and radius on cosmological time sc ales, implying that the ﬂow
+ is not exactly stationary. However, provided one has inform ation on the manner in which
+ the growth occurs, the time dependence is easily included. F or example, if the growth in
+ size is tantamount to an increase in the caustic radius at the rate ˙a, the velocities are still
+ as described in the previous paragraph except v�is replaced with v�+ ˙a. If the growth is
+ tantamount to expansion in all directions by a scale factor R(t),v�is replaced by v�+˙R
+ R�
+ andvzbyvz+˙R
+ Rz.
+ Thus far, we have given a detailed description of a caustic ri ng in the limit of axial
+ symmetry and where the transverse sizes pandqof the ring are much smaller than its
+ radius a. The description is in terms of a small number of parameters: a, b, u, τ 0, sand
+ dM
+ dΩdτ. We now turn to the self-similar model of galactic halo forma tion to obtain estimates
+ of these parameters for the caustic rings in actual halos.
+ B. Predictions of the self-similar infall model
+ The self-similar model of galactic halo formation [19, 20, 2 1] assumes that the entire halo
+ phase space distribution is unchanged in time except for a re scaling of all lengths by a scale
+ factor R(t), and all velocities byR(t)
+ twhere tis cosmic time. Physical space densities scale
+ as1
+ t2. A spherically symmetric overdensity in an Einstein-de Sit ter universe (Ω matter = 1)
+ has self-similar evolution provided its initial pro�le is a power law [19, 20]
+ δMi
+ Mi=/parenleftbiggM0
+ Mi/parenrightbiggǫ
+ , (9)
+ where Miis the mass interior to initial radius ri,δMiis the corresponding extra mass, and
+ ǫis a parameter with the a-priori range 0 ≤ǫ≤1. The scale factor R(t) is proportional to
+ t2
+ 3+2
+ 9ǫ. The rotation curve is ﬂat at small rprovided 0 ≤ǫ≤2
+ 3[19]. In an average sense, ǫis
+ related to the slope of the power spectrum of density perturb ations on galactic scales [23].
+ The standard CDM power spectrum implies ǫis in the range 0.2 to 0.35 [21].
+ 6The accelerated expansion [24] of the universe is not consis tent with Einstein-de Sitter
+ cosmology, nor therefore with strict self-similarity. Thi s is not a serious shortcoming of
+ the self-similar model, however, because galactic halos we re formed for the most part long
+ before the onset of accelerated expansion, when the univers e was accurately described by
+ Einstein-de Sitter cosmology.
+ The original spherically symmetric self-similar model [19 , 20] assumes radial orbits for
+ all the particles. Whereas this approximation is reasonabl e when describing the outer parts
+ of a galactic halo, it is inadequate for the inner parts. Spec i�cally, in the approximation of
+ radial orbits, all particles pass through the galactic cent er each time they fall in and out of
+ the galaxy, causing the density to diverge at the center as1
+ r2. The halo contribution to the
+ rotation curve then approaches a constant as r→0. In actual galaxies, the central parts
+ are dominated by baryons, and the halo contribution to the ro tation curve goes to zero at
+ the center.
+ However, the self-similar model can be generalized [21] to a llow the dark matter particles
+ to have angular momentum. Self-similarity is maintained pr ovided the speci�c angular
+ momentum distribution on the turnaround sphere at time tis of the form:
+ /vectorℓ(ˆr, t) =/vectorj(ˆr)R2(t)
+ t, (10)
+ where R(t) is the turnaround radius and /vectorj(ˆr) is a dimensionless and time-independent an-
+ gular momentum distribution. When angular momentum is incl uded, particle orbits avoid
+ the galactic center, the inner parts of the halo are depleted , and the halo contribution to the
+ rotation curve goes to zero at r= 0, as it should. In the Milky Way, approximately half of
+ the rotation velocity squared at our location is due to dark m atter, and half is due to bary-
+ onic matter. This determines the average magnitude ¯jof the rescaled angular momentum
+ distribution /vectorj(ˆr) to be of order ¯j∼0.2 for the Milky Way halo [21].
+ The caustic rings of dark matter occur where the particles wi th the most angular momen-
+ tum are at their distance of closest approach to the galactic center [15, 18]. In the spherically
+ symmetric model, the orbits are radial and hence the distanc e of closest approach vanishes
+ for all particles. In that case all the caustic rings collaps e to a single caustic point at the
+ center of spherical symmetry. In the more realistic self-si milar model with angular momen-
+ tum, the caustic rings have �nite radii. The radii are predic ted in terms of the maximum
+ value jmaxof the dimensionless angular momentum distribution /vectorj(ˆr) [13]:
+ {an:n= 1,2,3,4,5...} ≃40 kpc
+ n/parenleftBiggvrot
+ 220 km /s/parenrightBigg/parenleftbiggjmax
+ 0.25/parenrightbigg
+ (11)
+ where vrotis the rotation velocity of the galaxy. Eq. (11) is for the par ticular case ǫ= 0.3.
+ However, the an�1
+ napproximate behaviour holds for all ǫin the relevant range 0 .2≤ǫ≤
+ 0.35, so that a change in ǫcan be compensated for, as far as the anvalues are concerned,
+ by a change in jmax. We will assume ǫ= 0.3 henceforth. The self-similar model does not
+ predict jmaxand allows a diﬀerent jmaxvalue for each galactic halo.
+ The relationship between ¯jandjmaxdepends, of course, on the /vectorj(ˆr) distribution. Let us
+ assume the simplest distribution consistent with net overa ll rotation and axial symmetry:
+ /vectorj(ˆr) =jmaxˆφcosα, i.e. that the turnaround sphere is initially rigidly rotat ing. In that case,
+ ¯j=π
+ 4jmax. Thus, for the Milky Way halo, the estimate ¯j∼0.2 implies jmax∼0.25.
+ In summary so far, the self similar infall model with axial sy mmetry and net overall
+ rotation predicts caustic rings in the galactic plane at the radii speci�ed in Eq. (11). It also
+ 7predicts the speeds vnof the dark matter particles forming the caustic rings and th e infall
+ ratesdM
+ dΩdτ|n. The vnare approximately n-independent:
+ vn≃515km
+ s/parenleftBiggvrot
+ 220 km /s/parenrightBigg
+ . (12)
+ The infall rates are given by
+ dM
+ dΩdτ1
+ v/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingle
+ n=fnv2
+ rot
+ 4πG(13)
+ with
+ {fn:n= 1,2,3,4,5, ...} ≃(11,4.6,2.9,2.1,1.7, ...)×10−2. (14)
+ Eqs. (13) and (14) provide the prefactor which appears in the formulas for the density
+ [Eqs. (2) and (5)], up to the ratiov
+ b, which is of order one but which may diﬀer from one by
+ a factor two or so. The transverse sizes, pandq, of the caustic rings and the ratiov
+ bdepend
+ on relatively more subtle properties of the velocity distri bution at last turnaround [15], and
+ are not predicted by the self-similar infall model.
+ Observational evidence has been found in support of Eq. (11) in the Milky Way and other
+ spiral galaxies. We brieﬂy describe this evidence now.
+ C. Summary of observational evidence
+ Caustic rings of dark matter in or near the galactic plane cau se bumps in the galactic
+ rotation curve. In ref. [22] a set of 32 extended and well-mea sured rotation curves was
+ analyzed to test the hypothesis that some of their bumps are c aused by caustic rings of dark
+ matter at the radii given by Eq. (11). For each rotation curve , the radial coordinate rwas
+ rescaled according to
+ r→˜r=r/parenleftBigg220 km /s
+ vrot/parenrightBigg
+ , (15)
+ where vrotis the rotation velocity implied by the curve. The rotation c urves were then co-
+ added. The combined rotation curve shows peaks at ˜ r≃20 and 40 kpc, with a signi�cance
+ of 2.6 σand 3.0 σrespectively. The result suggests not only the existence of caustic rings
+ of dark matter at the radii given by Eq. (11), but also that the distribution of jmaxvalues is
+ peaked near jmax≃0.27.
+ The Milky Way rotation curve has a series of sharp rises at rad ii which agree at the 3%
+ level [12] with the caustic ring radii given in Eq. (11). The i nner North Galactic rotation
+ curve of ref. [25] has ten rises between r= 3 and 8.5 kpc, which may be identi�ed with
+ caustic rings n= 5,6...14. The rises are “sharp� in the sense that they start and end
+ with discontinuities (kinks) in the slope of the rotation cu rve. Kinks in the rotation curve
+ are predicted by caustic rings because the dark matter densi ty diverges at the caustic. The
+ outer Milky Way rotation curve is much less well measured. No netheless it has a prominent
+ rise near r= 13 kpc which may be identi�ed with the n= 3 caustic ring. Finally, the
+ IRAS map of the Galactic plane in the direction of galactic co ordinates ( l, b) = (80◦,0◦)
+ has a triangular feature whose position and appearance is co nsistent with the imprint of the
+ caustic ring of dark matter nearest to us ( n= 5) upon the gas and dust in the disk.
+ 8D. Expectations for the n= 2caustic ring
+ Eq. (11) predicts that the n= 2 caustic ring has radius a2≃20 kpc. Eq. (12) predicts that
+ the speed of the particles constituting the ring is approxim ately 515 km/s. The transverse
+ sizesp2andq2are not predicted. However, it is reasonable to expect that t hen= 2 caustic
+ ring has properties similar to caustic rings n= 3 and n= 5 to 14, for which we have the
+ observational evidence mentioned in the previous subsecti on. The pvalues of those rings can
+ be read oﬀ from the widths of the corresponding rises in the Mi lky Way rotation curve [12].
+ For those “observed� rings, one �nds that p/aranges from 0.015 to 0.1, with an average
+ value of 0.05. We thus expect p2to be of order 1 kpc, and very likely between 0.3 and 2
+ kpc. The rises in the rotation curve do not inform us about the values of q. However, the
+ triangular feature in the IRAS map provides values of both pandqfor the n= 5 caustic
+ ring. In that caseq
+ p≃1.5. We therefore expect q2to be of order 1 kpc as well.
+ The prediction for the dark matter density at the central poi nt of the tricusp is obtained
+ by combining Eqs. (5), (13) and (14):
+ dc,2= 8·10−3M⊙
+ pc3/parenleftbiggv2
+ b2/parenrightbigg/parenleftBiggkpc
+ p2/parenrightBigg
+ . (16)
+ Using Eq. (6), we obtain the predicted dark matter mass per un it length enclosed within
+ the tricusp
+ λ2= 5·106M⊙
+ kpc/parenleftbiggv2
+ b2/parenrightbigg/parenleftBiggq2
+ kpc/parenrightBigg
+ . (17)
+ Sinceb2is of order v2, the total mass 2 πa2λ2enclosed within the tricusp is of order 6 ·108M⊙.
+ Finally, from Eq. (8) we learn that the transverse velocity c omponents v�andvzof the
+ particles within the tricusp are of order (515 km/s)/radicalBig2p2
+ a2∼160 km/s.
+ III. EFFECT OF A CAUSTIC RING OF DARK MATTER UPON BARYONIC
+ MATTER IN THE DISK
+ In this section, we �rst describe the gravitational �eld of a caustic ring of dark matter
+ and its eﬀect on the Galactic rotation curve, assuming that t he caustic ring lies in the plane
+ of the disk. Next we identify two possible mechanisms by whic h a ring of stars may form
+ due to the presence of a caustic ring of dark matter. The �rst m echanism is the migration
+ of gas to the caustic ring radius, leading to enhanced star fo rmation there. The second is
+ the adiabatic deformation of star orbits as the caustic ring slowly grows in size.
+ A. Gravitational �eld of a caustic ring
+ As before, we assume that the transverse dimensions, pandq, of the caustic ring are
+ small compared to its radius a. In that limit, when calculating the gravitational �eld /vector gof
+ the caustic ring at a distance of order porqfrom the ring, we may neglect its curvature and
+ pretend that it is a straight tube. Then
+ /vector gc(�, z) =−2G/integraldisplay
+ d�′dz′d(�′, z′)(�−�′, z−z′)
+ (�−�′)2+ (z−z′)2. (18)
+ 9Using Eq. (2), changing variables ( �′, z′)→(α, τ), neglecting the ( α, τ) dependence of
+ dM
+ dΩdτ(α, τ) over the size of the caustic, and approximating cos α≃1, we obtain
+ /vector gc(�, z) =−2G
+ �dM
+ dΩdτ/integraldisplay
+ dαdτ(�−�(α, τ), z−z(α, τ))
+ (�−�(α, τ))2+ (z−z(α, τ))2. (19)
+ Eqs. (1) provide the functions �(α, τ) and z(α, τ). The integral on the RHS of Eq. (19) may
+ be evaluated numerically for all �andz. In the galactic plane
+ /vector gc(r,0) =−8πG
+ rbdM
+ dΩdτI(ζ,r−a
+ p)ˆr (20)
+ withζ=su
+ b2(as before) and
+ I(ζ, X)≡1
+ 2π/integraldisplay
+ dAdTX−(T−1)2+ζA2
+ [X−(T−1)2+ζA2]2+ 4A2T2, (21)
+ where X=r−a
+ p. Forζ= 1 one can do the integral by analytical methods, with the res ult
+ I(1, X) =−1
+ 2forX <0
+ =−1
+ 2+√
+ X for 0 < X < 1
+ = +1
+ 2forX >1. (22)
+ A plot of I(1, X) is shown in Fig. 2(a). I(1, X) has an upward kink at X= 0 and a
+ downward kink at X= 1. The kinks are due to the divergent behaviour of the dark ma tter
+ density in the z= 0 plane at r=aandr=a+p. The shape of I(ζ, X) with ζ�ne}ationslash= 1 is
+ similar to that of I(1, X). The amount ∆ I(ζ) by which I(ζ, X) rises between X= 0 and
+ X= 1 depends on ζ. A plot of ∆ I(ζ) is given in ref. [15]. ∆ I(ζ) is near one for ζof order
+ one, and ∆ I(1) = 1.
+ Substituting Eq. (13) into Eq. (20), we obtain:
+ /vector gc(r,0) =−2fv2
+ rot
+ rv
+ bI(ζ,r−a
+ p)ˆr . (23)
+ Sincev2
+ rot
+ ris the gravitational �eld of the galaxy as a whole, andv
+ bandI(ζ,r−a
+ p) are both
+ of order one whereas fis of order a few %, Eq. (23) implies that the caustic ring of da rk
+ matter causes only a small perturbation on the local gravita tional �eld.
+ Consider a smooth halo which produces a ﬂat rotation curve wi th rotation velocity vrot.
+ If we add to the halo a caustic ring of dark matter of radius a, t he gravitational �eld near
+ r=awould be /vector g(/vector r) =−g(r)ˆrwith
+ g(r) =v2
+ rot
+ r[1 + 2fv
+ bI(ζ,r−a
+ p)]. (24)
+ However, this is not what we want to do. Indeed, the caustic ri ng of dark matter is not an
+ addition to the smooth halo. Rather, it is the outcome of redistributing dark matter already
+ present in the halo. One can see that it is incorrect merely to add caustic rings of dark
+ 10matter to a smooth halo by noting that this would cause the rot ation curve to rise. The
+ rotation velocity squared would rise by the relative amount 2fnvn
+ bn∆I(ζn) at the nth ring,
+ for each ring. Instead, the redistribution of dark matter in to caustic rings should be such
+ that the rotation curve remains ﬂat on average. The gravitat ional �eld in the vicinity of a
+ caustic ring is therefore of the form
+ g(r) =v2
+ rot
+ r/parenleftBigg
+ 1 + 2fv
+ b[I(ζ,r−a
+ p) +H(r)]/parenrightBigg
+ (25)
+ where H(r) is a smooth function which steps down by the amount ∆ I(ζ) asrincreases from
+ r≪ator≫a; for example, H(r) =−1
+ 2∆I(ζ) tanh(r−a
+ p′).p′is expected to be of order a.
+ Let us de�ne
+ J(r−a)≡v
+ b[I(ζ,r−a
+ p) +H(r)]. (26)
+ The gravitational �eld in the galactic plane near a caustic r ing of dark matter is then
+ g(r) =v2
+ rot
+ r[1 + 2fJ(r−a)]. (27)
+ Fig. 2(b) shows what the function J(r−a) looks like qualitatively.
+ B. Eﬀect on gas
+ Gas in circular orbits in the galactic plane moves with angul ar velocity
+ Ω(r) =/radicalBigg
+ g(r)
+ r. (28)
+ Unless Ω is r-independent (rigid rotation) there is shear in the velocit y �eld. The viscous
+ forces which result from this shear cause radial motion of th e gas, as discussed by Lynden-
+ Bell and Pringle [28]. For the sake of completeness, we repea t here relevant considerations
+ from ref. [28].
+ Consider a cylinder of radius r. The viscous force per unit area across the cylinder is
+ �νrdΩ
+ drwhere �is the gas density and νits viscosity. Hence, the viscous torque across the
+ cylinder is
+ τ= 2πr/integraldisplay
+ dz(�νrdΩ
+ dr)r= 2πνσr3dΩ
+ dr(29)
+ where σ=/integraltextdz �is the mass per unit surface of the gas. Consider an annulus of width δr.
+ Its mass is δm= 2πrδrσ . The torque on the annulus is
+ τ(r+δr)−τ(r) =δrd
+ dr(2πνσr3dΩ
+ dr) =d
+ dtδL (30)
+ where δL=δmΩ(r)r2is its angular momentum, andd
+ dt=∂
+ ∂t+vr∂
+ ∂ris the time derivative
+ “following the motion�. We haved δm
+ dt= 0. Also,∂
+ ∂t[Ω(r)r2] = 0 because the gravitational
+ �eld is determined by the mass distribution of the Galaxy as a whole and only negligibly
+ altered by the motion of the gas. We thus obtain
+ vr=1
+ σrd
+ dr(νσr3dΩ
+ dr)
+ d
+ dr(Ωr2)(31)
+ 11for the radial velocity of the gas. The gas obeys the continui ty equation
+ ∂σ
+ ∂t+1
+ r∂
+ ∂r(rvrσ) = 0 . (32)
+ Eq. (31) neglects the back-reaction pressure from the accum ulation of gas at particular radii.
+ Let us assume that the gas is distributed uniformly (dσ
+ dr=dν
+ dr= 0) to start with, and use
+ Eq. (31) to determine in which direction it is driven by the vi scous forces. In a smooth halo
+ with ﬂat rotation curve, Ω =vrot
+ rand hence vr=−ν
+ r. If a caustic ring of dark matter lies in
+ the disk, we have instead in the neighborhood of the ring
+ Ω(r) =vrot
+ r[1 + 2fJ(r−a)]1
+ 2=vrot
+ r[1 +fJ(r−a) + 0(f2)]. (33)
+ Inserting Eq. (33) into Eq. (31), settingdσ
+ dr=dν
+ dr= 0, and neglecting terms of order f2, we
+ obtain
+ vr=−ν
+ r1 +fJ(r−a)−rfdJ
+ dr−r2fd2J
+ dr2
+ 1 +fJ(r−a) +rfdJ
+ dr. (34)
+ To obtain the qualitative behaviour, we neglect fJ(r−a),rfdH
+ drandr2fd2H
+ dr2vs. 1, because
+ such terms are all of order f. Then
+ vr≃ −ν
+ r1−frdI
+ dr−fr2d2I
+ dr2
+ 1 +frdI
+ dr. (35)
+ Forr < a andr > a +p,dI
+ dr= 0 and hence vr=−ν
+ ras in the absence of caustic. For
+ a < r < a +p,
+ vr≃ −ν
+ a1−fa
+ 2p1√
+ X+fa2
+ 4p21
+ X3
+ 2
+ 1 +fa
+ 2p1√
+ X, (36)
+ where X=r−a
+ p, as before. Sincefa
+ 2p= 0(1) whereasfa2
+ 4p2= 0(10), the numerator on the RHS
+ of Eq. (36) is always dominated by the last term. Hence
+ vr≃ −ν
+ afa2
+ 4p21
+ X3
+ 2+fa
+ 2pX. (37)
+ Eq. (37) shows that, within the tricusp, the gas velocity is a lso inward but much larger, by
+ a factor three or more, than outside the tricusp. It increase s rapidly as r→a+. Therefore
+ the viscous forces tend to drive the gas towards r=a. This happens on gas dynamic time
+ scales which are much shorter than the cosmological time sca les over which the caustic rings
+ migrate. The accumulation of gas at the caustic ring radius m ay lead to enhanced star
+ formation there. Such processes may be at work in the case of t he Monoceros Ring. To
+ the extent that such processes dominate the formation of the Monoceros Ring, the stars in
+ the Ring should be younger than average. Ref. [26] presents e vidence that Monoceros Ring
+ stars are on average bluer and therefore younger than ordina ry disk stars.
+ C. Eﬀect on star orbits
+ In this subsection, we consider the adiabatic deformation o f disk star orbits by the slowly
+ growing caustic ring of dark matter.
+ 121. Collision rate
+ Adiabatic deformation of star orbits presupposes that the s tar collision rate is small. The
+ time scale over which star orbits are signi�cantly modi�ed t hrough gravitational scattering
+ with other stars in a population is [27]
+ trelax≃0.3σ3
+ G2m2nln Λ(38)
+ where nis the density of stars in the population, mtheir typical mass, σtheir velocity
+ dispersion, and lnΛ ≃20. For the stars in the Monoceros Ring, trelax∼1016yr if we set
+ m∼M⊙,σ∼20 km/s, and n∼10−3/pc3. Since trelaxis much greater that the age of the
+ universe, we are justi�ed in neglecting collisions among st ars in the Ring.
+ 2. Orbit stability
+ In a gravitational �eld /vector g(/vector r) =−g(r)ˆr, the angular frequency squared of small radial
+ oscillations about a circular orbit of radius ris
+ ω2(r) =1
+ r3d
+ dr/parenleftBig
+ r3g(r)/parenrightBig
+ . (39)
+ The orbit is stable if ω2>0. In the neighborhood of a caustic ring of dark matter, where
+ the gravitational �eld is as given in Eq. (27), we have
+ ω2(r) = 2/parenleftbiggvrot
+ r/parenrightbigg2/parenleftBigg
+ 1 + 2fJ(r−a) +rfdJ
+ dr/parenrightBigg
+ . (40)
+ The sum of the �rst two terms in the parentheses on the RHS of Eq . (40) is of order one.
+ The third term is
+ rfv
+ b/parenleftBiggdI
+ dr+dH
+ dr/parenrightBigg
+ . (41)
+ dI
+ dris everywhere positive, whereasdH
+ drhas the qualitative form
+ dH
+ dr∼ −1
+ 2p′1
+ cosh2(r−a
+ p′). (42)
+ Since we expect p′to be of order aand at any rate much larger than fa∼1
+ 20a, we �nd
+ that circular orbits are stable everywhere in the neighborh ood of a circular caustic ring of
+ dark matter. The conclusion is valid only if the caustic ring is circular, because lack of axial
+ symmetry may drive an instability through the phenomenon of Lindblad resonance, as we
+ now discuss.
+ A particle on an orbit of radius ris subjected to a radial time-dependent, but periodic,
+ gravitational force from a non-circular caustic. The perio dT=2π
+ Ω≃2πr
+ vrotequals the
+ time to go around the Galaxy once. The equation of motion for t he radial coordinate of
+ the particle is that of a harmonic oscillator of proper frequ encyω(r) driven by a periodic
+ external force with frequencies mΩ(r)≃mvrot
+ r, where m= 1,2,3.... Resonance occurs
+ 13when ω(r) =mΩ(r). For the corresponding radii, circular orbits are unstabl e. Using
+ Eqs. (33) and (40), we �nd the instability condition
+ rfdJ
+ dr= (m2
+ 2−1) [1 + 2 fJ(r−a)] (43)
+ in the neighborhood of a caustic ring. Since 2 fJ(r)≪1, and
+ dJ
+ dr≃dI
+ dr≃1
+ 21/radicalBig
+ p(r−a)Θ(r−a) Θ(a+p−r) (44)
+ the instability occurs at radii
+ rm≃a+f2a2
+ p1
+ (m2−2)2(45)
+ form= 2,3,4...There is no resonance for m= 1. For a= 20 kpc and f= 0.046, the
+ instabilities occur at
+ {rm−a:m= 2,3, ...}= (210 ,17, ...) pckpc
+ p(46)
+ Let us caution that these estimates take account only of the g ravitational force exerted
+ by the caustic ring of dark matter itself, and neglect the gra vity of the baryons that have
+ aggregated at the caustic.
+ 3. Circular orbits
+ In the absence of the caustic, the eﬀective potential for rad ial motion is
+ Veﬀ,0(r) =v2
+ rotlnr+l2
+ 2r2(47)
+ where lis the speci�c angular momentum of the star. When the caustic is present, the
+ eﬀective potential is Veﬀ(r) =Veﬀ,0(r) +Vc(r) where
+ Vc(r) = 2fv2
+ rot/integraldisplaydr
+ rJ(r−a). (48)
+ Vc(r) is plotted in Fig. 2c for
+ J(r−a) =I(1,r−a
+ p)−1
+ 2tanh/parenleftBiggr−a
+ p′/parenrightBigg
+ (49)
+ witha= 20 kpc, p= 1 kpc, and p′= 5 kpc. Fig. 2c illustrates the fact that the eﬀective
+ potential is smooth even though its second derivative diver ges at r=aandr=a+p.
+ The caustic ring radius increases with time. According to th e self-similar infall model,
+ a�t2
+ 3+2
+ 9ǫ. Consider a particle of speci�c angular momentum l. In the absence of the caustic,
+ it is on a circular orbit of radius rgiven by
+ l2=r3g(r) =r2v2
+ rot , (50)
+ 14or it is oscillating about a circular orbit of that radius. In the presence of a caustic of radius
+ a, the particle is on or oscillating about a circular orbit of r adius r′(r, a) given by
+ l2=r′3g′(r′) =r′2v2
+ rot/bracketleftBig
+ 1 + 2fJ(r′−a)/bracketrightBig
+ . (51)
+ Angular momentum conservation implies
+ r2=r′(r, a)2/bracketleftBig
+ 1 + 2f J(r′(r, a)−a)/bracketrightBig
+ . (52)
+ Fig. 3 shows r′(r, a) as a function of a. Each line in that �gure corresponds to a diﬀerent
+ value of r. Let �(r) be the density of stars in the absence of the caustic, and �′(r, a) their
+ density in the presence of a caustic with radius a. Assuming that all stars are and remain
+ on circular orbits, conservation of the number of stars impl ies
+ r′dr′�′(r′, a) =r dr �(r) (53)
+ withr′(r, a) given by Eq. (52). One readily �nds
+ �′(r′, a) =�(r)/bracketleftBigg
+ 1 + 2f J(r′−a) +fr′dJ
+ dr(r′)/bracketrightBigg
+ . (54)
+ Assuming that the initial star density has no signi�cant str ucture of its own, we have
+ �′(r, a) =�/bracketleftBigg
+ 1 + 2f J(r−a) +frdJ
+ dr(r)/bracketrightBigg
+ (55)
+ where �is the initial density. The second term in brackets is an orde r 10 % modulation of
+ the initial density. The third term is of order f, like the second term, but diverges when
+ r→a+as 1/√r−a. It has the same singularity structure at r→a+as the dark matter
+ density because g′(r) =v2
+ rot
+ r[1 + 2f J(r)] satis�es Gauss′law. Eq. (55) states that, in the
+ limit where all stars are on circular orbits, the star densit y adopts at r=a+the same
+ divergent pro�le as the dark matter in the caustic surface th ere. The pile-up of circular
+ orbits at r=a+is clearly seen in Fig. 3.
+ 4. Non circular orbits
+ The observed radial velocity dispersion ∆ vof stars in the Monoceros Ring is of order 20
+ km/s. This implies that the stars do not move on circular orbi ts, but oscillate in the radial
+ direction with typical amplitude
+ ∆r≃20km
+ s1
+ ω≃20km
+ s1√
+ 220 kpc
+ vrot= 1.3 kpc . (56)
+ The density pro�le of stars in the neighborhood of a caustic r ing is therefore the pro�le of
+ Eq. (54) averaged over the length scale ∆ r. The sharp features at r=aandr=a+pare
+ then washed out. However, there will be an average relative o verdensity within the tricusp
+ /angbracketleftBigg�′−�
+ �/angbracketrightBigg
+ ≃af/angbracketleftBiggdJ
+ dr/angbracketrightBigg/vextendsingle/vextendsingle/vextendsingle/vextendsingle
+ a<r<a +p∼af
+ p≃1kpc
+ p(57)
+ 15provided pis not much less than ∆ r. This is the 100% average overdensity of ordinary disk
+ stars at the n= 2 caustic ring of dark matter, announced earlier.
+ For the proposed interpretation of the Monoceros Ring, the r adial velocities acquired by
+ stars as a result of the passing of a caustic ring should be les s than the measured radial
+ velocity dispersion of stars in the Monoceros Ring. We now ve rify that this is the case.
+ The radial motion of a star in a near circular orbit in the neig hborhood of a caustic ring
+ is that of a harmonic oscillator whose equilibrium position isr′(r(l), a(t)) and whose proper
+ frequency ωis given by Eq. (40) evaluated at r′.a(t) is a smooth function of time. However,
+ as shown in Fig. 3, r′as a function of ahas kinks at a=r′anda=r′−p. The velocitydr′
+ dt
+ of the equilibrium position changes abruptly when it passes the caustic at those locations.
+ A star in circular orbit in the z= 0 plane �rst encounters the caustic at r′=a+p. For
+ illustrative purposes, we consider the case a= 20 kpc, t0= 13.7 Gyr, ǫ= 0.3,p= 1 kpc,
+ v=bandf= 0.046. The caustic moves with outward speed
+ da
+ dt=/parenleftbigg2
+ 3+2
+ 9ǫ/parenrightbigga
+ t0= 2.0 km/s. (58)
+ When r′=a+p, the velocity of the equilibrium position changes abruptly by the amount
+ (δis in�nitesimally small)
+ ∆dr′
+ dt=/bracketleftBiggdr′
+ da/parenleftBig
+ r′=a+p−δ/parenrightBig
+ −dr′
+ da/parenleftBig
+ r′=a+p+δ/parenrightBig/bracketrightBiggda
+ dt
+ ≃af
+ 2p+afda
+ dt≃0.6 km/s. (59)
+ Here and below we are neglecting terms of order f,p/a,p/p′andaf/p′versus terms of order
+ one. The proper oscillation frequency after the caustic has passed is
+ ω(r=a+p−δ)≃√
+ 2vrot
+ a/radicalBigg
+ 1 +af
+ 2p≃1
+ 5×107years. (60)
+ Thus a star which is in a circular orbit in the z= 0 plane before the r′=a+pcaustic
+ passes by, will be oscillating in the radial direction with i nitial amplitude
+ A=1
+ ω∆dr′
+ dt≃30 pc (61)
+ after that caustic passes by. Stars not in the z= 0 plane do not go through the caustic cusp
+ atr′=a+p, and presumably make smoother transitions through the caus tic than the stars
+ in the z= 0 plane. So, Eq. (61) provides an upper limit for the z�ne}ationslash= 0 stars. Stars receive
+ a second jolt when the r′=acaustic surface passes by. The analogous quantities for tha t
+ transition are :
+ ∆dr′
+ dt=/bracketleftBiggdr′
+ da(r′=a−)−dr′
+ da(r′=a+)/bracketrightBiggda
+ dt≃ −da
+ dt≃ −2 km/s
+ ω(r=a−)≃√
+ 2vrot
+ a≃1
+ 6×107year
+ A=/vextendsingle/vextendsingle/vextendsingle/vextendsingle∆dr′
+ dt/vextendsingle/vextendsingle/vextendsingle/vextendsingle1
+ ω≃130 pc . (62)
+ After the equilibrium position r′has passed by the caustic surface at r′=a,r′decreases
+ very quickly, implying a depletion on the r < a side of the caustic. This depletion is evident
+ in Fig. 3.
+ 16IV. CONCLUSIONS
+ The ﬂow of cold collisionless dark matter in and out of the gra vitational potential of
+ a galaxy necessarily forms inner and outer caustics. The inn er caustics are rings in the
+ galactic plane provided the angular momentum distribution of the infalling dark matter is
+ characterized by net overall rotation. Assuming self-simi lar infall, the radii of the caustic
+ rings of dark matter in our galaxy were predicted to be 40 kpc/ nwithn= 1, 2, 3 ... Because
+ the Monoceros Ring of stars is located near the second causti c ring of dark matter we looked
+ for processes by which the latter may cause the former.
+ We have identi�ed two such processes. The �rst is the ﬂow of ga s in the disk towards the
+ sharp angular velocity minimum located at the caustic ring r adius, increasing the rate of
+ star formation there. To the extent that this process is resp onsible for the formation of the
+ Monoceros Ring, the Ring stars are predicted to be bluer than average. The second process
+ is the adiabatic deformation of star orbits in the neighborh ood of the caustic ring. As the
+ spatial dependence of the gravitational �eld of a caustic ri ng is known, it is straightforward
+ to obtain the map of initial to �nal orbits for disk stars. The resulting enhancement of
+ disk star density at the location of the second caustic ring i s of order 100%. Because of
+ uncertainties in the caustic parametersv
+ bandp, and in the velocity distribution of the disk
+ stars, the strength of the enhancement can only be estimated within a factor of two or so.
+ The self similar infall model of galactic halo formation is e xpected to describe the halos
+ of all isolated spiral galaxies. The caustic rings of dark ma tter in exterior galaxies may also
+ be revealed by the baryonic matter they attract. Our analyis is relevant to those cases as
+ well.
+ The existence of caustics has implications for most approac hes to the detection of dark
+ matter, including direct searches of WIMPs [29] and axions [ 30], the gamma ray signal from
+ WIMP annihilation [31], and gravitational lensing [32].
+ Acknowledgments
+ We thank Scott Tremaine for extended discussions and for sev eral insights which played
+ a crucial role in the development of the results presented he re. This work was supported in
+ part by the U.S. Department of Energy under grant DE-FG02-97 ER41209. P.S. gratefully
+ acknowledges the hospitality of the Aspen Center for Physic s while he was working on this
+ project.
+ [1] H. Newberg et al., Ap. J. 569 (2002) 245.
+ [2] B. Yanny et al., Ap. J. 588 (2003) 824.
+ [3] R.A. Ibata et al., MNRAS 340 (2003) L21.
+ [4] H.J. Rocha-Pinto et al., Ap. J. 594 (2003) L115.
+ [5] J.D. Crane et al., Ap. J. 594 (2003) L119.
+ [6] B. Yanny et al., Ap. J. 605 (2004) 575.
+ [7] A. Helmi et al., Ap. J. 592 (2003) L35.
+ [8] N.F. Martin et al., MNRAS 362 (2005) 906.
+ [9] J. Pe˜ narrubia et al., Ap. J. 626 (2005) 128.
+ 17[10] Y. Momany et al., Astron. Astroph. 421 (2004) L29.
+ [11] Y. Momany et al., Astron. Astroph. 451 (2006) 515.
+ [12] P. Sikivie, Phys. Lett. B567 (2003) 1.
+ [13] P. Sikivie, Phys. Lett. B432 (1998) 139.
+ [14] P. Sikivie and J.R. Ipser, Phys. Lett. B291 (1992) 288.
+ [15] P. Sikivie, Phys. Rev. D60 (1999) 063501.
+ [16] S. Tremaine, MNRAS 307 (1999) 877.
+ [17] A. Natarajan and P. Sikivie, Phys. Rev. D72 (2005) 08351 3.
+ [18] A. Natarajan and P. Sikivie, Phys. Rev. D73 (2006) 02351 0.
+ [19] J.A. Fillmore, P. Goldreich, Ap. J. 281 (1984) 1.
+ [20] E. Bertschinger, Ap. J. Suppl. 58 (1985) 39.
+ [21] P. Sikivie, I. Tkachev, Y. Wang, Phys. Rev. Lett. 75 (199 5) 2911; Phys. Rev. D56 (1997) 1863.
+ [22] W. Kinney and P. Sikivie, Phys. Rev. D61 (2000) 087305.
+ [23] A.G. Doroshkevich, Astrophysics 6 (1970) 320; P.J.E. P eebles, Ap. J. 277 (1984) 470; Y.
+ Hoﬀmann and J. Shaham, Ap. J. 297 (1985) 16.
+ [24] A. Riess et al., Astron. J. 116 (1998) 1009; S. Perlmutte r et al., Ap. J. 517 (1999) 565; C.L.
+ Bennett et al., Ap. J. Suppl. 148 (2003) 1.
+ [25] D.P. Clements, Ap. J. 295 (1985) 422.
+ [26] N.F. Martin et al., MNRAS 367 (2006) 69.
+ [27] J. Binney and S. Tremaine, Galactic Dynamics , Princeton University Press, 1987.
+ [28] D. Lynden-Bell and J.E. Pringle, MNRAS 168 (1974) 603; J .E. Pringle, Ann. Rev. Astron.
+ Astroph. 19 (1981) 137.
+ [29] J.D. Vergados, Phys.Rev. D63 (2001) 063511; A.M. Green , Phys. Rev. D63 (2001) 103003;
+ G. Gelmini and P. Gondolo, Phys. Rev. D63 (2001) 023504; J.D. Vergados, Phys. Rev. D67
+ (2003) 103003 F.-S. Ling, P. Sikivie and S. Wick, Phys. Rev. D 70 (2004) 123503; Chris Sav-
+ age, Katherine Freese and Paolo Gondolo, Phys. Rev. D74 (200 6) 043531; V. Barger et al.,
+ hep-ph/0702036.
+ [30] L. Duﬀy et al., Phys. Rev. Lett. 95 (2005) 091304 and Phys . Rev. D74 (2006) 012006.
+ [31] L. Bergstrom , L. Edsjo and C. Gunnarsson, Phys.Rev. D63 (2000) 087305; C. Hogan, Phys.
+ Rev. D64 (2001) 063515; L. Pieri and E. Branchini, JCAP 0505 ( 2005) 007; R. Mohayaee and
+ S. Shandarin, MNRAS 366 (2006) 1217; A. Natarajan, astro-ph /0703704.
+ [32] C. Hogan, Ap. J. 527 (1999) 42; C. Charmousis, V. Onemli, Z. Qiu and P. Sikivie, Phys. Rev.
+ D67 (2003) 103502; R. Gavazzi, R. Mohayaee and B. Fort, Astro n. and Astroph. 454 (2006)
+ 715; V. Onemli, Phys. Rev. D74 (2006) 123010, and Int. J. Mod. Phys. D15 (2006) 2059
+ 18(a)
+ (b)
+ FIG. 1: (a) Dark matter trajectories forming a caustic ring o f dark matter, in �−zcross-section.
+ (b) The envelope of the trajectories shown in (a). We refer to the shape shown in (b) as the
+ “tricusp�. The �gure also indicates what is meant by the radi usaof a caustic ring, and by its
+ transverse sizes pandq. The star indicates the center of the tricusp, as de�ned in th e text.
+ 19(a)
+ (b)
+ (c)
+ FIG. 2: (a) The function I(1,X) de�ned in Eq. (22), with X≡r−a
+ p. (b) The function J(X) de�ned
+ in Eq. (26) for v=b,ζ= 1 and H(X) =−1
+ 2tanh(X
+ 5). (c) The function Vc(X) de�ned in Eq. (48),
+ in units of 2 fv2
+ rot, forJ(X) as in (b).
+ 20FIG. 3: The radii r′(r,a) of circular orbits in the presence of a caustic, as a functio n of the caustic
+ radius a.ris the radius of the orbit in the absence of caustic. Each line corresponds to a diﬀerent
+ value of r. Each line has an upward kink at r′=a+pand a downward kink at r′=a. As a
+ increases with p�xed, r′�rst decreases from its initial value runtilr′=a+p. Fora < r′< a+p,
+ i.e. when the orbit is within the tricusp, r′increases with abut not as fast as a, until a=r′. As
+ aincreases yet further r′(r,a) returns to the value rfrom which it started. Note that the radii of
+ circular orbits pile up at r=a. Stars on approximately circular orbits oscillate about r′(r,a).
+ 21

@@ -1,0 +1,1057 @@
+arXiv:0706.0003v1  [astro-ph]  31 May 2007Accepted byApJ- May30, 2007
+ Preprint typesetusingL ATEX styleemulateapjv. 08 /22/09
+ INFRARED SPECTRAL ENERGYDISTRIBUTIONSOF Z∼0.7STAR-FORMING GALAXIES
+ XianZhongZheng1,2,Herv´eDole3, EricF.Bell1,EmericLeFloc’h4, GeorgeH. Rieke5,Hans-WalterRix1andDavidSchiminovich6
+ Accepted by ApJ-May 30, 2007
+ ABSTRACT
+ We analyze the infrared (IR) spectral energy distributions (SEDs) for 10µm<λrest<100µm for∼600
+ galaxies at z∼0.7 in the extended Chandra Deep Field South by stacking their Spitzer24, 70 and 160µm
+ images. We place interesting constraints on the average IR S EDshapein two bins: the brightest 25% of
+ z∼0.7galaxiesdetectedat 24 µm,andtheremaining75%ofindividually-detectedgalaxies . Galaxieswithout
+ individualdetectionsat24 µmwerenotwell-detectedat70 µmand160µmeventhroughstacking. We�ndthat
+ the average IR SEDs of z∼0.7 star-forming galaxies fall within the diversity of z∼0 templates. While dust
+ obscuration LIR/LUVseems to be only a function of star formation rate (SFR; ∼LIR+LUV), not of redshift,
+ the dust temperature of star-forming galaxies (with SFR ∼10M⊙yr−1) at a given IR luminosity was lower at
+ z∼0.7 than today. We suggest an interpretation of this phenomeno logyin terms of dust geometry: intensely
+ star-forming galaxies at z∼0 are typically interacting, and host dense centrally-conc entrated bursts of star
+ formation and warm dust temperatures. At z∼0.7, the bulk of intensely star-forming galaxies are relative ly
+ undisturbedspirals and irregulars,and we postulate that t hey have large amountsof widespreadlower-density
+ star formation,yielding lower dust temperaturesfor a give nIR luminosity. We recommendwhat IR SEDs are
+ mostsuitableformodelingintermediateredshiftgalaxies withdiﬀerentSFRs.
+ Subjectheadings: galaxies: evolution— galaxies: starburst—infrared: gala xies
+ 1.INTRODUCTION
+ Dusty, intensely star-forming galaxies (SFR >10M⊙yr−1)
+ are the dominant contributors to the z≥0.5 cosmic SFR
+ density(e.g.,Floreset al.1999;Elbazet al.2002;Pozzi et al.
+ 2004; Le Floc’het al. 2005). The thermal dust emission
+ from these galaxies accounts for much of the cosmic IR
+ background, which contains half of the radiation energy of
+ the extragalactic background light (Hauser&Dwek 2001;
+ Lagacheet al.2005; Doleetal.2006). Thereforeunderstand -
+ ingtheIRSEDsofthedustystar-forminggalaxiesisessenti al
+ for mapping the evolution of star formation as a function of
+ cosmic time, and is a key observationalingredient of our un-
+ derstandingofgalaxyevolution.
+ Detailed studies of the IR SEDs over the full range of
+ 3-1000µm have only been carried out for nearby galaxies
+ (e.g., Daleet al. 2005), �nding that the IR SED shape is cor-
+ related with dust temperature (Soifer& Neugebauer 1991;
+ Dale& Helou 2002; Chapmanet al. 2003; Lagacheetal.
+ 2003). Interestingly, despite this diversity of SED shapes ,
+ local galaxies’ mid-IR (10-30 µm) luminosities are tightly
+ correlated with their total IR luminosities with a scatter
+ of∼0.3dex (Chary&Elbaz 2001; Papovich& Bell 2002;
+ Takeuchiet al.2005b; Daleet al.2005).
+ Thislocalobservation has often been used as a key as-
+ sumptioninstudiesexploitingdeepmid-IRimagingfromthe
+ Infrared Space Observatory at 15µm and the Spitzer Space
+ Telescope at24µm(e.g.,Floreset al.1999,2004;Zhengetal.
+ 1Max-Planck Institut f¨ ur Astronomie, K¨ onigstuhl 17, D-69 117 Heidel-
+ berg, Germany
+ 2Purple Mountain Observatory, Beijing-West Road 2, Nanjing 210008, P.
+ R.China; xzzheng@pmo.ac.cn
+ 3Institut d’Astrophysique Spatiale (IAS), bat 121, F-91405 Orsay
+ (France); Universit´ e Paris-Sud 11 and CNRS (UMR 8617)
+ 4Spitzer Fellow, Institute for Astronomy, University of Haw aii, 2680
+ Woodlawn Drive, Honolulu, HI 96822
+ 5Steward Observatory, University ofArizona, 933 NCherry Av e,Tucson,
+ AZ85721
+ 6Department of Astronomy, Columbia University, New York,NY 100 272004; Hammeret al. 2005; Bell et al. 2005; Melbourneet al.
+ 2005). Such studies have found signi�cantly enhanced star
+ formation at 0.5/lessorsimilarz/lessorsimilar1, compared to the present day.
+ Yet, this conclusion rests critically on the extent to which
+ mid-IR luminosities reﬂect the total IR luminosity. Unfor-
+ tunately, only a small fraction of mid-IR detected sources
+ can be individually detected in the far-IR bands(e.g., Spitzer
+ 70 & 160µm), owing to limited signal-to-noise ratio (S /N)
+ and source confusion (Doleet al. 2004b; Frayeret al. 2006).
+ Thus, testing of this key assumption remains limited to the
+ brightest sources (e.g., Sajinaet al. 2006; Borysetal. 200 6)
+ or is indirect (e.g., Appletonet al. 2004; Yanet al. 2005;
+ Popeet al. 2006;Marcillacet al.2006).
+ Thegoalofthispaperis toexploretheaverageIRSEDsof
+ astellarmass-limitedsample z∼0.7galaxiesintheextended
+ ChandraDeep Field-South(E-CDFS).In previousworks, we
+ have shown that stacking noise-limited images of a set of
+ galaxies allows one to securely detect the mean ﬂux of the
+ galaxy set substantially below the individual detection li mit
+ (Zhenget al.2006;Doleet al.2006). Here,westackatlonger
+ wavelengths, i.e., 70 µm and 160µm, to empirically deter-
+ minethe population-averagedIRSED. We combinethese re-
+ sults with morphologies, and average ﬂuxes at shorter wave-
+ lengths, to place constraints on the dust extinction and SED s
+ ofthesegalaxies. In §2wedescribethemulti-wavelengthdata
+ used to construct galaxy SEDs and the samples of z∼0.7
+ galaxies.§3 presents our stacking methods. In particular
+ we test the results of stacking noise and confusion limited
+ 70 and 160µm images. In§4 we present the properties of
+ the average SEDs. Discussion and conclusion are given in
+ §5. Throughoutthispaper,weassume ΩM=0.3,ΩΛ=0.7and
+ H0=70kms−1Mpc−1for aΛ-CDM cosmology. All magni-
+ tudes are given in the Vega system except where otherwise
+ speci�ed.
+ 2.THEDATAANDSAMPLES
+ 2.1.Thedata2 Zhengetal.
+ WeuseSpitzer24,70and160µmdatatostudythethermal
+ dust emission of z∼0.7 galaxies. In addition, we include
+ deep ultraviolet data from the Galaxy Evolution Explorer
+ (GALEX: Martinet al. 2005a), optical data from the Classi-
+ fying Objects by Medium-Band Observations (COMBO-17;
+ Wolf etal. 2003) survey, and four band (3.6, 4.5, 5.8 and
+ 8.0µm)InfraredArrayCamera(IRAC;Fazioet al.2004)data
+ to construct the stellar SED of a galaxy. These data cover
+ wavelength range from 0.15 µm to 160µm in the observed
+ frame, equal to the rest-frame range ∼0.09 to∼100µm for
+ z=0.7.
+ TheCOMBO-17surveyhasimagedthe30 .′5×30′E-CDFS
+ in �ve broad ( U,B,V,RandI) and 12 medium optical bands,
+ providinghigh-qualityastrometry(uncertainties ∼0.′′1)based
+ onaverydeep R-bandimage(26magatthe5 σlimit),photo-
+ metric redshifts (δz/(1+z)∼0.02 atmR<23; Wolf etal.
+ 2004) and stellar masses (Borchet al. 2006) for ∼11,000
+ galaxies with mR<24. We use the photometric redshift and
+ stellarmasscatalogstoselect galaxysamples.
+ GALEX ultraviolet observations provided deep far-
+ ultraviolet (FUV; 1350–1750Å) and near-ultraviolet (NUV;
+ 1750–2800Å)imagescenteredontheE-CDFS.TheFUVand
+ NUVimageshavea�eldofviewofonesquaredegree,atypi-
+ calpoint-spreadfunction(PSF)offullwidthathalf-maxim um
+ (FWHM)∼5′′, a resolution of 1 .′′5pixel−1and a depth of
+ 3.63µJyatthe5σlevel. Thedatareductionandsourcedetec-
+ tionisdescribedinMorrisseyet al.(2005).
+ The deep IRAC 3.6, 4.5, 5.8 and 8.0 µm imaging data and
+ MIPS 24, 70 and 160 µm imaging data were obtained as
+ part of the �rst run of MIPS GTO observations (Rieke etal.
+ 2004). A rectangular �eld of ∼90′×30′was observed in
+ all bands (with small shifts between di ﬀerent bands). The
+ eﬀective exposure time is 500s for the four IRAC band im-
+ ages,1378spix−1forMIPS 24µm, 600spix−1for70µmand
+ 120spix−1for 160µm. IRAC 3.6 and 4.5 µm images have a
+ PSF of FWHM∼1.′′8 and 5.8and 8.0µm imageshavea PSF
+ ofFWHM∼2.′′0(Huanget al.2004). The24 µmimagehasa
+ PSF of FWHM≃6′′. Sources are detected at 24 µm down to
+ 83µJy(at80%completeness;seePapovichet al.2004forde-
+ tailsofdatareduction,sourcedetectionandphotometry). The
+ 70µm image is characterized by a PSF of FWHM ≃18′′and
+ a resolution of 9.′′9pixel−1. The 160µm image has a PSF of
+ FWHM≃40′′and a resolution of 16′′pixel−1. Sources with
+ ﬂuxes of f70>15mJy can be individually resolved at 70 µm
+ and off160>50mJy at 160µm (see Doleet al. 2004a, for
+ details).
+ WetakeCOMBO-17astrometryasthereferencecoordinate
+ andcross-correlateallotherbandcatalogswiththeCOMBO-
+ 17 catalog. In each cross-correlation,we use bright stars a nd
+ compactsourcestoestimate thesystematico ﬀsetsanduncer-
+ tainties between two coordinates. A position tolerance of 4 σ
+ uncertaintyisadoptedsothatobjectsinthetwocatalogsha v-
+ ingcoincidentcoordinateswithin the tolerance(correcte dfor
+ the systematic oﬀsets) areidenti�ed asthe same objects. The
+ nearest COMBO-17 object is chosen if multiple ones exist
+ within the tolerance. The adopted tolerances are 2 .′′5 (FUV),
+ 3.′′0(NUV),1.′′0(3.6µm),1.′′2(4.5µm), 1.′′5(5.8and8.0µm)
+ and 2.′′2 (24µm). For the 70 and 160 µm catalogs, we �rstly
+ cross-correlate them with the 24 µm catalog as individually-
+ detected 70 and 160 µm sources are bright at 24 µm; we then
+ associate70and160 µmobjectswithCOMBO-17objectsus-
+ ing the coordinatesof the corresponding24 µm sources. The
+ tolerancebetween70 /160and24µmis 5′′/16′′respectively.9.09.510.010.511.011.5
+ log (M*/MO •)-0.50.00.51.01.5( U - V )restE/S0 (27/200)Irr/Pec (84/287)
+ Spiral (105/389)w/o (24µm detection)
+ Fig. 1.— The rest-frame color U−Vversus stellar mass for a sample of
+ 1092 galaxies of known (GEMS) morphology in the redshift sli cez=0.7±
+ 0.05. Open symbols show the objects detected individually at 2 4µm (f24>
+ 83µJy) and skeletal symbols represent individually-undetect ed ones. Most
+ red (U−V>0.7) elliptical/lenticular galaxies and blue ( U−V<0.7) small
+ (M∗<10M⊙) spiral/irregular/peculiar galaxies are not individually detected
+ at 24µm. The number of objects in each category is given in the brack ets.
+ Thedashedline shows the mass cut M∗=1010M⊙that we apply in the
+ subsequent analysis.
+ 2.2.Thesamples
+ We combine spectroscopic redshifts from the VLT VI-
+ MOS Deep Survey (LeF` evreet al. 2005) and the GOODS
+ survey (Vanzellaet al. 2005, 2006) with photometric red-
+ shifts from the COMBO-17 survey (Wolf et al. 2004) to se-
+ lect sample galaxies. The E-CDFS has HST imaging from
+ the Galaxy EvolutionfromMorphologyand SEDs (Rixet al.
+ 2004, GEMS;) Survey. Visually classi�ed morphologies are
+ available for 1458 galaxies with mR<24 in a thin redshift
+ slicez=0.7±0.05 (Bell et al. 2005). Of the 1458 galaxies,
+ 1114galaxieshaveallobservations,includingGALEX,IRAC
+ and MIPS observations. To avoid contamination from active
+ galacticnuclei(AGNs),weremove22X-raydetectedsources
+ intheChandra250ksobservation(Lehmeret al.2005), leav-
+ ing a sample of 1092 galaxies. Spectroscopic redshifts are
+ available for 64% of the sample galaxies. The contribution
+ fromthe X-ray-undetectedAGNstothe total 24 µm luminos-
+ ity ofz<1 galaxiesis suggestedto be <∼10% (Zhenget al.
+ 2006;Brandet al.2006). Thiswillnothavesigni�cante ﬀects
+ onourresults.
+ ThesampledemographicsareshowninFigure1. Thesam-
+ ple is limited by R-band apparent magnitude( mR<24), cor-
+ respondingtoapproximatelytherest-frame B-bandatz∼0.7.
+ Accordingly,thecompletenessofthesample,intermsofste l-
+ lar mass, is a strong function of color: the mass limit for red
+ (old or dusty) galaxies is M∗∼1010M⊙whereas blue galax-
+ iescanbeincludeddowntoalmost M∗∼109M⊙. We choose
+ to impose a stellar mass cut of M∗≥1010M⊙in what fol-
+ lows; not only are almost all 24 µm emitters above this mass
+ cut, but also the completeness of this sample is not a strong
+ function of color (i.e., age or dust obscuration). We also se -
+ lect another sample to explore the relationship between the
+ IR SED shape and 24 µm luminosity; we extend the redshiftInfraredSEDsof z∼0.7Star-FormingGalaxies 3
+ 24 µm
+  70 µm
+  160 µm
+ simulated 70 µm
+  Simulated 160 µm
+ Fig. 2.— Observed MIPS 24, 70 and 160 µm image sections (15′×15′) in the extended CDFS and simulated 70 and 160 µm images. The simulated 70 and
+ 160µmimages are created by degrading the 24 µmimage to the70 and 160 µmresolution. No additional noise is added to thesimulated i mages.
+ slice to 0.6<z<0.8 to increase the number of sample galax-
+ ies. The �nal sample then comprisessome 579 galaxieswith
+ M∗≥1010M⊙in the redshift range 0.6 <z<0.8. Of them,
+ 218 are individually-detected at 24 µm with ﬂuxes in excess
+ of>83µJy; none is individually detected at 70 or 160 µm.
+ X-raydetectedsourceshavebeenexcluded.
+ 3.IMAGE STACKING
+ As outlined earlier, current missions are unable to yield
+ individual detections for the vast majority of intermediat e-
+ redshiftobjectsatfar-IRwavelengths,owingbothtocontr ibu-
+ tionsfrominstrumentalnoiseandconfusionnoise. Inorder to
+ placeconstraintsontheshapeoftheIRSEDsof‘typical’sta r-
+ forming intermediate redshift galaxies, stacking on the po si-
+ tions of known star-forming galaxies can lower the e ﬀective
+ noise (Zhenget al. 2006), allowingdetectionof the ‘averag e’
+ galaxy. In Zhenget al. (2006) we presented a description of
+ stacking of 24µm data (in that case to resolve the 24 µm lu-
+ minosity of dwarf galaxies); we brieﬂy summarize the most
+ important aspects of 24 µm stacking in§3.1. The focus of
+ this paper is stacking at longer wavelengths, at 70 µm (PSF
+ FWHM 18′′) and160µm (FWHM40′′),discussedin§3.2.
+ 3.1.FUV,NUV andMIPS24 µm imagestacking
+ Whilemuchofthispaperdescribesstackingresultsforsub-
+ samples that are individually detected at 24 µm, some sub-
+ samples are not individually detected at 24 µm. Further-
+ more, the 24µm, FUV and NUV images share many of the
+ same characteristics: the PSFs have similar FWHM, and at
+ each wavelength,/greaterorsimilar1/2 of the extragalactic background at
+ that wavelength is resolved by these images (i.e., the image s
+ are only mildly confusion-limited;e.g., Papovichetal. 20 04;Xuetal. 2005; Doleet al. 2006). Accordingly, stacking of
+ FUV, NUV and 24 µm images is carried out in the same way
+ (seeZhenget al.2006, formoredetails).
+ Threebasic steps are adoptedto derive the mean ﬂuxesfor
+ galaxy subsets. First, we subtract all individually-detec ted
+ sources from the images. This is done using the software
+ tool STARFINDER7(Diolaitiet al. 2000) with an empiri-
+ cal PSF constructed from 18 /42/56 bright point sources at
+ 24µm/FUV/NUV respectively. Then we performmean stack
+ of the residual image postage stamps centered on the opti-
+ calcoordinatesoftheobjectsthatareindividuallyundete cted
+ in the subset of interest. An aperture of 5′′is used to in-
+ tegrate the central ﬂux of the mean-stacked image and esti-
+ matethebackgroundfromtheouterregions. Aperturecorrec -
+ tions of a factor of 1.88 /1.19/1.14, derived from the empiri-
+ cal PSF at 24µm/FUV/NUV respectively,are adoptedto cal-
+ ibrate the stacked ﬂuxes to the total ﬂuxes. Last we sum the
+ ﬂuxes of individually-detected sources and the stack ﬂux of
+ individually-undetectedsourcesineachgalaxysubset,gi ving
+ the mean 24µm/FUV/NUV ﬂuxes. Uncertainties are derived
+ frombootstrapping.
+ 3.2.MIPS70and160µm imagestacking
+ The 70µm and 160µm PSFs are considerably larger than
+ those at shorter wavelengths, yielding confused images, re -
+ solving only the brightest, relatively nearby sources — som e
+ <30% of the extragalactic background at this wavelength
+ (Doleet al. 2004a). Galaxies at 0 .6<z<0.8 are heav-
+ ily confused in all but the brightest cases (Doleetal. 2004a ;
+ 7STARFINDER gives identical results within the errors to the tool ALL-
+ STARin IRAF package.4 Zhengetal.
+ 0.1 1.0
+ Mean F24 (mJy)0.51.01.52.0Frecovery / F24Median stack (− med of med BG)Mean stack (− mean of mean BG)
+ Mean stack (− med of mean BG)
+ 70 µm
+ 0.1 1.0
+ Mean F24 (mJy)0.51.01.52.0Frecovery / F24Median stack (− med of med BG)Mean stack (− mean of mean BG)
+ Mean stack (− med of mean BG)
+ 160 µm
+ Fig. 3.—Recovery ofthemeanﬂuxesof randomly distributed24µmsourcesthroughstacking afterconvolution tothe70 µm(left)and160µm(right)resolution.
+ The ﬂuxes were taken from the 8255 individually-resolved so urces in the∼1.◦5×0.◦5 24µm image and were split into 18 ﬂux bins in the range from 83 µJy to
+ 10mJy. Thenumber of objects in each bin decreases with incre asing ﬂux. Threemeasures of thestack ﬂux arepresented for e ach bin: the integrated central ﬂux
+ of themeanstack using the meanbackground for sky subtraction; the integrated central ﬂux of themeanstack using the medianbackground; and the integrated
+ central ﬂux of the medianstack using the medianof the background (see text for details). Errorbars are deri ved from bootstrapping. While the ﬂux can be
+ recovered with little bias at 70 µmresolution, ﬂux recovery at160 µmleads to asystematic overestimate.
+ TABLE1
+ Thenumbersofsourcesandaveragefluxesfor 18fluxbinscomposedof 8255individually -resolved 24µmsources .
+ No. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+ <f24>(µJy) 87 99 115 132 153 176 204 235 271 311 359 416 480 559 637 747 86 3 1946
+ Number 1070 1259 1067 894 803 683 508 418 328 267 222 174 134 98 7 2 46 39 169
+ Lagacheet al. 2003, 2004), requiringstacking to gain insig ht
+ into their long-wavelength IR SEDs (see, e.g., Doleetal.
+ 2006).
+ Thelargeangularextentofthelong-wavelengthPSFsposes
+ a signi�cant challengefor those wishing to estimate their a v-
+ erage properties. At z=0.7, the PSF size of the 70 µm image
+ (FWHM≃18′′) correspondsto a physicalscale of ∼130kpc.
+ For the 160µm image (PSF FWHM ≃40′′), the correspond-
+ ing scale is∼290kpc. Thus, the stacking results are a re-
+ ﬂection of the IR-luminosity weighted two-point correlati on
+ functionon/greaterorsimilar100kpcscales, overestimatingthetrueaverage
+ ﬂuxesofthegalaxiesofinterest.
+ In order to understand this source of systematic error in
+ better detail, we carried out some simulations where syn-
+ thetic 24µm data (using the observed positions and ﬂuxes
+ of individually-detected 24 µm sources) are degraded in res-
+ olution to the resolution of the 70 µm and 160µm data. For
+ the purposesof this test, we assume a constant ratio between
+ 24µm ﬂux and the wavelength of interest. We explore two
+ cases. First, the positions are randomly scrambled (i.e., t he
+ relative brightnesses of galaxies are preserved but their p osi-
+ tions are random). This test gives an indication of the sys-
+ tematic eﬀects of stacking randomly-positionedsources. The
+ second case is when both the ﬂuxes and positions of sources
+ are preserved. This second case is our ‘best’ estimate of the
+ likely systematic uncertainties of stacking in a realistic ally-
+ clustered case. Figure 2 shows the 24 µm images degraded
+ to the 70 and 160µm resolution respectively, compared with
+ the observed MIPS 24, 70 and 160 µm images. Because of
+ confusion, only a handful of bright 24 µm sources can be in-
+ dividuallyresolvedinthedegradedimages. Throughstacki ngthe mean ﬂux can be estimated for 24 µm source subsets; the
+ accuracy of the recovery of the mean ﬂux shows how well
+ stackingworksat thatcorrespondingimageresolution.
+ 3.2.1.Stackingrandomly distributedsources
+ The whole 24µm mosaic image of the E-CDFS covers
+ a rectangular sky area of ∼1.◦5×0.◦5 and contains 8255
+ individually-detected sources at 5 σdetection limit (83 µJy).
+ Thevastmajorityofthe8255sources( f24>83µJy)arepoint
+ sources. Replacing all sources with the 24 µm PSF (empiri-
+ callyconstructedfrombrightstars),wegeneratedanarti� cial
+ 24µm image having the 8255 sources randomly distributed
+ into a∼1.◦5×0.◦5 blank �eld. The arti�cial 24 µm image
+ was then degraded to the 70 and 160 µm image resolution
+ respectively. The degraded images are then stacked at the
+ 24µm source positions, giving indications as to the expected
+ quality of stacking results at 70 µm and 160µm. We note
+ that the replacement of the background blank �eld with the
+ PSF-subtracted24 µm image(havingsomecontributionfrom
+ individually-undetectedsources) does not modify our resu lts
+ signi�cantlyinthemean,addingonlysomemodestadditiona l
+ scatter.
+ The 24µm sources were sorted into 18 bins in ﬂux, rang-
+ ing from 83µJy to 10mJy (see also Doleet al. 2006), with
+ ∼1000 objects per bin at faint ﬂux levels, and /lessorsimilar100 per bin
+ atbrighterﬂuxes. Thenumbersofsourcesandaverage24 µm
+ ﬂuxes per bin are listed in Table 1. In real stacks, we choose
+ to PSF-subtract out the individually-detected sources, st ack-
+ ing the remaining image (in order to reduce bias from bright
+ sources in backgroundestimates). In the real 70 and 160 µm
+ images, we detect ∼130 sources in each image. Thus, weInfraredSEDsof z∼0.7Star-FormingGalaxies 5
+ 0.1 1.0
+ Mean F24 (mJy)0.51.01.52.0Frecovery / F24Median stack (− med of med BG)Mean stack (− mean of mean BG)
+ Mean stack (− med of mean BG)
+ 70 µm
+ 0.1 1.0
+ Mean F24 (mJy)0.51.01.52.0Frecovery / F24Median stack (− med of med BG)Mean stack (− mean of mean BG)
+ Mean stack (− med of mean BG)
+ 160 µm
+ Fig. 4.—Therecovery of the mean properties of 24 µm-detected sources at their observed positions. Left: Stacking results at70 µmresolution. Right: Stacking
+ results at160µmresolution. Theerrorbars reﬂect thevariance from bootst rapping.
+ must subtract approximately this many bright sources from
+ the simulated images before stacking to avoid unrealistica lly
+ biasing the results. Ideally, one would subtract all detect ed
+ sources in the simulated 70 and 160 µm images; unfortu-
+ nately, as the simulated and real 70 and 160 µm images have
+ (unavoidably)somewhatdi ﬀerentnoiseandbrightnessdistri-
+ butionproperties,thenumberofdetectedsourcesisdi ﬀerent,
+ andsubstantiallyhigherinthecaseof(theratherdeeper)s im-
+ ulated 70µm data. Thus, we choose to PSF-subtract the 169
+ brightestsources(thebrightestofthe18originalbins)be fore
+ stackingfortheremaining17bins.
+ For each ﬂux bin, postage stamps were cut from the simu-
+ latedimagecenteredonthepositionsofthesourcesandwere
+ stacked. The size of postagestamps is 2 .′5×2.′5 forthe 70µm
+ imageand4′×4′forthe160µmimage,allowingforaproper
+ background estimate. Two stacked images were created for
+ each bin through averaging or medianing. For the stacked
+ 70µm postage stamp images, an aperture of radius 0 .′49 is
+ used to integrate the central stack ﬂux and an annulus with
+ inner radius 0.′82 and outer radius 1 .′23 to estimate the back-
+ ground. For the stacked 160 µm postage stamp images, the
+ correspondingaperture is of radius 1 .′07 and the correspond-
+ ing annulus is of inner radius 1 .′07 and outer radius 1 .′87.
+ The mean and median of pixels in the annulus region were
+ taken as the background of the mean-stacked image for sky
+ subtraction. Only the median (nearly identical to the mean)
+ wasadoptedasthe backgroundofthemedian-stackedimage.
+ Therefore,wederivethreemeasuresofthestackﬂuxforeach
+ subsample: theintegratedcentralﬂuxofthe meanstackusing
+ themeanbackgroundfor sky subtraction; the integrated cen-
+ tral ﬂux ofthe meanstack using the medianbackground;and
+ the integrated central ﬂux of the medianstack using the me-
+ dianof the background. Finally, aperture correctionsderived
+ from model PSFs (http: //ssc.spitzer.caltech.edu /mips/psﬃts/)
+ wereappliedtocorrecttheestimatesofstackﬂuxtothetota l.
+ Theaperturecorrectionis a factorof1.30for70 µm, 1.25for
+ 160µm using the median background, and 1.34 for 160 µm
+ usingthe meanbackground.
+ Figure3showstheresultsofstacking randomly distributed
+ sources at 70 and 160 µm resolution. Uncertainties are de-
+ rivedfrombootstrapping. At 70 µm resolution,the meanﬂux
+ of 24µm sources of comparable ﬂux can be properly recov-ered over a ﬂux range of one order of magnitude. At 160 µm
+ resolution,recoveredﬂuxesareofreasonablequalityatbr ight
+ limits,andbecomeprogressivelymorebiased(by ∼20-50%)
+ towards fainter limits. After some investigation, it becam e
+ clear that the the stack recovery at 160 µm is correlated with
+ thenumberofobjectsinthestackbin. Theincreaseofobject s
+ in number leads to an increase of the overlap between these
+ objects within a �xed area. This increasing overlap leads to
+ an increase of the stack ﬂux relative to the input ﬂux. By
+ stacking a number of identical sources without background
+ andforegroundsources,weobtainedsimilarresultsasshow n
+ in Figure 3. Indeeda point sourcecontains80% of its ﬂux in
+ an area of 3.6 arcmin2in the 160µm imaging and an area of
+ 0.9arcmin2inthe70µmimaging. To�llina1 .◦5×0.◦5�eld,it
+ requires around 750 160 µm sources or 3000 70 µm sources,
+ compared to∼50 - 1260 objects in the stack bins. There-
+ forethestackresultsat70 µmarelittleaﬀectedbytheoverlap
+ between the stack objects but the stack results at 160 µm are
+ signi�cantlyinﬂuencedforstackbinsof ∼1000objects.
+ The three measures of the stack ﬂux are nearly identical
+ withintheerrorbars( ∼10%)forsimulated70 µmstackingand
+ slightly diﬀerent for simulated 160 µm stacking, in particular
+ for the low ﬂux bins, although the scatter is signi�cant ( ∼10
+ - 25%). Note that we dividedsourcesintostack binsin terms
+ oftheirﬂuxes. Forthestackbinshavingsourceswhoseﬂuxes
+ span a wide range, the median stack substantially underesti -
+ matesthemeanﬂux.
+ 3.2.2.Stackingsources at their observed positions
+ Inordertobuildamorerealisticpictureoftheexpectedun-
+ certaintiesfrom stacking at 70 µm and 160µm, we repeat the
+ last analysis except we keep both the ﬂuxes and positions of
+ the sources �xed to those observed at 24 µm. This gives in-
+ sightintotheinﬂuenceofclusteringontheresults. Inthis test,
+ the observed 24µm map was degraded to the 70 and 160 µm
+ resolution respectively, as shown in Figure 2. As previousl y,
+ sourcesweresplitinto18binsin24 µmﬂux,andthestacking
+ results for each ﬂux bin were calculated. Figure 4 shows the
+ results. Comparing the results with Figure 3, one can clearl y
+ see that the mean and median recovered ﬂuxes are signi�-
+ cantly aﬀected by the clustering of sources on the sky. In
+ general, our test suggests that stacking subsets of 70 µm and6 Zhengetal.
+ 0.1 1.0 10.0 100.0
+ Rest Wavelength ( µm)10910101011νLν  ( LO • )Spiral (80)E/S0 (17)Irr/Pec (45)
+ Fig. 5.— The average SED, spanning a factor of 1000 in wavelength , as a
+ function of morphological type for 24 µm detected ( f24>83µJy) galaxies
+ withM∗≥1010M⊙in a thin redshift slice 0.65 ≤z≤0.75. Vertical errorbars
+ are the 1σuncertainties derived from bootstrapping and horizonal er rorbars
+ show the band widths. The number of objects in each morpholog y bin is
+ given in thebrackets.
+ 160µm sources may overestimate the mean ﬂux somewhat;
+ typical biases are∼20%, with uncertaintiesof order ∼20%.
+ Yet, the magnitude and direction of these e ﬀects on diﬀerent
+ subsamplesarediﬃculttoestimate apriori. Figure4demon-
+ strates that from bin to bin, the source clustering may lead t o
+ eitheranincreaseoradecreaseofthemeanﬂuxofthesource
+ subsample, depending on the actual distribution and densit y
+ ofsourcesofdiﬀerentbrightnessesonthesky.
+ 3.2.3.Stacking z∼0.7galaxies
+ The above tests demonstrate that it will be di ﬃcult to esti-
+ matethemeanﬂuxat70 µmand160µmtobetterthan∼20%,
+ and that the extent of the bias towards higher or lower ﬂux
+ is diﬃcult to predict with accuracy. In this paper, we adopt
+ a pragmatic approach: for each subsample that is stacked at
+ 70µm and 160µm, we attempt to derive an individual ‘bias
+ correction’ based on the 24 µm image. Sources bright at
+ 24µm are generally bright at 70 and 160 µm, although the
+ 24µm to 70 or 160µm ﬂux ratio varies from object to object
+ at a scatter at the 0.5dex level (Daleet al. 2005). Thus, we
+ adopt the simplistic assumption that the 24 µm image can be
+ takenasagoodproxyforthe70or160 µmimageat≃6′′res-
+ olution and high S /N; 70µm and 160µm resolution images
+ derived under this assumption (Fig. 2) appear a reasonable
+ description of the real 70 µm and 160µm images. Thus, for
+ a given subset of z∼0.7 galaxies, we estimated precisely
+ the mean 24µm ﬂux from their 24 µm images. Then we de-
+ gradedthe 24µm imagesto 70 and 160 µm image resolution.
+ Two stack ﬂuxes were estimated by stacking each of the two
+ setsofdegradedimages. Bycomparingthestackﬂuxestothe
+ actualmean24µmﬂuxofthegalaxysubset,weobtainedem-
+ pirical corrections, which were applied to the correspondi ng
+ 70 and 160µm stack ﬂuxes of the subset of z∼0.7 galax-
+ ies, respectively. Uncertainties in this correction are ap plied
+ also, in quadrature, to the derived stacking results at 70 µm
+ and160µm.
+ 4.RESULTS
+ To explore the average IR SEDs of z∼0.7 star-forming
+ galaxies, we �rst look into the dependence of the IR SED
+ shape on galaxy morphology. Then, we investigate the rela-
+ tionshipbetweentheIRSEDshapeandthe24 µmluminosity0.1 1.0 10.0 100.0
+ Rest Wavelength ( µm)10910101011νLν  ( LO • )L24 low (361)L24 medium (160)L24 high (58)
+ Fig.6.—Average SEDasafunction the24 µmluminosity forgalaxies with
+ M∗≥1010M⊙inthe redshift range0.6 <z<0.8. Thevertical errorbars show
+ the 1σuncertainties and horizonal errorbars show the band widths . The 579
+ galaxies are split into three bins in terms of their 24 µm luminosities: L24-
+ high,L24-medium and L24-low. The numbers in brackets denote the number
+ of objects included in each bin.
+ andthez∼0.7IR SEDs to those of present-daystar-forming
+ galaxies. Finally, based on the IR SEDs, the extrapolation
+ of the total IR luminosity from the 24 µm luminosity is dis-
+ cussed.
+ 4.1.TherelationshipbetweenIRSEDandmorphology
+ We used a sample of 1092 galaxies of known morphology
+ to investigate the dependence of the IR SED shape on mor-
+ phology. The 1092 galaxies are classi�ed into three mor-
+ phological types: elliptical /lenticular (E/S0), spiral, and ir-
+ regular/peculiar. Figure 1 shows the relationshipbetweenthe
+ rest-frame color U−Vand stellar mass. Objects detected
+ at 24µm (f24>83µJy) are marked with open symbols and
+ undetected ones with skeletal symbols. The detection limit
+ of 83µJy correspondsto the monochromaticobserved-frame
+ 24µm luminosityνLν,24=6×1010L⊙atz=0.7. The24µm-
+ undetectedgalaxiesareintrinsicallyfaintintheIRbands (see
+ §4.2), and we excluded them in constructing these compos-
+ ite SEDs. To avoid selection bias in color (see §2.2), we
+ also excluded about one third of the 24 µm detected galaxies
+ withM∗<1010M⊙, leaving 152galaxiesin the �nal sample.
+ We calculated the average luminosities in 14 bands for each
+ subsample of 24µm-detected galaxies: FUV & NUV from
+ GALEX, U,B,V,RandIfromtheCOMBO-17survey,IRAC
+ 3.6, 4.5, 5.8 and 8.0 µm, MIPS 24, 70 and 160 µm bands.
+ The average luminosity of each band includes contributions
+ from both individually-detected and individually-undete cted
+ sources (at wavelengths other than 24 µm). Errors in the av-
+ erage luminosities were derived from bootstrapping, inclu d-
+ ing contributionsto the uncertaintyfrom measurementerro rs
+ in both the individually-detectedﬂuxes and the individual ly-
+ undetectedﬂuxes. TheaverageSEDspansarangeintherest-
+ frameof0.1to 100 µm.
+ Figure 5 shows the average SEDs of the three subsam-
+ ples. Each ofthe three averageSEDs is dominatedbya dust-
+ extincted stellar spectrum at λ<5µm and emission by dust
+ atλ>5µm. Irregular/peculiar galaxies show a higher ratio
+ of dust to stellar emission compared to the spirals and E /S0
+ galaxies. The slope of the IR SED (rest-frame 10-100 µm)
+ is steeper for irregular /peculiar galaxies, somewhat interme-
+ diate for E/S0 galaxies, and lowest for spirals although the
+ uncertaintiesof70and160 µm luminositiesarelarge. Their-InfraredSEDsof z∼0.7Star-FormingGalaxies 7
+ TABLE2
+ Averageluminositiesofmassive -galaxysubsetsintheredshiftslice 0.6<z<0.8.
+ Nobjlog<M∗>logνLν,24logνLa
+ ν,70corr.(70) logνLa
+ ν,160corr.(160) log<L12−−100>blog<LIR>c
+ (M⊙) ( L⊙) ( L⊙) ( L⊙) ( L⊙) ( L⊙)
+ 58 10.7 10.52+0.04
+ −0.0510.79+0.10
+ −0.131.51±0.24 11.17+0.16
+ −0.261.04±0.39 11.30+0.10
+ −0.1311.42+0.07
+ −0.08
+ 160 10.5 10.09+0.01
+ −0.0110.51+0.16
+ −0.241.03±0.32 10.98+0.23
+ −0.550.92±0.61 11.04+0.16
+ −0.2711.12+0.05
+ −0.05
+ 361 10.7 9.31+0.03
+ −0.039.90+0.28
+ −0.991.19±0.96<10.27 ... 10.18+0.26
+ −0.7510.28+0.14
+ −0.21
+ aThe70µm and 160µm luminosities estimated from stacking haveincluded the co rrections derived from degraded 24 µm images. Thecorrec-
+ tions arelisted inthe table.
+ bL12−−100is the luminosity between 12 to 100 µm, calculated by linearly interpolating observed 24, 70 and 160µm luminosities (in logarithm
+ space).
+ cLIRrefers to the total IR luminosity between 8 to 1000 µm. Local IR SED templates from Lagacheet al. (2004),Chary& E lbaz (2001) and
+ Dale& Helou(2002)areusedto�ttheobserveddatapoints. Th etotal IRluminosity isderivedfrom thedusttemperature-m atch templates. See
+ text for details.
+ regular/peculiargalaxies usually form stars in relatively con-
+ centrated regions, leading to a high star formation intensi ty
+ (i.e. SFRperunitarea). Incontrast,thespiralsareoftenc har-
+ acterized by a relatively low star formation intensity as th e
+ star-forming regions are widely distributed over disks. Th e
+ star formation density for the E /S0 galaxies is somewhat be-
+ tweenthoseoftheirregular /peculiargalaxiesandspirals. The
+ shapes of the IR SEDs are thus a function of star formation
+ intensity in the sense that the dust temperature is primaril y
+ colder in systems of relatively lower star formation intens ity
+ (wewill returnthistopicin §5).
+ 4.2.The relationshipbetweenIRSEDand24 µm luminosity
+ Weusedamass-limitedsampletostudytherelationshipbe-
+ tweenIRSEDshapeand24 µmluminosity. Thissamplecon-
+ sists of 579 galaxies with M∗≥1010M⊙and 0.6<z<0.8.
+ The sample galaxies were divided into three 24 µm lumi-
+ nosity bins: L24-high,L24-medium and L24-low. The �rst
+ two bins contain 218 individually-detected 24 µm sources
+ (f24>83µJy) and all individually-undetected 24 µm sources
+ (361 of the 579) are in the third bin. The L24-high bin is
+ chosen to contain 58 brightest 24 µm sources so that its total
+ 24µm luminosity equals that of the L24-medium bin. Con-
+ sequently the stacked 70 and 160 µm ﬂuxes are expected to
+ havecomparablesignal-to-noiseratiosforthetwobins. Av er-
+ age luminosities in all 14 bands were calculated for the thre e
+ subsets of galaxies. The average luminosities in the 24, 70
+ and 160µm bands are listed in Table 2, along with the num-
+ berofobjectsandmeanstellarmassforeachofthethreesub-
+ sets. Theempiricalcorrectionsadoptedforthe70and160 µm
+ stackﬂuxes(see§3.2.3)arealsopresented. Errorsincludethe
+ uncertaintiesin measurementsand bootstrappingerrors. F ig-
+ ure6showstheaverageSEDfromtherest-framewavelengths
+ 0.1 to 100µm as a a function of the 24 µm luminosity. It is
+ clear that the observed 24 µm (rest-frame 14µm) luminosity
+ iscorrelatedwiththe70and160 µmIRluminositiesformas-
+ sivegalaxiesat z∼0.7inthesensethatthe70and160 µmIR
+ luminosities increase as the 24 µm luminosity increases; i.e.,
+ 24µm luminositytypicallyreﬂectshighIRluminosity,rather
+ thananenhancedrest-framemid-IRexcess(seealsoBavouze t
+ et al. 2007, in preperation). The L24-high bin has an average
+ galaxy stellar mass 0.2dex larger than the L24-medium bin;
+ thiscanalsobeseenfromtheredderopticalcolorsandhighe r
+ rest-frame∼3µm luminosity of the L24-high bin. The L24-
+ low bin contains 361 massive galaxies that are individually
+ undetected at 24µm, including early-type galaxies with lit-
+ tle star formation and late-type galaxies in the quiescent s tar
+ formation phase (see Figure 1). The short-wavelength part−0.6 −0.4 −0.2 −0.0 0.2
+ log ( f60 / f100 )−2.5−2.0−1.5−1.0log ( f15 / f60 )
+ Arp22011.4
+ 11.110.3
+ <9.5
+ 9.5−10
+ 10−10.5
+ 10.5−11
+ 11−11.5
+ 11.5−12
+ >12
+ Fig. 7.— Relative dust temperature estimate from the IR ﬂux rati o
+ f60/f100versusf15/f60.Asterisks represent local star-forming galaxies from
+ Dale etal. (2000) with IRAS observations at the 60 and 100 µm and ISO
+ observation at 15µm. The ratio f60/f100is an indicator of the dust temper-
+ ature, which tends to be correlated with IR luminosity in the local Universe.
+ Thedotted lines show typical values of f60/f100corresponding the given
+ log(LIR/L⊙) derived from IRAS data (Soifer & Neugebauer 1991). These
+ linesarearbitrarily positioned ontheY-axis. The opencircle showsthewell-
+ known local ultraluminous IR galaxy Arp220. The squaresshow the three
+ subsets of massive ( M∗≥1010M⊙) galaxies in redshift slice 0.6 <z<0.8,
+ labeled with thecorresponding IR luminosities log( LIR/L⊙). Note that error-
+ barsofthetwo ﬂux ratios arenotindependent. Thearrow indi cates theeﬀect
+ of an increase in f60by afactor of 1.5.
+ of their average SED is dominated by a relatively old stellar
+ population. The large errorbars of the 70 and 160 µm lumi-
+ nositiescomparedtothesmallerrorbarofthe24 µmluminos-
+ ity are partially due to the intrinsic scatter among the samp le
+ galaxiesinthisbin.
+ 4.3.ComparisonwithlocalSEDs
+ A key goal of this paper is to compare the observed av-
+ erage IR SED shapes at z∼0.7 to local ‘template’ SEDs.
+ We adopted a sample of local star-forming galaxies from
+ Daleet al.(2000)with IRASandISO15µmobservationsand
+ total IR luminosity (8 - 1000 µm) spanning from ∼109to
+ 1012L⊙. Figure 7 shows these nearby galaxies in the IR ﬂux
+ ratiof60/f100versusf15/f60plot. Thelocalgalaxiesdistribute8 Zhengetal.
+ −0.4−0.3−0.2−0.10.00.10.00.51.01.5log χ2L24 high (58)
+ −0.4−0.3−0.2−0.10.00.1
+ log (f60/f100)    L24 medium (160)
+ −0.4−0.3−0.2−0.10.00.1    Lagache et al. (2004)
+ Chary & Elbaz (2001)
+ Dale & Helou (2002)L24 low (361)
+   0.11.010.0νLν  ( LO • )
+ L04, log(LIR/LO •)=11.4
+ DH02, log(LIR/LO •)=11.3CE01, log(LIR/LO •)=11.4L24 high (58)
+      
+ L04, log(LIR/LO •)=11.1
+ DH02, log(LIR/LO •)=11.1CE01, log(LIR/LO •)=11.0L24 medium (160)
+      
+ L04, log(LIR/LO •)=10.2
+ DH02, log(LIR/LO •)=10.3CE01, log(LIR/LO •)=10.3L24 low (361)
+ 10 1000.11.010.0νLν  ( LO • )
+ L04, log(f60/f100)= -0.36
+ DH02, log(f60/f100)= -0.38CE01, log(f60/f100)= -0.38
+ 10 100
+ Rest Wavelength ( µm)   
+ L04, log(f60/f100)= -0.33
+ DH02, log(f60/f100)= -0.38CE01, log(f60/f100)= -0.41
+ 10 100   
+ L04, log(f60/f100)= -0.31
+ DH02, log(f60/f100)= -0.28CE01, log(f60/f100)= -0.16
+ Fig.8.— Fitting three sets of local templates from Lagache etal . (2004), Chary &Elbaz (2001) and Dale &Helou (2002) to the av erage IR SEDs of three
+ subsets of massive ( M∗≥1010M⊙) galaxies in the redshift slice 0.6 <z<0.8. Only the three MIPS data points (24, 70 and 160 µm) of each observed IR SED
+ are used in the �tting. Top: The panels show χ2as a function of the template’s characteristic log( f60/f100). For each observed IR SED two best-�t templates are
+ chosen: one is matched in luminosity (i.e., with the normali zation constant equal to unity) and the other is dust tempera ture match (or SED shape match; i.e.,
+ with the minimum χ2).Bottom: Theupper panels shows the best-�t luminosity match templates and the lower panels show the best-�t dust temperature match
+ templates, compared to the observed SEDs from the rest-fram e 2 to 100µm delineated by IRAC and MIPS data points for the L24-high bin ( left panels ), the
+ L24-medium bin ( middle panels ) and the L24-low bin ( right panels ). TheSEDs are normalized to unity at 2.1 µm. Note that the stellar components of the locoal
+ templates are somewhat arbitrarily set. Thedisagreements between theaveraged SEDsand thebest-�t templates at λrest<5µmshould beignored.
+ along a sequence with considerable scatter. The sequence
+ is correlated with both dust temperature and IR luminosity.
+ The dust temperatureand IR luminosity increase for increas -
+ ingf60/f100(e.g., Soifer&Neugebauer 1991). The average
+ IR SEDs for z∼0.7 galaxies are determined by the three
+ MIPS bands, corresponding to the rest-frame ∼14,∼41 and
+ ∼94µm bands. The 24µm and 160µm luminosities can be
+ takenasrest-frame15 µmand100µmluminosities,forwhich
+ ‘K-corrections’ are negligible. We estimated the rest-frame
+ 60µm luminosity by linear interpolation between the MIPS
+ measurements in log-log space (as shown in Figure 6). We
+ usedthelocalsampletotestthelinearinterpolation. Firs t,we
+ derivethe41µmﬂuxesbylinearinterpolationbetween IRAS
+ 25and60µmmeasurementsinlog-logspace. Second,wede-
+ rive60µmﬂuxesbythesamemethodbetween41and100 µmforthe59localgalaxiesadopted. Theestimated60 µm ﬂuxes
+ are25±11%lowerthantheobserved IRAS60µmﬂuxes. This
+ hints that our rest-frame 60 µm luminosities of the z∼0.7
+ galaxies might be underestimated. We compared the z∼0.7
+ galaxies to the local galaxies. As shown in Figure 7, the
+ twopopulationsareroughlylocatedinthesame regionofthe
+ f60/f100versusf15/f60plane. Speci�cally, the z∼0.7 star-
+ forming galaxies of IR luminosity 11 <log(LIR/L⊙)<11.4
+ (those in the L24-high bin and L24-medium bin; the estimates
+ of the total IR luminosities will be discussed later) popula te
+ the relatively low-temperature end of the template sequenc e.
+ In the local Universe, these low-temperaturegalaxies tend to
+ beofrelativelylowluminositylog( LIR/L⊙)<10.5. This,with
+ signi�cantuncertainties,suggeststhatthetypicaldustt emper-
+ ature ofz∼0.7 luminous IR galaxies (LIRGs; i.e., galaxiesInfraredSEDsof z∼0.7Star-FormingGalaxies 9
+ −0.6 −0.4 −0.2 −0.0 0.2
+ log ( f60 / f100 )0.1νLν,15 / L12−100µm
+ Dale & Helou (2002)Chary & Elbaz (2001)Lagache et al. (2004)
+ −0.6 −0.4 −0.2 −0.0 0.2
+ log ( f60 / f100 )0.1νLν,15 / LIR(8−1000µm)
+ Fig. 9.— Theratio between the rest-frame 15 µmto the 12–100µmluminosity ( leftplot) and to the total IR luminosity (8–1000 µm;rightplot) as a function of
+ the IR ﬂux ratio f60/f100.Asterisks are local galaxies collected from literature with IRAS, ISO 15µm observations and at least one observation at wavelengths
+ longer than 100µm.Squaresshow our results for galaxies with M∗≥1010M⊙and 0.6<z<0.8. The relations derived from SED templates are presented for
+ comparison. One can see that the extrapolation of the rest-f rame 15µm luminosity based on the three sets of templates give compar able estimates of total IR
+ luminosity within aconsiderable scatter. Ourdatapoints d istribute within thescatter ofthelocal star-forming gala xies buttowards thecolder templates. Roughly
+ speaking, a factor of 10 is aquite good average bolometric co rrection to the estimate of the total IR luminosity from the r est-frame 15µm luminosity. Generally
+ speaking, the use of local templates of LIR≤1010.5L⊙for extrapolation of total IR luminosity from intermediate redshift 24µm luminosities gives a more
+ accurate result than the useof LIR∼1011L⊙templates.
+ with log(LIR/L⊙)>11)is lowerthan that of local galaxiesof
+ comparable IR luminosity. The IR ﬂux ratios are poorly de-
+ terminedforthe L24-lowbinbecauseofthelargeuncertainties
+ in the average70and 160 µm IR luminosities, which are par-
+ tiallyduetotheintrinsicscatteramongthesamplegalaxie sin
+ theL24-low bin (including early-type galaxies and late-type
+ galaxiesin thequiescentstar formationphase).
+ We compared our average SEDs with the IR SED model
+ templates from Lagacheet al. (2004), Chary& Elbaz (2001)
+ and Dale &Helou (2002). The three sets of templates were
+ empiricallycalibratedtorepresentlocalstar-formingga laxies
+ spanning a wide range in the IR ﬂux ratio f60/f100. Dale &
+ Helou’s IR SED templates are characterized by the ﬂux ra-
+ tiof60/f100. We use the equationfromChapmanet al. (2003)
+ to parameterize the IR luminosity (8 - 1000 µm) as a func-
+ tion off60/f100.8The templates from Lagacheetal. (2004)
+ and Chary&Elbaz (2001) were characterized by the IR lu-
+ minosity. We extended each set of SED templates by linear
+ interpolation in logarithmic space to a grid of SEDs with the
+ characteristicIRluminosityrangingfrom109to1013L⊙with
+ a resolution of 0.1dex. The observed IR SED of each subset
+ wascomparedtothe threesets oftemplates:
+ χ2=N�lters/summationdisplay
+ i=1/bracketleftBiggLobs,i−fscale×Ltemp,i(z=0.7)
+ σi/bracketrightBigg2
+ ,(1)
+ whereLobs,i,Ltemp,iandσiaretheobservedandtemplatelumi-
+ nositiesandtheiruncertaintyin�lteri,respectively,an dfscale
+ is a normalization constant. Here only 24, 70 and 160 µm
+ bandswere used to �t templates, i.e., N�lters=3.Ltempis cal-
+ 8The total IR luminosity de�ned in Chapman et al. (2003) is bet ween 3
+ and 1100µm,in good agreement with the adopted one(Dale et al. 2001;se e
+ also Takeuchi et al. 2005b).culatedbyconvolvingtheredshiftedSEDtemplateto z=0.7
+ withthe24,70or160 µm�ltertransmissionfunction. fscaleis
+ chosen to minimize the χ2for each template. The top plot in
+ Figure 8 shows the �tting results. The templates with a nor-
+ malizationconstant fscaleofunityarechosenasthebest-�tlu-
+ minositymatchtemplatesandthosewithaminimum χ2asthe
+ best-�t dust temperature match (or SED shape match) tem-
+ plates. The best-�t templates are compared to the observed
+ SEDsin thebottomplotofFigure8.
+ As shown in Figure 8 the local SED templates track the
+ observed SEDs reasonably well, in particular for the L24-
+ medium bin, which contains the majority of intense star-
+ forming galaxies. As the total IR luminosity is dominated
+ by emission in the rest-frame wavelength range between 10
+ and100µm,theestimatesofthetotalIRluminositywithtem-
+ plates from diﬀerent models give similar results. In contrast,
+ χ2is a measure of the shape agreement between a template
+ and an observed SED. It is worth noting that the estimate of
+ total IR luminosity based on the three measurements at 24,
+ 70 and 160µm is not sensitive to the shapes of the IR SED
+ templates. Both the best-�t luminosity match and the best-� t
+ dusttemperaturematchtheSEDtemplatesandsuggestatotal
+ IR (8 - 1000µm) luminosity of log LIR/L⊙∼11.4, 11.1, 10.3
+ for the three average SEDs, respectively. Generally speak-
+ ing, the shape (or dust temperature) of the average IR SEDs
+ of star-forming galaxies at z∼0.7 (i.e., the L24-high bin and
+ L24-medium bin) are better �tted by the local SED templates
+ of characteristic IR luminosity LIR≤1011L⊙than those of
+ LIR>1011L⊙. This holds for all three sets of templates. It
+ con�rms that the typical star-forming galaxies at z∼0.7 are
+ likelytohaverelativelycolderdustemissionthanlocalga lax-
+ ieswithcomparableIRluminosity.10 Zhenget al.
+ 4.4.The extrapolationfrom therest-frame15 µm to thetotal
+ IRluminosity
+ Local IR SED templates are often used to estimate the to-
+ tal IR luminosities from single mid-IR band luminosities fo r
+ distantstar-forminggalaxies. WiththeaveragedIRSEDsde -
+ termined in the three MIPS bands, we are able to better con-
+ strain the estimates of the IR luminosities. We compared the
+ estimateswiththosetransformedfromsingle15 µmluminosi-
+ tiesusinglocalSEDtemplates.
+ By linearly integrating between the average 24, 70 and
+ 160µm luminosities(inlogarithmspace)forthestar-forming
+ galaxies at z∼0.7, we estimated the rest-frame 12–100 µm
+ luminosities. Uncertainties are calculated from the combi -
+ nation of the uncertainties in the three bands. The total IR
+ (the rest-frame 8–1000 µm) luminosity is derived from the
+ three dust temperature-match templates to each observed IR
+ SED (the 24, 70 and 160 µm). We combine the scatter be-
+ tween the templates and the uncertainty in determining the
+ dust temperature-matchtemplates, in which the uncertaint ies
+ of the 24, 70and 160 µm luminositiesare counted,as the un-
+ certainty for the total IR luminosity. The results are liste d
+ in Table 2. For comparison, we use the NASA /IPAC Extra-
+ galactic database (NED) to collect a sample of 29 local star-
+ forminggalaxies( z<0.1)withobservationsat12,25,60and
+ 100µm byIRAS, at 15µm by ISO and at least in one band
+ longerthan 100µm. The 12–100µm luminosityand the total
+ IRluminosityarecalculatedasabove. Whenobservationsdo
+ not reach 1000µm, a modest (/lessorsimilar20% of the IR luminosity)
+ extrapolationis employedusingthelocalSED templates.
+ Figure 9 shows the extrapolations(bolometric corrections )
+ from the rest-frame 15 µm to the 12–100µm luminosity (left
+ plot) and to the total IR luminosity (right plot) as function s
+ of the IR ﬂux ratio f60/f100. The local star-forming galax-
+ iesexhibitasigni�cantscatter(Chary& Elbaz2001;seeals o
+ Daleet al. 2005); such scatter is typically adoptedas the sy s-
+ tematic uncertainty of template-based estimates of total I R
+ luminosity from rest-frame mid-IR luminosity. The z∼0.7
+ star-forming galaxies distribute within the scatter of the lo-
+ cal star-forming galaxies. Again, there is a tendency for th e
+ z∼0.7 galaxies to cluster towards the colder templates, sug-
+ gesting that use of spiral galaxy templates for extrapolati on
+ oftotalIRluminosityfromintermediateredshift24 µmﬂuxes
+ gives a more accurate result than the use of starburst /LIRG
+ templates.
+ 4.5.Dust extinction
+ A universal relation between SFR and dust extinction is
+ suggested by several studies at z<1 (Hopkinset al. 2001;
+ Adelberger&Steidel2000;Bell 2003;Takeuchiet al.2005a;
+ Zhengetal. 2006; Buat etal. 2006; althoughsee Reddyetal.
+ 2006 for a dissenting view at z∼2). With a measured esti-
+ mateofthetotalIRluminosityfromthe24,70and160 µmlu-
+ minosities,weexploretherelationshipbetweenSFRanddus t
+ extinction at z∼0.7, comparing it to that at z∼0. The dust
+ extinction is described by the IR to UV ratio LIR/LUV. The
+ UV luminosity, i.e., the integrated luminosity between res t-
+ frame 1500-2800Å, is estimated from linear interpolation o f
+ theFUV,NUV,U, andBband luminosities for z∼0.7
+ galaxysubsetsshowninFigures5and6. FollowingBell etal.
+ (2005),we derivedtheSFR fromtheIRandUV luminosities
+ withtheformula
+ SFR/(M⊙yr−1)=9.8×10−11(LIR+2.2LUV),(2)0.0 0.5 1.0 1.5
+ log ( SFR / MO • yr-1 )0.51.01.52.0log ( LIR / LUV )Irr/PecSpiralE/S0M*>1010MO •Galaxies at z~0.7
+ Local relation
+ (Martin et al. 2005)
+ Fig.10.— The ratio IR /UV ﬂux (i.e., the fractional dust obscuration) as a
+ function of SFR. Solid circles show the three subsets of galaxies with M∗≥
+ 1010M⊙and 0.6<z<0.8, sorted by the 24 µm luminosity. Other symbols
+ show three morphology subsets of star-forming (f 24>83µJy) galaxies in
+ redshift slice 0.65≤z≤0.75. The dashed line shows the local relation
+ (Martin et al. 2005b).
+ assuming a stellar population with a constant SFR for
+ 100Myr and a Kroupa initial mass function. Figure 10
+ showsthe relationshipbetweendust obscurationandSFR for
+ z∼0.7 galaxies, compared to the local relation derivedfrom
+ IRAS and GALEX data with a scatter at ∼0.5-1dex level
+ (Martinet al. 2005b; Xuet al. 2006; Buatet al. 2006). As
+ shown in Figure 10, the z∼0.7 galaxies distribute perfectly
+ alongthelocalrelationoveroneorderofmagnitude.
+ 5.DISCUSSION AND CONCLUSION
+ We selected a sample of 152 galaxies in the redshift slice
+ 0.65≤z≤0.75 of known morphology from HST imag-
+ ing and another sample of 579 mass-limited ( M∗≥1010M⊙)
+ galaxies in the redshift slice 0 .6<z<0.8 to study the IR
+ SEDsatthatredshift. Wedividedoursamplegalaxiesintodi f-
+ ferent mass-limited morphology and 24 µm luminosity bins.
+ For each bin, we determined the average luminosities in 14
+ bands from the FUV to the FIR by summing the individual
+ detectionsandaddinginthestackedﬂuxfromnon-detection s.
+ Carefuleﬀortsweretakeninstackingthenoiseandconfusion
+ limited 70 and 160 µm images. Empirical corrections, deter-
+ minedfrom the 24 µm image, were introducedto accountfor
+ theclusteringeﬀectsonthe stackresults.
+ The average luminosities in three MIPS bands determine
+ the IR SED from the rest-frame 10 to 100 µm. Our principal
+ result is that the average IR SED shape of z∼0.7 intensely
+ star-forminggalaxies(withIRluminosities ∼1011L⊙)issimi-
+ lartoreasonably‘cool’localtemplates(i.e.,templateso f‘nor-
+ mal’spiralgalaxies). ThedustSEDseemstodependonmor-
+ phologicaltype for star-forminggalaxiesat z∼0.7. Thishas
+ the immediateand importantimplicationthat the use ofloca l
+ templates to extrapolate total IR luminosity from observed -
+ frame 24µm data is a well-posed problem, at least, on aver-
+ age. Interestingly, galaxies with ‘cool’ dust temperature s in
+ thelocalUniversealltendtohaveIRluminosities /lessorsimilar1010.5L⊙,
+ i.e., distant intensely star-forminggalaxiestend to be ch arac-InfraredSEDsof z∼0.7Star-FormingGalaxies 11
+ −0.6 −0.4 −0.2 −0.0 0.2
+ log ( f60 / f100 )−2.5−2.0−1.5−1.0log ( f15 / f60 )ΣL24−highΣL24−low
+ 0.1 1.0 10.0 100.0
+ Rest Wavelength ( µm)10910101011νLν  ( LO • )ΣL24-low (161)ΣL24-high (150)
+ Fig.11.—SameasFig.7. The �lledcircles showthetwosubsetsofgalaxies
+ in the redshift slice 0 .6<z<0.8 split by 24µm luminosity surface density.
+ The inner panel shows the average SEDs of the two subsets. The ΣL24-high
+ bin and theΣL24-low bin data points are located separated along the dust-
+ temperature sequenceoflocalstar-forminggalaxies, indi cating thattheΣL24-
+ high bin is characterized by a hotter dust emission than the ΣL24-low bin.
+ This isclearly seen from the di ﬀerence between their IR SEDs.
+ terized by colder dust emission than their local counterpar ts
+ ofcomparableIRluminosity.
+ Previous studies have found evidence for a somewhat
+ cooler dust SED at 0 .2<z<2.5 than for local galaxies of
+ a comparable luminosity (e.g., Popeet al. 2006; Sajina etal .
+ 2006) at 0.2<z<2.5. These studies were selected in rest-
+ frame>100µmemission,andtheauthorssuspectedthattheir
+ overall tendency towards ‘colder’ IR SEDs was in part due
+ to that long-wavelengthselection. Our sample is selected o n
+ rest-frame∼15µm emission,i.e., bywarm dust; yet, we �nd
+ a ‘colder’ average SED at a given luminosity than is found
+ locally. This tends to support the interpretation that the o ﬀ-
+ set which we and others have found towards colder tempera-
+ turesatagivenluminosityareatleastinpartarealdi ﬀerence.
+ We suggest that this tendency toward colder dust tempera-
+ turereﬂects a diﬀerencein dust andstar formationgeometry:
+ whereaslocalLIRGstendtobeinteractingsystemswithrela -
+ tivelycompactveryintensestar formationandofcomparabl e
+ masses(e.g.,Wanget al.2006),0 .5/lessorsimilarz/lessorsimilar1LIRGstendtobe
+ disk-dominated, relatively undisturbed galaxies (Zhenge tal.
+ 2004; Bell et al. 2005; Melbourneet al. 2005). We suggest
+ that these disk galaxies host widespread intense star forma -
+ tion, like star formation in local spirals but scaled up, lea d-
+ ing to relatively cold dust temperatures. This is consisten t
+ with what Chanialetal. (2006) found — the scatter in the
+ LIR−Tdustrelation for star-forming galaxies is largely in-
+ duced by the size dispersion of the star-forming regions; an d
+ the IR luminosity surface density ΣIR−Tdustrelation is morefundamental than the the LIR−Tdustrelation. We examined
+ the IR ﬂux ratio f60/f100(indicator of dust temperature) as
+ a function of the IR luminosity surface density for z∼0.7
+ star-forming galaxies. By taking galaxy size (i.e. half-li ght
+ radius) derived from HST imaging (H¨ außleret al. 2007) as
+ a proxy of the size of star-forming regions in a galaxy and
+ 24µm luminosity as a proxy of total IR luminosity, we split
+ a sample of 311 24 µm-detected galaxies in the redshift slice
+ 0.6<z<0.8 into two bins in the 24- µm luminosity surface
+ densityΣL24. TheaverageSEDs forthetwo subsetsof galax-
+ ieswereconstructedinthesamewayasdescribedin §4.1and
+ shown in the inner panel of Figure 11. The total IR luminos-
+ ity is estimated as log( LIR/L⊙)=11.3 and 11.0 for the ΣL24-
+ high bin and theΣL24-low bin respectively. As shown in Fig-
+ ure11, the two subpopulationsare distributedalongthe dus t-
+ temperature sequence of local star-forming galaxies. Gala x-
+ iesin theΣL24-highbinonaverageshowhotterdust emission
+ thanthoseintheΣL24-lowbin,suggestingthattheIRluminos-
+ ity surface density plays an essential role in shaping IR SED
+ (Chanialet al.2006).
+ Finally, with UV luminosities derived from GALEX data
+ and IR luminosities derived from three band MIPS data, we
+ determined a quite precise relationship between the dust ob -
+ scuration and SFR for z∼0.7. Our results show an excel-
+ lent agreement between the SFR-dust obscuration relation a t
+ z∼0.7 with that at the present day, indicating that no signif-
+ icant evolution occurs since that redshift. Our measuremen ts
+ give the mean values of SFR and dust obscuration. The ac-
+ tual scatter in dust obscurationcan spreadby 1 - 2dexfor in-
+ dividual galaxies of given SFR(Martinet al. 2005b; Xuet al.
+ 2006; Buat et al. 2006). Reddyet al. (2006) claimed that the
+ dust obscuration for star-forming galaxies is systematica lly
+ smaller at z∼2 than the present day. Their sample is dom-
+ inated by rest-frame UV-selected galaxies. This may lead to
+ a potential selection biasagainst objectswith highIR /UV ra-
+ tio (see Buat etal. 2006 for the comparisonbetween UV and
+ FIR selected samples of local galaxies and a similar discus-
+ sion). Therefore studies based on unbiased samples of high-
+ redshift galaxies will help to answer the question whether
+ the SFR-dust obscuration relation still holds at z>1. This
+ will addimportantconstraintstoourunderstandingofgala xy
+ evolutioninvolvingstarformationandmetallicityenrich ment
+ (Zhenget al.2006).
+ We are grateful to Daniel A. Dale and Kirsten K. Knud-
+ sen for helpful discussions. E. F. B. was supported by the
+ Emmy Noether Programme of the Deutsche Forschungsge-
+ meinschaft. Support for E. L. F.’s work was provided by
+ NASA through the Spitzer Space Telescope Fellowship Pro-
+ gram. This work was in part supported by contract 1255094
+ fromJPL/Caltech tothe Universityof Arizona. Thisresearch
+ has made use of the NASA /IPAC Extragalactic Database
+ (NED) which is operated by the Jet Propulsion Laboratory,
+ California Institute of Technology, under contract with th e
+ NationalAeronauticsandSpaceAdministration.
+ REFERENCES
+ Adelberger, K.L.,& Steidel, C. C. 2000, ApJ,544, 218
+ Appleton, P.N.,etal. 2004, ApJS,154, 147
+ Bell, E.F.2003, ApJ, 586,794
+ Bell, E.F.,et al. 2005, ApJ,625, 23
+ Borch, A.,et al. 2006, A&A,453, 869
+ Borys, C.,etal. 2006, ApJ,636, 134Brand, K.,etal. 2006, ApJ,644, 143
+ Buat, V.,et al. 2006, ApJS,in press (astro-ph /0609738)
+ Chanial, P.,Flores, H.,Guiderdoni, B.,Elbaz, D.,Hammer, F.,& Vigroux,
+ L.2006, A&Ain press (astro-ph /0610900)
+ Chapman, S. C.,Helou, G.,Lewis, G.F.,& Dale, D.A. 2003, ApJ ,588, 186
+ Chary, R.,&Elbaz, D.2001, ApJ,556, 56212 Zhenget al.
+ Dale, D. A.,et al. 2000, AJ,120, 583
+ Dale, D. A.,& Helou, G.2002, ApJ, 576,159
+ Dale, D. A.,Helou, G.,Contursi, A.,Silbermann, N.A.,&Kol hatkar, S.
+ 2001, ApJ, 549,215
+ Dale, D. A.,et al. 2005, ApJ,633, 857
+ Diolaiti, E.,Bendinelli, O.,Bonaccini, D.,Close, L.,Cur rie, D.,&
+ Parmeggiani, G.2000, A&AS,147, 335
+ Dole, H.,etal. 2004a, ApJS,154, 87
+ Dole, H.,etal. 2004b, ApJS,154, 93
+ Dole, H.,etal. 2006, A&A,451, 417
+ Elbaz, D.,et al. 2002, A&A,384,848
+ Fazio, G.G.,etal. 2004, ApJS,154, 10
+ Flores, H.,etal. 1999, ApJ,517, 148
+ Flores, H.,etal. 2004, A&A,415, 885
+ Frayer, D.T.,et al. 2006, AJ,131, 250
+ Hammer, F.,Flores, H.,Elbaz, D.,Zheng, X. Z.,Liang, Y. C., Cesarsky, C
+ 2005, A&A,430, 115
+ Hauser, M. G.,&Dwek, E.2001, ARA&A,39, 249
+ H¨ außler, B.,et al. 2007, ApJ,submitted
+ Hopkins, A.M.,Connolly, A.J.,Haarsma, D. B.,&Cram, L.E.2 001, AJ,
+ 122, 288
+ Huang, J.-S.,et al. 2004, ApJS,154, 44
+ Kauﬀmann, G.,etal. 2003, MNRAS,341, 54
+ Lagache, G.,Dole, H.,&Puget, J.-L.2003, MNRAS,338, 555
+ Lagache, G.,et al. 2004, ApJS,154, 112
+ Lagache, G.,Puget, J.-L.,&Dole, H.,2005, ARA&A,43, 727
+ LeF` evre, O.,etal. 2005, A&A,439, 845
+ LeFloc’h, E.,etal. 2005, ApJ, 32,169
+ Lehmer, B.D.,et al. 2005, ApJS,161, 21
+ Marcillac, D.,Elbaz, D.,Chary, R.R.,Dickinson, M.,Galli ano, F.,&
+ Morrison, G.2006, A&A,451,57
+ Martin, D.C.,et al. 2005a, ApJ, 619,L1
+ Martin, D.C.,et al. 2005b, ApJ,619, L59Melbourne, J.,Koo,D.C.,& LeFloc’h, E.2005, ApJ,632, L65
+ Morrissey, P.,et al. 2005, ApJ,619, L7
+ Papovich, C.,&Bell, E.F.2002, ApJ,579, L1
+ Papovich, C.,et al. 2004, AppJS,152, 163
+ Pope, A.,et al. 2006, MNRAS, 370,1185
+ Pozzi, F.,etal. 2004, ApJ,609, 122
+ Reddy etal. 2006, ApJ, 644,792
+ Rieke, G.H.,et al. 2004, ApJS,154, 25
+ Rix, H.-W.,etal. 2004, ApJS,152, 163
+ Sajina, A.,Scott, D.,Dennefeld, M.,Dole, H.,Lacy, M.&Lag ache, G.
+ 2006, MNRAS,(astro-ph /0603614)
+ Soifer, B. T.,& Neugebauer, G.1991, AJ,101, 354
+ Takeuchi, T.T.,Buat, V.,&Burgarella, D. 2005a, A&A,440, L 17
+ Takeuchi, T.T.,Buat, V.,Iglesias-P´ aramo, J.,Boselli, A .,&Burgarella, D.
+ 2005b, A&A,432, 423
+ Vanzella, E.,etal. 2005, A&A,434, 53
+ Vanzella, E.,etal. 2006, A&A,454, 423
+ Wang,J.L.,Xia, X.Y.,Mao, S.D.,Cao, S.,Wu,H.,& Deng, Z.G. 2006,
+ ApJ,649, 722
+ Wolf,C.,Meisenheimer, K.,Rix, H.-W.,Borch, A.,Dye, S.,&
+ Kleinheinrich, M. 2003, A&A,401,73
+ Wolf,C.,et al. 2004, A&A,421,913
+ Xu,K.C.,Lonsdale, C.J.,Shupe, d. L.,Franceschini, A.,Ma rtin, C.,&
+ Schiminovich, D.2003, ApJ,587, 90
+ Xu,K.C.,et al. 2005, ApJ,619, L11
+ Xu,K.C.,et al. 2006, ApJ,646, 834
+ Yan, L.,et al. 2005, ApJ,628, 604
+ Zheng,X. Z.,et al. 2006, ApJ,640, 784
+ Zheng,X. Z.,Hammer, F.,Flores, H.,Ass´ emat, F.,&Pelat, D .2004, A&A,
+ 421, 847

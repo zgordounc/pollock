@@ -1,0 +1,540 @@
+arXiv:0706.0006v1  [astro-ph]  31 May 2007Submitted to Astrophysical Journal
+ Preprint typeset using L ATEX style emulateapj v. 6/22/04
+ EVOLUTION OF THE PHASE-SPACE DENSITY IN DARK MATTER HALOS
+ Yehuda Hoffman1, Emilio Romano-D Â´Ä±az2, Isaac Shlosman2, Clayton Heller3
+ Submitted to Astrophysical Journal
+ ABSTRACT
+ The evolution of the phase-space density proï¬le in dark matt er (DM) halos is investigated by means
+ of constrained simulations, designed to control the mergin g history of a given DM halo. Halos evolve
+ through a series of quiescent phases of a slow accretion inte rmitted by violent events of major mergers.
+ In the quiescent phases the density of the halo closely follo ws the NFW proï¬le and the phase-space
+ density proï¬le, Q(r), is given by the Taylor & Navarro power law, râˆ’Î², where Î²â‰ˆ1.9. Expressing the
+ phase-space density by the NFW parameters, Q(r) =Qs(r/Rs)âˆ’Î², the evolution of Qis determined
+ byQs. We have found that the eï¬€ective mass surface density within Rs, Î£sâ‰¡ÏsRs, remains constant
+ throughout the evolution of a given DM halo along the main bra nch of its merging tree. This invariance
+ entails that QsâˆRâˆ’5/2
+ sandQ(r)âˆÎ£âˆ’1/2
+ sRâˆ’5/2
+ s/parenleftBig
+ r/Rs/parenrightBigâˆ’Î²
+ . It follows that the phase-space density
+ remains constant, in the sense of Qs=const. , in the quiescent phases and it decreases as Râˆ’5/2
+ sin
+ the violent ones. The physical origin of the NFW density proï¬ le and the phase-space density power
+ law is still unknown. Yet, the numerical experiments show th at halos recover these relations after
+ the violent phases. The major mergers drive Rsto increase and Qsto decrease discontinuously while
+ keeping QsÃ—R5/2
+ s=const. The virial equilibrium in the quiescent phases implies tha t a DM halos
+ evolves along a sequence of NFW proï¬les with constant energy per unit volume (i.e., pressure) within
+ Rs.
+ Subject headings: cosmology: dark matter â€” galaxies: evolution â€” galaxies: fo rmation â€” galaxies:
+ halos â€” galaxies: interactions â€” galaxies: kinematics and d ynamics
+ 1.INTRODUCTION
+ The dynamics of dark matter (DM) halos in the Cold
+ Dark Matter (CDM) cosmology can be easily formulated
+ as the classical Newtonian N-body problem. Yet, the un-
+ derstanding of the equilibrium conï¬guration of the DM
+ halos deï¬es a simple analytical approach. The lack of
+ analytical understanding is often compensated for by
+ numerical simulations which provide empirical knowl-
+ edge. The cumulative work in cosmology over the last
+ decade or so has led to a broad consensus about two ba-
+ sic facts that describe the equilibrium structure of DM
+ halos. One is that the spherically-averaged density pro-
+ ï¬leÏ(r) is well approximated by the so-called NFW pro-
+ ï¬le (Navarro et al. 1996, 1997) or some close variants
+ of it (Moore et al. 1998; Jing & Suto 2000; Klypin et al.
+ 2001). The other is the power law behavior of the phase-
+ space density proï¬le, namely Q(r) =Ï(r)/Ïƒ3(r)âˆrâˆ’Î²,
+ with Î²â‰ˆ1.9, where Ïƒ(r) is the velocity dispersion
+ (Taylor & Navarro 2001).
+ Two seemingly orthogonal approaches to the prob-
+ lem of the origin of the equilibrium structure in
+ DM halos exist. One assumes a monolithic col-
+ lapse of a halo that can be approximated by the
+ spherical infall model (Gunn & Gott 1972). The ap-
+ plication of the model to the cosmological context,
+ where the shell crossing has to be explicitly accounted
+ for, has resulted in the so-called secondary infall
+ 1Racah Institute of Physics, Hebrew University; Jerusalem
+ 91904, Israel
+ 2Department of Physics and Astronomy, University of Ken-
+ tucky, Lexington, KY 40506-0055, USA
+ 3Department of Physics, Georgia Southern University, State s-
+ boro, GA 30460, USAmodel (hereafter SIM; Gunn 1977; Fillmore & Goldreich
+ 1984; Bertschinger 1985; Hoï¬€man & Shaham 1985;
+ Ryden & Gunn 1987; Zaroubi & Hoï¬€man 1993; Nusser
+ 2001; Lokas & Hoï¬€man 2000). The SIM has been tested
+ against the N-body simulations and has proven to faith-
+ fully reproduce the density proï¬le of simulated DM halos
+ (Quinn et al. 1986; Efstathiou et al. 1988; Crone et al.
+ 1994; Ascasibar et al. 2004; 2007). A closely related vari-
+ ant of the SIM replaces its dependence on the primor-
+ dial over-density of the proto-halo by the mass accre-
+ tion history (MAH) of the halo (Nusser & Sheth 1999;
+ Lu et al. 2006; Salvador-SolÂ´ e et al. 2007). The SIM and
+ its MAH variant can reproduce also the power law be-
+ havior of the phase-space density (Austin et al. 2005;
+ GonzÂ´ alez-Casado et al. 2007).
+ However, a close inspection of the N-body simu-
+ lations reveals that a DM halo evolves very diï¬€er-
+ ently from a monolithic quasi-spherical collapse. In
+ fact halos are numerically observed to go through a
+ sequence of mergers, some labeled as major merg-
+ ers in which the two main progenitors are of a sim-
+ ilar mass, leading to emergence of the NFW den-
+ sity proï¬le (Syer & White 1998; Dekel et al. 2003;
+ Subramanian et al. 2000). Romano-Diaz et al. (2006;
+ 2007, hereafter Paper I and II) studied the formation
+ and equilibrium conï¬guration of halos by means of con-
+ trolled N-body simulations, with the initial conditions
+ set by constrained realizations of Gaussian ï¬elds. These
+ simulations were designed to address issues of how the
+ merging history aï¬€ects the DM halos. The emerging pic-
+ ture is that of a halo evolving viaa sequence of quiescent
+ phases of a slow mass accretion intermitted by violent
+ episodes of major mergers. In the quiescent phases, the2 Hoï¬€man et al.
+ density is well ï¬tted by an NFW proï¬le, the inner (NFW)
+ scale radius Rsand the mass enclosed within it ( Ms) re-
+ main constant, and the virial radius ( Rvir) grows linearly
+ with the expansion parameter ( a). In the violent phases,
+ the halos are not in a dynamical equilibrium, but are
+ rather in a transition state, resulting in a discontinuous
+ growth of RsandRvir. In such a picture a halo is deï¬ned
+ in the context of a merger tree â€” at any given time it is
+ taken as the most massive progenitor along the branch
+ leading to the ï¬nal halo.
+ A direct comparison between the SIM and nu-
+ merical simulations has been conducted recently by
+ Ascasibar et al. (2007). This comparison is based on
+ selecting the DM halos from a cosmological simulation,
+ tracing them back in time, and recovering their individ-
+ ual initial conditions. The SIM has been applied to the
+ â€˜primordialâ€™ density proï¬les, and their virial density pro -
+ ï¬les have been calculated for diï¬€erent redshifts. The SIM
+ calculated proï¬les provided a good match to the evolu-
+ tion and structure of the simulated clusters. This is en-
+ couraging. However, a rigorous fundamental theory that
+ can accommodate both the spherical monolithic collapse
+ and the major merger-driven evolution exhibited by the
+ simulations is still missing. This motivates us to look
+ further into the phenomenology of the phase-space den-
+ sity, to gain a further insight into this seemingly simple,
+ yet complicated, problem.
+ The study of the DM halo evolution has been heav-
+ ily focused on the density proï¬le, while the evolution
+ of the phase-space density has been largely ignored.
+ Peirani & de Freitas Pacheco (2007) presented one of the
+ few studies of Q(r) evolution. They found that Q, de-
+ ï¬ned as a global quantity characterizing the halo as a
+ whole, is generally decreasing with time. Speciï¬cally, it
+ exhibits an early rapid decrease (at redshifts z/greaterorsimilar6.5) and
+ a late slow decrease. Here we aim at studying the evo-
+ lution of the phase-space density within the framework
+ of the NFW scaling and the dynamical picture formu-
+ lated in Papers I and II. In particular, we shall rely on
+ the empirical fact that the dynamics of the DM halos is
+ constrained by a new invariant of motion. This invari-
+ ant tags a halo along the main branch of the merging
+ tree. The NFW scaling and this invariant of motion pro-
+ vide a full description of the cosmological evolution of
+ the phase-space density for individual halos.
+ The structure of the paper is as follows. The analysis
+ of the DM halos in Papers I and II is brieï¬‚y reviewed in
+ Â§2. General considerations of the evolution of DM halos
+ are given in Â§3. The evolution of the phase-space density
+ proï¬le is described in Â§4 and self-similarity and scaling
+ relations are given in Â§5. A general discussion follows in
+ Â§6.
+ 2.NUMERICAL EXPERIMENTS
+ In Papers I and II, we investigated the cosmological
+ evolution and structure of ï¬ve DM halos by setting the
+ initial conditions of the simulations using constrained re -
+ alizations of Gaussian ï¬elds. Our basic motivation was
+ to perform controlled numerical experiments designed to
+ study the dependence of the evolution and structure of a
+ given halo on its merging history. The Hoï¬€man & Ribak
+ (1991) algorithm of constrained realizations of Gaussian
+ ï¬elds has been used to set up the initial conditions. Pa-
+ pers I and II present the analysis of ï¬ve diï¬€erent mod-els of a given DM halo, evolving along various merging
+ histories. The models were simulated within the frame-
+ work of the open CDM (OCDM) model with â„¦ 0= 0.3,
+ h= 0.7 and Ïƒ8= 0.9, where â„¦ 0is the current cosmologi-
+ cal matter density parameter and Ïƒ8is the variance of the
+ density ï¬eld convolved with a top-hat window of radius
+ 8hâˆ’1Mpc used to normalize the power spectrum. This
+ model is very close to the â€˜concordanceâ€™ Î›CDM model
+ in its dynamical properties. The models are labeled as
+ OCDMa, OCDMb, etc., following the notations of Pa-
+ pers I and II. Here we add a new model, run within
+ the ï¬‚at-Î› cosmology with the parameters of the WMAP
+ three years data base (Spergel et al. 2006). The con-
+ straints used to set the model are similar to OCDMa
+ and the model is labeled as WMAP3a, yet it is performed
+ within a 2563computational box and it starts from a dif-
+ ferent random realization of the initial conditions. A full
+ description of the numerical simulations, the application
+ of the algorithm of constrained realizations and the nu-
+ merical code are given in Papers I and II. The WMAP3a
+ model is one in a series of runs in the WMAP3 cosmology,
+ to be reported in a forthcoming paper. The NFW ï¬tting
+ algorithm is described in Paper II and the phase-space
+ density power law proï¬le is ï¬tted in a similar way.
+ 3.GENERAL CONSIDERATIONS
+ The density proï¬le of DM halos is well approximated
+ by the NFW proï¬le,
+ Ï(r) =4Ïs
+ (r/Rs)(1 +r/Rs)2, (1)
+ in which the characteristic density ( Ïs) and scale radius
+ (Rs) deï¬ne the NFW proï¬le. Deï¬ning the halo as a col-
+ lection of particles in a spherical (say) volume in which
+ the mean density equals some critical over-density (which
+ is in general redshift dependent) times the mean cosmo-
+ logical density, the virial mass ( Mvir) and radius ( Rvir)
+ of the halo are determined. It follows that RvirandRs
+ (or equivalently MvirandMs) are the two independent
+ parameters that deï¬ne an NFW halo.
+ Assuming the NFW parameterization, we can write the
+ phase-space density proï¬le as
+ Q(r) =QsQ(r
+ Rs), (2)
+ where
+ Q(x) =Ï(x)/Ïs/parenleftbig
+ Ïƒ(x)/Ïƒs/parenrightbig3, (3)
+ Qs=Ïs
+ Ïƒ3s, (4)
+ Ïƒsis the mean velocity dispersion within Rsandx=
+ r/Rs. To the extent that the DM halos are ï¬tted by the
+ NFW proï¬le, their Q(x) proï¬le should obey a universal
+ relation. Their cosmological evolution is then determined
+ by the evolution of Qs.
+ 4.EVOLUTION OF PHASE-SPACE DENSITY PROFILES
+ Evolution of the dimensionless phase-space density
+ proï¬le, Q(x), is presented in Fig. 1, where the Q(r/Rs)
+ proï¬les of all models are evaluated at diï¬€erent epochs,
+ covering the time interval from z= 5.3 (z= 3.35 for
+ the WMA3a model) to the present epoch. Fig. 1 clearlyEvolution of phase-space density in dark matter halos 3
+ Fig. 1.â€” The cosmological evolution of the dimensionless phase-spa ce density proï¬le, Q(r/Rs), of the ï¬ve OCDM and the one Î›CDM
+ halos. The Q(r/Rs) proï¬le is plotted for a sample of snapshots for all the OCDM a nd the WMAP3a models. The value of Î²for each
+ snapshot is indicated. The six panels correspond to the diï¬€e rent models. The universal form of Q(r/Rs) is clearly exhibited.
+ shows that the phase-space density of DM halos follows
+ a power law with Î²= 1.94Â±0.01 in the quiescent phases
+ The lack of the cosmological evolution of Î²is shown in
+ Fig. 2, where Î²is plotted against the cosmological ex-
+ pansion parameter afor all the models. This ï¬gure also
+ displays the cosmological evolution of the Q(r/Rs) pro-
+ ï¬le which is given by Qs. The Qs(a) curves are noisy, but
+ a clear and a striking trend can be observed â€” subject
+ to aâ‰ˆ20% jitter, Qsremains constant in the quiescent
+ phases, and drops discontinuously in the transitions from
+ one quiescent phase to the next one, which are induced
+ by the violent events. In the violent phases, the NFW
+ ï¬tting breaks down and the widely oscillating values of
+ Qsare clearly not physical.
+ A close inspection of the halo evolution reveals that
+ the product Î£ sâ‰¡ÏsRsremains approximately invariant
+ as the halo evolves along the main branch of its merg-
+ ing tree (Fig. 3). The value of Î£ sï¬‚uctuates around its
+ mean of two diï¬€erent modes. In the quiescent phases
+ Î£sundergoes fast and correlated ï¬‚uctuations of a small
+ amplitude (see next section and Paper II). In the vio-
+ lent episodes it exhibits large deviations from the mean
+ value. This behavior is associated with timings of major
+ mergers when halos are far from the equilibrium. The
+ NFW ï¬tting fails here and the resulting NFW param-
+ eters are ill-deï¬ned. Ignoring the spikes of the violent
+ phases, and averaging over the jittery ï¬‚uctuations in the
+ quiescent phases, Î£ sretains its value along the halo evo-
+ lution. While the invariance of Î£sin a given quiescent
+ phase is not surprising, its ability to retain the value in
+ the major merger events is not obviously expected.
+ 5.SELF-SIMILARITY AND SCALING RELATIONS
+ Assuming the empirical ï¬nding of Î£ sinvariance, we
+ shall study its ramiï¬cations for the evolution of the
+ phase-space density. In the quiescent phases, in which
+ the density follows the NFW proï¬le, a halo is expected
+ to be in virial equilibrium, as corrobrated by Fig. 13 ofPaper II. In particular the virial ratio, evaluated within
+ Rs, should have a constant value, namely,
+ Ïƒ2
+ s
+ Ms/Rsâ‰ˆconst. (5)
+ The virial ratio diï¬€ers from unity because the inner part
+ of the halo does not constitute an isolated system, and
+ its value depends on the shape of the density proï¬le.
+ Assuming the constancy of the virial ratio within Rs
+ and the invariance of Î£ s,
+ Ïƒ2
+ sÏsâˆMsÏs
+ RsâˆÏ2
+ sR2
+ s= Î£2
+ s. (6)
+ The evolution of the phase-space density proï¬le in a given
+ halo is described by
+ Q(r)âˆÎ£âˆ’1/2
+ sRâˆ’5/2
+ s/parenleftBigr
+ Rs/parenrightBigâˆ’Î²
+ . (7)
+ Consequently, for a given halo the following invariance
+ holds:
+ QsR5/2
+ sâ‰ˆconst. (8)
+ This prediction has been tested against the ï¬ve models
+ of Papers I and II and the Î›CDM halo. Fig. 2 shows
+ the cosmological evolution of QsandQsR5/2
+ sof these
+ models. As with all other quantities that characterize
+ the DM halos, the product QsR5/2
+ sshows a jittery be-
+ havior in the quiescent phases and strong ï¬‚uctuations in
+ the violent phases, in which the NFW parameters are ill
+ deï¬ned. Apart from this, it remains constant through-
+ out the evolution. Only Model B shows a very slight
+ increase in the long quiescent phase that follows its last
+ major merger.
+ TheÏsRsinvariance is to be distinguished from the
+ ÏsâˆRâˆ’m
+ sscaling found in its the low-amplitude jitter
+ (Paper II) and from MsâˆRÎ±
+ sof Zhao et al. (2003). In
+ Paper II we show that mâ‰ˆ1.39 in the last quiescent
+ phases of various halos, while at early times mâ‰ˆ1.59.4 Hoï¬€man et al.
+ Fig. 2.â€” The cosmological evolution of the phase-space density proï¬ le of the main halo of the six models. The upper panel shows the
+ dependence of Qson the expansion parameter a. The middle panel shows the cosmological evolution of the pr oduct QsR5/2
+ s. To a good
+ approximation the product is invariant. The lower panel pre sents the evolution of the slope of the Q(r) proï¬le. The slopes of all the models
+ converge to Î²â‰ˆ âˆ’1.95.
+ This stands in good agreement with Zhao et al.â€™s Î±â‰ˆ
+ 1.44 in the â€œslow accretion phaseâ€ and Î±â‰ˆ1.92 in the
+ â€œrapid accretion phase.â€ The mâ‰ˆ1.39 scaling is ob-
+ tained by analyzing each quiescent phase, and it reï¬‚ects
+ the ï¬‚uctuations of ÏsandRsaround their mean values
+ within that phase. This correlation appear to be driven
+ by density ï¬‚uctuations that originate in the region be-
+ tween the cusp and Rs, where the density slope varies
+ between -1 and -2. The mean values of ÏsandRschange
+ from one quiescent phase to another. The mâ‰ˆ1.59
+ reï¬‚ects the variation across the diï¬€erent phases. The as-
+ sociation of the mâ‰ˆ1.59 and Î±â‰ˆ1.92 with the early
+ times of the evolution of halos stems from the fact that
+ the violent phases are more abundant at early times. The
+ combined analysis of Paper II and the present work yields
+ the following picture. In the quiescent phases the values
+ ofÏsandRsï¬‚uctuate around constant values, yet their
+ product remains invariant along the evolution of a halo.
+ The Î£ sinvariance implies that MsâˆR2
+ s. This is very
+ close to the MsâˆR1.92
+ sof Zhao et al. (2003) and the mi-nor discrepancy results from Zhao et al. not separating
+ explicitly between the quiescent and violent phases. We,
+ therefore, support and validate one of Zhao et al.â€™s main
+ points, namely the MsâˆRÎ±
+ sscaling, and set Î±= 2.
+ Thus, we validate also Zhao et al.â€™s relation between the
+ evolution of the concentration parameter and the MAH.
+ Moreover, this relation can be easily extended to the
+ MAH â€” Qsrelation, given the QsR5/2
+ sinvariance.
+ A ï¬nal note concerns the entropy of a system of self-
+ gravitating collisionless particles. The deï¬nition of the
+ entropy (per particle) of a monoatomic ideal gas is givein
+ by
+ s=kBln(Qâˆ’1) +const, (9)
+ where kBis the Boltzmann constant ( e.g.,
+ Dalcanton & Hogan 2001; White & Narayan 1987).
+ Applying this deï¬nition to the DM particles provides
+ one with a formal entropy of the DM. Our ï¬ndings
+ concerning structure and evolution of the phase-space
+ density can be easily translated to the language of theEvolution of phase-space density in dark matter halos 5
+ Fig. 3.â€” The product Î£ s=ÏsRsis plotted against the expansion parameter afor the six halo models. The panels present the individual
+ models. Î£ sexhibits a jittery behavior in the quiescent phases and the l arge spikes correspond to the violent epochs in which the NFW
+ ï¬tting is ill-deï¬ned. Apart from these, Î£ sremains approximately constant throughout the evolution.
+ entropy of the DM. It should be noted here that Eq.
+ 9 provides a local measure of the entropy. The long
+ range nature of the gravitational interactions prohibits
+ a simple extension of the entropy to an extensive
+ quantity that characterizes the whole halo. Within this
+ framework we can only refer to the entropy as a local
+ property.
+ 6.DISCUSSION AND CONCLUSIONS
+ The main elements of the structure and evolution of the
+ DM halos can be summarized as follows. Halos evolve
+ through two phases, quiescent and violent ones, which
+ represent the two extreme cases of smooth accretion and
+ major mergers. In the quiescent phase the halo density
+ distribution is closely approximated by the NFW pro-
+ ï¬le. The inner (within Rs) halo mass surface density,
+ Î£s, remains approximately constant throughout its en-
+ tire evolution. Most importantly, the major mergers that
+ take the halo from one quiescent phase to the other pre-
+ serve the value of Î£ s. During the quiescent phases the
+ halo phase-space density proï¬le follows a power law of
+ the form Q(r) =Qs(r/Rs)âˆ’Î²withÎ²â‰ˆ1.9. The cosmo-
+ logical evolution of the phase space density is given by
+ Qs. Under the invariance of Î£ sand the assumption of
+ the virial equilibrium within Rs, the evolution of Qsis
+ dictated by Rs, so that QsâˆRâˆ’5/2
+ s. In the quiescent
+ phases, Qsremains constant and it decreases discontin-
+ uously in the violent phases.
+ The Î£ sinvariance and the virial theorem (Eq. 6) imply
+ that the evolution of a halo proceeds while conserving its
+ surface density and its energy per unit volume, or equiv-
+ alently the pressure, within Rs. The interesting pointis that a typical halo undergoes a few violent events of
+ major merging that destroy its equilibrium. Following
+ each event it regains the NFW structure with a larger
+ Rs, while preserving its pressure and the mean surface
+ density within the new Rs. Summarizing, a DM halo
+ evolves along a sequence of NFW proï¬les, with an ever
+ increasing RvirandRsthat grows only discontinuously,
+ in the manner described in Paper I, while conserving the
+ mean surface density and the pressure within Rs.
+ The evolution of the Q(r) proï¬le of a given DM halo
+ is predicted by Eq. 7. The controlled numerical experi-
+ ments of Papers I and II suggest that, for a given halo,
+ Î£sremains constant over a few quiescent phases inter-
+ mitted by violent events. All the halos analyzed here
+ (apart from WMAP3a) emerge from the same realiza-
+ tion of the initial conditions that has been subjected to
+ diï¬€erent constraints. In many ways these halos can be
+ considered as a single halo that has been manipulated so
+ as to modify its merging history. As such they all have
+ roughly the same value of Î£ s. The WMAP3a model pro-
+ vides an independent realization of a DM halo in a diï¬€er-
+ ent cosmology. The value of Î£ sis roughly twice as large
+ than in all the other model. Of course the extremely
+ poor statistics of our models cannot teach us about the
+ scatter in Î£ s. The question arises as to what happens in
+ the general case of a large ensemble of DM halos drawn
+ from a large cosmological simulation. The scatter in Î£ s
+ is expected to determine the evolutionary tracks of the
+ phase-spase density proï¬les. It is interesting to study
+ the possible environment âˆ’Î£scorrelation, and to what
+ extent this aï¬€ects the evolution of the DM halos.6 Hoï¬€man et al.
+ TheÏsRsinvariance implies that the Zhao et al. (2003)
+ MsâˆRÎ±
+ sscaling holds with Î±= 2, and so does the MAH
+ - concentration parameter relation. It follows that this
+ can be easily extended to calculate a similar MAH âˆ’Qs
+ relation. The interesting ramiï¬cation of this result is
+ that any statistical algorithm for generating DM halos
+ merging trees and/or MAHs can be extended so as to
+ provide the evolution of the full NFW parameters of a
+ halo along its merging tree. This can be used in semi-
+ analytical modeling of galaxy formation in which realiza-
+ tions of merging trees include the full NFW structure of
+ the halos.
+ The deï¬nition of Q(r) as a phase-space density is only
+ a poor manâ€™s substitute for the â€™realâ€™ phase-space den-
+ sity in the six-dimensional phase space. Yet, pushing the
+ analogy further on, a formal entropy is deï¬ned by Eq. 9
+ as a local variable. This local deï¬nition cannot be ex-
+ tended to provide a global entropy of the halo. It follows
+ that statements regarding the evolution of the entropy of
+ DM halos are ill-deï¬ned, at least in the current context.
+ Nevertheless, in the NFW scaling framework, in which
+ the entropy of DM halos is taken as Qs, it increases with
+ Rs. In this context, the quiescent phases with Rsâˆ¼const.
+ correspond to adiabatic processes which preserve the en-
+ tropy, and the violent phases â€” to non-adiabatic ones in
+ which the entropy grows.
+ The method of introducing an entropy by means of Eq.
+ 9 can be considered as only formal, and its relation to a
+ standard thermodynamics needs to be questioned. Yet,
+ Faltenbacher et al. (2007) have recently shown that the
+ formally deï¬ned entropy of the DM is very closely as-
+ sociated with the classical (ideal gas) entropy of the in-
+ tergalactic gas in clusters of galaxies. Faltenbacher et al .
+ studied the entropy of the gas and DM in high reso-
+ lution adiabatic SPH cosmological simulations â€” â€˜adia-baticâ€™ here is used in the sense that the entropy of the
+ gas can only grow due to shock waves. Consequently,
+ following the accepted notation, the entropy of the gas
+ can be expressed by means of Kgasâ‰¡kBT/Ï2/3, and
+ by analogy KDM=Ïƒ2
+ DM/Ï2/3
+ DMâˆQâˆ’2/3. The power law
+ behavior of Q(r) implies that KDMâˆr1.1. Interestingly,
+ outside the entropy core of râ‰ˆRs/2 the gas entropy fol-
+ lows the DM, namely KgasâˆKDM, and the calculated
+ slope agrees well with observations. Faltenbacher et al.
+ amended the deï¬nition of Kgas, such that the thermal en-
+ ergy is extended to include the kinetic energy of the small
+ scale (turbulent motion) and the DM and gas densities
+ are normalized by their mean cosmological values. The
+ newly deï¬ned Kgasthen coincides with the DM entropy
+ outside the entropy core to a very good approximation.
+ The analysis of Faltenbacher et al. shows that, at least
+ in galaxy clusters, the DM entropy coincides with the
+ classical, ideal gas, entropy of the intracluster medium.
+ It is not clear a priori why the gas and DM entropies
+ should coincide, but numerical simulations suggest that
+ they do. The simulations suggest that observational de-
+ termination of the entropy of the intracluster gas should
+ shed light and constrain the behavior of the DM entropy.
+ We thank Ran Rubin for his help with the calcula-
+ tion of the phase space density proï¬le. Fruitful discus-
+ sions with Yuval Birnboim, Adi Nusser, Noam Soker and
+ Saleem Zaroubi are gratefully acknowledged. This re-
+ search has been supported by ISF-143/02 and the Shein-
+ born Foundation (to YH), by NASA/LTSA 5-13063,
+ NASA/ATP NAG5-10823, HST/AR-10284 (to IS), and
+ by NSF/AST 02-06251 (to CH and IS).
+ REFERENCES
+ Ascasibar, Y., Hoï¬€man, Y., & Gottlober, S. 2007, Monthly Not ices
+ of the Royal Astronomical Society, 376, 393
+ Ascasibar, Y., Yepes, G., GottlÂ¨ ober, S., & MÂ¨ uller, V. 2004 ,
+ MNRAS, 352, 1109
+ Austin, C. G., Williams, L. L. R., Barnes, E. I., Babul, A., &
+ Dalcanton, J. J. 2005, ApJ, 634, 756
+ Bertschinger, E. 1985, ApJS, 58, 39
+ Crone, M. M., Evrard, A. E., & Richstone, D. O. 1994, ApJ, 434,
+ 402
+ Dalcanton, J. J. & Hogan, C. J. 2001, ApJ, 561, 35
+ Dekel, A., Arad, I., Devor, J., & Birnboim, Y. 2003, ApJ, 588, 680
+ Efstathiou, G., Frenk, C. S., White, S. D. M., & Davis, M. 1988 ,
+ MNRAS, 235, 715
+ Faltenbacher, A., Hoï¬€man, Y., GottlÂ¨ ober, S., & Yepes, G. 20 07,
+ MNRAS, 376, 1327
+ Fillmore, J. A. & Goldreich, P. 1984, ApJ, 281, 1
+ GonzÂ´ alez-Casado, G., Salvador-SolÂ´ e, E., Manrique, A., & Hansen,
+ S. H. 2007, ArXiv Astrophysics e-prints
+ Gunn, J. E. 1977, ApJ, 218, 592
+ Gunn, J. E. & Gott, J. R. I. 1972, ApJ, 176, 1
+ Hoï¬€man, Y. & Ribak, E. 1991, ApJ, 380, L5
+ Hoï¬€man, Y. & Shaham, J. 1985, ApJ, 297, 16
+ Jing, Y. P. & Suto, Y. 2000, ApJ, 529, L69
+ Klypin, A., Kravtsov, A. V., Bullock, J. S., & Primack, J. R. 2 001,
+ ApJ, 554, 903
+ Lokas, E. L. & Hoï¬€man, Y. 2000, ApJ, 542, L139
+ Lu, Y., Mo, H. J., Katz, N., & Weinberg, M. D. 2006, MNRAS,
+ 401
+ Moore, B., Governato, F., Quinn, T., Stadel, J., & Lake, G. 19 98,
+ ApJ, 499, L5+Navarro, J. F., Frenk, C. S., & White, S. D. M. 1996, ApJ, 462,
+ 563
+ â€”. 1997, ApJ, 490, 493
+ Nusser, A. 2001, MNRAS, 325, 1397
+ Nusser, A. & Sheth, R. K. 1999, MNRAS, 303, 685
+ Peirani, S. & de Freitas Pacheco, J. A. 2007
+ Quinn, P. J., Salmon, J. K., & Zurek, W. H. 1986, Nature, 322,
+ 329
+ Romano-Diaz, E., Faltenbacher, A., Jones, D., Heller, C., H oï¬€man,
+ Y., & Shlosman, I. 2006, ApJ, 637, L93
+ Romano-DÂ´ Ä±az, E., Hoï¬€man, Y., Heller, C., Faltenbacher, A. , Jones,
+ D., & Shlosman, I. 2007, ApJ, 657, 56
+ Ryden, B. S. & Gunn, J. E. 1987, ApJ, 318, 15
+ Salvador-SolÂ´ e, E., Manrique, A., GonzÂ´ alez-Casado, G., & Hansen,
+ S. H. 2007, ArXiv Astrophysics e-prints
+ Spergel, D. N., Bean, R., DorÂ´ e, O., Nolta, M. R., Bennett, C. L.,
+ Dunkley, J., Hinshaw, G., Jarosik, N., Komatsu, E., Page, L. ,
+ Peiris, H. V., Verde, L., Halpern, M., Hill, R. S., Kogut, A.,
+ Limon, M., Meyer, S. S., Odegard, N., Tucker, G. S., Weiland,
+ J. L., Wollack, E., & Wright, E. L. 2006, ArXiv Astrophysics
+ e-prints
+ Subramanian, K., Cen, R., & Ostriker, J. P. 2000, ApJ, 538, 52 8
+ Syer, D. & White, S. D. M. 1998, MNRAS, 293, 337
+ Taylor, J. E. & Navarro, J. F. 2001, ApJ, 563, 483
+ White, S. D. M. & Narayan, R. 1987, MNRAS, 229, 103
+ Zaroubi, S. & Hoï¬€man, Y. 1993, ApJ, 416, 410
+ Zhao, D. H., Mo, H. J., Jing, Y. P., & BÂ¨ orner, G. 2003, MNRAS,
+ 339, 12

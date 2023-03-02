@@ -1,0 +1,1026 @@
+arXiv:0706.0014v1  [cs.SC]  31 May 2007Towards an exactadaptive algorithmfor the
+ determinant of arational matrix
+ Anna Urba´ nska
+ Laboratoire Jean Kuntzmann
+ Universit´ eJoseph Fourier, Grenoble I
+ E.mail: Anna.Urbanska@imag.fr
+ ABSTRACT
+ In this paper we propose several strategies for the
+ exact computation of the determinant of a ratio-
+ nal matrix. First, we use the Chinese Remain-
+ dering Theorem and the rational reconstruction to
+ recover the rational determinant from its modular
+ images. Then we show a preconditioning for the
+ determinant which allows us to skip the rational
+ reconstruction process and reconstruct an integer
+ result. We compare those approaches with matrix
+ preconditioning which allow us to treat integer in-
+ stead of rational matrices. This allows us to intro-
+ duce integer determinant algorithms to the ratio-
+ nal determinant problem. In particular, we discuss
+ the applicability of the adaptive determinant algo-
+ rithm of [9] and compare it with the integer Chinese
+ Remaindering scheme. We present an analysis of
+ the complexity of the strategies and evaluate their
+ experimental performance on numerous examples.
+ This experience allows us to develop an adaptive
+ strategy which would choose the best solution at
+ the run time, depending on matrix properties. All
+ strategies have been implemented in LinBox linear
+ algebra library.
+ 1. INTRODUCTION
+ The determinant computation is one of the core
+ problems in linear algebra. To our knowledge, the
+ problem of the exact computation of the determi-
+ nant of a rational matrix (i.e a matrix with ratio-
+ nal entries) has not yet been widely studied. Ingeneral, exact algorithms can be used everywhere
+ where large precision is required. For example, the
+ determinant can be too close to 0 or ±∞and thus
+ cannot be computed by ﬂoating point precision al-
+ gorithms. In the case of ill-conditioned matrices
+ symbolic methods can be preferred as rounding er-
+ rors can spoil the computation. It can also be in-
+ teresting to compare the use of decimal and contin-
+ ued fractions approximations of the entries of real-
+ valued matrices. Continued fractions are the best
+ approximants with small denominators, see [12, Ch.
+ 4]. In this paper, we will try to face the question
+ of how eﬃcient an exact determinant computation
+ can be in both cases.
+ LinBox library [7] implements exact algorithms for
+ the determinant computation in the case of mod-
+ ular and integer domains. By using fast modular
+ routines [6, 8] it can oﬀer solutions an order of mag-
+ nitude faster than other existing implementations
+ [9]. We apply these procedures to the computation
+ of the determinant of a rational matrix.
+ Rational �eld arithmetics is implemented in GMP
+ [21] and Givaro [22] libraries. In general, rational
+ numbers are diﬃcult to treat from the exact com-
+ putation point of view. Mainly, the size of the nu-
+ merator and denominator can increase very quickly
+ with every addition and multiplication. When we
+ add or multiply two fractions with numerators and
+ denominators bounded by M, the numerator and
+ denominator of the result are bounded by O(M2).
+ Moreover, one addition requires 3, and one mul-
+ tiplication requires 2 integer products, as well as
+ a gcd computation. Therefore, the cost of an ex-
+ act matrix-vector or matrix-matrix product can be
+ prohibitive in practice. This prohibits the use of
+ the rational �eld Qin most exact linear algebra
+ algorithms which rely on matrix-matrix or matrix-
+ vector products.However, the cost of computing a modular image
+ of a rational numbera
+ b, where a,bare of moderate
+ size, should be comparable with the cost of com-
+ puting a modular image of a large integer number.
+ This allows us to compute a modular image of a ra-
+ tional matrix at a reasonable cost and thus enables
+ us to use modular procedures.
+ To compute the determinant of a rational matrix
+ A=ˆaij
+ bij˜
+ , bij>0 the problem of matrix storage
+ has to be considered. First, we can store the entries
+ ofAas rational numbers. Furthermore, one could
+ store the common denominator D(A) of all entries
+ ofAand an integer matrix A′given by the formula
+ A=1
+ D(A)A′. This approach can be useful in the
+ case when the entries of Aare decimal fractions and
+ D(A) can be set to a power of 10. But if we only
+ assume that the values |aij|, bijare less than M,
+ bothD(A) and/bardblA′/bardblare bounded by O(Mn2). Still,
+ we may store the common denominator for each row
+ (column) separately. Then the integer vectors ˜Ai
+ are given by the equation Ai=1
+ Di˜Ai, where Ai
+ is the matrix row (column) and Diis the common
+ denominator of its entries. Vectors ˜Aiform matrix
+ ˜A, the norm of which is bounded by O(Mn). The
+ product πDigives a more accurate approximation
+ of the denominator D(det(A)) than D(A)n.
+ The purpose of this paper is to propose the strate-
+ gies to compute the denominator of a rational ma-
+ trix. All approaches are based on modular com-
+ putation. Depending on the matrix storage deter-
+ minant and/or matrix preconditioning is proposed.
+ The resulting algorithms can use the rational re-
+ construction [12, Ch.5] and/or existing integer de-
+ terminant algorithms.
+ The rest of the paper is organized as follows. In sec-
+ tion 2 we give a short description of the existing al-
+ gorithms for the rational reconstruction and the in-
+ teger determinant problem. In section 3 we present
+ the main result i.e. two preconditioning strategies
+ and four new algorithms to compute the rational
+ determinant. The cost of the algorithms can be
+ described in terms of the number of modular im-
+ ages of Aand modular determinant computations
+ needed. Depending on the strategy, the cost of the
+ rational reconstruction or p-adic lifting is taken into
+ account. In section 4 we discuss the cost of com-
+ puting a modular image of a matrix and the overall
+ cost of the algorithms. In section 5 we present the
+ experimental results and discuss the best choice of
+ the strategy in practice. We conclude the paper by
+ proposing some mixed solutions in section 6.2. EXISTING ALGORITHMS
+ The aim of this section is to introduce the algo-
+ rithms that will be used later in section 3. In sub-
+ section 2.1 we give a short description of the ratio-
+ nal reconstruction procedure. On the example of p-
+ adic system solving [2], we present the application
+ of this procedure to the computation of a rational
+ solution. We show how to change the procedure in
+ the case of early terminated reconstruction [18] and
+ give the complexity estimation in this case. Then
+ in subsection 2.2 we present the classical CRA al-
+ gorithm for the determinant and its modi�cations
+ by [1] and [9].
+ 2.1 Rationalreconstructionanditsap-
+ plication
+ A modular image of a rational numbera
+ bmodM
+ can be computed by taking the modular images of
+ aandband applying the modular division. This
+ fact can be written as
+ a
+ b=umodM⇔a=bumodM.
+ It should be noticed is that the opposite procedure
+ can also be performed. One can reconstruct the
+ fractiona
+ bwhere gcd( a,b) = 1, b >0 from it mod-
+ ular image u. The solution is usually not unique
+ but when we additionally require that |a|<N
+ 2,
+ b≤M
+ N, then there exists at most one solution, see
+ [12, Ch.5].
+ The solution to the rational reconstruction prob-
+ lem can be computed by applying the extended
+ Euclidean algorithm EEA which searches for the
+ gcd of Mandu. The procedure Ratrec(a,b,u,M,
+ N, D) takes as the input modulus M,u∈Zand
+ the bounds NandD, and returns a fractiona
+ b=
+ umodMsuch that |a|< N, b < D or FAIL if no
+ such solution exists. The worst case complexity
+ ofRatrec is thus the same as for the EEA algo-
+ rithm i.e. O`
+ log2(M)´
+ for the classical algorithm
+ andO(log(M)log(log( M))) for the fast Euclidean
+ algorithm, see [12, Ch.11]. We will use the nota-
+ tion EEA( M) for the complexity of the Extended
+ Euclidean Algorithm with entries bounded by M.
+ In many application, the cost of rational recon-
+ struction is usually small compared with the cost of
+ computing uandM. The general scheme is to re-
+ cursively compute uk, Mk, where Mk=p1p2···pk
+ orMk=pkuntilMk>2NDand then to apply the
+ rational reconstruction. The complexity of the pro-
+ cedure depends on the number kof steps, which can
+ be quite large Reducing the number of steps can be
+ the easiest way to enhance the performance of thealgorithm.
+ This can be seen on the example of the Dixon al-
+ gorithm [2] to solve a linear system Ax=bof in-
+ teger equations. Let N, D be the bound for the
+ numerator and denominator of x. In the classi-
+ cal approach we compute the p-adic approxima-
+ tion in k >log(N) + log( D) + 1 steps and then
+ reconstruct the result, which gives the complex-
+ ityO`
+ m3(log(m) + log( /bardblA/bardbl))2´
+ when we use the
+ bound of Hadamard for D, Nand assume b∈O(1).
+ See [15] for a detailed complexity study. In fact, the
+ number of entries in xwhich we need to reconstruct
+ can often be reduced, see [7].
+ One should however notice, that the bounds Nand
+ Dcan be much bigger than the actual result. The
+ idea is therefore to apply the rational reconstruc-
+ tion periodically and check the solution for correct-
+ ness. If Mk=pkis the modulus in the current step,
+ the method of Wang [18] prompts us to setq
+ Mk
+ 2
+ as the current bound for numerators and the de-
+ nominator in Ratrec . The algorithm is guaranteed
+ to return the result if Mk>2max( N(x)2, D(x)2),
+ where N(x),D(x) are the values of the numera-
+ tor and the denominator. In the opposite case,
+ Ratrec (a,b, u, M k,q
+ Mk
+ 2,q
+ Mk
+ 2) should fail with large
+ probability. If we apply Wang’s idea to the p-adic
+ lifting we can reduce the number of steps to k=
+ 2logp(max( N(x),D(x)))+1 and the complexity be-
+ comes O`
+ mω+m2klog(m/bardblA/bardbl)´
+ Current work on
+ this �eld focus on further reducing the number of
+ steps in the case when N(x)≪D(x) orD(x)≪
+ N(x). A purely heuristic idea is to use the boundsq
+ Mk
+ 2N
+ D,q
+ Mk
+ 2D
+ Ninstead ofq
+ Mk
+ 2. For other ap-
+ proaches, see [14, 17].
+ 2.2 Integer Determinant Algorithms
+ For an integer matrix Aone has several alterna-
+ tives to compute the determinant. The classical ap-
+ proach is to use Chinese Remaindering Algorithm
+ (CRA) to reconstruct the value from suﬃciently
+ many modular images. The modular determinant
+ is computed by LU factorization in the time O(nω),
+ where nis the matrix dimension.Each step of the
+ algorithm consist of computation mod piand a re-
+ construction of the determinant mod p1···piby the
+ Chinese Remaindering Theorem. The computation
+ is stopped when the early termination (ET) con-
+ dition is ful�lled i.e. the reconstructed result rests
+ the same for several iterations. The algorithm is
+ Monte Carlo type, where the probability of success
+ is controlled by the number of repetitions. See [4,9] for a detailed description.
+ A mixture of CRA loop and Dixon p-adic lifting is
+ used to compute the integer determinant in [1] and
+ in the hybrid algorithm of [9]. The principle is to
+ reduce the value reconstructed by CRA algorithm
+ by computing a large fraction of the determinant.
+ By solving several linear systems we can compute
+ some largest invariant factors sm, . . . s m−i. Their
+ product πis potentially a large part of the determi-
+ nant. An early terminated CRA loop which recon-
+ structs det( A)/πmodp0p1· ··piusually requires
+ only a few modular determinant computations. In-
+ formally, the algorithm can be described as follows.
+ 1. For i= 0 to kdo
+ (a) Solve Axi=biby Dixon p-adic lifting to
+ �ndsm, . . . s m−i;
+ (b)π=sm·· ·sm−i;
+ (c) Run CRA for several iterations to deter-
+ mine det( A)/π;
+ (d) if ET break;
+ 2. Run another determinant algorithm to get the
+ result;
+ Here, kshould not exceed the expected number
+ of invariant factors which is O(p
+ log(n)) see [9].
+ The expected complexity of the hybrid determi-
+ nant algorithm [9] for random dense matrices is
+ O`
+ n3log2.5(n/bardblA/bardbl)´
+ . In the worst case (step 2) we
+ can choose between the CRA algorithm and the al-
+ gorithms of [16, 10, 13]. In fact, in the expected
+ case we do not need to run this step. The experi-
+ ment proved that thanks the adaptive solutions this
+ algorithm performs better than other implementa-
+ tion for a larger group of matrices.
+ 3. RATIONAL DETERMINANT AL-
+ GORITHMS
+ The algorithms to compute the rational determi-
+ nant are based on the ideas described in section
+ 2. We present four main strategies to compute the
+ rational determinant. They all use CRA which al-
+ lows us to compute the determinant of the matrix
+ modulo a product p1···pkof primes. Then the
+ �rst variant uses the rational reconstruction to ob-
+ tain the rational result. In order to make use of
+ Early Termination condition we have to precondi-
+ tion the determinant to obtain its integer multipli-
+ cation. Preconditioning of the matrix allows us to
+ use the integers determinant algorithms. The ap-
+ plication of two determinant algorithms is studiedhere. The common requirements for all algorithm
+ are shown in 3.0. The algorithms are Monte Carlo
+ type due to the early termination used.
+ Requirements 3.0
+ Require: A- anm×mrational matrix;
+ Require: Di,i= 1. . . m- the common denomina-
+ tor of the entries of the ith row (column);
+ Require: N, D- the bounds for the numerator and
+ the denominator of det( A),D=πDi;
+ Require: A set Pof random primes;
+ Require: Ratrec (a,b, u, M, N, D ) - a procedure
+ which reconstructsa
+ b=umodM, a < N, b < D
+ or returns FAIL.
+ Ensure: det(A) - the determinant of the matrix.
+ The eﬀectiveness of our methods depends heavily
+ on the number of modular determinants computed
+ and thus on the bound NandDfor the numerator
+ and the denominator of the determinant. One can
+ compute Das the product of lcm of all denomina-
+ tors in a row (or a column). Then Ncan be com-
+ puted as D·H, where His the Hadamard bound
+ for matrix A. One should notice that the bounds
+ can be largely overestimated. Thus, we proposed
+ output-dependant approach which allows us to re-
+ duce the number of iteration.
+ The �rst idea is to employ the CRA scheme and
+ compute the determinant for the modular images
+ of a rational matrix. In the case when the determi-
+ nant is rational, early termination condition never
+ holds. Instead, we have to compute the bounds
+ DandNfor the denominator and numerator of
+ the determinant. As soon as the product of primes
+ M=p1···pkovercomes 2 NDwe can apply ratio-
+ nal reconstruction and reconstruct the determinant
+ from the modular image. We can also use an output
+ dependent rational reconstruction as described in
+ section 2.1. This strategy is presented as algorithm
+ RatLU. An early termination in the rational case
+ would required applying the rational reconstruction
+ from time to time with the bounds N=D=q
+ Mk
+ 2
+ and wait for the result to re-occur. This leads to so-
+ lution when M >2max{n2, d2}, where n, dare the
+ numerator and denominator of the determinant.
+ The second method can use the denominator bound D
+ to make the CRA loop look for an integer value.
+ Again, we compute the modular image of a ratio-
+ nal matrix Abut this time we call CRA to look for
+ D×det(A) which is integer. Now the classic ET
+ condition can be used and the result is obtained as
+ soon as M > nD
+ d. The eﬀectiveness of this methodAlgorithm 3.1 RatLU
+ 1:i= 0, k= 0, n= 0, d= 1, M= 1, u= 0;
+ 2:repeat
+ 3: ++ i; Get pifromP;
+ 4: Compute Ai=Amodpi;
+ 5: Compute ui= det( Ai);
+ 6: Reconstruct u= det( A)mod Mpiusing
+ M, u, u i, pi,M=Mpi;
+ 7:ifi=k2then
+ 8: s = Ratrec( n, d, u, M,q
+ M
+ 2,q
+ M
+ 2);++k;
+ 9: ifs/ne}ationslash= FAIL then return n, d;end if
+ 10:end if
+ 11:until M >2ND
+ 12: status = Ratrec( n, d, u, M, N, D );
+ 13:ifstatus /ne}ationslash= FAIL then return n, d;end if
+ depends therefore on the exactness of denominator
+ bound D. Experimental results show that it is suf-
+ �cient in practice, see sec. 5 table 2. This strategy
+ is presented as algorithm PrecDetLU.
+ Algorithm 3.2 PrecDetLU
+ 1:i= 0;M= 1;u= 0;
+ 2:repeat
+ 3: ++ i;GetpifromP;
+ 4: Compute Ai=Amodpi;
+ 5: Compute ui=D·det(Ai);
+ 6: reconstruct u=D·det(A)mod Mpiusing
+ M, u, u i, pi,M=M·pi
+ 7:ifET holds then returnu
+ gcd(u,D),D
+ gcd(u,D);
+ end if
+ 8:until M >2ND
+ 9: returnu
+ gcd(u,D),D
+ gcd(u,D);
+ The last two strategies require an integer matrix ˜A
+ which can be obtained by preconditioning the ra-
+ tional matrix A. In order to obtain an integer ma-
+ trix, the easiest way would be to take matrix A′=
+ D(A)A, where D(A) is the common denominator
+ of all entries. In the general case, where the entries
+ ofAare fractionsaij
+ bijwith numerator and denom-
+ inator bounded by /bardblA/bardbl, this is not the best choice
+ as the size of D(A) can be as large as O(/bardblA/bardblm2).
+ This causes log( /bardblA′/bardbl) to be O(m2). Moreover, the
+ denominator approximation is D(A)min this case,
+ which is O(m3) in size. We have already de�ned
+ a tighter bound for the denominator of det( A) by
+ πDi, which is O(m2) in size. Now, if we want to
+ use the integer matrix ˜Athen we can precondi-
+ tionAby taking ˜A=Adiag(Di), where Diare
+ the common denominators of the rows (or ˜A=
+ diag(Di)A, where Diare the common denomina-tors of the columns). For the preconditioned ma-
+ trix˜Aall integer determinant algorithms can be
+ applied. In particular the hybrid determinant algo-
+ rithm of [9] can be used. The drawback of this ap-
+ proach is the size of the coeﬃcients of ˜Acompared
+ toA, see section 5 table 1. This forced us to use
+ early terminated rational reconstruction for system
+ solving in the Dixon p-adic lifting algorithm. The
+ strategies that use the CRA loop or the hybrid algo-
+ rithm are presented as algorithms PrecMatLU and
+ PrecMatDixon respectively.
+ Algorithm 3.3 PrecMatLU
+ 1:i= 0;M= 1;u= 0;
+ 2: Compute A=Adiag(Di) (or diag( Di)A)
+ 3:repeat
+ 4: Get pifromP;
+ 5: Compute Ai=Amodpi;
+ 6: Compute ui= det( Ai);
+ 7: reconstruct u= det( A)mod Mpiusing
+ M, u, u i, pi,M=M·pi
+ 8:ifET holds then returnu
+ gcd(u,D),D
+ gcd(u,D);
+ end if
+ 9:until M >2ND
+ 10: returnu
+ gcd(u,D),D
+ gcd(u,D);
+ Algorithm 3.4 PrecMatDixon
+ 1: Compute A=Adiag(Di) (or diag( Di)A);
+ 2: Compute u= det( A) by HybridDet [9];
+ 3: returnu
+ gcd(u,D),D
+ gcd(u,D);
+ 4. COMPLEXITY ANALYSIS
+ In this section we study the complexity of the al-
+ gorithms presented in section 3. In subsection 4.1
+ we present the analysis of the general case, where
+ we assume that the entries of the matrix are frac-
+ tions with numerators and denominators bounded
+ by/bardblA/bardbl. Then, in subsection 4.2, we will focus on
+ two special cases i.e. matrices of decimal fractions
+ and Hilbert matrices.
+ The complexity of the strategies described in sec-
+ tion 3 depends on the number of iterations required
+ by the while loop of CRA. Then, depending on the
+ strategy, we have to include the cost of computing
+ the homomorphic image of the matrix, the cost of
+ the rational reconstruction or the cost of p-adic lift-
+ ing. If we use the early termination condition, the
+ number of steps required for the computation of
+ det(A) depends on the values: m- the size of the
+ matrix, n, d- the real values of the numerator and
+ denominator of det( A) and D- the bound for the
+ denominator. The cost of homomorphic imagingdepends on the maximum norm of the matrix i.e.
+ /bardblA/bardbl= max {/bardblaij/bardbl, bij}and/bardbl˜A/bardbl.
+ 4.1 General case
+ We start this section by the analysis of the ratio-
+ nal homomorphic imaging schemes. We have the
+ following lemma.
+ Lemma 4.1.Letpbe a word-size prime. Then
+ the complexity of computing the modular image at p
+ for a rational matrix AisO(m2(log(/bardblA/bardbl))+EEA( p))
+ word operations.
+ Proof. For a matrix without a pattern we com-
+ pute an image for all m2entries. For a rational
+ fraction the cost is O(log(/bardblA/bardbl)) for the computa-
+ tion of the modular image of the numerator and de-
+ nominator and EEA( p) =O(log(p) log(log( p))) for
+ the modular inverse computation by fast extended
+ Euclidean algorithm. Therefore for a word-size /bardblA/bardbl
+ the cost of computing the image is O(1) yet impor-
+ tant, due to the constant for computing the inverse
+ of an element mod p.
+ For the integer case, the cost is log( /bardbl˜A/bardbl)). We
+ can notice that log( /bardbl˜A/bardbl) can be O(mlog(/bardblA/bardbl)) in
+ the worst case, so the complexity of homomorphic
+ imaging in terms of misO(m2) for the rational
+ andO(m3) in the integer case. But if /bardbl˜A/bardbl< pthe
+ cost of imaging for one element is 1. Thus, if both
+ /bardbl˜A/bardbland/bardblA/bardblare less than p, the complexity of the
+ homomorphic imaging becomes m2EEA( p) for the
+ rational and m2for the integer case. In this case,
+ it is better to use integer imaging. On the other
+ hand, if matrix Ais structured, for example it is
+ Hankel-type, we have the complexity mEEA( p) for
+ rational imaging. Due to the preconditioning, we
+ loose the structure pattern for ˜Aand the complex-
+ ity of integer imaging rests without change. Finally
+ we notice, that for sparse matrices with Ω elements,
+ we can take Ω instead of m2in the complexity for-
+ mula.
+ Putting it together we have the following theorem.
+ Theorem 4.2.The worst case complexities of the
+ strategies for computing the determinant of a ratio-
+ nal matrix Aof size mare
+ 1.O`
+ k(m2log(/bardblA/bardbl) +mω)´
+ +O∼“
+ k√
+ k�
+ for RatLU,
+ where O∼hides some log(k)factors;2.O`
+ log(D
+ dn)(m2log(/bardblA/bardbl) +mω)´
+ for PrecDetLU;
+ 3.O“
+ log(D
+ dn)(m2log(/bardbl˜A/bardbl) +mω)�
+ for PrecMatLU;
+ 4.O∼(x(m2(log(m)+log( /bardbl˜A/bardbl))+mx1
+ 2)+O(log(D
+ dn
+ sm+
+ 1)(m2log(/bardbl˜A/bardbl)+mω))for PrecMatDixon, where
+ sm=sm(˜A)andx∈m(log(m/bardbl˜A/bardbl/bardblb/bardbl)is the
+ size of solution to ˜Ax=b.
+ Here ˜Ais equal to Adiag(Di)as in section 3; n,d
+ are the numerator and denominator of det(A)and
+ k=O(max(log( n),log(d))).
+ Proof. The complexities can be obtained by a
+ careful examination of the number of CRA steps.
+ The result for alg. RatLU takes into account the
+ cost of the rational reconstruction which is per-
+ formed at most O(√
+ k) times. In alg. PrecMat-
+ Dixon we introduce xto estimate the cost of early
+ terminated p-adic lifting. The size of xcan gen-
+ erally vary depending on the choice of bbut is
+ O(mlog(m/bardbl˜A/bardbl/bardblb/bardbl)) in the worst case. To further
+ evaluate the worst case complexity of alg. PrecMat-
+ Dixon we assumed that HybridDet continues to use
+ CRA loop in the worst case. Thus the number of
+ iterations O(log(D
+ dn
+ sm)) and the complexity.
+ Special care should be taken if we consider the use
+ of alg. PrecMatDixon. As /bardbl˜A/bardblcan potentially be
+ O∼(m) in size and with a pessimistic bound on
+ x, its worst case complexity can be O∼(log(m4)),
+ which is worse than for the CRA computation. Nev-
+ ertheless, the gain of computing smcan be impor-
+ tant, as it is the case in the HybridDet algorithm,
+ see [9].
+ 4.2 Complexity inthe specialcases
+ By the precedent remarks it should be visible, that
+ the analysis of the strategies should be divided into
+ two main cases. One would consist of the matri-
+ ces, whose entries are given by decimal fraction,
+ or more generally, where the common denomina-
+ tor of all entries, the common denominator of the
+ rows and the norm of Aare of the same order i.e.
+ D(A) =O(Di) =O(/bardblA/bardbl). In the other case ma-
+ trix entries are given as fractions with diﬀerent de-
+ nominators. We will study the complexity of the
+ algorithms on the example of Hilbert matrices.
+ In the case of matrices of decimal fractions let us
+ further assume that /bardblA/bardblisO(1). This would be the
+ case of numerous ill-conditioned matrices emergingfrom diﬀerent applications in science and engineer-
+ ing. In order to better describe the diﬀerences be-
+ tween the algorithms, we include the cost of EEA
+ when it is relevant. The theorem is a straightfor-
+ ward consequence of theorem 4.2.
+ Theorem 4.3.The complexities of the strategies
+ in the case when /bardblA/bardbl=O(˜/bardblA/bardbl) =O(1)are:
+ 1.O∼“
+ k(m2EEA( p) +mω+k√
+ k�
+ for alg. RatLU;
+ 2.O∼`
+ log(D
+ dn)(m2EEA( p) +mω)´
+ for alg. PrecDetLU;
+ 3.O∼`
+ log(D
+ dn)(m2+mω)´
+ for alg. PrecMatLU;
+ 4.O∼“
+ x(m2log(m) +mx1
+ 2)) + log(D
+ dn
+ sm)(m2+mω)�
+ for alg. PrecMatDixon.
+ where k, xare as in theorem 4.2.
+ The analysis suggests that the algorithm PrecMatLU should
+ be better than PrecDetLU (see 4.1 for the homo-
+ morphic image complexity). The performance anal-
+ ysis in section 5 con�rms this observation. Further-
+ more, as long as the Smith form of ˜Ais simple, we
+ encourage the use of strategy PrecMatDixon. In
+ particular, we can establish an equivalence between
+ matrices Aof random decimal fractions with edec-
+ imal places taken randomly an uniformly from the
+ interval [0 ,1] and matrices ˜A,/bardbl˜A/bardbl<10e. This
+ allows us to use the expected complexity of the hy-
+ brid algorithms of [9] as the expected complexity
+ of the rational determinant computation by alg.
+ PrecMatDixon. Also, the preconditioning should
+ be used instead of strategy RatLU. For more de-
+ tails see section 5.
+ The other group consists of matrices with ratio-
+ nal entries given by fractions with very diﬀerent
+ denominators. As a model case we can consider
+ Hilbert matrices. Hilbert matrices are the matrices
+ of the form Hm= [1
+ i+j−1]i,j=1..m. They are bench-
+ marks examples for many numerical methods. The
+ formula for the determinant of a Hilbert matrix is
+ well known and is given by the equation
+ 1
+ det(Hm)= Πm−1
+ k=1(2k+ 1)„
+ 2k
+ k«2
+ .
+ Theorem 4.4.The complexities for rational de-
+ terminant strategies in the case of Hilbert matrices
+ are1.O“
+ m2log(m)(mω+mp
+ log(m))�
+ for alg. RatLU;
+ 2.O`
+ mω+2log(m)´
+ for alg. PrecDetLU;
+ 3.O`
+ m5) log(m)´
+ for alg. PrecMatLU;
+ 4.O(smm3log2(m) +m5log(m))for alg. Prec-
+ MatDixon.
+ Proof. One should notice that log(1
+ det(Hm)) is
+ O(m2log(m)). The size of entries of Hmis log(/bardblHm/bardbl) =
+ O(log(m)) and log( /bardbl˜Hm/bardbl) =O(mlog(m)).
+ In the case of Hilbert matrices algorithm PrecDetLU -
+ has the best time complexity and also performed
+ best in the experiments, see section 5. Since the
+ numerator is equal to 1, we only have to recover
+ the size of the over-approximation. Experimental
+ results show, that its size is equal to about 8% of
+ the denominator size. Therefore, alg. PrecDetLU,
+ PrecMatLU perform about 25 times less iterations
+ than RatLU. As for the algorithm PrecMatDixon,
+ the study of the Smith form of ˜Hmhas revealed that
+ it is quite complex, with about 2√mnontrivial fac-
+ tors and the size log( sm(˜Hm)) equal O(m). Thus,
+ it is not worth computing PrecMatDixon due to
+ the high cost of the algorithm and poor gain.
+ 5. PERFORMANCECOMPARISON
+ In this section we present the experimental results
+ for four strategies from section 3. We have tested
+ the performance of four strategies on three matrix
+ sets: random, ill-conditioned and Hilbert matrices.
+ We generated the random matrices using Matlab
+ procedure rand. The entries of the matrices are
+ decimal fractions with 6 decimal places chosen ran-
+ domly from the interval [0 ,1]. The determinant of
+ the resulting matrices is large in the absolute value.
+ The result of the numerical procedure of Matlab is
+ ±∞.
+ Ill-conditioned matrices have been chosen from the
+ Matrix Market [20] Harwell-Boeing collection. We
+ chose three sets: Grenoble, Astroph and Bcsstruc3.
+ Grenoble set represents the results of the simula-
+ tion of computer systems. The sizes of the matri-
+ ces varies from 115 to 1107 and the condition num-
+ bers range from 1 .5·102in the case of the smallest
+ matrix to 9 .7·107for the biggest. The decimal
+ precision of the entries depends on the matrix and
+ ranges from 1 to 5 decimal places. The determi-
+ nants are close to 0. For these matrices, Matlab
+ procedure detcomputes the result correctly up tothe 5th decimal place. Since matrix entries seem to
+ be represented as rounded expansions of rational
+ numbers, we computed the determinant of the ma-
+ trices �as is� and then we took continued fractions
+ approximants of the entries with the same precision
+ as the decimal fractions.
+ Astroph set describes the process of nonlinear ra-
+ diative transfer and statistical equilibrium in as-
+ trophysics. The condition number is 3 .6·1017for
+ the small 180 ×180 matrix and 1 .7·1014for the
+ 765×765 one. The result of Matlab computation
+ is−∞. Bcsstruc3 gives dynamic analyses in struc-
+ tural engineering. All matrices are symmetric. The
+ condition number is about 1011for matrices 19 and
+ 20 and 105for matrix 22. The result of Matlab
+ computation is ∞.
+ We split the analysis of the performance of the al-
+ gorithms in three phases. First, we will consider
+ the cost of rational-modular vs. integer-modular
+ imaging and compare it with the results for /bardblA/bardbl
+ and/bardbl˜A/bardbl. Then we will take a look on the nu-
+ merator and denominator approximations DandN
+ computed by our algorithms. Finally, we give the
+ timings for all strategies and compare their perfor-
+ mance.
+ As we can see in table 1, the time of computing an
+ integer image can be several times shorter than for
+ the rational image provided that the size of precon-
+ ditioned matrix is still small. This is not the case
+ for Hilbert matrices of dimension ≥250 , when the
+ time of rational image computation is better. Fur-
+ thermore, for structured matrices, like Hilbert, we
+ can reduce the number of images computed. For
+ a Hankel-type matrix, there are only 2 n−1 im-
+ ages to compute, which makes the cost of imaging
+ negligible.
+ The performance of the algorithms depends on the
+ accuracy of denominator approximation used. For
+ the bound D=πDi, the resulting size of the over-
+ approximation is shown in table 2, column 4. In
+ algorithm PrecMatDixon we additionally approx-
+ imate the numerator by computing sm(˜A). In this
+ case we are interested in the value App(N) =sm(˜A)
+ andD
+ dn
+ sm(˜A)which we compute instead of the nu-
+ merator. As we can see in the table, the quality
+ of the approximation of the denominator depends
+ on the matrix and ranges from 1-2% in the case
+ of sparse matrices in the Grenoble set, to 80% for
+ Bccstk matrices. For Hilbert matrices the approxi-
+ mation is quite eﬃcient, the over-approximation is
+ always less than 10%. Table 3 shows that despiteA RatIm IntIm IntIm/RatIm log(/bardblA/bardbl)log(/bardbl˜A/bardbl)
+ bccstk817 0.14587 0.03126 4.66696 60 66
+ bccstk485 0.05189 0.01123 4.61980 65 69
+ bccstk138 0.00280 0.00050 5.53681 42 42
+ mmca180 0.00808 0.00120 6.74795 77 76
+ mccf765 0.13222 0.03215 4.11219 70 68
+ grenoble115 0.00162 0.00019 8.51887 19 19
+ grenoble185 0.00746 0.00096 7.8125 19 19
+ grenoble216a 0.01055 0.00145 7.25 2 1
+ grenoble216b 0.0105 0.00106 9.90055 19 19
+ grenoble343 0.0264 0.00507 5.21053 2 1
+ grenoble512 0.0588 0.0126 4.66667 2 1
+ grenoble1107 0.26762 0.05682 4.70958 16 16
+ random200 0.037 0.003 11.692 19 19
+ random500 0.330 0.028 11.831 19 19
+ random800 0.599 0.071 8.436 19 19
+ random1000 0.934 0.111 8.452 19 19
+ hilbert100 0.00414 0.00255 1.62264 7 289
+ hilbert200 0.02174 0.01984 1.09552 8 567
+ hilbert250 0.03481 0.03629 0.95942 8 714
+ hilbert300 0.05093 0.05967 0.85350 9 847
+ hilbert400 0.09307 0.13343 0.69756 9 1134
+ hilbert600 0.21485 0.41759 0.51450 10 1711
+ hilbert800 0.38839 0.94920 0.40917 10 2294
+ hilbert1000 0.61425 1.81285 0.33883 10 2866
+ Table 1: Comparison of the times (in sec-
+ onds) for homomorphic imaging are given in
+ columns RatIm (for rational) and IntIm (for
+ integer). The ratio of the timings is given in
+ column 3. Last two columns give the size of
+ entries for Aand ˜A. Matrix size is included
+ in its name.
+ the size of the over-approximation, preconditioning
+ allow us to gain enough to beat the naive RatLU al-
+ gorithm. If the size of /bardbl˜A/bardblis small, as is the case
+ for sparse matrices, we can compute sm(˜A) at a
+ relatively low cost and eﬃciently approximate the
+ numerator.
+ The timings for all algorithms are shown in table
+ 3. The results for Hilbert matrices agree with the
+ complexity estimation in Thm. 4.4. Note that alg.
+ PrecMatDixon is usually the best for the matrices
+ from MatrixMarket collection.
+ For the Grenoble set, the approximation by contin-
+ ued fractions allowed quite well, in our opinion, to
+ reconstruct the orginal rational matrix connected
+ to the problem. Despite the diﬀerence in proper-
+ ties, the running times for the decimal and con-
+ tinued fractions variants were simmilar. However,
+ although the matrices were close in the maximum
+ norm, the determinants ratio reached as much as 2
+ in the case of grenoble1107.
+ In �gure 5 we present the results of the determinant
+ computation for Hilbert matrices. We compare the
+ timings for algorithm RatLU, PrecDetLU, Prec-
+ MatLU, PrecMatDixon, and the Maple LinearAlge-
+ bra::Determinant algorithm with method=rational .
+ The best performance is observed for a variant of
+ algorithm PrecDetLU which takes into account theA log(d)log(n)log(D/d)log(D/d)
+ dlog(App(n))log(Dn
+ dApp(N))
+ bccstk817 7845 36169 6294 0.802 25923 16540
+ bccstk485 3903 21921 2538 0.650 16225 8234
+ bccstk138 2576 5040 139 0.054 3880 299
+ mmca180 1663 7341 571 0.343 7375 537
+ mccf765 5503 32451 2626 0.477 32483 2594
+ grenoble115 2243 2136 36 0.016 1526 646
+ grenoble185 3072 2785 3 0.001 2777 11
+ grenoble216a 423 131 9 0.021 124 16
+ grenoble216b 4110 3278 193 0.047 683 2788
+ grenoble343 678 209 8 0.012 201 16
+ grenoble512 1009 303 15 0.015 306 12
+ grenoble1107 15639 14002 2707 0.173 7184 9525
+ random200 3986 4255 0 0 4255 0
+ random500 9961 10952 4 0 10956 0
+ random800 15944 17797 1 0 17798 0
+ random1000 19931 22407 0 0 22404 3
+ hilbert100 19737 1 1690 0.086 130 1561
+ hilbert200 79472 1 6493 0.082 290 6204
+ hilbert300 179207 114323 0.080 424 13900
+ hilbert400 318942 126509 0.083 563 25947
+ hilbert600 718412 159948 0.083 848 59101
+ hilbert800 1277881 1103581 0.081 1133 102449
+ hilbert1000 1997351 1164550 0.082 1424 163127
+ Table 2: The size of the numerator nand de-
+ nominator dofdet(A), the size of the denom-
+ inator over-approximation D/dcomputed by
+ PrecDetLU and PrecMatLU; the numera-
+ tor approximation App(n)obtained as smin
+ PrecMatDixon, and the size of the part re-
+ maining to compute. smdepends on nand
+ the over-approximation D/d.
+ Matrix RatLU PrecDetLU PrecMatLU PrecMatDixon
+ bccstk817 * 789.02 553.624 318.62
+ bccstk485 278.964 143.888 95.836 57.144
+ bccstk138 4.12 1.868 1.324 0.764
+ mmca180 14.404 5.896 3.644 1.604
+ mccf765 * 585.724 416.352 128.24
+ grenoble115 1.444 0.591813 0.456 0.288
+ grenoble185 5.86 2.34 1.456 0.468
+ grenoble216a 1.052 0.268 0.248 0.26
+ grenoble216b 10.448 3.852 2.204 2.128
+ grenoble343 4.292 0.924 0.832 0.732
+ grenoble512 14.844 2.868 2.48 1.072
+ grenoble1107 * 698.436 519.368 367.448
+ random200 24.096 10.776 3.996 2.980
+ random500 432.448 180.448 71.492 54.996
+ random800 1715.316 789.154 331.008 205.188
+ random1000 * 1572.024 662.956 403.232
+ hilbert100 17.860 0.664 0.548 0.712
+ hilbert200 330.280 11.104 10.52 11.312
+ hilbert300 * 59.144 65.236 66.872
+ hilbert400 *200.844 252.676 265.276
+ hilbert600 *1072.754 1664.738 1735.574
+ hilbert800 *3476.188 6299.98 8830.372
+ hilbert1000 *8870.534 18466.348 19328.66
+ Table 3: Timing comparison for 4 rational
+ determinant strategies. All times in seconds.
+ Best times in bold. 0 100 200 300 400 500 600 700 800
+  50  100  150  200  250  300  350  400  450  500Time (s)
+ nRational determinant computation − timings comparison
+ RatLU
+ PrecDetLU
+ PrecDetLUsym
+ PrecMatLU
+ PrecMatDixon
+ Maple
+ Figure 1: Comparison of the timings for
+ the exact computation of the rational de-
+ terminant of Hilbert matrices. The results
+ for algorithms RatLU, PrecDetLU, Prec-
+ MatLU and PrecMatDixon implemented in
+ LinBox and Maple Determinant procedure
+ are shown. Algorithm PrecDetLU is used
+ in the classic and symmetric variant, which
+ takes into account the Hankel structure of
+ the matrix. All times in seconds.
+ Hankel structure of the matrix.
+ 6. CONCLUSIONS
+ It this paper we have presented four strategies for
+ exact computation of the determinant of a ratio-
+ nal matrix. We have evaluated the performance of
+ these algorithms on several sets of matrices. The
+ performance of the algorithms suggests that there
+ exists a clear division between the matrices given as
+ a rational approximation (by decimal fractions) of
+ real valued matrices and the matrices with a great
+ diversity of the denominators of the entries. For
+ the �rst case, matrix preconditioning which leads
+ to a integer matrix is proposed, which allows us
+ to use integer determinant algorithms, see solution
+ PrecMatDixon. For the second case, determinant
+ preconditioning is preferred, which does not lead
+ to matrix coeﬃcient blow-up. In general, precon-
+ ditioning proved more useful than rational recon-
+ struction tools, although better early termination
+ methods where the modulus Mis linear in the size
+ of the output nanddcan bring a change, see [14,
+ 17].
+ An adaptive solution should be able to choose the
+ best storage method and homomorphic imaging scheme,
+ and work independently of the determinant over-
+ approximation.
+ We propose the following solution, which incorpo-
+ rates the elements of all algorithms1. Compute D=πDi,˜A; setN= 1;
+ 2. If logp(/bardbl˜A/bardbl< C) compute N=sm(/bardbl˜A/bardbl) - see
+ alg. PrecMatDixon
+ 3. Compute the modular image of the rational
+ matrix Aand integer matrix ˜A, determine
+ whether to use PrecDetLU or PrecMatLU based
+ on the timings.
+ 4. Run the ET CRA loop forD
+ N·det(A) using
+ PrecDetLU or PrecMatLU.
+ 5. From time to time check by rational recon-
+ struction the early termination condition on
+ det(A) - see RatLU.
+ This algorithm can be further developed to com-
+ pute other invariant factors as in alg. PrecMat-
+ Dixon if relevant. Notice, that the cost of intro-
+ ducing solution RatLU to the adaptive algorithm
+ is virtually that of rational reconstruction.
+ Further work can include intertwining algorithms
+ RatLU and PrecDetLU to include the use of less
+ exact determinant preconditioners, which potentially
+ are not a multiple of d. The aim would to re-
+ duce a factor of the denominator by precondition-
+ ing and reconstruct the remaining part by rational
+ reconstruction. The strategy should be eﬀective,
+ if the over-approximation caused by precondition-
+ ing is reduced but a large fraction of the denomi-
+ nator is obtained at the same time. For example,
+ D=πDi/gcd(Di) could be considered.
+ Further work can then focus on the implementation
+ of the solution in the case of sparse matrices and
+ on the parallelization of the algorithms.
+ In this paper we have considered the case of dense
+ matrices in the analysis of the complexity of the
+ strategies as well as in the implementation. How-
+ ever, sparse matrix counterparts of the algorithms
+ can also be used. For the modular determinant
+ computation one could used the algorithm of Wiede-
+ mann [19] that computes the determinant by �nd-
+ ing the characteristic polynomial of the matrix. In
+ alg. PrecMatDixon the sparse solver of [11] can be
+ used.
+ The strategies described in this paper contain ele-
+ ments that allow parallelization. This concerns in
+ particular the CRA loop, where several iterations
+ can be performed at the same time, see [3]. The
+ question of an optimally distributed early termina-
+ tion in the case of integer Chinese reconstruction(alg. PrecDetLU, PrecMatLU, PrecMatDixon) as
+ well as the rational reconstruction (alg. RatLU)
+ has not yet been addressed. For a parallel p-adic
+ lifting for alg. PrecMatDixon, see [5].
+ In this paper we have developed and compared four
+ strategies to compute the rational determinant of
+ a matrix. We have proposed two preconditioning
+ methods that allow us to transfer the problem from
+ rational to integer domain. We believe that the ap-
+ proach described in this article can also be applied
+ in other problems of exact computation in ratio-
+ nal numbers such as rank computation or system
+ solving.
+ 7. REFERENCES
+ [1] J. Abbott, M. Bronstein, T. Mulders. Fast
+ deterministic computation of determinants of
+ dense matrices. ISAAC’1999 , pp. 197-204,
+ ACM Press, 1999.
+ [2] J. Dixon. Exact Solution of Linear Equations
+ Using P-Adic Expansions. Numer.Math.
+ 40(1), pp. 137-141, 1982.
+ [3] J.G. Dumas. Calcul parallele du polynome
+ minimal entier en Athapascan-1 et Linbox.
+ RenPar’2000 . pp119-124. 2000.
+ [4] J.G. Dumas, D. Saunders, G. Villard. On
+ Eﬃcient Sparse Integer Matrix Smith Normal
+ Form Computations. Journal of Symbolic
+ Computations. 32 (1/2), pp. 71-99, 2001.
+ [5] J.G. Dumas, W. Turner, Z. Wan. Exact
+ Solution to Large Sparse Integer Linear
+ Systems. ECCAD’2002 , 2002.
+ [6] J.G. Dumas, T. Gautier, C. Pernet. FFLAS:
+ Finite �eld linear algebra subroutines.
+ ISSAC’2002 . 2002.
+ [7] J.G. Dumas, T. Gautier, M. Giesbrecht, P.
+ Giorgi, B. Hovinen, E. Kaltofen, D. Saunders,
+ W. Turner, G. Villard. LinBox: A Generic
+ Library for Exact Linear Algebra.
+ ICMS’2002 . 2002.
+ [8] J.G. Dumas, P. Giorgi, C. Pernet. FFPACK:
+ �nite �eld linear algebra package.
+ ISSAC’2004 . 2004.
+ [9] J.G. Dumas, A. Urba´ nska. An introspective
+ algorithm for the integer determinant.
+ Research report.
+ http://arxiv.org/abs/cs.SC/0511066.[10] W. Eberly, M. Giesbrecht, G. Villard. On
+ computing the determinant and Smith form
+ of an integer matrix. Proc. 41st FOCS , pp.
+ 675-687, 2000.
+ [11] W. Eberly, M.Giesbrecht, P. Giorgi, A.
+ Storjohann, G. Villard. Solving Sparse
+ Integer Linear Systems. ISSAC’2006 . 2006.
+ [12] J. von Gathen, J. Gerhard. Modern Computer
+ Algebra. Cambridge University Press 1999.
+ [13] E. Kaltofen, G. Villard. On the complexity of
+ computing determinants. Computational
+ Complexity , 31(3-4), pp. 91–130, 2005.
+ [14] S. Khodadad and M. Monagan. Fast rational
+ function reconstruction. ISSAC’2005 , pp.
+ 184–90. ACM Press, New York, 2006.
+ [15] T. Mulders, A. Storjohann. Diophantine
+ Linear System Solving. ISAAC’1999 , pp.
+ 181-188. 1999.
+ [16] A.Storjohann. The shifted number system for
+ fast linear algebra on integer matrices.
+ Journal of Complexity , 21(4), pp. 609–650,
+ 2005.
+ [17] Z. Olesh, A. Storjohann. The vector rational
+ function reconstruction problem. WWCA
+ 2006.
+ [18] P.S. Wang. A p-adic Algorithm for Univariate
+ Partial Fractions. Proc. of the 4th ACM
+ Symp. on Symb. and Alg. Comp . pp 212-217.
+ 1981.
+ [19] D. Wiedemann. Solving sparse linear
+ equations over Finite Fields. IEEE Trans.
+ Inf. Theory , pp. 54-62. 1986.
+ [20] Matrix Market.
+ http://math.nist.gov/MatrixMarket/
+ [21] GNU Multiprecision Package.
+ http://www.swox.com/gmp/
+ [22] Givaro library.
+ http://ljk.imag.fr/CASYS/LOGICIELS/givaro/

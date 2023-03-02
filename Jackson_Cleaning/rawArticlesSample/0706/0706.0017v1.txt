@@ -1,0 +1,4322 @@
+Preprint typeset in JHEP style - HYPER VERSION CERN-PH-TH/2007-082
+ 31 May 2007
+ Parton showers with quantum interference
+ Zolt an Nagy
+ Theory Division, CERN
+ CH-1211 Geneva 23, Switzerland
+ E-mail: Zoltan.Nagy@cern.ch
+ Davison E. Soper
+ Institute of Theoretical Science
+ University of Oregon
+ Eugene, OR 97403-5203, USA
+ E-mail: soper@uoregon.edu
+ Abstract: We specify recursive equations that could be used to generate a lowest order
+ parton shower for hard scattering in hadron-hadron collisions. The formalism is based
+ on the factorization soft and collinear interactions from relatively harder interactions in
+ QCD amplitudes. It incorporates quantum interference between dierent amplitudes in
+ those cases in which the interference diagrams have leading soft or collinear singularities.
+ It incorporates the color and spin information carried by partons emerging from a hard
+ interaction. One motivation for this work is to have a method that can naturally cooperate
+ with next-to-leading order calculations.
+ Keywords: perturbative QCD, parton shower .arXiv:0706.0017v1  [hep-ph]  1 Jun 2007Contents
+ 1. Introduction 2
+ 2. A notation for parton showers 6
+ 3. Structure of the calculation 10
+ 3.1 The space of quantum parton states 10
+ 3.2 The density matrix 12
+ 3.3 Statistical states 15
+ 3.4 The resolution scale 16
+ 3.5 Parton shower evolution 18
+ 4. Momentum and 
+ avor mapping 22
+ 4.1 Splitting a nal state parton 23
+ 4.2 Combining two nal state partons 27
+ 4.3 The integration measure for nal state splitting 28
+ 4.4 Splitting an initial state parton 29
+ 4.5 Combining an initial state parton with a nal state parton 33
+ 4.6 The integration measure for initial state splitting 33
+ 5. Spin states 34
+ 6. Splitting functions for the quantum states 35
+ 6.1 Denition of the splitting functions vl 36
+ 6.2 Initial state q!q+ g splitting, quark scatters 37
+ 6.3 Initial state q!q+ g splitting, gluon scatters 40
+ 6.4 Otherqqgsplittings 41
+ 6.5 Splitting with a gggvertex 42
+ 6.6 Soft splitting function 42
+ 7. Description of color 44
+ 7.1 Color basis 44
+ 7.2 Parton insertion operators 47
+ 7.3 Color evolution for the quantum states 48
+ 8. Evolution for the statistical states 51
+ 9. The operator HI(t) 56
+ 10. Color evolution of the statistical states 57
+ 11. Soft gluon coherence 59
+ { 1 {12. Inclusive evolution 62
+ 13. End of the shower 67
+ 14. Conclusions 69
+ A. Limit on momentum fraction after splitting 72
+ B. Counting factors for the density matrix 73
+ 1. Introduction
+ Parton shower Monte Carlo event generators, such as H ERWIG [1] and P YTHIA [2], have
+ proven to be enormously useful since the development of the main ideas in the 1980s
+ [3,4,5]. These computer programs perform calculations of cross sections according to an
+ approximation to the standard model or some of its possible extensions. Because of the
+ great success of these programs, it is worthwhile to investigate possible improvements. In
+ this paper, we propose a theoretical structure for event generators that generalizes the
+ structure of current programs and allows the elimination of certain approximations used
+ currently.
+ Parton showers are mostly re
+ ections of QCD interactions. In order to present a
+ reasonably complete discussion of the QCD issues in a parton shower while keeping the
+ length of this paper within reasonable bounds, we limit the presentation to QCD and omit
+ any discussion of how electroweak and beyond-the-standard-model interactions are to be
+ added to the QCD interactions to make a useful event generator.
+ What is a parton shower Monte Carlo event generator? Let us consider hadron-hadron
+ collisions, which is the case relevant for the Tevatron and the Large Hadron Collider. An
+ experiment will produce a large number of events f, where one can characterize an event as
+ a list of the momenta and 
+ avors of the nal state particles produced. The experiment can
+ measure a cross section [F] corresponding to an observable1that assigns to each event f
+ a numberF(f). The relation of the cross section and the function Fis
+ [F]1
+ LNX
+ n=1F(fn); (1.1)
+ whereLis the integrated luminosity for an experimental run and the fnare the observed
+ events. For example, the cross section to produce a Higgs boson and two jets having certain
+ 1In order to be subject to reliable calculation in QCD perturbation theory, the function Fshould have the
+ property known as infrared safety. However, a parton shower event generator is also useful for observables
+ that are not infrared safe.
+ { 2 {characteristics is specied by setting F(f) = 1 iffcontains a Higgs boson and two jets
+ having these characteristics and F(f) = 0 otherwise.2
+ A parton shower Monte Carlo event generator calculates this cross section by producing
+ a large number Nof simulated events fn, each with an accompanying weight wn. The
+ calculated cross section is then
+ [F]1
+ NNX
+ n=1wnF(fn): (1.2)
+ Most typically, the weights are all equal, so that 1 =wnis the simulated luminosity per point
+ L=N. Our denition of the category of parton shower Monte Carlo event generator includes
+ the possibility that the weights are complex numbers produced for each event. It is always
+ possible to throw away the imaginary parts of the wnsince we know in advance that the
+ imaginary part of the sum in Eq. ( 1.2) vanishes, so having complex weights is equivalent
+ to having real weights that can be positive or negative. This situation occurs in typical
+ event generators [ 6,7] that are based on next-to-leading order perturbation theory.3
+ In a typical parton shower event generator, the physics is modeled as a process in
+ classical statistical mechanics. Some number of partons are produced in a hard interac-
+ tion. Then each parton has a chance to split into two partons, with the probability to
+ split determined from an approximation to the theory. Parton splitting continues in this
+ probabilistic style until a complete parton shower has developed.
+ The parton splitting probability is biggest when the two daughter partons are almost
+ massless with nearly collinear momenta or when one of their momenta is soft (near p= 0),
+ or both. There is a simple underlying approximation used: the amplitude for producing
+ m+1 partons when two of the momenta piandpjare nearly collinear or one is soft factors
+ into a splitting function times the matrix element for producing mpartons.
+ The underlying approximation is the factorization of amplitudes in the soft or collinear
+ limits. However, further approximations are usually added:
+ 1. The interference between a diagram in which a soft gluon is emitted from one hard
+ parton and a diagram in which the same soft gluon is emitted from another hard
+ parton is treated in an approximate way, with the \angular ordering" approximation.
+ 2. Color is treated in an approximate way, valid when 1 =N2
+ c!0 whereNc= 3 is the
+ number of colors.
+ 3. Parton spin is treated in an approximate way. According to the full quantum ampli-
+ tudes, when a parton splits, the angular distribution of the daughter partons depends
+ on the mother parton spin and even on the interference between dierent mother-
+ parton spin states. This dependence is typically ignored.
+ 2The case in which F(f) takes values 0 or 1 is the most common, but other possibilities are allowed.
+ For instance, the energy-energy correlation function in electron-positron annihilation is of the more general
+ variety.
+ 3The recent papers [ 8] provide an exception to this rule.
+ { 3 {With the use of these further approximations, one can get to a formalism in which the
+ shower develops according to classical statistical mechanics with a certain evolution oper-
+ ator.
+ Our purpose in this paper is to investigate whether one can have a formulation of
+ parton showers based on the factorization of amplitudes in the soft or collinear limits in
+ which one does not make the additional approximations enumerated above. For this, one
+ would have to use quantum statistical mechanics instead of classical statistical mechanics.
+ It might seem that doing the problem in quantum mechanics is hopelessly complicated.
+ However, within the soft/collinear factorization approximation, the problem is fairly simple
+ because it is almost classical. In fact, if partons did not have color or spin, the problem
+ would be classical (as we discuss in Sec. 2). Thus what we need is a fully quantum treatment
+ of color and spin. We arrange for this by making use of the quantum density operator in
+ color
+ spin space.
+ In the subsequent sections, we dene evolution equations for the quantum density ma-
+ trix within the soft/collinear factorization approximation. The matrix evolves in \shower
+ time" from harder splittings to softer splittings. The iterative solution of these equations
+ has the form familiar from parton showers, with splitting functions and Sudakov exponen-
+ tials that express the probability for not splitting. There are, however, some dierences
+ that result from not making the approximations 1, 2, and 3 above.
+ We also want to have a formulation that can coexist easily with matching the proba-
+ bilities generated by showering to known exact tree level matrix elements, as in Refs. [ 9]
+ and with using next-to-leading order hard matrix elements as in Refs. [ 6,7,10]. However,
+ we leave for future work the analysis of how one can match the showers to the exact tree
+ level matrix elements or to next-to-leading order hard matrix elements.
+ We pay particular attention to the kinematics. In the treatment here, parton shower
+ dynamics is represented in the splitting functions, in the ordering of the hardness scales
+ of successive branchings, and in the kinematic mappings that dene the relation of the
+ parton momenta before splitting to the momenta after splitting. Here, we reversibly map
+ mparton phase space into m+ 1 parton phase space. This is not always the case in parton
+ shower Monte Carlo event generators.
+ We present a formalism for describing parton showers in which the result has the
+ form of an integral equation for the evolution of the color 
+ spin density matrix. This
+ integral equation can be solved iteratively. We do not, however, present an algorithm for
+ generating a shower according to this equation. Just as there is more than one algorithm
+ for performing a given integration numerically, there is more than one way to implement
+ the shower equations numerically. We leave issues of implementation for future work.
+ One may wonder whether removing the approximations 1, 2, and 3 listed above is
+ numerically important. We do not know. What we would like to do is to set up a for-
+ malism that does not make approximations beyond the basic soft/collinear factorization
+ approximation, then (in future work) implement this formalism as a working algorithm and
+ computer code. One could then make the further approximations separately or all together
+ and see what dierence they make.
+ { 4 {We close this introduction with some comments on whether a parton shower Monte
+ Carlo event generator ought to allow weights for generated events, and in particular nega-
+ tive weights.
+ We rst note that in a real experiment the relation between the measurement function
+ Fand the measured cross section is a little more complicated than we indicated in Eq. ( 1.1).
+ Instead, we have
+ [F]1
+ LNX
+ n=11
+ anF(fn); (1.3)
+ whereLis the integrated luminosity for an experimental run in which Ntotal events n
+ are collected and anis the acceptance for the event resulting from the way the detector
+ is triggered. For example, if a fraction 10 3of a certain kind of event is recorded, then
+ for those events anis 10 3. Thus the weight factors wn=Nin Eq. ( 1.2) are analogous to
+ 1=(anL) in the analysis of real data.
+ We can also examine the eect of weights on the statistical error in Eq. ( 1.2). The
+ expected errorEis given by
+ E21
+ N 
+ 1
+ NNX
+ n=1
+ wnF(fn) hwFi2!
+ : (1.4)
+ HerehwFiindicates an average. If it is very expensive to use a large N, for instance
+ because calculating F(fn) requires a full detector simulation, then one would like to make
+ E2as small as possible for a xed N. That means not that wnshould be constant, but
+ thatwnF(fn) should be approximately constant for the observables Fof most interest.4
+ It is never possible to make wnF(fn)=hwFi= 1 for all events, but one does not want to
+ have lots of events for which this ratio is much smaller than 1 nor any events for which the
+ ratio is much bigger than 1. Having events for which wnF(fn)=hwFi  1 is not a good
+ thing, but, sincej 1jis not much larger than 1, it is not really damaging from the point
+ of view of avoiding large statistical errors.
+ Evidently having weights that are real numbers of either sign, or complex numbers,
+ does not make it impossible to apply Eq. ( 1.2). It does, however, make the analysis a little
+ more complicated. That is a disadvantage.
+ We also note that having weights that are real numbers of either sign makes it clear
+ that the calculation in Eq. ( 1.2) is not the same as the analysis of real data using Eq. ( 1.3).
+ Thus there can be no illusion that the parton shower Monte Carlo event generator is the
+ same as nature. Perhaps this gentle reminder might be regarded as an advantage of having
+ negative weights.
+ Preview. Since this is a rather lengthy paper, some preview of what is in it may be
+ helpful. Section 2contains an introduction to the notation we use. This notation is,
+ we think, useful for thinking about a variety of formulations of the parton shower idea.
+ 4Thus, if our primary interest were in the high PTtail of a jet PTdistribution, we would not want to
+ use most of the available computer time to generate low PTevents. Rather, we would want to generate few
+ lowPTevents, giving each of them a high weight to compensate.
+ { 5 {We present it in the context of a simple scalar eld theory that is free from a lot of
+ the complications of quantum chromodynamics (QCD). We then turn to QCD, with its
+ complications. We present in Sec. 3the structure that we propose for a parton shower that
+ contains quantum interference. In order to present this structure in just a few pages, we
+ leave for later sections most of the detailed denitions. The rst of these, the momentum
+ and 
+ avor mapping, is covered in Sec. 4. Then Sec. 5covers spin. This provides enough
+ background to present the splitting functions for the quantum amplitudes in Sec. 6. The
+ description of color, which is rather more complicated than that of spin, is presented in
+ Sec. 7. We are then able to specify the shower evolution operator in Secs. 8and9. We
+ follow this with discussions of two interesting issues, the evolution of color in Sec. 10and
+ soft gluon coherence in Sec. 11. We analyze the structure of the functions that appear in
+ the Sudakov exponent in Sec. 12. Eventually shower evolution stops and a hadronization
+ model is inserted. We discuss this in Sec. 13. We present some concluding remarks in
+ Sec.14. There are two appendices that deal with certain technical issues.
+ 2. A notation for parton showers
+ Starting in the next section, we present a formulation for parton showers in QCD hard
+ scattering events in hadron-hadron collisions, taking into account the complexities intro-
+ duced by spin and color correlations and by soft, wide angle gluon emissions in addition
+ to collinear splittings. In order to do this, we use a mathematical language that helps
+ to organize the algorithm. Alas, the complexities of the real physical situation make the
+ needed construction a bit subtle. Therefore, in this section we rst introduce some of the
+ needed language in a simpler situation. The notation introduced here will be used again
+ for QCD in the subsequent sections.
+ Consider the process e+e !hadrons in a world in which hadrons consist of just one
+ kind of massless scalar particle, which has no color. The e+e annihilation produces a pair
+ of virtual scalar particles through an interaction that we need not specify. In the evolution
+ of the hadronic state, we can still have collinear singularities similar to those found in
+ QCD if the theory consists of 3theory in six dimensional space-time. The cross section
+ to measure an observable Fcan be written as
+ [F] =X
+ m1
+ m!Z
+ dfpgm
+ jM(fpgm)j2F(fpgm): (2.1)
+ Here there is a sum over the number mof produced particles, fpgm=fp1;:::;pmg, and
+ Z
+ dfpgm
+ mY
+ i=1Zd6pi
+ (2)62+(p2
+ i)
+ (2)6
+ P0 mX
+ i=1pi
+ ; (2.2)
+ withP0= (ps;~0). The function M(fpgm) gives the matrix element to produce mparticles
+ with momentafpgm, whileF(fpgm) describes the measurement to be done.
+ We want to describe this using an algorithm that approximates jM(fpgm)j2based on
+ jM(fpgm)j2form= 2 and the subsequent generation of the rest of the particles based on
+ a narrow angle approximation for one particle to split into two. This is to be done using
+ { 6 {a Monte Carlo simulation in which the system evolves from 2 particles to many particles
+ as a simulation time tprogresses from t= 0 to a large value, at which the simulation is
+ terminated. There are various possibilities for the physical meaning of the time t. We will
+ take it that a splitting l!i+joccurs at time t= log(Q2
+ 0=(2pipj)), whereQ2
+ 0is the
+ hardness scale of the hard interaction with which we start.
+ At each stage of this simulation, let the cross section to have mparticles with momenta
+ fpgmbe(fpgm;t). Summing over the number of particles and integrating over momenta
+ gives the total cross section,
+ T=X
+ m1
+ m!Z
+ dfpgm
+ (fpgm;t): (2.3)
+ At the nal time, tf, the value of the measurement function is
+ [F] =X
+ m1
+ m!Z
+ dfpgm
+ (fpgm;tf)F(fpgm): (2.4)
+ The possible functions (at a given time t) form a vector space, so that at time
+ tcan be considered to be a vector(t)
+ . We use rounded brackets here. The notation 
+ is reserved for a quantum state, while
+ denotes a state in the sense of statistical
+ mechanics. We therefore call it a statistical state. The inner product is5
+  
+ AB
+ =X
+ m1
+ m!Z
+ dfpgm
+ A(fpgm)B(fpgm): (2.5)
+ We can dene basis vectorsfpgm
+ in this space so that
+ (fpgm;t) = 
+ fpgm(t)
+ : (2.6)
+ With these denitions, there is a completeness relation
+ 1 =X
+ m1
+ m!Z
+ dfpgmfpgm 
+ fpgm: (2.7)
+ The measurement function Fcan also be considered to be a vector, 
+ F. Thus
+ [F] = 
+ F(tf)
+ : (2.8)
+ There is a special vector 
+ 1with
+  
+ 1fpgm
+ = 1: (2.9)
+ This vector represents the totally inclusive measurement function corresponding to the
+ total cross section,
+ T= 
+ 1(t)
+ : (2.10)
+ 5Note that there is no * here.
+ { 7 {Now we are ready to discuss the evolution of the statistical state. We take the evolution
+ to be given by a linear operator U(t;t0), with
+ (t)
+ =U(t;t0)(t0)
+ : (2.11)
+ HereU(t;t) = 1. These operators have the group composition property
+ U(t3;t2)U(t2;t1) =U(t3;t1): (2.12)
+ The class of evolution operators that we will use is dened by two operators. The rst
+ is an innitesimal generator of evolution or hamiltonian, HI(t). We can specify HI(t) by
+ giving its action on an arbitrary state
+ ,
+ HI(t)
+ : (2.13)
+ In a lowest order shower, the operator HI(t) describes parton splitting, changing a state
+ withmparticles to one with m+ 1 particles. One of the particles in fpgm, say particle l, is
+ removed and replaced by two, with momenta ^ pland ^pm+1. The quantum amplitude after
+ the splitting is approximately
+ M(f^pgm+1)M(fpgm)g
+ 2^pl^pm+1: (2.14)
+ Here, to precisely dene the right-hand side, one needs to redene the momenta so that the
+ mother parton has a momentum pl^pl+ ^pm+1that is nevertheless on-shell, p2
+ l= 0. Thus
+ the momentafpgmare functions of the momenta f^pgm+1. We omit a discussion here of the
+ various ways to dene this momentum mapping. More important for now is the idea that
+ the quantum matrix element factorizes in the form ( 2.14) when 2^pl^pm+1is much smaller
+ than any of the dot products among the momenta in fpgm. This factorization is at the
+ heart of the reason why parton shower Monte Carlo programs give useful approximations.
+ For the statistical splitting function in Eq. ( 2.13), we need the square of the quantum
+ amplitude. Thus we want
+  
+ f^pgm+1HI(t)
+ =X
+ l
+ t logQ2
+ 0
+ 2^pl^pm+1g
+ 2^pl^pm+12 
+ fpgm
+ : (2.15)
+ We have inserted the denition of the Monte Carlo time, t, that we here imagine using. For
+ our present pedagogical purposes, the details of the denition of HI(t) are not so important.
+ What is important is that it re
+ ects the factorization ( 2.14).
+ The second operator used in the construction of U(t0;t) is a no-change operator N(t;t0)
+ withN(t;t) = 1 and
+ N(t3;t2)N(t2;t1) =N(t3;t1): (2.16)
+ The no-change operator leaves the basis states unchanged except for multiplying each of
+ them by an eigenvalue :
+ N(t0;t)fpgm
+ = (t0;t;fpgm)fpgm
+ : (2.17)
+ { 8 {Figure 1: Illustration of Eq. ( 2.18). The wide ovals represent the evolution operator Uwhile the
+ narrow ovals represent the no change operator N, which provides the Sudakov exponentials, and
+ the small circle is a parton splitting. Shower time truns from left to right.
+ The evolution operator Uis expressed in terms of the hamiltonian and the no-change
+ operators by (see Fig. 1)
+ U(t3;t1) =N(t3;t1) +Zt3
+ t1dt2U(t3;t2)HI(t2)N(t2;t1): (2.18)
+ This equation is interpreted as saying that either the system evolves without splitting from
+ t1tot3, or else it evolves without splitting until an intermediate time t2, splits att2, and
+ then evolves (possibly with further splittings) from t2tot3.
+ We need one more ingredient. We wish to construct the evolution so that it leaves the
+ total cross section invariant, 
+ 1U(t0;t)
+ = 
+ 1
+ . This should hold for every state
+ , so
+  
+ 1U(t0;t) = 
+ 1: (2.19)
+ This assumption denes what N(t3;t1) has to be. Multiply Eq. ( 2.18) on the left by 
+ 1
+ and on the right byfpgm
+ . Then, using Eqs. ( 2.19) and ( 2.17) we have
+ 1 = (t3;t1;fpgm) +Zt3
+ t1dt2 
+ 1HI(t2)fpgm
+ (t2;t1;fpgm): (2.20)
+ If we now dierentiate with respect to t3, we get
+ d
+ dt3(t3;t1;fpgm) =  
+ 1HI(t3)fpgm
+ (t3;t1;fpgm): (2.21)
+ The solution of this with the initial condition ( t1;t1;fpgm) = 1 is
+ (t3;t1;fpgm) = exp
+  Zt3
+ t1d 
+ 1HI()fpgm
+ : (2.22)
+ This result has a simple interpretation. The quantity 
+ 1HI()fpgm
+ is the total proba-
+ bility for one of the partons in the state fpgmto split at time . The exponential, known
+ as the Sudakov factor, is the probability that none of these partons splits between t1and
+ t3.
+ { 9 {This operator notation provides a convenient way to express the essence of standard
+ shower Monte Carlo algorithms. Dierent algorithms dier in how the evolution variable t
+ is dened and in exactly what the splitting operator HI(t) is.
+ At its heart, the shower Monte Carlo idea is that soft interactions factor from hard
+ interactions in QCD. After being produced in a hard interaction, partons in QCD travel
+ a long way before undergoing much softer interactions such as splitting. What subsequent
+ splitting does occur does not much change the basic hard matrix element for producing
+ (almost) on-shell partons. There are some complications, however. On shell partons carry
+ both spin and color. Furthermore, soft gluons can transmit color changes over long dis-
+ tances. In the subsequent sections, we will extend the meaning of the symbols used here
+ so as to accommodate spin and color.
+ 3. Structure of the calculation
+ In this section we introduce notational conventions and a general structure for the calcu-
+ lation that we will use later in the paper.
+ 3.1 The space of quantum parton states
+ In order to describe showers, we need a notation for the description of quantum states
+ consisting of two initial state partons and mnal state partons. The partons are labeled by
+ an index such as ithat takes values \a" or \b" for the initial state partons and 1 ;2;:::;m
+ for the nal state partons. Each parton is described by a momentum p, a 
+ avorf2
+ fg;u; u;d;d;:::g, a spin index sand a color index c. We denote the quantum numbers of
+ such a state by
+ fp;f;s;cgmfa;a;s a;ca;b;b;s b;cb;p1;f1;s1;c1;:::;pm;fm;sm;cmg: (3.1)
+ Here there is a special notation with respect to the incoming partons. The momentum
+ fractions of the incoming partons are denoted by aandb, dened below. We call the
+ 
+ avor of parton \a" simply aand we call the 
+ avor of parton \b" simply b. This notation
+ is useful for designating the parton distribution functions, fa=A(a;2
+ F) andfb=B(b;2
+ F).
+ For the purpose of describing backward evolution of the initial state partons, we will often
+ need the anti
+ avors of the incoming partons. We use faandfbfor these,
+ fa= a ;
+ fb= b :(3.2)
+ Here our notation is  u =  u,  u = u, g = g, etc.
+ The nal state partons are always on-shell. Our kinematics allows parton masses, with
+ p2
+ j=m2(fj): (3.3)
+ { 10 {To describe the momenta of the initial state partons, we start by dening pAandpBto be
+ massless approximations to the momenta of the two incoming hadrons
+ p2
+ A= 0;
+ p2
+ B= 0;
+ 2pApB=s :(3.4)
+ The initial state partons are on-shell. In general, they can have masses but, with a small
+ modication of the notation, their masses could be set to zero.6In any case, we take the
+ initial state partons to have zero transverse momentum. Thus
+ pa=apA+m2(fa)
+ aspB;
+ pb=bpB+m2(fb)
+ bspA:(3.5)
+ This denes the momentum fractions aandb.
+ In the event that we include parton masses, the hardness scale Q2
+ 0at which the parton
+ shower is initiated should be much bigger than the mass of any parton that is included
+ as a possible constituent of the incoming hadrons. For example, if the hard process were
+ t+tproduction near threshold, then top quarks should not be used as possible initial state
+ partons. Thus we demand that
+ Q2
+ 0>4m2
+ H; (3.6)
+ wheremHis the mass of the heaviest quark that is included as an initial state parton,
+ typically the bquark. In any reasonable application of the formalism of this paper, the
+ \>" here will be \." Equation ( 3.6) suces to make certain kinematic formulas in the
+ paper work. At any stage in the shower, we dene pa+pb=Q. At the rst step, the
+ starting hard scattering, with a sensible denition of the starting hardness scale we must
+ haveQ2Q2
+ 0. The values of Q2increase as the shower develops. Thus at any stage we
+ will have
+ (pa+pb)2>4m2
+ H; (3.7)
+ We will impose a kinematic restriction on the momentum fractions,
+ m2(fb)
+ bs<a;m2(fa)
+ as<b: (3.8)
+ These limits require that the momentum in the system in the direction of pAcomes mainly
+ from parton \a," and the same for pA$pB, a$b. We can be sure that both conditions
+ hold by requiring
+ abs>m2
+ H: (3.9)
+ The reason for imposing this condition is as follows. Given Eq. ( 3.5), there are two choices
+ forabsthat yield the same value of ( pa+pb)2. As long as condition ( 3.7) holds, the
+ 6There are several possibilities for the treatment of masses of initial state partons and there are some
+ subtle issues associated with the choice. We mention some of these issues in Sec. 14.
+ { 11 {larger of the two choices for abssatises Eq. ( 3.9). Imposing Eq. ( 3.9) eliminates the
+ other solution, in which parton \a" moves in approximately the pBdirection and parton
+ \b" moves in approximately the pAdirection, creating a large value for ( pa+pb)2.
+ The upper limit on aandbis 1. We note here that this is an approximation. To
+ discuss this, let nAandnBbe dimensionless lightlike vectors in the directions of pAand
+ pBrespectively, normalized to nAnB= 1. Then consider, for example, the limit on a.
+ The total momentum in the direction of nAof the nal state particles is
+ (pa+pb)nB=
+ a+m2(fb)
+ bs
+ pAnB: (3.10)
+ This can be bigger than the available momentum pAnBifais very close to 1. A remedy
+ for this would be to redene pAandpBin our formulas. Suppose that the exact hadron
+ momenta are PAandPB. Then if we put
+ pA= PAnBnA;
+ pB= PBnAnB;(3.11)
+ then there is a value of that makes ( pA+pB)2= (PA+PB)2. By taking a value of 
+ that is a little smaller than this, one can ensure that the momentum in the nal state in
+ the directions of nAandnBis not more than was present in the initial state. It is this
+ momentum that is available for the \underlying event." With this adjustment, the value
+ ofsin our formulas is a little less than the true c.m. squared energy, ( PA+PB)2.
+ Our notation with respect to spin and color is meant to be 
+ exible. A standard helicity
+ basis will work for spin. For color, we begin with a straightforward basis in which each
+ partonihas a color index cithat can take values 1,2,3 for quarks and antiquarks and
+ 1,. . . ,8 for gluons. Later, we will want to consider the subspace of the whole color space in
+ which the parton state is a singlet under the SU(3) color group. We will choose a basis for
+ this subspace. Using this basis, we will still have labels that we can call fcgm, but the new
+ labels will describe the color links among the partons rather than individual color indices
+ cifor the individual partons. The notation fp;f;c;sgmis thus supposed to include the
+ possibility of any representation of the colors of the m+ 2 partons.
+ 3.2 The density matrix
+ A matrix element used in the computation of a cross section can be thought of as having
+ the form of a function of the momenta and 
+ avors that carries indices for spin and color,
+ M(fp;fgm)ca;cb;c1;:::;cmsa;sb;s1;:::;sm: (3.12)
+ Here we denote the functions Mfor dierent numbers mof nal state partons by the same
+ name, simply M(fp;fgm) rather than Mm(fp;fgm). The array Mcan be thought of as a
+ vector in spin and color space,M(fp;fgm)
+ : (3.13)
+ The inner product
+ M0M
+ denotes multiplying M0byMand summing over the spins
+ and colors.
+ { 12 {An observable Fcan be specied by giving a set of functions F(fp;fgm) that are linear
+ operators on the color-spin space. (In many important cases, F(fp;fgm) is a function times
+ the unit operator on color-spin space. If Fis be simply made from theta functions dening
+ nal state cuts, then [F] is the cross section to nd the nal state partons within the
+ cuts.) With this notation the cross section for an observable Ftakes the form7
+ [F] =X
+ m1
+ m!Z
+ dfp;fgmfa=A(a;2
+ F)fb=B(b;2
+ F)
+ 4nc(a)nc(b) 2abpApB
+ 
+ M(fp;fgm)F(fp;fgm)M(fp;fgm)
+ :(3.14)
+ Here the functions fare parton distribution functions while nc(a) is the number of colors
+ that a parton of 
+ avor acan have,Nc= 3 for a quark or antiquark, N2
+ c 1 = 8 for a gluon.
+ The factor 4 nc(a)nc(b) turns the sum over spins and colors for the initial state partons
+ into an average over spins and colors. We have indicated the appropriate integrations over
+ momenta by
+ Z
+ dfp;fgm
+ g(fp;fgm)mY
+ i=18
+ <
+ :X
+ fiZd4pi
+ (2)42+(p2
+ i m2(fi))9
+ =
+ ;X
+ aZ1
+ 0daX
+ bZ1
+ 0db
+ (2)4
+ pa+pb mX
+ i=1pi
+  
+ m2
+ H<abs
+ g(fp;fgm):
+ (3.15)
+ Hereg(fp;fgm) is an arbitrary function.
+ The nal state particles carry labels i2f1;:::;mg. Then particle ihas momentum,
+ 
+ avor, spin, and color given by fpi;fi;si;cig. One can arrange the denitions such that the
+ amplitudeMis symmetric under interchange of the labels. However, we do not necessarily
+ do so. Instead, the notation allows for a general labeling scheme.8A measurement function
+ Fmust be symmetric under interchange of labels, since the labels are not physical. Two
+ amplitudes Mthat become the same if the labels are symmetrized are equivalent.
+ We will nd it useful to rewrite [F] in the form of a trace over the spin and color
+ space,
+ [F] =X
+ m1
+ m!Z
+ dfp;fgm
+ Trf(fp;fgm)F(fp;fgm)g; (3.16)
+ where
+ (fp;fgm) =M(fp;fgm)fa=A(a;2
+ F)fb=B(b;2
+ F)
+ 4nc(a)nc(b) 2abpApB
+ M(fp;fgm): (3.17)
+ 7This formula contains a parton 
+ ux factor 2 abpApBthat corresponds to massless partons. The 
+ ux
+ factor for scattering of free massive particles is more complicated. However, ( pa+pb)2is always bigger than
+ the initial hard scale Q2
+ 0and the formalism of this paper is valid only when Q2
+ 0is much larger than the
+ masses of any initial state partons. For this reason, we use the 
+ ux factor for massless parton scattering.
+ 8Just to take a trivial example, in a u ug state, the label 1 might be assigned to the up quark, 2 to the
+ anti-up quark and 3 to the gluon. Of course, it will not work in general to use the 
+ avors as labels because
+ one can have two nal state partons with the same label.
+ { 13 {Thusis the density operator in color 
+ spin space. It is illustrated in Fig. 2. The density
+ operator, for momentum as well as spin, is widely used as the basis of quantum statistical
+ mechanics. It was introduced for the spin space in parton showers by Collins [ 11] and is
+ used in H ERWIG for the heavy partner particles in supersymmetry [ 12].
+ Figure 2: Illustration of a contribution to , Eq. ( 3.17). The Feynman graph on the left is a
+ contribution toM(fp;fgm)
+ and the Feynman graph on the right is a contribution to
+ M(fp;fgm).
+ The factor with parton distributions is not illustrated. The momenta and 
+ avors of the labeled
+ partons match betweenM(fp;fgm)
+ and
+ M(fp;fgm), but the partons on the left have colors and
+ spinsfs;cgmwhile those on the right have possibly dierent colors and spins fs0;c0gm. Additionally,
+ can contain quantum interference between dierent graphs, as illustrated here. We imagine that
+ eventually the partons will evolve to form a nal state in the middle and an initial state on the left
+ and right.
+ We can expand (fp;fgm) in basis statesfs;cgm
+ for the color
+ spin space,
+ (fp;fgm) =X
+ s;cX
+ s0;c0fs;cgm
+ (fp;f;s0;c0;s;cgm)
+ fs0;c0gm: (3.18)
+ Here(fp;f;s0;c0;s;cgm) is a function that depends on the momenta and 
+ avors fp;fgm,
+ the labelsfs;cgmfor the quantum \ket" state and the labels fs0;c0gmfor the conjugate
+ quantum \bra" state. We denote the state labels collectively by fp;f;s0;c0;s;cgm. Thus
+ (fp;f;s0;c0;s;cgm) a function giving the matrix elements of the density matrix. We nd
+ it convenient to base our treatment on this function.
+ Later, we will choose an orthonormal basis for the spin space, so that
+ 
+ fs0gmfsgm
+ =fs0gm
+ fsgm: (3.19)
+ For the color space, we will nd it convenient to use a basis in which
+ fcgmfcgm
+ is
+ approximately but not exactly 1 and where
+ fc0gmfcgm
+ is not generally zero for fcgm6=
+ fc0gm. With a non-orthogonal basis, we need to be a little careful about the notation.
+ Suppose that we expand a vector in such a basis,
+  
+ =X
+ fcgmfcgm
+ a(fcgm): (3.20)
+ { 14 {A convenient representation for the expansion coecients a(fcgm) is obtained by taking
+ matrix elements with elements of the dual basisfcgm
+ Ddened9by
+ D
+ fc0gmfcgm
+ =fc0gm
+ fcgm: (3.21)
+ Using the dual basis we can write
+ D
+ fcgm 
+ =a(fcgm): (3.22)
+ The expansion of any vector in the basisfcgm
+ can conveniently be obtained directly by
+ using the completeness relation
+ 1 =X
+ fcgmfcgm
+ D
+ fcgm: (3.23)
+ If we want to expand a bra vector in the basis
+ fcgmwe can use the completeness relation
+ 1 =X
+ fcgmfcgm
+ D
+ fcgm: (3.24)
+ This is particularly useful with respect to operators. Let Obe a linear operator on the color
+ space. If 
+ has expansion coecients a(fcgm) dened by Eq. ( 3.20) and 0
+ =O 
+ has
+ expansion coecients a0(fc0gm) thenOis conventionally described by the matrix dened
+ by
+ a0(fc0gm) =X
+ fcgmo(fc0gm;fcgm)a(fcgm): (3.25)
+ We can write this as
+ o(fc0gm;fcgm) =D
+ fc0gmOfcgm
+ : (3.26)
+ 3.3 Statistical states
+ The set of functions (fp;f;s0;c0;s;cgm) forms a vector space, which we can call the statis-
+ tical state space (as distinct from the quantum state space). We can call the vector corre-
+ sponding to this function simply
+ . Note the rounded brackets instead of angle brackets
+ that we use for quantum states, as in 
+ . We can dene basis vectors 
+ fp;f;s0;c0;s;cgm
+ for the statistical state space10so that
+ (fp;f;s0;c0;s;cgm) = 
+ fp;f;s0;c0;s;cgm
+ : (3.27)
+ There are also ket basis vectors such that the completeness relation for the basis states is
+ 1 =X
+ m1
+ m!Z
+ dfp;f;s0;c0;s;cgmfp;f;s0;c0;s;cgm 
+ fp;f;s0;c0;s;cgm; (3.28)
+ 9Readers familiar with general relativity can think of
+ fcgma
+ as the covariant components acofa
+ and
+ D
+ fcgma
+ as the contravariant components ac. One can lower indices using the metric tensor gcc0,
+ analogous to
+ fcgmfc0gm
+ . The inverse matrix
+ D
+ fcgmfc0gm
+ Dis analogous to gcc0.
+ 10More precisely, the bra vectors 
+ Fare vectors in the dual space to the ket vectors
+ , that is the space
+ of linear functions on the vectors
+ .
+ { 15 {where
+ dfp;f;s;s0;c;c0gm
+ is an extension of the integration measure Eq. ( 3.15)
+ Z
+ dfp;f;s0;c0;s;cgm
+ Z
+ dfp;fgmX
+ sa;s0a;ca;c0aX
+ sb;s0
+ b;cb;c0
+ bmY
+ i=18
+ <
+ :X
+ si;s0
+ i;ci;c0
+ i9
+ =
+ ;: (3.29)
+ The corresponding inner product of basis states is
+  
+ fp;f;s0;c0;s;cgmf~p;~f;~s0;~c0;~s;~cg~m
+ =m;~m(fp;f;s0;c0;s;cgm;f~p;~f;~s0;~c0;~s;~cgm);
+ (3.30)
+ where the function is a generalization of the ordinary delta-function that is dened by
+ 1
+ m!Z
+ dfp;f;s0;c0;s;cgm
+ (fp;f;s0;c0;s;cgm;f~p;~f;~s0;~c0;~s;~cgm)h(fp;f;s0;c0;s;cgm)
+ =h(f~p;~f;~s0;~c0;~s;~cgm):
+ (3.31)
+ Herehis any well behaved function of the variables indicated, dened on the integration
+ surface.
+ Let us dene a vector corresponding to a measurement function Fusing11
+  
+ Ffp;f;s0;c0;s;cgm
+ =
+ fs0;c0gmF(fp;fgm)fs;cgm
+ : (3.32)
+ Then, using the completeness relation ( 3.28), the cross section ( 3.16) corresponding to a
+ measurement function Fcan be expressed using Eqs. ( 3.18) and ( 3.27) as
+ [F] = 
+ F
+ : (3.33)
+ In the case that Fconsists of a function F(fp;fgm) times a unit operator in spin-color
+ space, the inner product 
+ F
+ is
+  
+ F
+ =X
+ m1
+ m!Z
+ dfp;f;s0;c0;s;cgm
+ F(fp;fgm)
+ fs0gmfsgm
+ fc0gmfcgm
+ (fp;f;s0;c0;s;cgm):(3.34)
+ 3.4 The resolution scale
+ We now need to introduce a resolution scale into our equations. We rst discuss the reso-
+ lution scale of the observable. In Eq. ( 3.33), let us suppose that the observable represented
+ by the functions F(fp;fgm) is infrared safe. To be precise about what this means, we rst
+ demand that the functions F(fp;fgm) be smooth functions of the momentum variables and
+ that they be invariant under label interchanges. Then we consider a list of parton variables
+ f^p;^fgm+1form+1 partons and suppose that ^ pm+1becomes collinear with the momentum
+ ^plof partonl. Then we can consider the list of parton momenta fp;fgmwherepj= ^pj
+ andfj=^fjforj6=lwhilepl= ^pm+ ^plandfl=^fm+^fl(with the obvious denition
+ 11Note that this equation for the measurement function has a dierent structure from the equation used
+ to dene the statistical state vector
+ ,(fp;fgm) =fs;cgm 
+ fp;f;s0;c0;s;cgm
+ fs0;c0gm.
+ { 16 {of adding 
+ avors). That is, the partons with variables f^p;^fgm+1could have arisen from
+ partons with variables fp;fgmby the collinear splitting of parton linto new partons with
+ labelslandm+ 1. Then infrared safety requires that
+ F(f^p;^fgm+1)!F(fp;fgm) (3.35)
+ in the limit. This should also hold if parton m+ 1 becomes soft, ^ pm+1!0. It should also
+ hold with a suitable adjustment of the notation for a splitting of one of the initial state
+ partons. This is, so far, just the standard denition of infrared safety. It allows us to have
+ perturbatively calculable cross sections. Now let us extend the denition to include a scale.
+ We can say that the observable is infrared safe at scale 2if
+ F(f^p;^fgm+1)F(fp;fgm) (3.36)
+ whenj2^pm+1^plj<2. To be really precise, we should specify how good this approximation
+ has to be, but this will not matter for our purposes. Strictly speaking an \infrared safe
+ observable" without further qualication is one that is infrared safe at any scale, no matter
+ how small. However, what is usually meant is that it is infrared safe at a scale not much
+ smaller than the scale Q2
+ 0of the hardest interaction in the problem. What we want to do
+ here is to specify the splitting scale at which the observable is sensitive to the splitting.
+ That scale could be much smaller than Q2
+ 0.
+ Now we introduce the concept of the density operator evaluated at resolution scale
+ 2. The idea is that interactions with scales greater than 2are included inM
+ Mwhile
+ interactions with scales smaller than 2are integrated out (for nal state interactions) or
+ included in the parton distributions (for initial state interactions).12We can describe this
+ in a rough way as follows. In each cut Feynman diagram, each integration region for nal
+ state partons that produces a collinear or soft divergence can be described as a region in
+ which some group of partons with labels ibecome collinear to a given direction of a mother
+ parton or some become soft, so that (P
+ ipi)2!0. Divide this region into subregions with
+ (P
+ ipi)2<2and (P
+ ipi)2>2. In the (P
+ ipi)2<2region we can combine the partons i
+ into a single eective parton for purposes of calculating the observable. That is, the partons
+ iare \unresolved." This leads to a free integration over this region using a constant Ffor
+ fewer partons. Adding these real emission integrals to the corresponding virtual diagrams
+ and counterterms from the parton distributions gives a nite result containing logarithms
+ of2=Q2
+ 0.
+ A more intuitive way of thinking about this is to imagine writing the Feynman diagrams
+ in a coordinate space representation, in which we integrate over the positions x
+ iof the
+ interaction vertices relative to the position of the hard interaction, which is determined to
+ within 1=Q2
+ 0. Then we can restrict these integrations to jx2
+ ij<1=2before integrating over
+ the nal state momenta.
+ In order that the parton distributions in Eq. ( 3.17) include initial state interactions at
+ all scales smaller than 2, the factorization scale 2
+ Fat which the parton distributions are
+ evaluated should be 2.
+ 12This is the idea of the standard factorization theorem [ 13]. However, we here go beyond anything that
+ has been proved.
+ { 17 {With this meaning of evaluated at resolution scale 2, 
+ F
+ is invariant under
+ 2!2+2as long asFis infrared safe at a scale equal to 2or larger. However, if
+ one looks at
+ with a resolution scale smaller than 2then 
+ F
+ does see the eect of
+ changing2.
+ Our object in this paper is to construct an approximate version of
+ as a function
+ of the resolution scale. The idea is to construct
+ using a parton shower, starting from
+ 2=Q2
+ 0and evolving to smaller values of 2, down to a nal infrared cuto. This intuitively
+ appealing idea has been inherent in the idea of a parton shower since the earliest days.
+ It would be very useful to have a precise eld theoretic denition
+ as a function of
+ resolution scale. However, this is beyond our scope in this paper.
+ One nds that the logarithm of the resolution scale 2is more useful as a variable than
+ 2itself. Therefore we dene Monte Carlo time tby
+ 2=Q2
+ 0e t(3.37)
+ and write the density operator with this resolution scale as(t)
+ . Then also the parton
+ distributions are evaluated at factorization scale
+ 2
+ F=Q2
+ 0e t: (3.38)
+ 3.5 Parton shower evolution
+ We are now prepared to set up a quite general framework for describing a parton shower.
+ We take the framework as a set of axioms that we hope are reasonably intuitive. Later, we
+ relate the operators that occur to the structure of Green functions at tree level in QCD.
+ We use the evolution variable tthat species the resolution scale of according to
+ Eq. ( 3.37). Thuststarts at zero and increasing tcorresponds to decreasing virtuality. In
+ principle, the shower can evolve to t=1but one actually stops evolution at an infrared
+ cutotfthat corresponds, say, to a 1 GeV2virtuality. The evolving shower is represented
+ by a state(t)
+ that begins with an initial state(0)
+ . The evolution is given by a linear
+ operatorU(t;t0), with(t)
+ =U(t;t0)(t0)
+ : (3.39)
+ HereU(t;t) = 1. These operators have the group composition property
+ U(t3;t2)U(t2;t1) =U(t3;t1): (3.40)
+ The class of evolution operators that will use is dened by two operators, HI(t) and
+ V(t), according to the dierential equation
+ d
+ dtU(t;t0) = [HI(t) V(t)]U(t;t0); (3.41)
+ with initial condition U(t;t) = 1.
+ The rst operator, HI(t), represents parton interactions and, in general, changes the
+ number of partons and their momenta. We specify HI(t) by giving its matrix elements
+  
+ f^p;^f;^s0;^c0;^s;^cgm0HI(t)fp;f;s0;c0;s;cgm
+ : (3.42)
+ { 18 {In a lowest order shower, which we consider in this paper, the operator HI(t) describes
+ 1!2 parton splitting, changing a state with mnal state partons to one with m+ 1 nal
+ state partons.
+ The second operator that controls evolution, V(t), describes the eect of virtual graphs
+ and the \unresolved" part of real emission graphs. In a lowest order shower, we do not
+ account for the virtual graphs exactly, but rather account for only the infrared singular
+ part of the virtual graphs, which can be deduced from the real emission graphs. That is,
+ V(t) is determined from HI(t). The operatorV(t) does not change the number of partons
+ or their 
+ avors or spins, but can change their color states.
+ We construct the shower algorithm in such a way that it conserves probability in a
+ certain sense. If we were dealing with e++e !hadrons , we would demand that the devel-
+ opment of the shower does not change the total cross section. For hadron-hadron collisions,
+ the total cross section does not have a well dened perturbative expansion. However, if we
+ start with a state(0)
+ that is \hard" in the sense that 
+ fp;f;s0;c0;s;cgm(0)
+ is non-zero
+ only for parton congurations with a large transverse energy, then we can demand that as
+ this state evolves into the shower, the contribution from(t)
+ to the total cross section
+ does not change. The observable that measures the total cross section is
+ F1(fp;fgm) = 1: (3.43)
+ We will call the vector corresponding to F1simply 
+ 1. Using Eq. ( 3.32), the inner product
+ of 
+ 1with a basis state is
+  
+ 1fp;f;s0;c0;s;cgm
+ =
+ fs0gmfsgm
+ fc0gmfcgm
+ : (3.44)
+ The statement that shower evolution leaves contributions to the total cross section
+ invariant is 
+ 1U(t0;t)
+ = 
+ 1
+ (3.45)
+ for any (suitably hard) state
+ . This requirement leads to a relation between the matrix
+ elements ofV, andHI. To derive this relation we multiply Eq. ( 3.41) on the left by 
+ 1
+ and on the right by
+ . After using Eq. ( 3.45), we get
+ 0 = 
+ 1[HI(t) V(t)]U(t;t0)
+ : (3.46)
+ Since this holds for any suitably hard state
+ we have
+ 0 = 
+ 1[HI(t) V(t)]: (3.47)
+ We multiply on the right byfp;f;s0;c0;s;cgm
+ to obtain
+  
+ 1V(t)fp;f;s0;c0;s;cgm
+ = 
+ 1HI(t)fp;f;s0;c0;s;cgm
+ : (3.48)
+ At this point, we need to discuss the structure of the parton splitting operator HI. In
+ subsequent sections, we derive the form of HI(t) based on the structure of QCD tree level
+ matrix elements in the limit that two of the m+1 partons become massless and collinear, one
+ { 19 {becomes massless and collinear with one of the beam directions, or one (a gluon) becomes
+ soft. In this limit, the matrix elements take a factored form, hard
+ (soft&collinear ).
+ This factorization leads to the denition13ofHI(t) in Sec. 9. At the moment, what we
+ need is the structure of 
+ 1HI(t)fp;f;s0;c0;s;cgm
+ , which represents the inclusive splitting
+ probability at splitting scale t. We will nd
+  
+ 1HI(t)fp;f;s0;c0;s;cgm
+ = 2
+ fs0gmfsgm
+ fc0gmh(t;fp;fgm)fcgm
+ ; (3.49)
+ where the function h(t;fp;fgm) is given in Sec. 12, Eq. ( 12.21 ). The important point is
+ that there is a trivial spin structure and a non-trivial color structure.
+ We take the operator V(t) to operate only on the color space and dene its action in
+ terms of its matrix elements, for which we use the notation 
+ f^c0;^cgmV(t;fp;fgm)fc0;cgm
+ .
+ The denition of V(t) in terms of these matrix elements is
+ V(t)fp;f;s0;c0;s;cgm
+ =X
+ f^c0;^cgmfp;f;s0;^c0;s;^cgm 
+ f^c0;^cgmV(t;fp;fgm)fc0;cgm
+ :
+ (3.50)
+ Thus, using Eq. ( 3.44),
+  
+ 1V(t)fp;f;s0;c0;s;cgm
+ =X
+ f^c0;^cgm
+ fs0gmfsgm
+ f^c0gmf^cgm
+  
+ f^c0;^cgmV(t;fp;fgm)fc0;cgm
+ :(3.51)
+ If we insert Eq. ( 3.49) and Eq. ( 3.51) into Eq. ( 3.48) and cancel the spin factors, we get
+ X
+ f^c0;^cgm
+ f^c0gmf^cgm 
+ f^c0;^cgmV(t;fp;fgm)fc0;cgm
+ = 2
+ fc0gmh(t;fp;fgm)fcgm
+ :(3.52)
+ There is a simple way to satisfy this equation. We dene
+  
+ f^c0;^cgmV(t;fp;fgm)fc0;cgm
+ =D
+ f^cgmh(t;fp;fgm)fcgm
+ f^c0gm
+ fc0gm
+ +f^cgm
+ fcgm
+ fc0gmh(t;fp;fgm)f^c0gm
+ D:(3.53)
+ What we have done here is to decompose 
+ f^c0;^cgmV(t;fp;fgm)fc0;cgm
+ into two terms.
+ In the rst term, nothing happens on the bra side of the density matrix but there is a
+ virtual correction on the ket side, while in the second term nothing happens on the ket
+ side of the density matrix but there is a virtual correction on the bra side.14With this
+ denition, when we perform the sums over f^cgmandf^c0gmin Eq. ( 3.52) using Eq. ( 3.23)
+ we see that Eq. ( 3.52) is satised.
+ 13The denition is not unique because there is freedom to choose what to do away from the soft and
+ collinear limits
+ 14WhatVcontains is the singular parts of the virtual corrections, which are related to the collinear and
+ soft singularities of the real emission diagrams, plus an \unresolved" contribution from the real emission
+ diagrams. Thus we obtain VfromH.
+ { 20 {We note that one could imagine solving Eq. ( 3.41) numerically in the form
+ U(t+ t;0)(0)
+ = [1 V(t)t]U(t;0)(0)
+ +HI(t)tU(t;00)(0)
+ : (3.54)
+ That is, one could use small time steps in which either one of the partons splits or else no
+ parton splits and the weights for dierent color states are readjusted. However, this is not
+ the way that shower evolution is typically constructed.
+ To proceed down a more traditional path, we dene two other operators, VE(t) and
+ VS(t) with sum
+ VE(t) +VS(t) =V(t): (3.55)
+ The distinction between VE(t) andVS(t) lies in how we treat them within shower generation:
+ VE(t) is exponentiated and VS(t) is subtracted. We express the solution of Eq. ( 3.41) in
+ the form
+ U(t;t0) =N(t;t0) +Zt
+ t0dU(t;) [HI() VS()]N(;t0); (3.56)
+ where the operator N(t;t0) is the time ordered exponential of the operator VE(t),
+ N(t;t0) =Texp
+  Zt
+ t0dVE()
+ : (3.57)
+ HereTrepresents the ordering in evolution time t. The operatorN(t;t0) is a generalization
+ of the standard Sudakov exponential in parton shower Monte Carlo programs. It has the
+ group multiplication property
+ N(t3;t2)N(t2;t1) =N(t3;t1) (3.58)
+ and satises the dierential equation
+ d
+ dtN(t;t0) = VE(t)N(t;t0): (3.59)
+ Eq. ( 3.56) is interpreted as saying that either the system evolves without splitting from t0
+ tot, or else it evolves without splitting until an intermediate time , splits or undergoes a
+ color change at , and then evolves (possibly with further splittings or color changes) from
+ tot. The rst term contains a summation of eects from virtual splittings. In the second
+ term we have a parton splitting contribution along with a subtraction that arises from the
+ part of the virtual splitting contribution that was not summed to form part of N(t;t0).
+ Now the operator V(t) is completely dened but we still need to dene VE(t) andVS(t).
+ Here we have some freedom. There are at least three obvious choices:
+ 1. We could dene VE(t) = 0. ThenVS(t) =V(t). This choice leads to a trivial Sudakov
+ exponential,N(t;t0) = 1. This is similar to what one does in xed order calculations
+ when the singularities of the real emission graphs with m+ 1 nal state partons are
+ removed by the subtraction terms with mpartons. This is not useful in the context
+ of a parton shower.
+ { 21 {2. We could dene VS(t) = 0. ThenVE(t) =V(t). This means we exponentiate the
+ whole virtual splitting operator. It is the most \shower way" to organize the parton
+ evolution. The integral of V(t) over a range of tproduces large logarithms and all
+ of these logarithms appear in the Sudakov exponent. Since V(t) is a non-diagonal
+ matrix in color space, the implementation of this choice may present diculties.
+ 3. Alternatively we can dene VE(t) to be the diagonal in color as follows:
+  
+ f^c0;^cgmVE(t;fp;fgm)fc0;cgm
+ =f^cgm
+ fcgmf^c0gm
+ fc0gm
+ 
+ fcgmh(t;fp;fgm)fcgm
+ +
+ fc0gmh(t;fp;fgm)fc0gm
+ :(3.60)
+ ThenVS(t) is
+ VS(t;fp;fgm) =V(t;fp;fgm) VE(t;fp;fgm): (3.61)
+ With this choice, the computation of the operator N(t;t0) is simple because the basis
+ vectors in the statistical space are eigenvectors of the operator VE(t).
+ With this alternative, we do not exponentiate everything. However, when we study
+ color in the following sections, we will see with this choice that (with the color basis
+ that we will choose) VS(t) is small compared to VE(t). First, we have
+ 
+ fcgmh(t;fp;fgm)fcgm
+ =X
+ f~cgm
+ fcgmf~cgm
+ D
+ f~cgmh(t;fp;fgm)fcgm
+ ;
+ 
+ fc0gmh(t;fp;fgm)fc0gm
+ =X
+ f~cgm
+ fc0gmh(t;fp;fgm)f~cgm
+ D
+ f~cgmfc0gm
+ :
+ (3.62)
+ We will see in Eq. ( 7.14) that the matrix
+ fcgmf~cgm
+ is the unit matrix except for
+ 1=N2
+ ccorrections. Thus the dierence between using dual basis vectorsf~cgm
+ Din
+ Eq. ( 3.53) and ordinary basis vectorsfc0gm
+ is not important in the large Nclimit.
+ Second, we will see in Sec. 12that the matrix
+ f^cgmh(t;fp;fgm)fcgm
+ is almost
+ diagonal in the sense that its o-diagonal matrix elements are suppressed compared
+ to its diagonal matrix elements by factors of 1 =N2
+ c. Thus the part of the virtual
+ contribution that is not exponentiated is small. This small part is not neglected, but
+ we can leave it out of the Sudakov exponent and treat it as a subtraction instead.
+ Eectively, this means that we treat 1 =N2
+ cas a small parameter in addition to s.
+ 4. Momentum and 
+ avor mapping
+ In this and the following sections, we explore how to dene the splitting operator HI.
+ The rst issue to examine is the momentum mapping. We begin with an mparton state
+ with momentafpgm. One of the partons, with label l2fa;b;1;:::;mg, splits. After the
+ splitting, we have an m+ 1 parton state with momenta f^pgm+1. Our notation is that
+ { 22 {partonlsplits into partons with labels landm+ 1, while the other partons keep their
+ labels. The momenta f^pgm+1after splitting are determined by the momenta fpgmand a
+ momentum splitting variable that we call p, which denes the momenta of the daughter
+ partons. There is also a 
+ avor splitting variable, f, which tells the daughter 
+ avors.
+ In this section, we rst describe the splitting of a nal state parton, then move on
+ to the somewhat more complicated splitting of an initial state parton. For the nal state
+ splitting we rst describe how f^p;^fgm+1is determined from fp;fgmandfp;fg. Then
+ we state the inverse transformation, from f^p;^fgm+1tofp;fgmandfp;fg. Finally, we
+ deduce the jacobian for this change of variables. We will then be ready to do the same
+ thing for the splitting of an initial state parton.
+ There are many ways to dene the momentum mapping fpgm$f^pgm+1. One of the
+ most successful is that of Catani and Seymour [ 14]. This may be called a local mapping:
+ the momenta of most of the partons are left unchanged, while the momenta of two partons
+ are mapped into the momenta of three partons, ( pl;pk)$(^pl;^pm+1;^pk). Here parton k
+ is a spectator parton, chosen as one of the partons that is color connected to parton l.
+ (There is an exception to this rule in the case of initial state splittings.) The antenna
+ factorization of Ref. [ 15] also uses a local mapping. We use a global mapping, in which all
+ of the partons participate, as in Ref. [ 16]. This way, each parton has to contribute only a
+ little momentum. We also include quark masses in the kinematics.
+ 4.1 Splitting a nal state parton
+ We begin by dening what happens to the parton 
+ avors when a nal state parton lsplits.
+ The partons with indices other than landm+ 1 keep their 
+ avors,
+ ^fj=fj; j =2fl;m+ 1g: (4.1)
+ What happens to partons landm+ 1 is given by the value of the variable f= (^fl;^fm+1).
+ The 
+ avor splitting variable takes values in a set  l(fl) that depends on the 
+ avor of the
+ mother parton. If parton lis a quark or antiquark, then the set  l(fl) has only one element,
+ l(fl) =f(fl;g)g; fl6= g: (4.2)
+ Here, we have used the freedom to assign labels in order to assign the label lto the daughter
+ quark or antiquark and the label m+ 1 to the gluon. If parton lis a gluon, then fcan be
+ a pair of gluons or any choice of ( q;q) 
+ avors,
+ l(g) =f(g;g);(u; u);(d;d);:::g: (4.3)
+ In the case of a g !q+ qsplitting, we again use the freedom to assign labels in order to
+ assign the label lto the daughter quark the label m+ 1 to the daughter antiquark.
+ We now turn to the momenta. Parton lhas momentum plwithp2
+ l=m2(fl) and splits
+ into two partons landm+1 with momenta ^ pland ^pm+1respectively. The daughter partons
+ are on-shell: ^ p2
+ l=m2(^fl) and ^p2
+ m+1=m2(^fm+1). We always have (^ pl+ ^pm+1)2m2(fl).
+ { 23 {We need a bit of notation. Let Qbe the total momentum of the nal state partons,
+ QmX
+ j=1pj=pa+pb: (4.4)
+ Dene
+ al=Q2
+ 2plQ;
+ bl=m2(fl)
+ 2plQ:(4.5)
+ Note thatal+bl1. To see this, let K=Q plbe the total momentum of the nal state
+ spectator partons, with K20. Then
+ 0K2
+ 2plQ
+ =Q2 2plQ+m2(fl)
+ 2plQ
+ =al+bl 1:(4.6)
+ In order to dene the momentum mapping, we rst determine the total momentum
+ Pl= ^pl+ ^pm+1 (4.7)
+ of the daughters of parton l. We takePlto be a linear combination of plandQ,
+ Pl=pl+1 +y
+ 2alQ : (4.8)
+ There are two parameters in this denition. The rst, y, is a measure of the virtuality,
+ P2
+ l m2(fl), of the splitting. The second, , is a function of ythat we will determine
+ presently.
+ For an exactly collinear splitting or the emission of gluon with momentum ^ pm+1= 0,
+ we havePl=pl. Away from these limits, the spectator partons will have to donate
+ some momentum in order to allow Pl6=pl. We elect to leave the momenta of the initial
+ state partons unchanged, ^ pa=paand ^pb=pb. Instead, we choose to obtain the needed
+ momentum from the nal state spectator partons by letting the momenta after the splitting
+ be related to the momenta before the splitting by a Lorentz transformation,
+ ^p
+ j= 
+ p
+ j; j =2fl;m+ 1g: (4.9)
+ With this method of transferring momentum, each parton donates a share of the needed
+ momentum, with low momentum partons donating only a little momentum.
+ The total momentum of the nal state spectator partons before the splitting is
+ K=Q pl: (4.10)
+ { 24 {Since the momenta of the initial state partons remains the same, ^Q= ^pa+ ^pbis the same
+ asQ. The total momentum of the nal state spectator partons after the splitting is then
+ ^K=Q Pl: (4.11)
+ Since each nal state spectator is changed by a Lorentz transformation, we have
+ ^K= 
+ K: (4.12)
+ In fact, there is a Lorentz transformation that does this, namely
+ (^K;K )
+ =g
+  2(^K+K)(^K+K)
+ (^K+K)2+2^KK
+ K2; (4.13)
+ provided that ^K2=K2. ThusPlmust lie on the hyperbola ( Q Pl)2= (Q pl)2in the
+ Q-plplane, as illustrated in Fig. 3.
+ In the case in which the momenta Kand ^Kare carried by a single massless spectator,
+ ^Kis parallel to K. In this case, one can use an alternative representation of the boost in
+ Eq. ( 4.13) that remains well dened when K2= (^K+K)2= 0,
+ (^K;K )
+ =g
+ +Kn
+ ^Kn 1
+ nn+ ^Kn
+ Kn 1!
+ nn; (4.14)
+ wherenand nare lightlike vectors in the Q-plplane with nn= 1 and (pln=pln)<
+ (Qn=Qn). That is, these are the vectors along the two coordinate axes in Fig. 3, with
+ ndirected toward the upper right and  ndirected toward the upper left in the diagram.
+ Figure 3: Momentum space mapping for a nal state splitting. Coordinate axes in the two lightlike
+ directions in the plane of plandQare shown. Points plandQare shown in the case that plis
+ nearly lightlike. Then Pllies on the hyperbola ( Q Pl)2=const:that passes through pl.
+ We can arrange that ^K2=K2by making a proper choice of in Eq. ( 4.8). We have
+ K2= (al+bl 1) 2Qpl; (4.15)
+ and
+ ^K2=1
+ 4al
+ (2al 1 y)2 (1 4albl)2
+ 2Qpl: (4.16)
+ { 25 {We obtain ^K2=K2if
+ =s
+ (1 +y)2 4al(y+bl)
+ 1 4albl: (4.17)
+ We note that !1 wheny!0. Asyincreases,decreases. There is a maximum
+ possible value of y, namely the value that makes = 0,
+ ymax=pal p
+ al+bl 12
+  bl: (4.18)
+ The splitting parameter yhas a simple meaning. From Eq. ( 4.8), we nd, using
+ Eq. ( 4.17),
+ y=P2
+ l m2(fl)
+ 2plQ: (4.19)
+ That is,yis a dimensionless measure of the virtuality of the splitting. An alternative
+ relation is
+ y=P2
+ l m2(fl)
+ 2PlQ (P2
+ l m2(fl)): (4.20)
+ There are also alternative relations for alandbl,
+ al=Q2
+ 2PlQ+m2(fl) P2
+ l;
+ bl=m2(fl)
+ 2PlQ+m2(fl) P2
+ l:(4.21)
+ These relations can be derived with the use of the relation
+ 2PlQ= (1 +y) 2plQ : (4.22)
+ There is also a minimum value of y. SinceP2
+ l>[m(^fl) +m(^fm+1)]2, we havey>y min
+ where
+ ymin=[m(^fl) +m(^fm+1)]2 m2(fl)
+ 2plQ: (4.23)
+ Note that if all of the partons are massless, then ymin= 0. In addition, if fl=^flis a
+ massive quark 
+ avor and ^fm+1= g, then also ymin= 0.
+ We have seen how, given the virtuality variable y, we can dene Pl= ^pl+ ^pm+1in the
+ plane ofplandQsuch thatP2
+ l m2(fl) =y2plQand so that the needed momentum
+ donation from the spectator partons can be obtained by a Lorentz transformation. It
+ remains to dene ^ pland ^pm+1individually. This is simple. We let ^ pland ^pm+1be any
+ momenta on the appropriate mass shells that sum to Pl.
+ It will prove convenient to formulate this rather abstractly. We denote the daughter
+ parton momenta by
+ p(^pl;^pm+1): (4.24)
+ We must have
+ p2 l(fpgm;f); (4.25)
+ { 26 {where the set  l(fpgm;f) is described as follows,
+  l(fpgm;f) =n
+ (^pl;^pm+1)^p2
+ l=m2(^fl);^plQ> 0;
+ ^p2
+ m+1=m2(^fm+1);^pm+1Q> 0;
+ "(^p
+ l+ ^p
+ m+1)p
+ lQ= 0;
+ (Q ^pl ^pm+1)2= (Q pl)2o
+ :(4.26)
+ That is, each of ^ pland ^pm+1lies on the appropriate forward mass shell, their sum lies in
+ the plane of plandQ, and ^K2=K2. These conditions entail that
+ [m(^fl) +m(^fm+1)]2(^pl+ ^pm+1)2p
+ Q2 p
+ Q2+m2(fl) 2plQ2
+ ; (4.27)
+ which corresponds to yminyymax.
+ We give a name to this transformation of momenta and 
+ avors:
+ f^p;^fgm+1=Rl(fp;fgm;fp;fg): (4.28)
+ In parton splittings close to the collinear or soft limits, partons lose energy when they
+ split. It is of interest to see how this property carries over to splittings that are not close
+ to the limit. Here, the choice of the mapping Rlmay be considered to be part of a model
+ for shower evolution that could be sensible or perhaps not so sensible. An investigation of
+ properties of the model is thus of some signicance.
+ UsingK2=^K2, we derive
+ Qpl Q^pl= ^pm+1^K+1
+ 2
+ m2(fl) m2(^fl) +m2(^fm+1)
+ : (4.29)
+ This is especially interesting in the case that parton lis a quark and parton m+ 1 is a
+ gluon. Then the term involving masses vanishes. We note that ^ pm+1^K0 because
+ both ^pm+1and ^Klie inside or on the forward light cone. Thus the energy of the quark,
+ as measured in the frame in which Qis at rest, is bigger before the splitting than after
+ the splitting. By emitting bremsstrahlung, the quark slows down. If evolution of the nal
+ state were to continue long enough, the quark would slow to a stop in the ~Q= 0 frame.
+ Then radiation from that quark would cease. At any point in the shower evolution, there
+ can be an initial state splitting, discussed below in Sec. 4.4. This changes paorpband
+ thuspa+pb=Q. Now nal state quarks tend to come to rest in the new ~Q= 0 frame. We
+ judge that a tendency for quarks to slow down (and, similarly, for gluons to lose energy)
+ is reasonably sensible. Of course, the partons should not be allowed to shower indenitely.
+ At some resolution scale, a perturbative model for showering is simply wrong and a process
+ by which partons combine to form hadrons is needed.
+ 4.2 Combining two nal state partons
+ It is signicant (and useful) that this transformation has an inverse. Let start with f^pgm+1
+ and determinefpgmandfp;fg.
+ { 27 {The splitting variable for the momenta is given by the momenta of the daughter par-
+ tons,p= (^pl;^pm+1). Fromf^pgm+1we determine
+ Q=m+1X
+ j=1^pj= ^pa+ ^pb: (4.30)
+ Then Eq. ( 4.20) givesy, Eq. ( 4.21) givesalandbl, and Eq. ( 4.17) gives. Since the
+ calculation of involves taking the square root of 2, we should check that 2>0. For
+ this purpose, we can express 2in terms of dot products of vectors as
+ 2=4[(QPl)2 Q2P2
+ l] +m2(fl) [4Pl^K+m2]
+ 4Q^K[Pl^K+P2
+ l m2(fl)] + (P2
+ l m2(fl))2; (4.31)
+ SinceQ,Pl, and ^K=Q Pllie inside or on the positive lightcone and P2
+ l m2(fl)>0,
+ both the numerator and the denominator are non-negative. With y,,alandblat hand,
+ one can calculate the lightlike momentum plby rearranging Eq. ( 4.8),
+ pl=1
+ (^pl+ ^pm+1) 1 +y
+ 2alQ : (4.32)
+ We now have pl. We dene pa= ^paandpb= ^pb. This leaves the pjforj =2fl;a;bg.
+ For this, we need the inverse Lorentz transformation to Eq. ( 4.9). FromK=Q pland
+ ^K=Q ^pl ^pm+1, we construct ( K;^K)
+ using Eq. ( 4.13) or Eq. ( 4.14) with the roles
+ of^KandKinterchanged. Then
+ p
+ j= (K;^K)
+ ^p
+ j; j =2fl;a;bg: (4.33)
+ The transformation of the 
+ avors is simple. The splitting variable fis given by the
+ 
+ avors of the daughter particles, ( ^fl;^fm+1). The 
+ avor of the mother parton is
+ fl=^fl+^fm+1; (4.34)
+ with the obvious denition of adding 
+ avors, as in d + g = d and u +  u = g. The 
+ avors of
+ the other partons are unchanged
+ fj=^fj; j =2fl;m+ 1g: (4.35)
+ We give a name to this transformation of momenta and 
+ avors,
+ ffp;fgm;fp;fgg=Ql(f^p;^fgm+1): (4.36)
+ This is the inverse transformation to Rl, Eq. ( 4.28).
+ 4.3 The integration measure for nal state splitting
+ With a suitable choice of the integration measure dpfor integrating over the splitting
+ variablesp, we can arrange that
+ Z
+ [df^p;^fgm+1]g(f^p;^fgm+1)
+ =Z
+ [dfp;fgm]X
+ f2l(fl)Z
+ dp(p2 l(fpgm;f))g(f^p;^fgm+1)(4.37)
+ { 28 {for an arbitrary function g(f^p;^fgm+1). The denition that we need is
+ dpdy (ymin<y<y max)plQ
+ 
+ d4^pl
+ (2)42+(^p2
+ l m2(^fl))d4^pm+1
+ (2)42+(^p2
+ m+1 m2(^fm+1))
+ (2)4
+ ^pl+ ^pm+1 pl 1 +y
+ 2alQ
+ :(4.38)
+ Here the limits on yare given in Eqs. ( 4.18) and ( 4.23).
+ 4.4 Splitting an initial state parton
+ Consider the splitting of an initial state parton, say parton \a." The initial state parton
+ with momentum paapAsplits to produce a new initial state parton with momentum
+ ^pa^apAand a new nal state parton with label m+ 1 and momentum ^ pm+1. We are
+ using the usual backwards evolution here, so that the evolution going forward in time is
+ ^pa!pa+ ^pm+1. In this subsection, we describe how f^p;^fgm+1is determined from fp;fgm
+ and splitting variables fp;fg. The splitting of the other initial state parton is described
+ by the same formulas with a $b.
+ We begin by dening what happens to the parton 
+ avors, recalling our notation that
+ for the initial state partons \a" and \b", fa,^fa,fband ^fbdenote the opposite of the 
+ avor
+ of the physical incoming parton. The partons with indices other than \a" and m+ 1 keep
+ their 
+ avors,
+ ^fj=fj; j =2fa;m+ 1g: (4.39)
+ What happens to partons \a" and m+1 is given by the value of the variable f= (^fa;^fm+1).
+ The 
+ avor splitting variable takes values in a set  a(fa) that depends on the 
+ avor of the
+ mother parton. This set is determined by the requirement that fa=^fa+^fm+1. If parton
+ \a" is a quark or antiquark, then the set  a(fa) has only two elements,
+ a(fa) =f(fa;g);(g;fa)g; f a6= g: (4.40)
+ If parton \a" is a gluon, then fcan be a pair of gluons or any choice of ( q;q) or (q;q)
+ 
+ avors,
+ a(g) =f(g;g);(u; u);( u;u);(d;d);(d;d);:::g: (4.41)
+ We now turn to the momenta. Let parton \a" with momentum fraction aradiate a
+ partonm+ 1 with momentum ^ pm+1. We then need to dene how to determine f^pgm+1
+ fromfpgmand ^pm+1.
+ As discussed in Sec. 3.1, we can include masses for the initial state partons.15We take
+ 15Recall that this is optional. One could just replace the masses for the initial state partons by zero,
+ m2(fa) =m2(^fa) =m2(fb) = 0. One could also set all quark masses to zero.
+ { 29 {the partons to be on-shell with zero transverse momenta,
+ pa=apA+m2(fa)
+ aspB;
+ pb=bpB+m2(fb)
+ bspA;
+ ^pa= ^apA+m2(^fa)
+ ^aspB:(4.42)
+ Recall that we dene pAandpBto be lightlike approximations to the incoming hadron
+ momenta, with 2 pApB=s. The radiated parton can have a mass,
+ ^p2
+ m+1=m2(^fm+1): (4.43)
+ We take the momentum fraction of parton \b" to remain the same,
+ ^b=b: (4.44)
+ The momentum fraction ^ aafter the splitting will be determined by ^ pm+1. As in the case
+ of a nal state splitting, it is not generally possible to have ^ pa=pa+ ^pm+1given the
+ mass shell conditions and the possibility that the radiated parton has non-zero transverse
+ momentum. In order to allow the approximation that both paand ^paare on-shell with
+ zero transverse momenta, we therefore take some momenta from the nal state spectator
+ partons by letting the momenta after the splitting be related to the momenta before the
+ splitting by a Lorentz transformation,
+ ^p
+ j= 
+ p
+ j; j2f1;:::;mg: (4.45)
+ Since each nal state spectator is changed by a Lorentz transformation, we have
+ ^K= 
+ K; (4.46)
+ whereKis the momentum of the nal state partons before the splitting,
+ K=pa+pb; (4.47)
+ and ^Kis the momentum of the nal state spectators after the splitting,
+ ^K= ^pa+pb ^pm+1: (4.48)
+ In order for Kand ^Kto be related by a Lorentz transformation, we need ^K2=K2.
+ To see what this means, dene
+ ^Q(^a) = ^pa+pb= 
+ ^a+m2(^fb)
+ bs!
+ pA+ 
+ bpB+m2(^fa)
+ ^as!
+ pB: (4.49)
+ Then we demand that
+ (^Q(^a) ^pm+1)2=K2: (4.50)
+ { 30 {The vector ^ pm+1determines ^ a. In the space of ^ pm+1, a surface of constant ^ ais the
+ intersection of the hyperbola ^ p2
+ m+1=m2(^fm+1) with the hyperbola given by Eq. ( 4.50), as
+ illustrated in Fig. 4. Using ^p2
+ m+1=m2(^fm+1) in Eq. ( 4.50), we can write
+ ^Q(^a)^pm+1=^Q(^a)2+m2(^fm+1) K2: (4.51)
+ Looked at this way, a surface of constant ^ ais the intersection of the hyperbola ^ p2
+ m+1=
+ m2(^fm+1) with the plane dened by Eq. ( 4.51). We will require ^ a<1. Thus the allowed
+ region in ^p2
+ m+1is the part of the forward mass shell with
+ ^Q(1)^pm+1<^Q(1)2+m2(^fm+1) K2: (4.52)
+ In order to solve for ^ agiven ^pm+1, we writeK2and ^K2in the form
+ K2=a 
+ a 
+  ;
+ ^K2= ^^a ^
+ ^a ^
+  :(4.53)
+ Here
+ =bs ;
+ = m2(fa)m2(fb)
+ bs;
+ 
+ = m2(fa) m2(fb);(4.54)
+ while
+ ^=bs 2pA^pm+1;
+ ^=m2(^fa)
+ s
+ 2pB^pm+1 m2(fb)
+ b
+ ;
+ ^
+ = 2pb^pm+1 m2(^fa) m2(fb) m2(^fm+1):(4.55)
+ The condition ^K2=K2now determines ^ a,
+ ^a=1
+ 2^
+ K2+ ^
+ +q
+ (K2+ ^
+ )2+ 4^^
+ : (4.56)
+ It is a consequence of Eq. ( 4.56) and the kinematic conditions ( 3.6) and ( 3.9) that
+ ^a>a: (4.57)
+ We prove this in Appendix A.
+ Having xed ^ aso that ^K2=K2, these two momenta will be related by Eq. ( 4.46),
+ ^K= ( ^K;K )
+ K; (4.58)
+ { 31 {Figure 4: Momentum space for ^ pm+1in an initial state splitting. Coordinate axes along pAand
+ pBare shown, along with the point ^Q(^a). We show the mass shell for ^ pm+1and the hyperbola
+ (^Q(^a) ^pm+1)2=K2. Points ^pm+1for a given value of ^ aare on the intersection of these two
+ hyperbolas. We illustrate a point ^ pm+1with zero momentum transverse to pAandpB, but in
+ general ^pm+1can have transverse components. The plane specied in Eq. ( 4.51) is also depicted.
+ where 
+ the Lorentz transformation ( 4.13). This allows us to dene the spectator mo-
+ menta after the splitting to be related to the spectator momenta before the splitting by
+ this same boost, as in Eq. ( 4.45),
+ ^p
+ j= ( ^K;K )
+ p
+ j; j2f1;:::;mg: (4.59)
+ For a nal state splitting, we dened a splitting variable pin a three dimensional set
+  lso thatfpgmtogether with pdeterminesf^pgm+1. Here we use an analogous notation,
+ with
+ p= (^pa;^pm+1): (4.60)
+ We choose
+ p2 a(fpgm;f); (4.61)
+ where
+  a(fpgm;f) =n
+ (^pa;^pm+1)^p2
+ m+1=m2(^fm+1);^pm+1(pa+pb)>0;
+ ^pa= ^apA+m2(^fa)
+ ^aspB;
+ ^K2(^a) =K2(a);^KK > 0;
+ a<^a<1o
+ :(4.62)
+ That is, the radiated parton lies on the forward mass-shell and the new initial state parton
+ is also on its mass shell with has zero transverse momentum. Its momentum fraction ^ ais
+ determined by ^K2=K2, withKinside the forward lightcone. The solution of ^K2=K2
+ is given by Eq. ( 4.56). We also need ^ ato be big enough that that the kinematic bound
+ { 32 {that was given in Eq. ( 3.9) is obeyed. This follows from ^ a>a. Finally, ^amust be less
+ than 1.
+ We give a name to this transformation of momenta and 
+ avors, Rlwithl= a:
+ f^p;^fgm+1=Ra(fp;fgm;fp;fg): (4.63)
+ 4.5 Combining an initial state parton with a nal state parton
+ The transformation for splitting an initial state parton has an inverse. Let us start with
+ f^p;^fgm+1and determinefp;fgmandfp;fg.
+ The momentum splitting variable is simply p= (^pa;^pm+1). For the momentum frac-
+ tion of parton \b" before the splitting, we take
+ b= ^b: (4.64)
+ To determine a, we simply use the representation ( 4.53) ofK2and ^K2and solveK2=^K2
+ forain terms of ^ a. This gives
+ a=1
+ 2
+ ^K2+
+ +q
+ (^K2+
+ )2+ 4
+ : (4.65)
+ Once we have a, we can construct K=pa+pb. Then from Kand ^Kwe can construct
+ (K;^K), the inverse Lorentz transformation matrix to ( ^K;K ) dened in Eq. ( 4.13) by
+ simply using the same equation with K$^K. Then we can construct the remaining
+ momenta using
+ p
+ j= (K;^K)
+ ^p
+ j: (4.66)
+ The transformation of the 
+ avors is simple. The splitting variable fis given by the
+ 
+ avors of the (backwards evolution) daughter particles, ( ^fa;^fm+1). The 
+ avor of the mother
+ parton is
+ fa=^fa+^fm+1: (4.67)
+ The 
+ avors of the other partons are unchanged
+ fj=^fj; j =2fa;m+ 1g: (4.68)
+ We give a name to this transformation of momenta and 
+ avors,
+ ffp;fgm;fp;fgg=Qa(f^p;^fgm+1): (4.69)
+ This is the inverse transformation to Ra, Eq. ( 4.63).
+ 4.6 The integration measure for initial state splitting
+ With a suitable choice of the integration measure dpfor integrating over the splitting
+ variablesp, we can arrange that
+ Z
+ [df^p;^fgm+1]g(f^p;^fgm+1)
+ =Z
+ [dfp;fgm]X
+ f2a(fa)Z
+ dp(p2 a(fpgm;f))g(f^p;^fgm+1)(4.70)
+ { 33 {for an arbitrary function g(f^p;^fgm+1) with support in ^K2>4m2
+ H. The denition that we
+ need is
+ dpd4^pm+1
+ (2)42+(^p2
+ m+1 m2(^fm+1))+=2
+ a
+ ^+^=^2a: (4.71)
+ The factor ( +=2
+ a)=(^+^=^2
+ a) here is just d^a=dacalculated from the relation ^K2=K2.
+ 5. Spin states
+ The quantum scattering amplitudeM(fp;fgm)
+ is a vector in spin 
+ color space. Thus
+ we can expand it in terms of spin and color basis vectors,
+ M(fp;fgm)
+ =X
+ fcgmfcgmX
+ fsgmfsgm
+ M(fp;f;s;cgm): (5.1)
+ The treatment of color that appears to us to be most useful for parton showers is a bit subtle
+ and, in particular, involves basis vectors that are not exactly conventionally normalized
+ and are not exactly orthogonal to one another. The color basis is described in Sec. 7. In
+ contrast, our spin basis vectors are quite standard, are orthogonal and normalized,
+ 
+ fs0g0
+ mfsgm
+ =m0;mfs0gm;fsgm: (5.2)
+ The spin labelsfsa;sb;s1;:::;smgrepresent the helicities of the corresponding particles.16
+ The basis states for parton lare represented for quarks or antiquarks by Dirac spinors
+ U(pl;sl) orV(pl;sl), wherep2
+ l=m2(fl). For gluons, we need polarization vectors "(pl;sl)
+ withp2
+ l= 0. Our denition makes use an auxiliary vector nl, chosen along the intersection
+ of the positive lightcone with the plane of plandQ, whereQ=Pm
+ j=1pj=pa+pbis the
+ total momentum of the nal state particles. The normalization of nlis not important. We
+ take the solution that is not close to plin the case that m2(fl) is small. A convenient set
+ of choices is
+ nl=8
+ >>>><
+ >>>>:pB; l = a;
+ pA; l = b;
+ Q Q2
+ Qpl+p
+ (Qpl)2 Q2m2(fl)pl; l2f1;:::;mg:(5.3)
+ For quarks and antiquarks, we use Dirac spinors U(p;s) orV(p;s) withp2=m2and
+ s=1=2. We can take V(p;s) = [U(p;s)C]T, whereCis the charge conjugation matrix,
+ i
+ 2
+ 0in the chiral representation of the gamma matrices, with C 1
+ C= (
+ )Tand
+ C 1=Cy=CT= C. The spinors obey ( /p m)U(p;s) = 0 and ( /p+m)V(p;s) = 0.
+ They are normalized to
+ U(p;s)
+ U(p;s) = 2p;
+ V(p;s)
+ V(p;s) = 2p:(5.4)
+ 16Many authors follow the convention that the helicity label for an incoming particle is the negative of
+ the particle's helicity. In contrast, our convention is that saandsb, as well as s1;:::;s m, represent the
+ physical helicities of the particles.
+ { 34 {We use helicity eigenstates, dened so that
+ 
+ 5/sU(p;1=2) =U(p;1=2);
+ 
+ 5/sV(p;1=2) =V(p;1=2):(5.5)
+ Here the spin vector sis
+ s=1
+ mp m
+ pnn ; (5.6)
+ wherenis the auxiliary lightlike vector from Eq. ( 5.3). Thuss2= 1 andsp= 0.
+ A convenient denition that denes the phase of U(p; s) in terms of the phase of
+ U(p;s) is
+ U(p; s) =
+ 1 +m
+ pn/n
+ V(p;s) (5.7)
+ For gluons, we need polarization vectors "(p;s;Q), representing a given helicity sand
+ dened with the aid of an auxiliary vector Q. The polarization vectors obey p"(p;s;Q) = 0
+ and
+ Q"(p;s;Q) = 0: (5.8)
+ We can also write
+ "(p;s;Q) ="(p;s;n); (5.9)
+ wheren"(p;s;n) = 0 andnis a lightlike vector dened in Eq. ( 5.3). We dene the phase
+ by using the standard denition in terms of mass zero Dirac spinors [ 17],
+ "(p;1;n) =U(n;1=2)
+ U(p;1=2)p
+ 2U(p;1=2)U(n;1=2): (5.10)
+ With this denition, there is a simple relation between polarization vectors dened
+ with dierent auxiliary vectors Qand thus dierent lightlike auxiliary vectors n[17],
+ "(p;1;n) "(p;1;n0) =p
+ 2U(n;1=2)U(n0;1=2)
+ U(n;1=2)U(p;1=2)U(p;1=2)U(n0;1=2)p:
+ (5.11)
+ If we use these polarization vectors with the exact tree-level Feynman diagrams, gauge
+ invariance of the matrix elements, together with the fact that "(p;s;n) diers from
+ "(p;s;n0) by a vector proportional to p, shows that the amplitude is independent of
+ the choice of the auxiliary vector Q. Our matrix elements will be approximate and will be
+ gauge invariant only to the extent that the splittings are close to the soft or collinear limits.
+ Thus some dependence on the auxiliary vector used to dene the polarization vectors will
+ result.
+ 6. Splitting functions for the quantum states
+ Consider for a moment a theory without spin, color, or 
+ avors, say 3theory in six di-
+ mensions as in Sec. 2. An (m+ 1)-parton scattering amplitude M(f^pgm+1) is simple in
+ { 35 {the limit in which two of the partons are approximately collinear. Supposing that partons
+ m+ 1 andlare almost collinear, we have
+ M(f^pgm+1)v(f^pgm+1)M(fpgm); (6.1)
+ wherev(f^pgm+1) =g=(2^pl^pm+1). Herefpgmis determined from f^pgm+1by the (six-
+ dimensional version of) the transformation described in Sec. 4. This factorization formula
+ for the amplitude becomes exact in the limit that partons m+ 1 andlbecome collinear.
+ Away from the collinear limit, there is some freedom to choose the momentum mapping
+ and the splitting amplitude v(f^pgm+1). One has to make a denite choice based on ease of
+ computation or conceptual simplicity. In the case of QCD, we have soft as well as collinear
+ singularities, we have parton 
+ avors (which are rather trivially treated) and we have color
+ and spin, which are not so trivial. Let us see how to describe splitting in QCD.
+ It has been known for a long time that QCD amplitudes factor in the soft and collinear
+ limits [ 18]. Indeed, there are beautiful modern formulas for the factors [ 17,19,15]. We
+ have adopted a more pedestrian approach that has at least the advantage of encompassing
+ the soft and collinear limits at the same time and of including masses. A treatment of the
+ squared amplitude that is rather similar to the approach of this paper, but at higher order,
+ may be found in Ref. [ 20].
+ 6.1 Denition of the splitting functions vl
+ The QCD scattering amplitude for m+1 partons is a vectorM(f^p;^fgm+1)
+ in color
+ spin
+ space. In the limit that two partons, landm+ 1 are almost collinear, this amplitude takes
+ a certain limiting form,
+ M(f^p;^fgm+1)
+ Ml(f^p;^fgm+1)
+ ; (6.2)
+ whereMl(f^p;^fgm+1)
+ is to be dened precisely below. When ^ pm+1becomes soft, then all
+ of theMl(f^p;^fgm+1)
+ amplitudes contribute to the limit,
+ M(f^p;^fgm+1)
+ X
+ lMl(f^p;^fgm+1)
+ : (6.3)
+ We arrange the denition so that Eqs. ( 6.2) and ( 6.3) are exact in the collinear or soft limit
+ respectively. We also arrange thatMl(f^p;^fgm+1)
+ is dened for anyf^p;^fgm+1. Then these
+ equations are approximate away from the limit. The amplitudeMl(f^p;^fgm+1)
+ is then
+ the contribution to the ( m+ 1)-parton amplitude from the splitting of parton lin the
+ parton shower approximation.
+ We now need to deneMl(f^p;^fgm+1)
+ . This amplitude factors into a splitting op-
+ erator times the m-parton matrix element evaluated at momenta and 
+ avors fp;fgmde-
+ termined fromf^p;^fgm+1according to the transformation Ql(f^p;^fgm+1), Eq. ( 4.36) or
+ Eq. ( 4.69),
+ Ml(f^p;^fgm+1)
+ =ty
+ l(fl!^fl+^fm+1)Vy
+ l(f^p;^fgm+1)M(fp;fgm)
+ : (6.4)
+ In Eq. ( 6.4),Vy(f^p;^fgm+1) is the analogue of v(f^pgm+1) but is now an operator on the
+ spin part of the color 
+ spin space. There is also an operator ty
+ l(fl!^fl+^fm+1) on the
+ { 36 {color part of the color 
+ spin space. This operator multiplies by the right color matrix.
+ We will not comment further on it in this section, but will turn to the description of color
+ in Sec. 7. The spin dependent splitting operator can be described in terms of its matrix
+ elements,
+ 
+ f^sgm+1Vy
+ l(f^p;^fgm+1)fsgm
+ (6.5)
+ This is a simple function of f^p;^fgm+1,f^sgm+1, andfsgm. Furthermore, we can take it to
+ be diagonal in the spectator spins,
+ 
+ f^sgm+1Vy
+ l(f^p;^fgm+1)fsgm
+ =0
+ @Y
+ j=2fl;m+1g^sj;sj1
+ Avl(f^p;^fgm+1;^sm+1;^sl;sl):(6.6)
+ Our object in this section is to dene the splitting functions vfrom the QCD vertices. In
+ writing formulas for vl(f^p;^fgm+1;^sm+1;^sl;sl), we will use the momentum pl. We under-
+ stand that this is obtained from f^p;^fgm+1according to the transformation Ql(f^p;^fgm+1).
+ 6.2 Initial state q!q+ gsplitting, quark scatters
+ Figure 5: Illustration of factorization at the amplitude level, leading to the denition of the
+ splitting function in Eq. ( 6.19). When the nal state gluon becomes collinear with the initial state
+ quark, the full amplitude is approximately the amplitude for one fewer parton, with the incoming
+ quark after the gluon radiation approximated as being on shell, times a splitting function simply
+ made from the QCD qqgvertex and the singular quark propagator. If the nal state gluon is soft,
+ then this diagram is one of the possibilities. Then, the soft gluon could have been emitted from
+ any of the external legs of the diagram and we must sum over all of the possible emissions. In this
+ case, we can, however, use a simpler splitting function.
+ Consider an initial state q!q+g splitting in which the gluon goes into the nal state
+ and the quark enters the hard scattering, as illustrated in Fig. 5. We highlight this case
+ because it exhibits some complications compared to nal state q!q+ g splitting. The
+ parton that splits could be either of the initial state partons. We examine the case that
+ it is parton \a." The kinematics were dened in Secs. 4.4and4.5. In order to keep our
+ { 37 {notation for this subsection as simple as possible, we will write
+ p=pa;  =a;
+ ^p= ^pa; ^= ^a;
+ q= ^pm+1; m =m(fa) =m(^fa);
+ ^s= ^sa; "="(^pm+1;^sm+1;^Q):(6.7)
+ Here"is dened to be orthogonal to ^Q= ^pa+ ^pb= ^pa+pb.
+ The Feynman rules forM(f^p;^fgm+1)
+ give the following structure
+ M=H/P+m
+ P2 m2gtc/"U(^p;^s): (6.8)
+ Here there are factors U(^p;^s) for the initial state quark and "
+ for the nal state gluon.
+ There is a vertex g
+ with a color matrix tc. There is a propagator for the o-shell quark
+ that carries momentum
+ P= ^p q : (6.9)
+ The quark propagator has a denominator P2 m2and a numerator /P+m. Finally, there
+ is the rest of the diagram, H, which contains hard interactions. Thus Hcarries a Dirac
+ spinor index. We need to relate this toM(fp;fgm)
+ , where the momenta and 
+ avors
+ fp;fgmas well as the splitting variables fp;fgare given by the momentum and 
+ avor
+ mappingQl(f^p;^fgm+1), Eq. ( 4.36).
+ We will be concerned with the behavior of Min the soft and collinear limits. The soft
+ limit isq!0 (for all four components of q). SinceP2 m2= 2^pq, the denominator is
+ proportional to a single power of q, while the numerator stays nite in the q!0 limit. To
+ describe the collinear limit, let q?be the part of qorthogonal to pAandpB. The collinear
+ limit isq?!0 whileqpBstays nite. Also, m!0 withm2.jq2
+ ?j. Then near the
+ collinear limit, the denominator is
+ P2 m2=^
+ ^ q2
+ ? ^ 
+ ^m2
+ (1 +O(q2
+ ?;m2)): (6.10)
+ That is, the denominator has two powers of q?. To analyze the numerator, we note that
+ p=pA+O(q2
+ ?;m2);
+ ^p= ^pA+O(q2
+ ?;m2);
+ ^q= (^ )pA+q?+O(q2
+ ?;m2):(6.11)
+ The numerator has a factor ( /P+m)/"U(^p;^s). Usingq"= 0 and (/ ^p m))U(^p;^s) = 0, one
+ can rewrite this factor in the form
+ (/P+m)/"U(^p;^s) = 2
+ ^p ^
+ ^ q
+ "U(^p;^s) +/"
+ /q ^ 
+ ^(/ ^p m)
+ U(^p;^s):(6.12)
+ Looking at the numerator in this form, we see that it vanishes in the collinear limit pro-
+ portionally to one power of q?orm. ThusMis only half as singular in the collinear limit
+ as it rst appears.
+ { 38 {We now develop an approximation for M. We can insert a factor 1 next to Hin
+ Eq. ( 6.8) so that it reads
+ M=H/n(/p m) + (/p+m)/n
+ 2pn/P+m
+ P2 m2(gtc/")U(^p;^s): (6.13)
+ Herenis the lightlike vector n=pB.
+ We now notice that the contribution from the rst term, namely
+ Mns=H/n(/p m)
+ 2pn/P+m
+ P2 m2(gtc/")U(^p;^s); (6.14)
+ can be neglected because it does not have a collinear or soft singularity. To see this takes
+ a little analysis. First, we write
+ p=P+ (p+q ^p): (6.15)
+ Since ( /P m)(/P+m) =P2 m2, we have
+ Mns=H/n
+ 2np(gta/")U(^p;^s) +H/n(/p+/q / ^p)
+ 2pn/P+m
+ P2 m2(gtc/")U(^p;^s): (6.16)
+ The rst term is non-singular because the denominator is cancelled. In the second term, the
+ vector (p+q ^p) vanishes in the collinear or soft limit. In the soft limit, it is proportional
+ to one power of q, which cancels the single power of qin the denominator. In the collinear
+ limit, it is proportional to one power of q?. As we have just seen, the rest of the numerator
+ contains an additional factor of q?. Together, these cancel the two powers of q?from the
+ denominator. Thus no singularity remains.
+ We are left with
+ Msing=H(/p+m)/n
+ 2pn/P+m
+ P2 m2(gtc/")U(^p;^s): (6.17)
+ In Eq. ( 6.17), the factor /p+mis
+ /p+m=X
+ sU(p;s)U(p;s): (6.18)
+ The factor U(p;s) is to be associated with H, giving the hard scattering amplitude for
+ an incoming quark with spin s. The remaining factor, U(p;s), then becomes part of the
+ splitting function. This calculation leads us to dene the splitting function as
+ va= p4s
+ (^p q)2 m2"
+ U(p;s)/n(/ ^p /q+m)
+ U(^p;^s)
+ 2pn: (6.19)
+ This does not include the color matrix and a factor  1, which will be included in the color
+ operatorty
+ l(fl!^fl+^fm+1). As indicated by the derivation, Eq. ( 6.19) is directly given by
+ the factorized structure of QCD Feynman graphs in the soft and collinear limits. There is
+ freedom to choose the form of the splitting function as one moves away from these limits.
+ We have made a simple choice.
+ In the hard part of the diagram, we can make approximations that are valid for q2
+ ?!0.
+ In particular, we can adjust the momenta of the partons with indices other than \a,"
+ replacing ^pjbypjas dened by the momentum mapping Ra(fp;fgm;fp;fg), Eq. ( 4.63).
+ { 39 {6.3 Initial state q!q+ gsplitting, gluon scatters
+ We consider next the process in which an initial state quark with label \a" splits to make
+ a quark that goes into the nal state (with label m+ 1) and a gluon that enters the hard
+ scattering (with label \a"). We simplify the notation as in the previous subsection by using
+ p=pa;  =a;
+ ^p= ^pa; ^= ^a;
+ q= ^pm+1; m =m(^fa) =m(^fm+1);
+ ^s= ^sa; s0= ^sm+1:(6.20)
+ The Feynman rules forM(f^p;^fgm+1)
+ give the following structure
+ M=HD(P;n)
+ P2U(q;s0)(gtc
+ )U(^p;^s): (6.21)
+ HereHis the hard part of the graph, now with a vector index, and there is a propagator
+ for the o-shell gluon that carries momentum
+ P= ^p q : (6.22)
+ We have chosen the axial gauge nA= 0, where nis the lightlike vector n=PB. The
+ numerator of the gluon propagator is
+ D(P;n) = g+Pn+nP
+ Pn: (6.23)
+ As in the previous subsection, Mis singular in the collinear limit, in which q?!0
+ andm!0.17As in the previous section, the numerator is proportional to q?and the
+ denominator is proportional to q2
+ ?in the collinear limit.
+ In order to nd a suitable approximation for M, we insert 1 next to H, so that it reads
+ M=H
+  D(p;n) +pn+np
+ pnD(P;n)
+ P2U(q;s0)(gtc
+ )U(^p;^s): (6.24)
+ We can drop the term ( pn+np)=(np). To see this, we write
+ pn+np
+ pn=Pn+nP
+ Pn+D(p;n) D(P;n): (6.25)
+ The termPngives zero when contracted with D. When we contract nPwithD,
+ we get
+ nP
+ PnD(P;n)
+ P2=nn
+ (Pn)2; (6.26)
+ which does not have a collinear singularity. Finally, the dierence D(p;n) D(P;n)
+ is proportional to q?in the collinear limit because P p/q?in this limit. The remaining
+ 17We do not need to be concerned with the soft limit, q!0 withm!0. Here, there is only a 1 =pq
+ singularity, which is too weak to create a logarithmically divergent integration over nal states. Nevertheless,
+ our approximation to Malso matches the behavior of Min the soft limit.
+ { 40 {numerator factor gives another factor q?in the collinear limit, so that the factor q2
+ ?from
+ the denominator is cancelled.
+ Thus we are left with MMsing, where
+ Msing= HD(p;n)D(P;n)
+ P2U(q;s0)(gtc
+ )U(^p;^s): (6.27)
+ The factor D(p;n) is
+ D(p;n) =X
+ s"(p;s;n)"(p;s;n)=X
+ s"(p;s;^Q)"(p;s;^Q): (6.28)
+ It is equivalent to use n=pBor^Q= ^pa+ ^pb= ^pa+pbto dene the polarization vectors
+ since they are orthogonal to both p=paandpb. The factor "(p;s;^Q) is to be associated
+ withH, giving the hard scattering amplitude for a gluon with spin s. The remaining factor,
+ "(p;s;^Q), then becomes part of the splitting function.
+ This calculation leads us to dene the splitting function as
+ va= p4s
+ (^p q)2"(p;s;^Q)D(^p q;n)U(q;s0)
+ U(^p;^s): (6.29)
+ This does not include the color matrix, which is included in the color operator ty
+ l(fl!
+ ^fl+^fm+1).
+ In the hard part of the diagram, we can again make approximations that are valid
+ forq2
+ ?!0. In particular, we can adjust the momenta of the partons with indices other
+ than \a," replacing ^ pjbypjas dened by the momentum mapping Ra(fp;fgm;fp;fg),
+ Eq. ( 4.63). We will also want to use Q=pa+pbinstead of ^Q= ^pa+ ^pbto dene the
+ polarization vector for parton las it enters the hard scattering. This is just a change in
+ notation rather than an approximation since Qis in thep-^Qplane.
+ 6.4 Other qqgsplittings
+ For splittings involving a qqgvertex, there are several other choices for the 
+ avors fl,^fl
+ and ^fm+1and for whether the index lof the parton that splits is a nal state index or
+ an initial state index. The results for vl(f^p;^fgm+1;^sm+1;^sl;sl) are listed in Table 1. In
+ constructing this table, we keep track of two sign factors. First, there is a numerator sign
+ that we compute as in the examples in the preceding subsections. This is a minus sign
+ whenever a gluon or an antiquark enters the hard scattering from the initial state or leaves
+ the hard scattering to the nal state and a plus sign when a quark enters or leaves the hard
+ scattering. Second, there is a color sign. There is always a color matrix ta. We count a color
+ 3line entering the hard scattering as a color 3line leaving the hard scattering. Viewed this
+ way, the color matrix is actually ( ta)T. However, the generator of color rotations for the
+ 3representation of SU(3) is  (ta)T. Thus we include  (ta)Tas part of the color operator
+ ty
+ l(fl!^fl+^fm+1) and include the minus sign as part of the splitting function vl. This
+ leaves a factor 1 invlwhenever a 3line leaves the hard scattering. The sign included in
+ ty
+ l(fl!^fl+^fm+1) is indicated in the last column of Table 1. The net sign of vlis shown
+ in the table.
+ { 41 {The construction for a nal state splitting, as for an initial state splitting, makes use
+ of a lightlike vector nlthat is in the plane of pland ^Q= ^pa+ ^pb, which is the same as the
+ plane ofplandQ=pa+pb. The normalization of nlis not signicant. Our choice for this
+ vector was dened in Eq. ( 5.3).
+ 6.5 Splitting with a gggvertex
+ We construct the splitting function for a g !g + g splitting in a similar fashion. In the
+ case of a nal state splitting, we use the ggg QCD vertex,
+ v
+ (pa;pb;pc) =g(pa pb)
+ +g
+ (pb pc)+g
+ (pc pa); (6.30)
+ to dene
+ vl(f^p;^fgm+1;^sm+1;^sl;sl)
+ =p4s
+ 2^pm+1^pl"(^pm+1;^sm+1;^Q)"(^pl;^sl;^Q)"(pl;sl;^Q)
+ v
+ (^pm+1;^pl; ^pm+1 ^pl)D
+ (^pl+ ^pm+1;nl):(6.31)
+ For an initial state splitting, we have
+ vl(f^p;^fgm+1;^sm+1;^sl;sl)
+ = p4s
+ 2^pm+1^pl"(^pm+1;^sm+1;^Q)"(^pl;^sl;^Q)"(pl;sl;^Q)
+ v
+ (^pm+1; ^pl;^pl ^pm+1)D
+ (^pl ^pm+1;nl):(6.32)
+ In each case, we have the exact QCD vertex and the exact propagator for the o-shell gluon
+ innlA= 0 gauge followed by a projection onto the physical gluon degrees of freedom
+ contained in the on-shell polarization vector.
+ 6.6 Soft splitting function
+ These splitting functions enable us to approximate the ( m+ 1)-parton matrix element in
+ the cases that ^ pm+1is collinear with ^ plor else ^pm+1is soft. In the special case that ^ pm+1is
+ soft, or possibly soft and collinear with ^ pl, a simpler splitting function can be used. When
+ ^pm+1is soft, we have
+ M(f^p;^fgm+1)
+ X
+ lMsoft
+ l(f^p;^fgm+1)
+ ; (6.33)
+ where
+ Msoft
+ l(f^p;^fgm+1)
+ =ty
+ l(fl!^fl+^fm+1)Vy;soft
+ l(f^p;^fgm+1)M(fp;fgm)
+ : (6.34)
+ The matrix elements of Vy;soft
+ lare specied by a function vsoft
+ l,
+ 
+ f^sgm+1Vy;soft
+ l(f^p;^fgm+1)fsgm
+ =0
+ @Y
+ j=2fl;m+1g^sj;sj1
+ Avsoft
+ l(f^p;^fgm+1;^sm+1;^sl;sl):
+ (6.35)
+ { 42 {l fl^fl^fm+1 vl1p4scolor
+ F q q g"(^pm+1;^sm+1;^Q)U(^pl;^sl)
+ [/ ^pl+ / ^pm+1+m(fl)]/nlU(pl;sl)
+ 2plnl[(^pl+ ^pm+1)2 m2(fl)]ta
+ F qq g"(^pm+1;^sm+1;^Q)V(pl;sl)/nl[/ ^pl+ / ^pm+1 m(fl)]
+ V(^pl;^sl)
+ 2plnl[(^pl+ ^pm+1)2 m2(fl)] ta
+ Iqq g "(^pm+1;^sm+1;^Q)U(pl;sl)/nl(/ ^pl / ^pm+1+m(fl))
+ U(^pl;^sl)
+ 2plnl[(^pl ^pm+1)2 m2(fl)] ta
+ I q q g "(^pm+1;^sm+1;^Q)V(^pl;^sl)
+ (/ ^pl / ^pm+1 m(fl))/nlV(pl;sl)
+ 2plnl[(^pl ^pm+1)2 m2(fl)]ta
+ Fgq q "(pl;sl;^Q)D(^pl+ ^pm+1;nl)U(^pl;^sl)
+ V(^pm+1;^sm+1)
+ (^pl+ ^pm+1)2ta
+ Ig q q "(pl;sl;^Q)D(^pl ^pm+1;nl)U(^pm+1;^sm+1)
+ U(^pl;^sl)
+ (^pl ^pm+1)2ta
+ Igq q "(pl;sl;^Q)D(^pl ^pm+1;nl)V(^pl;^sl)
+ V(^pm+1;^sm+1)
+ (^pl ^pm+1)2ta
+ I q gq "(^pl;^sl;^Q)U(^pm+1;^sm+1)
+ [/ ^pl / ^pm+1 m(fl)]/nlV(pl;sl)
+ 2plnl[(^pl ^pm+1)2 m2(fl)]ta
+ Iqg q "(^pl;^sl;^Q)U(pl;sl)/nl[/ ^pl / ^pm+1+m(fl)]
+ V(^pm+1;^sm+1)
+ 2plnl[(^pl ^pm+1)2 m2(fl)] ta
+ Table 1: Splitting functions vl(f^p;^fgm+1;^sm+1;^sl;sl) for splittings involving a qqgvertex, with a
+ common factorp4sremoved. The values of lare either in the set of initial state indices I=fa;bg
+ or in the set of nal state indices F=f1;:::;mg. The 
+ avors fl,^fl, and ^fm+1can bef= g or can
+ be a quark index, q2fu;d;:::g, or an antiquark index  q2f u;d;:::g. Recall from Eq. ( 3.2) that
+ in the case of an initial state parton, fland ^fldenote the opposite of the incoming 
+ avors of the
+ parton. For a row in which qdenotes a quark index,  qdenotes the corresponding antiquark index.
+ The next column gives the value of vlcorresponding to the values of l,fl,^fl, and ^fm+1indicated.
+ The last column indicates the sign of the color matrix that is incorporated into the color operator
+ ty
+ l. The lightlike vector nlis dened in Eq. ( 5.3).
+ If partonm+ 1 is a quark or antiquark, vsoft
+ l= 0. When parton m+ 1 is a gluon,
+ vsoft
+ l(f^p;^fgm+1;^sm+1;^sl;sl) =p
+ 4s^sl;sl"(^pm+1;^sm+1;^Q)^pl
+ ^pm+1^pl: (6.36)
+ { 43 {The functions vsoft
+ lare not as powerful as the functions vlbecause they provide good
+ approximations only in the soft gluon limit. Nevertheless, we will have occasion to make
+ use of them.
+ 7. Description of color
+ We will need a description of the quantum color state that is adapted to a description
+ of shower evolution. If we use an index notation, to each parton with label lthere is
+ associated a color index al, which takes values 1 ;:::; 3 for a quark or antiquark and takes
+ values 1;:::; 8 for a gluon. There is also a spin index l, which takes values 1=2 for quark
+ and1 for a gluon. We can expand Min terms of color and spin basis vectors in the form
+ M(fp;fgm)aa;ab;a1;:::;am
+ a;b;1;:::;m=X
+ fcgm	(fcgm)aa;ab;a1;:::;amX
+ fsgm(fsgm)a;b;1;:::;m
+ M(fp;f;s;cgm);(7.1)
+ where the 	(fcgm) form a basis for the space of color singlet amplitudes with color labels
+ fcgmand the (fsgm) form a basis for the spin space with spin labels fsgm. The quantities
+ M(fp;f;s;cg) are the expansion coecients. In a vector notation, this is
+ M(fp;fgm)
+ c;s=X
+ fcgmfcgm
+ c
+ X
+ fsgmfsgm
+ sM(fp;f;s;cgm): (7.2)
+ HereM(fp;fgm)
+ c;slies in the combined color-spin space whilefcgm
+ cis a vector in color
+ space andfsgm
+ sis a vector in spin space.
+ As discussed in Sec. 5, we use a conventional treatment of spin. We assume that the
+ spin labels already represent parton helicities using suitable conventions for choosing
+ corresponding Dirac spinors and polarization vectors. Then the basis vector labels can be
+ simplyfsgm=fsa;sb;s1;:::;smgand the basis vectors can be
+ (fsgm)a;b;1;:::;m=asabsb1s1msm: (7.3)
+ Then we have an orthonormal basis:
+ fs0gmfsgm
+ is 1 if the spin labels are all the same
+ and zero otherwise.
+ We use a treatment of color that is conventional but more subtle than the treatment
+ for spin. We turn to this subject in this section.
+ 7.1 Color basis
+ We rst note that as far as color is concerned, an initial state quark is equivalent to a nal
+ state antiquark and an initial state antiquark is equivalent to a nal state quark. Thus,
+ in the prose description in this section we use \quark" and \ q" to refer to a nal state
+ quark or an initial state antiquark and we use \antiquark" and \ q" to refer to a nal state
+ antiquark or an initial state quark.18
+ 18Recall from Eq. ( 3.2) that in the case of an initial state parton, fland ^fldenote the opposite of the
+ incoming 
+ avors of the parton.
+ { 44 {We next note that the amplitudeM(fp;fgm)
+ us always invariant under an overall
+ rotation of all of the parton colors. Thus what we really need is a basis for the space of
+ color singlet amplitudes in the color space. There is a widely used and intuitively appealing
+ way to do this that, furthermore, matches with the idea of color strings forming between
+ outgoing partons [ 21].
+ The color basis vectorsfcgm
+ care labeled by a color string congurations fcgm. A
+ color string conguration can be described as a set fS1;:::;Sngof one or more stringsS.
+ There are two types of strings, open strings andclosed strings . An open string is an ordered
+ set of parton indices that we denote by S= [l1;l2;:::;ln 1;ln]. Herel1is the label of a
+ quark,lnis the label of an antiquark, and l2;:::;ln 1are labels of gluons. A closed string
+ is an ordered set of at least two parton indices that we denote by S= (l1;l2;:::;ln 1;ln).
+ Here all of the indices label gluons and we treat sets that dier by a cyclic permutation of
+ the indices as being the same. Thus a complete color string conguration for a quark, an
+ antiquark, and ve gluons might be f[1;6;3;7];(4;2;5)g. This is a notation for a possible
+ fcg5.
+ Now we can dene the basis states. We take 	( fcgm) to be a product
+ 	(fcgm)a1;:::;am= 	(S1)fag[1]	(S2)fag[2]:::	(SK)fag[K]: (7.4)
+ Here we have denoted the set of color indices represented in string kby
+ fag[k]=fal1;:::;alng (7.5)
+ if stringkis [l1;:::;ln] or (l1;:::;ln).
+ Figure 6: Illustration an open string color basis state (left) and a closed sting color basis state
+ (right).
+ We can now dene the component factors V(S). For notational convenience, we sup-
+ pose thatli=iso that the partons along the string are numbered sequentially, [1 ;2;:::;n ]
+ or (1;2;:::;n ).
+ We rst consider an open string, as illustrated on the left in Fig. 6. We dene
+ 	(S)fag=n(S) 1=2[ta2ta3tan 1]a1an; (7.6)
+ where thetaare the SU(3) generator matrices for the fundamental representation and we
+ take thea1;anmatrix element of the matrix product of the generator matrices (normalized
+ toTR= 1=2). The normalization factor n(S) is
+ n(S) =NcCn 2
+ F: (7.7)
+ { 45 {With this normalization,
+ SS
+ X
+ fagj	(S)fagj2= 1: (7.8)
+ For a closed string with the same parton labels (now all gluons) we dene, as illustrated
+ on the right in Fig. 6,
+ 	(S)fag=n(S) 1=2Tr [ta1ta2tan]; (7.9)
+ where, again, the taare the SU(3) generator matrices for the fundamental representation19
+ and where
+ n(S) =Cn
+ F: (7.10)
+ With this normalization,
+ 
+ SS
+ X
+ fagj	(S)fagj2= 1  1
+ 2NcCFn 1
+ : (7.11)
+ This is approximately 1 in the limit of a large number of colors.
+ A general color basis state is a product of string states.20It includes a normalization
+ factorn(fcgm) 1=2,
+ n(fcgm) =n(S1)n(S2)n(SK): (7.12)
+ The normalization of the states is
+ 
+ fcgmfcgm
+ =Y
+ k
+ SkSk
+ ; (7.13)
+ where the factors are given in Eqs. ( 7.8) and ( 7.11). Thus
+ fcgmfcgm
+ 1 in the large
+ Nclimit.
+ The basis vectorsfcgm
+ are not exactly normalized and they are not orthogonal.
+ However, the inner product between two dierent basis vectors is small in the limit of a
+ large number of colors,
+ 
+ fc0gmfcgm
+ =O(1=N2
+ c)fc0gm6=fcgm: (7.14)
+ For instance, suppose fcgm= [1;2;3;4] and supposefc0gm= [1;3;2;4], with the posi-
+ tions of the two gluons reversed. Then
+ fc0gmfcgm
+ = 1=(N2
+ c 1). The calculation is
+ illustrated in Fig. 7.
+ 19One could use the adjoint representation here. However, an adjoint representation string is approx-
+ imately equivalent to two fundamental representation strings and having two strings when one would do
+ makes the description more complicated.
+ 20The building blocks used are the invariant matrices ijto connect a quark and an antiquark and ta
+ ij
+ to connect a quark, antiquark and gluon. One could also use the completely antisymmetric matrix ijk
+ to connect three quarks or three antiquarks. However, we don't need states made using ijkbecause the
+ amplitudes Mhave net baryon number zero.
+ { 46 {Figure 7: Inner products for color basis states. The left hand picture illustrates the inner product
+ of the [1;2;3;4] with itself. The color diagram shown gives C2
+ FNc, which is just canceled by the
+ normalization factor 1 =n(S) from Eq. ( 7.7). The right hand picture illustrates the inner product
+ of the [1;2;3;4] with [1;3;2;4]. The color diagram gives  CF=2. Multiplying by 1 =n(S) gives
+  1=(N2
+ c 1).
+ 7.2 Parton insertion operators
+ It will prove useful to dene certain operators that act on an mparton color state with
+ partons with labels fa;b;1;:::;mgand add one parton with label m+ 1. We let ay
+ +(l)
+ insert a gluon just to the right of parton lon whatever string contains parton l,
+ ay
+ +(l)f:::;[a1;:::;l;:::;a n];:::g
+ =f:::;[a1;:::;l;m + 1;:::;an];:::g
+ ;
+ ay
+ +(l)f:::;(a1;:::;l;:::;a n);:::g
+ =f:::;(a1;:::;l;m + 1;:::an);:::g
+ ;
+ ay
+ +(l)f:::;[l;:::;an];:::g
+ =f[l;m+ 1;:::;an];:::g
+ ;
+ ay
+ +(l)f:::;[a1;:::;l ];:::g
+ = 0:(7.15)
+ The rst equation applies to the case that llabels a gluon on an open string while the
+ second equation applies to the case that llabels a gluon on an closed string. The third
+ equation applies when llabels a quark at the end of an open string. The fourth equation
+ applies when llabels an antiquark at the end of an open string. In this case, there is no
+ place to put the gluon, so the result is dened to be zero. Similarly, we dene an operator
+ ay
+  (l) that inserts a gluon just to the left of parton lon whatever string contains parton l,
+ ay
+  (l)f:::;[a1;:::;l;:::;a n];:::g
+ =f:::;[a1;:::;m + 1;l;:::an];:::g
+ ;
+ ay
+  (l)f:::;(a1;:::;l;:::;a n);:::g
+ =f:::;(a1;:::;m + 1;l;:::an);:::g
+ ;
+ ay
+  (l)f:::;[l;:::;an];:::g
+ = 0;
+ ay
+  (l)f:::;[a1;:::;l ];:::g
+ =f:::;[a1;:::;m + 1;l];:::g
+ :(7.16)
+ We dene an operator ay
+ q(l) that breaks a string at the position of a gluon with label l,
+ creating a quark that we take to inherit the label land an antiquark with the new label
+ m+ 1. Iflis a gluon on an open string, this creates two open strings. If lis a gluon
+ on a closed string, this turns the closed string into an open string. If llabels a quark or
+ { 47 {antiquark, we dene the result to be zero. Thus
+ ay
+ q(l)f:::;[a1;:::;l;:::;a n];:::g
+ =f:::;[a1;:::;m + 1];[l;:::an];:::g
+ ;
+ ay
+ q(l)f:::;(a1;:::;l;:::;a n);:::g
+ =f:::;[l;:::an;a1;:::;m + 1];:::g
+ ;
+ ay
+ q(l)f:::;[l;:::;an];:::g
+ = 0;
+ ay
+ q(l)f:::;[a1;:::;l ];:::g
+ = 0:(7.17)
+ Finally, we dene an operator ay
+ s(l) that removes a gluon with label lfrom its string, and
+ creates a new open string consisting of just a quark that we take to inherit the label land
+ an antiquark with the new label m+1. Ifllabels a quark or antiquark, we dene the result
+ to be zero. Thus
+ ay
+ s(l)f:::;[a1;:::;l;:::;a n];:::g
+ =f:::;[a1;:::;an];[l;m+ 1]
+ ;
+ ay
+ s(l)f:::;(a1;:::;l;:::;a n);:::g
+ =f:::;(a1;:::;an);[l;m+ 1];:::g
+ ;
+ ay
+ s(l)f:::;[l;:::;an];:::g
+ = 0;
+ ay
+ s(l)f:::;[a1;:::;l ];:::g
+ = 0:(7.18)
+ We will see the utility of these operators presently, when we study the color 
+ ow in parton
+ splitting.
+ 7.3 Color evolution for the quantum states
+ In this subsection, examine how the color vector changes with successive parton splittings.
+ Consider starting with a color state 
+ formpartons and letting a nal state parton with
+ labelland 
+ avorflemit a gluon with label m+ 1.21After the gluon emission, parton l
+ retains its label land its 
+ avor. This produces a new color state
+ ^ 
+ =ty
+ l(fl!fl+ g) 
+ : (7.19)
+ We can dene the color splitting operator ty
+ l(fl!fl+ g) precisely by writing this out in
+ component notation
+ ^ aa;ab;a1;:::;al;:::;am;am+1=X
+ ~alT(fl)am+1
+ al;~al aa;ab;a1;:::;~al;:::;am: (7.20)
+ The matrix T(fl)am+1here is the generator matrix in the 8representation if fl= g, in the
+ 3representation if fl2fu;d;:::g, and in the 3representation if fl2f u;d;:::g.22
+ This notation applies for an initial state splitting too since, from Eq. ( 3.2), in the
+ case of an initial state parton, fland ^fldenote the opposite of the incoming 
+ avors of the
+ parton. In this case, the arrow in fl!fl+ g and more generally in fl!^fl+^fm+1refers
+ to backward evolution.
+ 21In [14], the nal state labels are called iandj. We identify iwithl, andjwithm+1. The labels for the
+ initialmpartons arefa;b;1;:::;mgand for the subsequent state after splitting are fa;b;1;:::;m;m + 1g.
+ The partons not involved in the splitting keep their labels.
+ 22Specically, T(q)a
+ ij=ta
+ ij,T(q)a
+ ij= ta
+ jiandT(g)a
+ bc=ifbac, whereqhere represents any quark 
+ avor
+ and qrepresents any antiquark 
+ avor.
+ { 48 {Now consider what happens when the splitting operator is applied to one of the color
+ basis vectors,fcgm
+ . For the case that fl= g we have
+ X
+ alT(g)~am+1
+ ~al;altal=X
+ alif~al;~am+1;altal=t~alt~am+1 t~am+1t~al: (7.21)
+ Thusty
+ l(g!g + g)fcgm
+ is a normalization factor times a dierence of two basis vectors
+ n(f^c+gm+1)
+ n(fcgm)1=2f^c+gm+1
+  n(f^c gm+1)
+ n(fcgm)1=2f^c gm+1
+ : (7.22)
+ Inf^cgm+1, gluonlis replaced by gluons landm+ 1. Specically, if in fcgmgluonl
+ appears in an open string as [ i1;:::;l;:::;i n] then inf^c+gm+1this string is replaced by
+ [i1;:::;l;m + 1;:::;in] and inf^c gm+1this string is replaced by [ i1;:::;m + 1;l;:::;in].
+ The normalization factor is
+ n(f^cgm+1)
+ n(fcgm)=CF: (7.23)
+ Analogous remarks apply for a closed string. We can state this result using the operators
+ dened in Eqs. ( 7.15) and ( 7.16),
+ ty
+ l(g!g + g) =p
+ CFay
+ +(l) p
+ CFay
+  (l): (7.24)
+ This is illustrated in Fig. 8.
+ Figure 8: Illustration of Eq. ( 7.24). A gluon lspits into gluon land gluonm+ 1. The result is
+ to place the new gluon m+ 1 either to the right of gluon l, with insertion operator ay
+ +(l) or to the
+ left, with insertion operator ay
+  (l). The normalization factorsp
+ CFare not indicated.
+ For a quark splitting to a quark plus a gluon we have a similar operator, one more
+ generator matrix is inserted at the quark end of the string, so that
+ ty
+ l(q!q+ g) =p
+ CFay
+ +(l): (7.25)
+ For an antiquark splitting to an antiquark plus a gluon, one more generator matrix is
+ inserted at the antiquark end of the string, so that
+ ty
+ l(q!q+ g) = p
+ CFay
+  (l): (7.26)
+ { 49 {In these equations, qrepresents any quark 
+ avor and  qrepresents any antiquark 
+ avor.
+ The operators for gluon emission obey an important identity. The matrix element M
+ and our approximations to it are always color singlets,
+ X
+ lX
+ ~alT(fl)am+1
+ al;~al aa;ab;a1;:::;~al;:::;am= 0: (7.27)
+ ThusX
+ lty
+ l(fl!fl+ g) 
+ = 0: (7.28)
+ We will use this identity in the following sections to rearrange the splitting formulas.
+ The last possibility for parton splitting is that of a gluon splitting into a quark-
+ antiquark pair with 
+ avors qand q. The color splitting operator is dened by
+ ^ 
+ =ty
+ l(g!q+ q) 
+ ; (7.29)
+ where
+ ^ aa;ab;a1;:::;am;am+1=X
+ ~alt~alal;am+1 aa;ab;a1;:::;~al;:::;am: (7.30)
+ Our convention here is that the quark inherits the gluon label, l, and the antiquark gets
+ the new label, m+ 1. To analyze this, we use
+ t~alal;am+1t~al
+ c;d=1
+ 2c;am+1al;d 1
+ 2Ncal;am+1c;d: (7.31)
+ Thustl(g!q+ q)fcgm
+ is a combination of two basis vectors,
+ 1
+ 2n(f^c1gm+1)
+ n(fcgm)1=2f^c1gm+1
+  1
+ 2Ncn(f^c2gm+1)
+ n(fcgm)1=2f^c2gm+1
+ : (7.32)
+ Inf^c1gm+1, the string in which gluon lresides is split. Specically, if in fcgm, gluonl
+ appears in an open string as [ i1;:::;iA;l;iB:::in], then inf^c1gm+1this string is replaced
+ by two strings, [ i1;:::;iA;m+ 1][l;iB;;in]. On the other hand, if in fcgm, gluonl
+ appears in a closed string as ( i1;:::;iA;l;iB;:::in), then inf^c1gm+1this string is replaced
+ by an open string, [ l;iB;:::;in;i1:::;iA;m+ 1]. In either case,
+ n(f^c1gm+1)
+ n(fcgm)=Nc
+ CF: (7.33)
+ In the second color state in Eq. ( 7.32),f^c2gm+1
+ , gluonlis simply removed from its
+ string and a new trivial qqstring is created. Specically, if in fcgmgluonlappears in an
+ open string as [ i1;:::;iA;l;iB:::in], then inf^c2gm+1this string is replaced by two strings,
+ [i1;:::;iA;iB;;in] and [l;m+ 1]. On the other hand, if in fcgmgluonlappears in an
+ closed string as ( i1;:::;iA;l;iB;:::in), then inf^c2gm+1this string is replaced by a closed
+ string (i1;:::;iA;iB;:::in) and the open string [ l;m+ 1]. In either case,
+ n(f^c2gm+1)
+ n(fcgm)=Nc
+ CF: (7.34)
+ { 50 {We can state this result using the operators dened in Eqs. ( 7.17) and ( 7.18),
+ ty
+ l(g!q+ q) =r
+ Nc
+ 4CFay
+ q(l) r
+ 1
+ 4NcCFay
+ s(l): (7.35)
+ We can now see the advantage of this choice of color basis, beyond the fact that it is
+ widely used for NLO calculations. In this basis, the description of parton splitting is very
+ simple. For splittings q!qg and q!qg, we simply add a gluon to a string. For splittings
+ g!gg, we replace one gluon on a string by two. There are two terms corresponding to
+ the two possible orders for the two gluons on the string. For a splitting g!qq, we split a
+ string or we remove the gluon from its string and create a new qqstring. The normalization
+ factors may be considered to be just a matter of bookkeeping. However, one should note
+ that the splittings q!qg, q!qg. and g!gg come with numerical factorspCFin
+ the amplitude. These factors are large for large Nc. The splitting g !qqcomes with a
+ numerical factor for the rst term, [ Nc=(4CF)]1=2that is notlarge in the large Nclimit.
+ (The numerical factor for the second term is small in the large Nclimit.) Thus the color
+ factor for the splitting g !qqis smaller than the color factors for the other splittings.
+ This makes g!qqsplitting somewhat disfavored even though there are several qq
+ avor
+ choices available.
+ 8. Evolution for the statistical states
+ We have seen how parton splitting works at the quantum amplitude level. We now need
+ to use these results to formulate the eect of splitting on the density operator and thus
+ the statistical state
+ . Suppose that we have the function
+  
+ fp;f;s0;c0;s;cgm
+ (8.1)
+ describingmnal state partons plus the two initial state partons. After one splitting, we
+ will havem+ 1 nal state partons, described by
+  
+ f^p;^f;^s0;^c0;^s;^cgm+1
+ : (8.2)
+ We need this function within the soft and collinear splitting approximations that we have
+ used for the amplitudes.
+ Any of the partons can split. In particular, parton iinM(fp;fgm)
+ and parton jin
+ M(fp;fgm)can split. In the simplest case (and the only case incorporated into typical
+ parton shower Monte Carlo event generators), i=j. However, one can have i6=jand still
+ get the same momenta and 
+ avors f^p;^fgm+1from both splittings and still get a logarithmic
+ divergence if one were to integrate over f^pgm+1. This happens when parton iemits a gluon
+ m+ 1 inM(fp;fgm)
+ and parton jemits gluon m+ 1 in
+ M(fp;fgm). An interference
+ graph of this sort has no collinear divergence from ^ pm+1being collinear to ^ pior ^pj. However
+ it does have a soft divergence from ^ pm+1!0. For this reason, we need to include the case
+ i6=j.
+ { 51 {For each splitting, we relate f^p;^fgm+1to the starting momenta and 
+ avors fp;fgm
+ and splitting variables fp;fgusing one of the mappings
+ f^p;^fgm+1=Rl(fp;fgm;fp;fg); (8.3)
+ as specied in Sec. 4. In the case i6=j, we can use either the mapping with l=ior the
+ mapping with l=j.23We nd it most useful to average over these two possibilities. In
+ the casei=j, we use the mapping with l=i=j.
+ We are thus led to write the density operator ^ after splitting as a sum of contributions
+ ^(l)
+ ij, where the superscript indicates the treatment of the kinematics and the subscripts
+ indicate which partons split,
+ ^(f^p;^fgm+1) =X
+ l8
+ <
+ :^(l)
+ ll(f^p;^fgm+1) +1
+ 2X
+ k6=l^(l)
+ lk(f^p;^fgm+1) +1
+ 2X
+ k6=l^(l)
+ kl(f^p;^fgm+1)9
+ =
+ ;:
+ (8.4)
+ Here the sums run over the set fa;b;1;:::;mg. We use Eq. ( 6.4) for the contributions ^ (l)
+ ij
+ in the case i=j,
+ (l)
+ ll(f^p;^fgm+1) =ty
+ l(fl!^fl+^fm+1)Vy
+ l(f^p;^fgm+1)(fp;fgm)
+ Vl(f^p;^fgm+1)tl(fl!^fl+^fm+1)
+ Sl(f^fgm+1):(8.5)
+ HereSl(f^fgm+1) is a counting factor that is determined by the conventions we have used
+ to label the nal state partons,
+ Sl(f^fgm+1) =8
+ >>>>>>><
+ >>>>>>>:1=2; l2f1;:::;mg;^fl=^fm+1= g
+ 1; l2f1;:::;mg;^fl6= g;^fm+1= g
+ 0; l2f1;:::;mg;^fl= g;^fm+16= g
+ 1; l2f1;:::;mg;^fl=q;^fm+1= q
+ 0; l2f1;:::;mg;^fl= q;^fm+1=q
+ 1; l2fa;bg: (8.6)
+ This factor is zero for ^fl= g and ^fm+1=qor^fm+1= q, even though 
+ avor conservation
+ allows this combination in a q!q+ g or q!q+ g splitting, because we have chosen
+ to label the nal daughter gluon in these cases as parton m+ 1. Similarly, this factor is
+ zero for ^fl= qand ^fm+1=q, even though 
+ avor conservation allows this combination
+ in a g!q+ qsplitting, because we have chosen to label the nal daughter antiquark
+ in this case as parton m+ 1. In the case of a nal state g !g + g splitting on line l,
+ the splitting probability is symmetric under interchange of the labels landm+ 1, so that
+ integrating over ^ pland ^pm+1would count the same physical conguration twice. The factor
+ 1/2 corrects for this symmetry. This issue is discussed in some detail in Appendix B.
+ 23Either mapping suces because in either case the map becomes the identity map in the soft limit
+ ^pm+1!0.
+ { 52 {Fori6=j, we can use the simpler splitting operator Vsoftas in Eq. ( 6.33),
+ ^(l)
+ ij(f^p;^fgm+1) =ty
+ i(fi!^fi+^fm+1)Vy;soft
+ i(f^p;^fgm+1)(fp;fgm)
+ Vsoft
+ j(f^p;^fgm+1)tj(fj!^fj+^fm+1):(8.7)
+ Note thatVy;soft
+ i andVsoft
+ jboth vanish if parton m+ 1 is not a gluon. Thus ^ (l)
+ ij= 0 for
+ i6=junless parton m+ 1 is a gluon.
+ This denition for ^ (l)
+ ijdenes a mapping of the statistical states in which
+ becomes
+ ^(l)
+ ij
+ =S(l)
+ ij
+ ; (8.8)
+ after splitting. Then
+  
+ f^p;^f;^s0;^c0;^s;^cgm+1S(l)
+ ij
+ =1
+ m!Z
+ dfp;f;s0;c0;s;cgm
+  
+ f^p;^f;^s0;^c0;^s;^cgm+1S(l)
+ ijfp;f;s0;c0;s;cgm
+  
+ fp;f;s0;c0;s;cgm
+ :(8.9)
+ The splitting operator S(l)
+ ijis dened by giving its matrix elements,
+  
+ f^p;^f;^s0;^c0;^s;^cgm+1S(l)
+ ijfp;f;s0;c0;s;cgm
+ =
+  
+ f^c0;^cgm+1G(i;j;f^fgm+1)fc0;cgm
+  
+ f^s0;^sgm+1W(i;j;f^f;^pgm+1)fs0;sgm
+  
+ f^p;^fgm+1Plfp;fgm
+ (m+ 1)nc(a)nc(b)ab
+ nc(^a)nc(^b) ^a^bf^a=A(^a;2
+ F)f^b=B(^b;2
+ F)
+ fa=A(a;2
+ F)fb=B(b;2
+ F):(8.10)
+ We discuss each factor in turn.
+ The rst factor,G(i;j;f^fgm+1), describes how the splittings change the parton colors,
+  
+ f^c0;^cgm+1G(i;j;f^fgm+1)fc0;cgm
+ =D
+ f^cgm+1ty
+ i(fi!^fi+^fm+1)fcgm
+ 
+ fc0gmtj(fj!^fj+^fm+1)f^c0gm+1
+ D:(8.11)
+ In the next factor, W(i;j;f^f;^pgm+1), contains the spin-dependent splitting functions.
+ The simplest case occurs for i=jwith anything other than a nal state g !g+g splitting.
+ For that case
+  
+ f^s0;^sgm+1W(l;l;f^f;^pgm+1)fs0;sgm
+ =Sl(f^fgm+1)
+ f^sgm+1Vy
+ l(f^p;^fgm+1)fsgm
+ fs0gmVl(f^p;^fgm+1)f^s0gm+1
+ :
+ Fori=jin general we dene
+  
+ f^s0;^sgm+1W(l;l;f^f;^pgm+1)fs0;sgm
+ =Sl(f^fgm+1)
+ f^sgm+1Vy
+ l(f^p;^fgm+1)fsgm
+ fs0gmVl(f^p;^fgm+1)f^s0gm+1
+ +(l2f1;:::;mg;^fl=^fm+1= g) 
+ f^s0;^sgm+1fW(l;l;f^pgm+1)fs0;sgm
+ :
+ (8.12)
+ { 53 {The second term is included in the special case of a nal state g !g + g splitting. In
+ this case, the rst term is symmetric under an interchange l$m+ 1 between the two
+ nal state gluons. It gives a leading singularity when gluon m+ 1 is soft but also gives
+ a leading singularity when gluon lis soft. We seek to use the freedom to assign labels
+ to ensure that gluon m+ 1 can be soft but not gluon l. The operator fWin the added
+ term is antisymmetric under l$m+ 1, so that it gives zero contribution after integration
+ over the nal state momenta. The simplest choice for fWwould be the rst term times
+ [2(^pm+1Q< ^plQ) 1] which is antisymmetric under l$m+1. Then the total Wwould
+ be just the rst term times 2 (^pm+1Q < ^plQ). Clearly this eliminates the singularity
+ when gluon lis soft. However, we adopt a slightly more subtle procedure. Write the tensor
+ that denes the three gluon vertex as v=v1+v2+v3,
+ v
+ 1(pa;pb;pc) =g(pa pb)
+ ;
+ v
+ 2(pa;pb;pc) =g
+ (pb pc);
+ v
+ 3(pa;pb;pc) =g
+ (pc pa):(8.13)
+ Then we can dene partial vertex functions analogous to those in Eq. ( 6.31) by
+ vJ;l(f^p;^fgm+1;^sm+1;^sl;sl)
+ =p4s
+ 2^pm+1^pl"(^pm+1;^sm+1;^Q)"(^pl;^sl;^Q)"(pl;sl;^Q)
+ v
+ J(^pm+1;^pl; ^pm+1 ^pl)D
+ (^pl+ ^pm+1;nl):(8.14)
+ forJ2f1;2;3g. Finally we dene partial operators Vby the analogue of Eq. ( 6.6),
+ 
+ f^sgm+1Vy
+ J;l(f^p;^fgm+1)fsgm
+ =0
+ @Y
+ j=2fl;m+1g^sj;sj1
+ AvJ;l(f^p;^fgm+1;^sm+1;^sl;sl):(8.15)
+ Now the rst term in Wcomes fromP3
+ J;K=1vJv
+ K. The term with a leading singularity
+ when gluon m+ 1 is soft is v2v
+ 2. The term with a leading singularity when gluon lis
+ soft isv3v
+ 3. Therefore we need to get rid of v3v
+ 3and double v2v
+ 2to make up for
+ the factor 1 =2 inSl. We thus dene
+  
+ f^s0;^sgm+1fW(l;l;f^pgm+1)fs0;sgm
+ =
+ 
+ f^sgm+1Vy
+ 2;l(f^p;^fgm+1)fsgm
+ fs0gmV2;l(f^p;^fgm+1)f^s0gm+1
+  
+ f^sgm+1Vy
+ 3;l(f^p;^fgm+1)fsgm
+ fs0gmV3;l(f^p;^fgm+1)f^s0gm+1
+ :
+ (8.16)
+ This is computationally very simple even if it takes some time to explain.
+ Fori6=j, we use the simpler splitting operators Vsoft,
+  
+ f^s0;^sgm+1W(i;j;f^f;^pgm+1)fs0;sgm
+ =
+ f^sgm+1Vy;soft
+ i(f^p;^fgm+1)fsgm
+ 
+ fs0gmVsoft
+ j(f^p;^fgm+1)f^s0gm+1
+ :(8.17)
+ { 54 {In the next factor, the matrix element 
+ f^p;^fgm+1Plfp;fgm
+ is a delta function that
+ enforces the requirement that the momenta and 
+ avors fp;fgmare related to the momenta
+ and 
+ avors after the splitting by the mapping Ql. The denition is
+ 1
+ m!Z
+ dfp;fgm 
+ f^p;^fgm+1Plfp;fgm
+ h 
+ fp;fgm
+ =h 
+ fp0;f0gm
+ ; (8.18)
+ whereh(fp;fgm) is an arbitrary test function and
+ ffp0;f0gm;fp;fgg=Ql(f^p;^fgm+1) (8.19)
+ as specied in Sec. 4. Another useful identity for Plis24
+ 1
+ (m+ 1)!Z
+ df^p;^fgm+1
+ g 
+ f^p;^fgm+1 
+ f^p;^fgm+1Plfp;fgm
+ =1
+ (m+ 1)X
+ f2l(fl)Z
+ dp(p2 l(fpgm;f))g 
+ f^p0;^f0gm+1
+ ;(8.20)
+ whereg 
+ f^p;^fgm+1
+ is an arbitrary test function and
+ f^p0;^f0gm+1=Rl(ffp;fgm;fp;fgg) (8.21)
+ is the inverse transformation to Ql, as specied in Sec. 4. In this form, we display an inte-
+ gration over the splitting variables that would occur in an implementation of this formalism
+ as a computer program.
+ The counting factor ( m+ 1) is the ratio of the factor ( m+ 1)! in the normalization
+ integral for 
+ f^p;^f;^s0;^c0;^s;^cgm+1S(l)
+ ij
+ to the factor m! in the normalization integral for 
+ fp;f;s0;c0;s;cgm
+ . This factor is derived in Appendix B. The factor with parton distri-
+ butions comes from Eqs. ( 3.17) and ( 3.18). In the case of a nal state splitting, this factor
+ is 1.
+ We can now assemble our result. From Eq. ( 8.4) we have
+ ^
+ =S
+ ; (8.22)
+ where the total splitting operator is
+ S=X
+ lSl;Sl=S(l)
+ ll+1
+ 2X
+ k6=lS(l)
+ lk+1
+ 2X
+ k6=lS(l)
+ kl: (8.23)
+ Here the sums run over the set fa;b;1;:::;mg.
+ We manipulate the result a bit. Because the quantum amplitudes are color singlets, as
+ re
+ ected in Eq. ( 7.28), when ^fm+1= g the gluon emission operators G(l;k;f^fgm+1) obey
+ X
+ kG(l;k;f^fgm+1) = 0;X
+ kG(k;l;f^fgm+1) = 0: (8.24)
+ 24To derive Eq. ( 8.20) from Eq. ( 8.18), we add one more integration to Eq. ( 8.18), in the formR
+ df^p;^fgm+1
+ g 
+ f^p;^fgm+1
+ . Then on the right hand side, we change integration variables from f^p0;^f0gm+1
+ toffp;fgm;fp;fggaccording to Eqs. ( 4.37) and ( 4.70). This gives a result that is equivalent to Eq. ( 8.20).
+ { 55 {Then theG(l;k;f^fgm+1) are not independent. For this reason, there can be color coherence
+ cancellations that are always present but are not evident if we use all of the possible
+ G(l;k;f^fgm+1) operators. Accordingly, when ^fm+1= g, we eliminate G(l;l;f^fgm+1) with
+ the replacement
+ G(l;l;f^fgm+1) = 1
+ 2X
+ k6=lG(l;k;f^fgm+1) 1
+ 2X
+ k6=lG(k;l;f^fgm+1): (8.25)
+ We will see in Sec. 11how this allows cancellations to occur at a low level of a calculation.
+ With this replacement, the total splitting operator is given for the case ^fm+1= g by
+  
+ f^p;^f;^s0;^c0;^s;^cgm+1Slfp;f;s0;c0;s;cgm
+ =m+ 1
+ 2 
+ f^p;^fgm+1Plfp;fgmnc(a)nc(b)ab
+ nc(^a)nc(^b) ^a^bf^a=A(^a;2
+ F)f^b=B(^b;2
+ F)
+ fa=A(a;2
+ F)fb=B(b;2
+ F)
+ X
+ k2fa;b;1;:::;mg
+ k6=l 
+ f^c0;^cgm+1G(l;k;f^fgm+1)fc0;cgm
+ h 
+ f^s0;^sgm+1W(l;k;f^f;^pgm+1)fs0;sgm
+   
+ f^s0;^sgm+1W(l;l;f^f;^pgm+1)fs0;sgmi
+ + 
+ f^c0;^cgm+1G(k;l;f^fgm+1)fc0;cgm
+ h 
+ f^s0;^sgm+1W(k;l;f^f;^pgm+1)fs0;sgm
+   
+ f^s0;^sgm+1W(l;l;f^f;^pgm+1)fs0;sgmi
+ :(8.26)
+ In the case that ^fm+16=g, that isf^fl;^fm+1g=fq;qg, this becomes
+  
+ f^p;^f;^s0;^c0;^s;^cgm+1jSlfp;f;s0;c0;s;cgm
+ = (m+ 1) 
+ f^p;^fgm+1Plfp;fgm
+ nc(a)nc(b)ab
+ nc(^a)nc(^b) ^a^bf^a=A(^a;2
+ F)f^b=B(^b;2
+ F)
+ fa=A(a;2
+ F)fb=B(b;2
+ F)
+  
+ f^c0;^cgm+1G(l;l;f^fgm+1)fc0;cgm
+  
+ f^s0;^sgm+1W(l;l;f^f;^pgm+1)fs0;sgm
+ :(8.27)
+ In the following section, we will use Sto dene the splitting operator at shower time t,
+ HI(t). Then in Sec. 10we will study the evolution of the color structure that is expressed
+ in Eqs. ( 8.26) and ( 8.27). In Sec. 11, we will examine the how quantum coherence for soft
+ gluon emission is contained in Eq. ( 8.26).
+ 9. The operator HI(t)
+ It remains to dene the operator HI(t). The integral of this operator over tgives the total
+ probability for a splitting at any scale,
+ Z1
+ 0dtHI(t) =S: (9.1)
+ { 56 {To get the probability for a splitting at the scale corresponding to shower time t, we simply
+ need to insert a delta function that denes t. Our default choice is
+ t= logQ2
+ 0
+ j(^pl+ ( 1)l;a+l;b^pm+1)2 m2(fl)j
+ : (9.2)
+ Here the virtuality is dened using ^ pl+ ^pm+1for a nal state splitting and ^ pl ^pm+1for
+ an initial state splitting. We take Q2
+ 0to be the hardness scale of the initial hard scattering
+ that starts the parton shower, so that the initial value of tis zero. One could take Q2
+ 0
+ to be the minimum of the values 2 pipjfor nal state particles i;jfrom the initial hard
+ scattering. Here we can neglect all quark masses compared to Q0. Other denitions of t
+ are possible. For instance, many authors use a measure of the transverse momentum in a
+ parton splitting.
+ When we use the denition ( 9.2) oft, we obtain the corresponding denition of HI(t).
+  
+ f^p;^f;^s0;^c0;^s;^cgm+1HI(t)fp;f;s0;c0;s;cgm
+ =X
+ l2fa;b;1;:::;mg 
+ f^p;^f;^s0;^c0;^s;^cgm+1Slfp;f;s0;c0;s;cgm
+ 
+ t logQ2
+ 0
+ j(^pl+ ( 1)l;a+l;b^pm+1)2 m2(fl)j
+ ;(9.3)
+ whereSlis dened in Eqs. ( 8.26) and ( 8.27). In these equations there are parton distribu-
+ tion functions evaluated at a factorization scale F, which we dene according to Eq. ( 3.38)
+ in terms of t. In addition, there is a factor s, which needs to be evaluated at a scale R
+ that has not been made explicit in the notation. The argument presented in Sec. ( 3.4)
+ indicates that the momentum scale at the splitting is just the resolution scale that we use
+ forF. Thus we take
+ 2
+ F=2
+ R=Q2
+ 0e t: (9.4)
+ 10. Color evolution of the statistical states
+ We are now in a position to say something about the color structure of the statistical
+ states and the evolution of this structure. Notice that in general 
+ fp;f;s0;c0;s;cgm
+ can
+ be non-zero forfc0gm6=fcgm. Even if we start with fc0gn=fcgn, at some early stage
+ of evolution, splitting will generate states with fc0gm6=fcgmat later stages. However,
+ in the end we measure something that is color independent. This means taking the color
+ trace of. That is, we multiply 
+ fp;f;s0;c0;s;cgm
+ by
+ fc0gmfcgm
+ and sum over the
+ color congurations fc0gmandfcgm, as in Eq. ( 3.34). Recall that when fc0gm6=fcgm, the
+ inner product
+ fc0gmfcgm
+ is of order 1 =N2
+ cto some power and is thus small in the large
+ N2
+ climit and numerically small for Nc= 3. Thus congurations with fc0gm6=fcgmare
+ not very important. Furthermore, if we start with a state with fc0gm6=fcgm, splitting
+ cannot generatef^c0gm+1=f^cgm+1at the next stage. Thus one can speak of a \leading
+ color approximation" in which contributions with fc0gm6=fcgmare always dropped. This
+ is what happens in most parton shower Monte Carlo programs. We do not drop terms, but
+ we should understand what happens in the leading color approximation.
+ { 57 {In order to understand splitting in the leading color conguration, suppose that we
+ applyHI(t) to a statefp;f;s0;c0;s;cgm
+ in whichfc0g=fcg. Thus we consider the action
+ of the color splitting operator G(i;j;f^fgm+1), on a statefc0;cgm
+ withfc0g=fcg,
+  
+ f^c0;^cgm+1G(i;j;f^fgm+1)fc;cgm
+ =D
+ f^cgm+1ty
+ i(fi!^fi+^fm+1)fcgm
+ D
+ f^c0gm+1ty
+ j(fj!^fj+^fm+1)fcgm:(10.1)
+ We rst consider gluon emission. That is ^fm+1= g. Then, after using Eq. ( 8.25), all of the
+ contributions toHI(t)
+ come fromG(i;j;f^fgm+1) withi6=j. In order to have a denite
+ case in mind, let us suppose that iandjare gluons. Then, using Eq. ( 7.24) to represent the
+ tyoperators in terms of the operators aythat insert the added gluon in particular places
+ in the string basis states, our matrix element becomes
+ CF
+ f^cgm+1ay
+ +(i)fcgm
+ f^c0gm+1ay
+ +(j)fcgm
+ +CF
+ f^cgm+1ay
+  (i)fcgm
+ f^c0gm+1ay
+  (j)fcgm
+  CF
+ f^cgm+1ay
+ +(i)fcgm
+ f^c0gm+1ay
+  (j)fcgm
+  CF
+ f^cgm+1ay
+  (i)fcgm
+ f^c0gm+1ay
+ +(j)fcgm:(10.2)
+ Consider the case that gluon jis just to the right of gluon ialong a color string. Then
+ if the new gluon is inserted to the right of gluon i, we get the same state as when the new
+ gluon is inserted to the left of gluon j. That is, the third term, with ay
+ +(i) anday
+  (j), gives
+ a non-zero matrix element when f^c0gm+1=f^cgm+1. This contribution is thus kept in the
+ leading color approximation. The other three contributions would be thrown away in this
+ approximation. This is illustrated in Fig. 9.
+ i
+ jm+1
+ Figure 9: Illustration of Eq. ( 10.2). The rst diagram shows the color conguration corresponding
+ to the operatorG(i;j;f^fgm+1): the gluon's color is emitted from parton iand absorbed on gluon j.
+ Using Eq. ( 7.24) to write this in terms of color basis states, one contribution is shown in the middle
+ diagram. This is the leading color contribution. Another contribution is shown in the right-hand
+ diagram. This contribution is subleading. If iandjhad not been color connected to each other,
+ there would have been no contribution that survives in the leading color approximation.
+ Similarly, if gluon jis just to the left of gluon ialong a color string, then the con-
+ tribution with ay
+  (i) anday
+ +(j) makes a leading color contribution, while the other three
+ contributions would be thrown away in the leading color approximation.
+ Suppose now that gluon jisnotnext to gluon ialong a color string. Then all four
+ terms would be thrown away in the leading color approximation.
+ { 58 {We can summarize this by saying that there is a term that is kept in the leading color
+ approximation when gluons iandjare \color connected": next to each other along a color
+ string. An analogous analysis leads to the same conclusion if one or both of partons iand
+ jare quarks.
+ One may say that in the leading color approximation, the operating units are color
+ dipoles, consisting of partons that are next to each other along a single color string. Within
+ this approximation, a gluon may be considered to carry the 33representation of SU(3)
+ instead of the 8representation. Then, for instance, the 3half of a gluon forms a dipole
+ with the 3part of the neighboring gluon or with a neighboring quark. A dipole can emit
+ a gluon. But there is no interference between diagrams in which the gluon is emitted by
+ dierent dipoles. This is illustrated in Fig. 10. The color dipole picture was introduced as
+ the basis of the parton shower program A RIADNE [22].
+ With the formalism presented in this paper, one
+ Figure 10: The starting diagram
+ from Fig. 9in the leading color
+ approximation, in which gluons are
+ emitted from color dipoles. The i-
+ jcolor dipole is a unit that emits a
+ gluon and absorbs it on the other side
+ of the diagram. At the next stage
+ there will be an i-(m+1) color dipole
+ and an (m+ 1)-jcolor dipole.can easily implement this approximation, but one can
+ also keep corrections to it.
+ We have considered gluon emission. The case of a
+ g!q+ qsplitting is rather dierent. Then the con-
+ tributing terms are from G(l;l;f^fgm+1). For the op-
+ eratorsty
+ l(g!q+ q) in Eq. ( 10.1), we use Eq. ( 7.35).
+ In the leading term, with operator ay
+ q(l), the color
+ string containing the gluon breaks at the position of
+ the gluon, with the creation of two new string ends.
+ There is a second term, with operator ay
+ s(l), in which
+ gluonlsimply disappears from its string and a new
+ q-qstring is created. However, the coecient of ay
+ s(l)
+ is small in the Nc!1 limit and would be dropped
+ in the leading color approximation. In fact, the coe-
+ cient of the leading ay
+ q(l) is nite in the Nc!1 limit,
+ instead of growing with Nc. Thus g!q+ qsplitting
+ is color suppressed compared to g !g + g splitting. Some of the color suppression is
+ cancelled by the number of available qq
+ avors. Parton shower Monte Carlo programs
+ normally include the leading term in g!q+ qsplitting. With the formalism presented in
+ this paper, we can keep both terms in g !q+ qsplitting.
+ 11. Soft gluon coherence
+ When a soft gluon is emitted from the partons involved in a hard scattering, the angular
+ distribution of the emitted gluon re
+ ects the structure of the emitting partons as a whole.
+ In particular, a soft gluon emitted from a pair of colored partons at an angle that is
+ bigger than the angle between the partons eectively sees just one parton with the total
+ color charge of the pair. Since the splitting operator HI(t) coherently sums the leading
+ soft gluon singularities for emissions from a hard partonic system, including all of the
+ { 59 {interference diagrams, soft gluon coherence is automatically included. It is of interest to
+ see how this happens and what form it takes in the color basis used in this paper.
+ Consider the matrix element of the splitting operator Slfor the case ^fm+1= g,
+ as given in Eq. ( 8.26). There is a sum over indices k2 fa;b;1;:::;mgwithk6=l.
+ There are two terms with dierent color factors, 
+ f^c0;^cgm+1G(l;k;f^fgm+1)fc0;cgm
+ and 
+ f^c0;^cgm+1G(k;l;f^fgm+1)fc0;cgm
+ . These have analogous structures, so it suces to an-
+ alyze one of them. The coecient of the color factor   
+ f^c0;^cgm+1G(l;k;f^fgm+1)fc0;cgm
+ is
+  
+ f^s0;^sgm+1Wtot(l;k;f^f;^pgm+1)fs0;sgm
+ 
+  
+ f^s0;^sgm+1W(l;l;f^f;^pgm+1)fs0;sgm
+   
+ f^s0;^sgm+1W(l;k;f^f;^pgm+1)fs0;sgm
+ :(11.1)
+ The rst term is from the square of the amplitude for emitting the gluon from parton
+ l. The second term represents the interference between the emission of gluon m+ 1 from
+ partonland the emission of this gluon from parton k. Let us evaluate this in the soft-gluon
+ approximation, V!Vsoft, as dened in Eqs. ( 6.35) and ( 6.36). We can also approximate
+ ^plpland ^pkpk. With these replacements, we have
+  
+ f^s0;^sgm+1Wtot(l;k;f^f;^pgm+1)fs0;sgm
+ 
+ 0
+ @Y
+ j6=m+1^sj;sj^s0
+ j;s0
+ j1
+ A(4s)"(^pm+1;^sm+1;Q)pl
+ ^pm+1pl
+ "(^pm+1;^sm+1;Q)pl
+ ^pm+1pl "(^pm+1;^sm+1;Q)pk
+ ^pm+1pk
+ :(11.2)
+ There are singularities when ^ pm+1is collinear with pland when ^pm+1collinear with pk. The
+ singularity for ^ pm+1collinear with pkis not strong enough to give a logarithmic divergence
+ when we integrate over the direction of ^ pm+1. The singularity for ^ pm+1collinear with plis
+ strong enough to give a logarithmic divergence. Here, the leading singularity comes from
+ the rst term, while the second term, representing the interference graph, gives only an
+ integrable collinear singularity.
+ When ^pm+1is not close to being collinear with plorpk, both terms are important.
+ However, suppose that the angle between plandpkis small and that ^ pm+1makes an angle
+ with either of them that is substantially greater than this angle. Then the two contributions
+ approximately cancel each other. That is, soft gluon radiation associated with this color
+ factor is approximately conned to a cone about the directions of partons landkwith
+ opening angle on the order of the angle between plandpk.
+ Thus there is approximate angular ordering of soft gluon emissions. One can also make
+ an exact statement about angular ordering [ 5]. If we sum over the spins of the soft gluon,
+ we can use
+ X
+ ^sm+1"(^pm+1;^sm+1;Q)"(^pm+1;^sm+1;Q)= g+^p
+ m+1Q+Q^p
+ m+1
+ ^pm+1Q Q2^p
+ m+1^p
+ m+1
+ (^pm+1Q)2:
+ (11.3)
+ { 60 {Then we can integrate over the azimuthal angle specifying the rotation of ^ pm+1aboutpl
+ in the rest frame of Q. This gives
+ Zd
+ 2X
+ sm+1;^sm+1sm+1;^sm+1 
+ f^s0;^sgm+1Wtot(l;k;f^f;^pgm+1)fs0;sgm
+ =
+ 0
+ @Y
+ j6=m+1^sj;sj^s0
+ j;s0
+ j1
+ A(4s)Isoft;(11.4)
+ where
+ Isoft=Zd
+ 2p
+ l
+ ^pm+1plp
+ l
+ ^pm+1pl p
+ k
+ ^pm+1pk
+ (
+  g+^p
+ m+1Q+Q^p
+ m+1
+ ^pm+1Q Q2^p
+ m+1^p
+ m+1
+ (^pm+1Q)2)
+ :(11.5)
+ One can multiply this out and perform the integral using
+ Zd
+ 21
+ A2+B2+ 2ABcos=1
+ jA2 B2j: (11.6)
+ This gives
+ Isoft=Qpl
+ pl^pm+1Q^pm+1(
+ ^pm+1"pklp
+ (^pm+1"pk)2+m2(fk) ("^pm+1)2+ 1)
+  m2(fl)
+ (pl^pm+1)2:
+ (11.7)
+ Hereis the velocity of parton l,
+ l=p
+ (plQ)2 m2(fl)Q2
+ plQ: (11.8)
+ We have written "vfor the product "
+ vof a vector vwith the tensor "dened by
+ "=Qp
+ l p
+ lQ
+ Qpl: (11.9)
+ The tensor  1
+ l"is the unit antisymmetric tensor in the pl-Qplane and projects onto
+ this plane. It obeys  2
+ l"
+ "
+ =P
+ , whereP
+ is the projection operator onto the pl-Q
+ plane.
+ In the case that all of the masses are zero, Eq. ( 11.7) becomes
+ Isoft=Qpl
+ pl^pm+1Q^pm+1(
+ ^pm+1"pkp
+ (^pm+1"pk)2+ 1)
+ (masses vanish) : (11.10)
+ The ratio in the rst term in Eq. ( 11.10 ) is either +1 or 1. It is +1 if
+ ^pm+1Q
+ ^pm+1pl>pkQ
+ pkpl: (11.11)
+ { 61 {That is, the ratio is +1 if, in the rest frame of Q, ^pm+1makes a smaller angle with plthan
+ doespk. In this small angle region, we have
+ Isoft=2Qpl
+ pl^pm+1Q^pm+1(masses vanish, small angle) : (11.12)
+ In the wide angle region, where ^ pm+1makes a larger angle with plthan doespk, we have
+ Isoft= 0 (masses vanish, wide angle) : (11.13)
+ Thus, in the massless case, after a sum over spins and an average over the azimuthal angle,
+ the soft radiation outside a cone centered on pland extending out to pkcancels exactly. This
+ phenomenon is known as angular ordering. It can be used to dene the angular ordering
+ approximation, in which one simply neglects the radiation outside of this cone even for
+ a xed set of spins and a xed azimuthal angle. This angular ordering approximation is
+ commonly used in parton shower Monte Carlo event generators. With the formalism of
+ this paper, one can make this approximation if desired, but it is not required.
+ In the massive case, it is no longer true that soft radiation outside a cone centered on
+ pland extending out to pkcancels after integrating over the azimuthal angle.
+ 12. Inclusive evolution
+ As described in Sec. 3.5, the Sudakov exponent is constructed from the operator V(t). In
+ turn,V(t) is constructed from 
+ 1HI(t)fp;f;s0;c0;s;cgm
+ , which tells the total probability
+ for the statefp;f;s0;c0;s;cgm
+ to split at time t. In this section, we determine the structure
+ of 
+ 1HI(t)fp;f;s0;c0;s;cgm
+ .
+ We know the matrix elements of HI(t), so we simply insert the completeness relation
+ (3.28) for the basis states and use Eq. ( 3.44) for the inner product of 
+ 1with a basis state.
+ Thus
+  
+ 1HI(t)fp;f;s0;c0;s;cgm
+ =1
+ (m+ 1)!Z
+ df^p;^f;^s0;^c0;^s;^cgm+1
+ 
+ f^s0gm+1f^sgm+1
+ f^c0gm+1f^cgm+1
+  
+ f^p;^f;^s0;^c0;^s;^cgm+1HI(t)fp;f;s0;c0;s;cgm
+ :(12.1)
+ We use Eq. ( 9.3) to expressHI(t) in terms of a sum of splitting operators Sland then use
+ Eqs. ( 8.26) and ( 8.27) for the matrix elements of Sl. We encounter
+ 1
+ (m+ 1)!Z
+ df^p;^fgm+1 
+ f^p;^fgm+1Plfp;fgm
+ 
+ =1
+ (m+ 1)X
+ f2l(fl)Z
+ dp(p2 l(fpgm;f));(12.2)
+ where we have used Eq. ( 8.20). Thus we are really integrating over the splitting variables.
+ Inside the integral and the sum over l, the variablesf^p;^fgm+1are determined from fp;fgm
+ { 62 {and the splitting variables ff;fgby the transformation Rl, Eqs. ( 4.28) and ( 4.63). Then
+  
+ 1HI(t)fp;f;s0;c0;s;cgm
+ =
+ X
+ lX
+ f2l(fl)Z
+ dp(p2 l(fpgm;f))
+ 
+ t logQ2
+ 0
+ j(^pl+ ( 1)l;a+l;b^pm+1)2 m2(fl)j
+ nc(a)nc(b)ab
+ nc(^a)nc(^b) ^a^bf^a=A(^a;2
+ F)f^b=B(^b;2
+ F)
+ fa=A(a;2
+ F)fb=B(b;2
+ F)
+ 
+ (^fm+16= g)
+ fc0gmgll(f^fgm+1)fcgm
+ fs0gmwll(f^f;^pgm+1)fsgm
+ +1
+ 2(^fm+1= g)X
+ k6=l
+ 
+ fc0gmglk(f^fgm+1)fcgm
+ 
+ fs0gmwlk(f^f;^pgm+1) wll(f^f;^pgm+1)fsgm
+ +
+ fc0gmgkl(f^fgm+1)fcgm
+ 
+ fs0gmwkl(f^f;^pgm+1) wll(f^f;^pgm+1)fsgm
+ :(12.3)
+ Here the color dependent function is
+ 
+ fc0gmgij(f^fgm+1)fcgm
+ =X
+ f^c0;^cgm+1
+ f^c0gm+1f^cgm+1
+  
+ f^c0;^cgm+1G(i;j;f^fgm+1)fc0;cgm(12.4)
+ and the spin dependent function is
+ 
+ fs0gmwij(f^f;^pgm+1)fsgm
+ =X
+ f^s0;^sgm+1
+ f^s0gm+1f^sgm+1
+  
+ f^s0;^sgm+1W(i;j;f^f;^pgm+1)fs0;sgm
+ :(12.5)
+ Let us look at the color factor in Eq. ( 12.3) rst. Using the denition ( 8.11) of
+ G(l;k;f^fgm+1), we have
+ 
+ fc0gmgij(f^fgm+1)fcgm
+ =X
+ f^c0;^cgm+1
+ fc0gmtj(fj!^fj+^fm+1)f^c0gm+1
+ D
+ 
+ f^c0gm+1f^cgm+1
+ D
+ f^cgm+1ty
+ i(fi!^fi+^fm+1)fcgm
+ :
+ (12.6)
+ Then using the completeness relations ( 3.23) and ( 3.24) we nd
+ 
+ fc0gmgij(f^fgm+1)fcgm
+ =
+ fc0gmtj(fj!^fj+^fm+1)ty
+ i(fi!^fi+^fm+1)fcgm
+ :(12.7)
+ The operator tjty
+ iis written as TjTiin the work of Catani and Seymour on the dipole
+ subtraction scheme for next-to-leading order calculations [ 14]. In that work, there is a sum
+ { 63 {over nal states, while in this paper we follow the evolution of the exclusive nal state
+ that comes between the operators tjandty
+ i. We get back to the inclusive case when we
+ form 
+ 1HI(t)fp;f;s0;c0;s;cgm
+ . The operators gijhave some simple properties. From the
+ denition Eq. ( 7.20), we see that
+ 
+ fc0gmgij(f^fgm+1)fcgm
+ =
+ fc0gmgji(f^fgm+1)fcgm
+ : (12.8)
+ Furthermore, when i=j, the operators are proportional to the unit operator,
+ 
+ fc0gmgll(f^fgm+1)fcgm
+ =
+ fc0gmfcgm
+ 8
+ ><
+ >:CF;f^fl;^fm+1g=fq;ggorfq;gg
+ CA;f^fl;^fm+1g=fg;gg
+ TR;f^fl;^fm+1g=fq;qg:
+ (12.9)
+ The last of these cases occurs in Eq. ( 12.3).
+ Let us look next at the spin dependent factor in Eq. ( 12.3). In order to do this, we
+ need to introduce the possibility of averaging over the azimuthal angle of parton splitting.
+ For the splitting of parton l, we dene the transverse part, q?of ^pm+1by
+ ^pm+1=apl+bnl+q?; (12.10)
+ wherenlis the lightlike vector dened in Eq. ( 5.3) andq?pl=q?nl= 0. We let 
+ be the angle of q?as measured in any convenient coordinate system, so thatR
+ dmeans
+ integrating over q?at xedjq?j. Thus integrating over is part of integrating over the
+ splitting variables p.
+ Consider rst the spin dependent factors for the case i6=j, which arises from interfer-
+ ence diagrams. Using the denition ( 8.17) ofW(i;j;f^f;^pgm+1) and the orthogonality of
+ the spin basis vectors, this is
+ 
+ fs0gmwij(f^f;^pgm+1)fsgm
+ =X
+ f^sgm+1
+ fs0gmVsoft
+ j(f^p;^fgm+1)f^sgm+1
+ 
+ f^sgm+1Vy;soft
+ i(f^p;^fgm+1)fsgm
+ :(12.11)
+ Using the denition ( 6.35) and ( 6.36) ofVsoft, this is
+ 
+ fs0gmwij(f^f;^pgm+1)fsgm
+ =X
+ f^sgm+1 mY
+ n=1^sn;sn^sn;s0n!
+ (4s)
+ "(^pm+1;^sm+1;Q)^pi
+ ^pm+1^pi"(^pm+1;^sm+1;Q)^pj
+ ^pm+1^pj
+ = mY
+ n=1sn;s0n!
+ (4s)X
+ ^sm+1"(^pm+1;^sm+1;Q)^pi
+ ^pm+1^pi"(^pm+1;^sm+1;Q)^pj
+ ^pm+1^pj
+ =
+ fs0gmfsgm
+ (4s)X
+ ^sm+1"(^pm+1;^sm+1;Q)^pi
+ ^pm+1^pi"(^pm+1;^sm+1;Q)^pj
+ ^pm+1^pj:(12.12)
+ { 64 {Notice that
+ fs0gmwij(f^f;^pgm+1)fsgm
+ is proportional to a unit matrix
+ fs0gmfsgm
+ in
+ the spin indices and that it is symmetric under i$j. The coecient of
+ fs0gmfsgm
+ is a
+ product of splitting functions vsoft
+ iandvsoft
+ j as dened in Eq. ( 6.36), summed over ^ siand
+ ^sjand averaged over siandsj. That is
+ 
+ fs0gmwij(f^f;^pgm+1)fsgm
+ =
+ fs0gmfsgm
+ wij(f^f;^pgm+1); (12.13)
+ wherewijis
+ wij(f^f;^pgm+1) =wji(f^f;^pgm+1)
+ =1
+ 4X
+ ^sm+1X
+ ^siX
+ siX
+ ^sjX
+ sjvsoft
+ j(f^p;^fgm+1;^sm+1;^sj;sj)vsoft
+ i(f^p;^fgm+1;^sm+1;^si;si):
+ (12.14)
+ Consider next the case i=j=l2f1;:::;mgwith ^fl6= g or with l= a or b and any
+ ^fl. Using the denition ( 8.12) ofW(l;l;f^f;^pgm+1) and orthogonality for the spin basis
+ vectors, this is
+ 
+ fs0gmwll(f^f;^pgm+1)fsgm
+ =X
+ f^sgm+1Sl(f^fgm+1)
+ fs0gmVl(f^p;^fgm+1)f^sgm+1
+ 
+ f^sgm+1Vy
+ l(f^p;^fgm+1)fsgm
+ :
+ (12.15)
+ Using the denition of Vas given in Eq. ( 6.6), this is
+ 
+ fs0gmwll(f^f;^pgm+1)fsgm
+ =X
+ f^sgm+1 Y
+ n=2fl;m+1g^sn;sn^sn;s0n!
+ Sl(f^fgm+1)
+ v
+ l(f^p;^fgm+1;^sm+1;^sl;s0
+ l)vl(f^p;^fgm+1;^sm+1;^sl;sl)
+ =X
+ ^sm+1X
+ ^sl Y
+ n=2fl;m+1gs0n;sn!
+ Sl(f^fgm+1)
+ v
+ l(f^p;^fgm+1;^sm+1;^sl;s0
+ l)vl(f^p;^fgm+1;^sm+1;^sl;sl):
+ (12.16)
+ This is proportional to the unit matrix in the spin indices sn;s0
+ nfor allnexcept possibly
+ forsl;s0
+ l, the indices that appear in the functions vl. However, in Eq. ( 12.3) there is an
+ integration over the azimuthal angle as part of the integration over p. Once we sum
+ over the nal state spin indices ^ sl;^sm+1and integrate over , the result is invariant under
+ rotations about the plaxis in the rest frame of Q. Thus the result must vanish for sl6=s0
+ l.
+ In addition, the parity invariance of the splitting vertices implies that the result is invariant
+ under a re
+ ection through a plane containing pl,Q, and any vector transverse to pland
+ Q. Under this transformation, sl$ slands0
+ l$ s0
+ l. Thus the result is proportional to
+ sl;s0
+ l. The coecient of the sl;s0
+ lcan be obtained by setting s0
+ l!sl, summing over sl, and
+ { 65 {multiplying by 1/2. Thus
+ Zd
+ 2
+ fs0gmwll(f^f;^pgm+1)fsgm
+ =Zd
+ 2 mY
+ n=1s0n;sn!
+ 1
+ 2X
+ ^sm+1X
+ ^slX
+ slSl(f^fgm+1)
+ v
+ l(f^p;^fgm+1;^sm+1;^sl;sl)vl(f^p;^fgm+1;^sm+1;^sl;sl)
+ =
+ fs0gmfsgm
+ Sl(f^fgm+1)
+ 1
+ 2X
+ ^sm+1X
+ ^slX
+ slvl(f^p;^fgm+1;^sm+1;^sl;sl)2:(12.17)
+ In the last line, we have not written the average over because, once we have summed
+ over all of the spins, the result is independent of .
+ For the special case i=j=l2f1;:::;mgwith ^fl= g, there is an extra term in the
+ denition ( 8.12) ofW(l;l;f^f;^pgm+1). The extra term, involving fWdened in Eq. ( 8.16),
+ is built from some of the separate terms in the three gluon vertex. Their treatment is
+ essentially the same as the treatment just given for the other vertex functions. The result
+ fori=j=lin general is
+ Zd
+ 2
+ fs0gmwll(f^f;^pgm+1)fsgm
+ =
+ fs0gmfsgm
+ wll(f^f;^pgm+1); (12.18)
+ where
+ wll(f^f;^pgm+1) =Sl(f^fgm+1)1
+ 2X
+ ^sm+1X
+ ^slX
+ sl
+ vl(f^p;^fgm+1;^sm+1;^sl;sl)2
+ +(l2f1;:::;mg;^fl=^fm= g)
+ h
+ jv2;l(f^p;^fgm+1;^sm+1;^sl;sl)j2 jv3;l(f^p;^fgm+1;^sm+1;^sl;sl)j2i
+ :
+ (12.19)
+ Herev2;landv3;lare dened in Eq. ( 8.14).
+ We conclude that 
+ 1HI(t)fp;f;s0;c0;s;cgm
+ has the form given in Eq. ( 3.49),
+  
+ 1HI(t)fp;f;s0;c0;s;cgm
+ = 2
+ fs0gmfsgm
+ fc0gmh(t;fp;fgm)fcgm
+ : (12.20)
+ It is proportional to the unit matrix in spin but is not proportional to the unit matrix, or
+ { 66 {even diagonal, in color. The matrix
+ fc0gmh(t;fp;fgm)fcgm
+ is
+ 
+ fc0gmh(t;fp;fgm)fcgm
+ =
+ 1
+ 2X
+ lX
+ f2l(fl)Z
+ dp(p2 l(fpgm;f))
+ 
+ t logQ2
+ 0
+ j(^pl+ ( 1)l;a+l;b^pm+1)2 m2(fl)j
+ nc(a)nc(b)ab
+ nc(^a)nc(^b) ^a^bf^a=A(^a;2
+ F)f^b=B(^b;2
+ F)
+ fa=A(a;2
+ F)fb=B(b;2
+ F)
+ 
+ (^fm+16= g)
+ fc0gmfcgm
+ TRwll(f^f;^pgm+1)
+ +(^fm+1= g)X
+ k6=l
+ fc0gmglk(f^fgm+1)fcgm
+ 
+ wlk(f^f;^pgm+1) wll(f^f;^pgm+1)
+ :(12.21)
+ Here
+ fc0gmgij(f^fgm+1)fcgm
+ is given in Eq. ( 12.7) whilewij(f^f;^pgm+1) fori6=jis
+ given in Eq. ( 12.14 ) andwll(f^f;^pgm+1) is given in Eq. ( 12.19 ). The scales Fused in the
+ parton distribution functions and Rused insare given by Eq. ( 9.4). Inside the integral
+ and the sum over l, the variablesf^p;^fgm+1are determined from fp;fgmand the splitting
+ variablesfp;fgby the transformation Rl, Eqs. ( 4.28) and ( 4.63).
+ Notice that the matrix
+ fc0gmh(t;fp;fgm)fcgm
+ is not diagonal in color. However,
+ the matrix elements with fc0gm6=fc0gmare suppressed by powers of 1 =Nc. For the term
+ with a factor
+ fc0gmfcgm
+ , this was already noted in Eq. ( 7.14). To see this for the term
+ involvingglk, we should write the matrix element of glkin the form of Eq. ( 12.6),
+ 
+ fc0gmglk(f^fgm+1)fcgm
+ =X
+ f^c0;^cgm+1D
+ f^c0gm+1ty
+ k(fk!^fk+^fm+1)fc0gm
+ 
+ f^c0gm+1f^cgm+1
+ D
+ f^cgm+1ty
+ l(fl!^fl+^fm+1)fcgm
+ :
+ (12.22)
+ The leading contribution for 1 =Nc!0 comes whenfc0gm=fcgmand partons landkare
+ color connected: they lie next to each other on a string. As discussed in Sec. 10, we can
+ use the representations ( 7.24), (7.25), (7.26), and ( 7.35) for the operators ty
+ landty
+ kto see
+ that the action of ty
+ landty
+ kcan producef^c0gm+1=f^cgm+1. Iffc0gm6=fcgm, then the
+ action ofty
+ landty
+ kalways producesf^c0gm+16=f^cgm+1, so that we get a color suppressed
+ inner product
+ f^c0gm+1f^cgm+1
+ .
+ 13. End of the shower
+ As the shower progresses toward smaller and smaller resolution scales 2=Q2
+ 0e t, there
+ must come a point at which the perturbative basis of the evolution equation is no longer
+ valid. Then, at some evolution time tf, the shower evolution should be stopped. In the event
+ { 67 {that the resolution scale of the desired measurement function is larger than 2
+ f=Q2
+ 0e tf,
+ whatever happens beyond that is not seen by the measurement. Then one could simply
+ apply the measurement function, calculating
+  
+ F(tf)
+ : (13.1)
+ Let us suppose that the measurement function does not see the spins or colors of the nal
+ state partons. Then, as in Eq. ( 3.34), we need
+  
+ F(tf)
+ =X
+ m1
+ m!Z
+ dfp;f;s0;c0;s;cgm
+ F(fp;fgm)
+ fs0gmfsgm
+ fc0gmfcgm
+  
+ fp;f;s0;c0;s;cgm(tf)
+ :(13.2)
+ It is signicant that, although the possibility of fc0gm6=fcgmis included in the shower
+ evolution presented in this paper, the matrix
+ fc0gmfcgm
+ is almost diagonal, with o-
+ diagonal matrix elements being suppressed by factors of 1 =N2
+ c. The situations with respect
+ to spins and colors are dierent. In the end, we must have fs0gm=fsgmexactly. However,
+ the spins get shued at each stage of shower evolution and there is no reason that a
+ state withfs0gm6=fsgmat an earlier stage of evolution cannot evolve into a state with
+ fs0gm=fsgmat the end. On the other hand, color dierences between fc0gmandfcgm
+ are a little like entropy. Once fc0gm6=fcgmat an early stage of evolution, we can never
+ getfc0gm=fcgmat the end. For this reason, the most important part of color evolution
+ is the part that maintains fc0gm=fcgmthroughout. This is evolution in the leading color
+ dipole approximation.
+ Now, what if we wish to use a measurement function with a resolution scale smaller
+ than2
+ f. Then we need a model for what happens at smaller resolution scales (or later
+ and earlier proper times than given by x21=2
+ f). Our model should certainly include
+ hadronization. We can easily extend the formalism presented here to encompass hadroniza-
+ tion. We have only to replace Eq. ( 13.1) by
+  
+ FU(1;tf)(tf)
+ : (13.3)
+ HereU(1;tf) represents a model for what happens after Monte Carlo time tf. It starts
+ with partonic states fp;fgmand, for the nal state partons, turns them into hadronic
+ states, each according to its own probability. Assuming that the hadronization model does
+ not use color or spin information, we could represent this as
+  
+ F(tf)
+ =X
+ m1
+ m!Z
+ dfp;f;s0;c0;s;cgm
+ fs0gmfsgm
+ fc0gmfcgm
+  
+ FU(1;tf)fp;fgm
+  
+ fp;f;s0;c0;s;cgm(tf)
+ :(13.4)
+ Typically, hadronization models douse color information. The color eld interacting
+ with the outgoing partons is represented as a classical color string. The string then frag-
+ ments into hadrons. This applies directly in P YTHIA [2] and in a dierent way in H ERWIG
+ { 68 {[1], where the color strings fragment into color singlet parton clusters immediately. The
+ formalism of this paper is set up with the color string picture in mind. The color states
+ fcgmexactly map onto string congurations, as explained in Sec. 7.1. Thus for terms in
+ Eq. ( 13.2) withfc0gm=fcgm, one can usefcgmas the input toU(1;tf). The string model
+ does not tell us what to do with fc0gm6=fcgm. A reasonable suggestion would be to use
+ fc0gmhalf the time and fcgmhalf the time. This could be represented as
+  
+ F(tf)
+ =X
+ m1
+ m!Z
+ dfp;f;s0;c0;s;cgm
+ fs0gmfsgm
+ fc0gmfcgm
+ 1
+ 2h 
+ FU(1;tf)fp;f;cgm
+ + 
+ FU(1;tf)fp;f;c0gmi
+  
+ fp;f;s0;c0;s;cgm(tf)
+ :(13.5)
+ If the hadronization model is based on strings, one needs to do something with the
+ string ends that connect to the initial state partons. Consider, for example, the case that
+ the hard collision at scale 2
+ fis a quark-quark collision and concentrate on one of the initial
+ state quarks. From the point of view of backwards evolution from the scale Q2
+ 0, this initial
+ state quark appears as a color 3line. The initial state quark is part of a colorless hadron,
+ but the net color 3is carried by the spectator quarks from this hadron. Thus in a color
+ string model, the color strings from the hard interactions should connect to the spectator
+ partons. Of course, this is not a completely simple problem. In a realistic model, the
+ spectator partons from the two hadrons have many interactions with each other, possibly
+ followed by their own (not very hard) parton showers. After all of these interactions, the
+ spectator partons left over from a quark-quark collision must have 3
+ 3color, but its
+ internal color state can be quite complicated. Modeling the spectator interactions is well
+ beyond the scope of this paper but is addressed by Sj ostrand and Skands in Ref. [ 23].
+ 14. Conclusions
+ We have presented a formulation of parton showering for hadron-hadron collisions. The
+ prediction for a cross section corresponding to an observable Fis given by 
+ F(tf)
+ or
+ one of the other formulas in Sec. 13, depending on the treatment of hadronization, which
+ is not covered in this paper. The dynamics of the quantum density(t)
+ is given by the
+ evolution operator U(t;t0), so that(tf)
+ =U(tf;0)(0)
+ , where(0)
+ is determined from
+ the hard matrix element that starts the shower. Thus the shower dynamics represented
+ inU(t;t0) is based on factorization of soft and collinear singularities from hard scattering.
+ The basic formula is Eq. ( 3.56), which we can rewrite as
+ U(tf;t0) =N(tf;t0) +Ztf
+ t0dU(tf;) [HI() VS()]N(;t0): (14.1)
+ HereHI(t) is a parton splitting operator, as dened in the preceding sections and VS(t) rep-
+ resents a virtual interaction that interchanges colors. The operator N(;t0) generates the
+ standard sort of Sudakov exponential that gives the probability not to have an interaction
+ between shower times t0and.
+ { 69 {Eq. ( 14.1) has the proper form to conveniently generate a parton shower. Starting with
+ a state at time t0, one would useN(;t0) to determine the time for a parton splitting (or
+ color rearrangement). Possibly there is no splitting before the cuto time tf, as represented
+ by the rst term. Otherwise, the operators HI() andVS() give a new partonic state at
+ time. Now we operate with U(tf;), which is to say that we apply this procedure again.
+ We oer here concluding remarks under several headings.
+ Implementation. Equation ( 14.1), together with the formulas in Sec. 13and the deni-
+ tions given throughout this paper, represents a certain approximation for the cross section
+ [F] corresponding to a given observable F. When Eq. ( 14.1) is iterated, the result is
+ expressed in the form of certain integrals and sums. It will be a signicant challenge to
+ nd ways to implement Eq. ( 14.1) in a manner that allows an ecient calculation of [F].
+ We expect that there is more than one way to attack this problem. The choice aects the
+ eciency of calculation, but not the result, [F]. We leave implementation issues to later
+ work.
+ Evolution variable. We have chosen the evolution variable tto be proportional to
+ the virtuality in the splitting. An alternative would be the transverse momentum in the
+ splitting. The H ERWIG choice of the splitting angle does not work well with the formalism
+ presented here since a parton emitted at a xed angle can be arbitrarily soft, necessitating
+ introducing the nal hardness cuto 2
+ fat each splitting.
+ Momentum mapping. It is not kinematically possible for an on-shell parton to split
+ into two on-shell partons. However, it is useful to approximate the mother parton as being
+ exactly on-shell in calculating the (relatively) hard scattering in which the mother parton
+ participates. To make this approximation, we need to take the needed momentum from
+ somewhere else. Sometimes this is done by taking momentum from the mother's sister in
+ the previous splitting. In the Catani-Seymour subtraction scheme for doing next-to-leading
+ order calculations, there is a \spectator parton" that donates the required momentum [ 14].
+ Rather than taking momentum from a single parton that might not have much to give, we
+ have chosen to take a little momentum from each nal state parton, with each donating
+ according to how much momentum it has. Note that we keep momentum in balance at
+ each step, rather than waiting until the end of the shower to make adjustments.
+ Common evolution. In Eq. ( 14.1), each parton has a chance to split or interchange
+ colors between shower times tandt+dt. In the very simplest form of a parton shower,
+ each parton could evolve independently, at least if one ignores momentum conservation
+ and adjusts the momenta only at the end. Then the complete evolution of each parton l
+ could be traced out without keeping track of the other partons. Eectively, there could be a
+ separate time tlfor each parton. However, independent evolution could still be implemented
+ using a common evolution variable t, giving each parton its chance to split between times
+ tandt+dt. The physical distinction that characterizes independent evolution is that the
+ evolution is independent if the various functions involved in the splitting of parton ldo
+ not involve the states of the other partons. With the denitions of the operators used
+ { 70 {in Eq. ( 14.1), the use of a common shower time variable is required , since each splitting
+ changes the whole partonic state and aects the probabilities for other partons to split at
+ later shower times.
+ Other choices. Within Eq. ( 14.1), there are quite a number of other choices required.
+ For instance, the splitting functions must have a particular form in the limits of soft and
+ collinear splittings. However, away from these limits there is a certain freedom to choose.
+ Where choices like this were needed, we exercised the freedom to choose based mostly on
+ conceptual simplicity. Other authors might choose dierently.
+ Interference and angular ordering. In Eq. ( 14.1), quantum interference between
+ emissions of a gluon from dierent partons is treated exactly in the soft gluon limit. Sup-
+ pression of wide angle emissions is a result. Typically, parton shower generators make
+ an \angular ordering" approximation to this result. Once one has an implementation of
+ Eq. ( 14.1), it will be interesting to make the standard angular ordering approximation and
+ see how good an approximation it is.
+ Spin. Partons produced in a hard scattering carry spin, which can aect the angular
+ distribution of their subsequent splittings. Eq. ( 14.1) includes the full spin information.
+ Typically, parton shower generators average over spins, thus discarding this information.
+ Once one has an implementation of Eq. ( 14.1), it will be interesting to insert spin averages
+ everywhere and see how good an approximation it is.
+ Color. Partons produced in a hard scattering carry color, which can aect the pattern of
+ future splittings. The formalism presented here includes the full color information. Typi-
+ cally, parton shower generators make use of a leading color approximation that amounts to
+ taking the rst term in an expansion about 1 =Nc= 0. Once one has an implementation of
+ Eq. ( 14.1), it will be interesting to make the leading color approximation everywhere and
+ see how good an approximation it is.
+ Improvements needed. We leave for future work the question of how one could match
+ the parton shower to the exact matrix elements for 2 !nscattering instead of simply
+ starting with 2!2 scattering. We also leave for future work the question of how one
+ could do this at next-to-leading order. (See, however, Ref. [ 10].) More ambitiously, we
+ would like to extend the whole formalism, including the splitting functions, to next-to-
+ leading order. Current work by others on soft-collinear eective theory may be helpful
+ here [ 24].
+ Masses. We gave included quark masses in our momentum mappings and splitting func-
+ tions. However, there are a number of issues associated with masses that we do not address.
+ Suppose that we start with a hard scattering at a scale Q0that is much larger than the
+ mass of the bottom quark, mb.25Suppose additionally that we want to continue evolution
+ 25Here we assume that the bottom quark is the heaviest quark counted as initial state parton. One could
+ include production of top quarks, but would not include the top quark as a constituent of the proton unless
+ Q0mt.
+ { 71 {down to a scale that is less than mb. Then we need a suitable variable 
+ avor number
+ scheme. At the leading order used in this paper, this is easy enough, but at higher orders
+ of perturbation theory there are some subtle issues. Collins [ 25] has addressed some of
+ these issues as they arise in deeply inelastic scattering. One should, however, note that
+ for hadron-hadron collisions, the power suppressed terms that are omitted when the cross
+ section is written in a factored form as a hard scattering function convoluted with parton
+ distributions are not of order 2
+ QCD=Q2
+ 0but rather of order m2
+ b=Q2
+ 0[26]. This is not a
+ problem since, in the applications we have in mind, m2
+ b=Q2
+ 01. We lack a theorem to
+ tell us what to do if we want to keep the hard scattering but lower the resolution scale to
+ 2<m2
+ bso as to examine the nal state in more detail.
+ Foundations. The formalism presented here is based on ideas of factorization, both at
+ the amplitude level and at the cross section level, where summation over partonic states
+ that are unresolved at a given scale 2is essential. As the discussion of masses makes clear,
+ more work is needed to make these ideas suciently precise to justify the formalism.
+ Acknowledgments
+ We are grateful to J. Collins, M. Seymour, P. Skands, and Z. Tr ocs anyi for helpful conver-
+ sations. This work was supported in part the United States Department of Energy and by
+ the Swiss National Science Foundation (SNF) through grant no. 200020-109162 and by the
+ Hungarian Scientic Research Fund grants OTKA T-60432.
+ A. Limit on momentum fraction after splitting
+ In Sec. ( 4.4) we dened the kinematics of initial state splitting. For a collinear splitting
+ from an initial state parton, say parton \a,", we have ^ a>  a. It is not exactly evident
+ that this holds in away from the collinear limit, especially with masses. Here we show that
+ this holds under the kinematic conditions ( 3.6) and ( 3.9).
+ Let
+ ^g(^a) = (^pa+pb)2
+ = ^abs+m2(^fa) +m2(fb) +m2(^fa)m2(fb)
+ ^abs;
+ g(a) = (pa+pb)2
+ =abs+m2(fa) +m2(fb) +m2(fa)m2(fb)
+ abs:(A.1)
+ Note that ^g(^a) is an increasing function of its argument in the allowed region of momentum
+ fractions:
+ 1
+ bsd^g(^a)
+ d^a= 1  
+ m(^fa)m(fb)
+ ^abs!2
+ >0; (A.2)
+ since ^abs>m2
+ Hin our allowed kinematic region according to Eq. ( 3.9). Since ^g(^a) is an
+ increasing function, we just need to show that ^ g(^a)>^g(a).
+ { 72 {Recall that the kinematics requires
+ ^g(^a) = ( ^K+pm+1)2;
+ g(a) =K2;(A.3)
+ where ^K2=K2. Thus
+ ^g(^a) ^g(a) = ^g(^a) g(a) +g(a) ^g(a)
+ = (^K+pm+1)2 K2+g(a) ^g(a)
+ = 2^Kpm+1+m2(^fm+1)
+ +
+ m2(fa) m2(^fa)
+ 1 +m2(fb)
+ abs
+ :(A.4)
+ We need to show that the right hand side of Eq. ( A.4) is positive. If m(fa)2m(^fa)2,
+ this is evident. There is only one case in which m2(fa)<m2(^fa). That is when we have a
+ q!qgor q!qgsplitting in which the quark (or antiquark) enters the nal state and the
+ gluon enters the hard scattering. Then m2(^fm+1) =m2(^fa) andm2(fa) = 0. In that case,
+ ^g(^a) ^g(a) = 2 ^Kpm+1 m2(^fa)m2(fb)
+ abs
+ >2^Kpm+1 m2(^fa);(A.5)
+ where we have used abs>m2(fb) from Eq. ( 3.9). The minimum value of ^Kpm+1occurs
+ whenpm+1is proportional to ^K. Then ^Kpm+1=m(^fa)p
+ K2, so
+ ^g(^a) ^g(a)>m(^fa)
+ 2p
+ K2 m(^fa)
+ >m(^fa)
+ 2q
+ Q2
+ 0 m(^fa)
+ : (A.6)
+ This is positive as long as the condition ( 3.6) holds.
+ We have seen that
+ ^g(^a)>^g(a): (A.7)
+ Since ^g(^a) is an increasing function of ^ a, this implies that ^ a>a.
+ B. Counting factors for the density matrix
+ In this appendix, we organize the singular contributions to the density matrix starting with
+ the quantum amplitudes dened to be symmetric in the labels of the nal state partons
+ (or antisymmetric in the case of identical fermions). Then we introduce the relabelings
+ that dene our labeling scheme for parton splittings. This produces the counting factors
+ Sl(f^fgm+1) dened in Eq. ( 8.6). The counting factors are related to our parton labeling
+ choices, which in turn related to the singularities of the amplitude in the limit in which
+ masses can be neglected. The counting factors do not depend on parton masses. In order to
+ keep our notation simple, in this appendix we simply take all the parton masses to vanish.
+ LetM(f^p;^fgm+1)
+ be the exact tree level matrix element for a nal state of m+ 1
+ partons, dened to be symmetric under the interchange of the labels for any two of the
+ { 73 {nal state partons, or antisymmetric if the two partons are identical fermions. The matrix
+ element may have a singularity when any of the dot products of two parton momenta,
+ ^pi^pj, approaches zero. Let us dene approximate matrix elementsM(f^p;^fgm+1;i;j)
+ that approximate the complete matrix element when ^ pi^pj, approaches zero. Here i2fa;bg
+ andj2f1;:::;m + 1gori;j2f1;:::;m + 1gwithi<j . There is more than one way to
+ do this. We can, for instance, use the method of Sec. 6. The approximate matrix elementsM(f^p;^fgm+1;i;j)
+ thus dened should include a theta function
+  
+ j^pi^pjj< min
+ fk;lg6=fi;jg
+ fk;lg6=fj;igj^pk^plj!
+ (B.1)
+ so thatM(f^p;^fgm+1;i;j)
+ is not singular when pkplfor some other pair of partons
+ approaches zero. Given the approximate matrix elements, the complete matrix element
+ can be written as
+ M(f^p;^fgm+1)
+ m+1X
+ j=1M(f^p;^fgm+1; a;j)
+ +m+1X
+ j=1M(f^p;^fgm+1; b;j)
+ +m+1X
+ i;j=1
+ i<jM(f^p;^fgm+1;i;j)
+ :(B.2)
+ The right hand side of Eq. ( B.2) approximates the complete matrix element in any of the
+ singular limits. For our purposes, it is convenient to dene
+ M(f^p;^fgm+1;i;j)
+ =M(f^p;^fgm+1;j;i)
+ (B.3)
+ fori;j2f1;:::;m + 1g,i>j . Then we can symmetrize the third term in Eq. ( B.2),
+ M(f^p;^fgm+1)
+ mX
+ j=1M(f^p;^fgm+1; a;j)
+ +mX
+ j=1M(f^p;^fgm+1; b;j)
+ +1
+ 2m+1X
+ i;j=1
+ i6=jM(f^p;^fgm+1;i;j)
+ :(B.4)
+ Now we construct the density operator from
+ 0(f^p;^fgm+1) =M(f^p;^fgm+1)
+ M(f^p;^fgm+1): (B.5)
+ Imagine expanding bothM(f^p;^fgm+1)
+ and
+ M(f^p;^fgm+1)according to Eq. ( B.4).
+ There are a number of terms, with the general form
+ const:M(f^p;^fgm+1;i;j)
+ M(f^p;^fgm+1;i0;j0): (B.6)
+ Not all of these contributions have soft or collinear singularities strong enough to produce
+ a logarithmic divergence if one were to integrate over the momenta f^pgm+1.
+ { 74 {One contribution that does have a strong enough singularity comes when i;j;i0;j02
+ f1;:::;m + 1gandi0=i,j0=jori0=j,j0=i. The sum of these contributions is
+ 1
+ 2m+1X
+ i;j=1
+ i6=jM(f^p;^fgm+1;i;j)
+ M(f^p;^fgm+1;i;j); (B.7)
+ where we have used Eq. ( B.3).
+ Another contribution that has a strong enough singularity comes when i=i0= a and
+ j;j02f1;:::;m +1gwithj0=j. Similarly, we can have i=i0= b andj;j02f1;:::;m +1g
+ withj0=j. The sum of these contributions is
+ m+1X
+ j=1M(f^p;^fgm+1; a;j)
+ M(f^p;^fgm+1; a;j)
+ +m+1X
+ j=1M(f^p;^fgm+1; b;j)
+ M(f^p;^fgm+1; b;j):(B.8)
+ Another contribution that does have a strong enough singularity comes when i;j;i0;j02
+ f1;:::;m +1gandi0=i,j06=jor elsej0=j,i06=ior elsei0=j,j06=ior elsej0=i,i06=j.
+ These four cases are really the same, with dierent labeling. Adding the contributions, we
+ have
+ m+1X
+ i;j=1
+ i6=jm+1X
+ k=1
+ k6=i;k6=jM(f^p;^fgm+1;i;k)
+ M(f^p;^fgm+1;j;k): (B.9)
+ Here we have a leading singularity only if ^fk= g. This is the interference between gluon
+ emission from line iand gluon emission from line j.
+ We can also have interference between gluon emission from an initial state line and
+ gluon emission from a nal state line or between gluon emission from one of the initial
+ state lines and gluon emission from the other. When we add all of these cases together and
+ add them to the contribution in Eq. ( B.9), we get
+ X
+ i;j2fa;b;:::;m +1g
+ i6=jm+1X
+ k=1
+ k6=i;k6=jM(f^p;^fgm+1;i;k)
+ M(f^p;^fgm+1;j;k): (B.10)
+ There are no more combinations of i;j;i0;j0that give leading singular contributions to
+ . Thus the sum of the leading singular contributions is obtained by adding the contribu-
+ tions ( B.7), (B.8), and ( B.10).
+ This formulation is ne for constructing an inverse shower, starting from a state with
+ many partons and combining partons to reach a hard scattering with fewer partons. In
+ order to construct a shower starting from the hard scattering, it is convenient to adopt
+ a labeling convention in which (f^p;^fgm+1) is not symmetric under interchanges of the
+ parton labels. This is easy to do.
+ { 75 {Consider the contribution ( B.7). Using the i$jsymmetry of the matrix elements,
+ this is
+ mX
+ i=1M(f^p;^fgm+1;i;m+ 1)
+ M(f^p;^fgm+1;i;m+ 1)
+ +1
+ 2mX
+ i=1mX
+ j=1
+ j6=iM(f^p;^fgm+1;i;j)
+ M(f^p;^fgm+1;i;j):(B.11)
+ We can now deliberately break the relabeling symmetry in the second term by interchanging
+ the labelsjandm+ 1. That is, we choose to label the daughter parton that here caries
+ the labeljbym+ 1 instead. Note that this changes (f^p;^fgm+1) for any xed value
+ off^p;^fgm+1. However, the result of integrating (f^p;^fgm+1) against any measurement
+ function (which must be symmetric under label interchanges) stays the same. After the
+ interchange j$m+ 1, the sum over jin the second term simply becomes a factor m 1.
+ This gives
+ mX
+ i=1M(f^p;^fgm+1;i;m+ 1)
+ M(f^p;^fgm+1;i;m+ 1)
+ +m 1
+ 2mX
+ i=1M(f^p;^fgm+1;i;m+ 1)
+ M(f^p;^fgm+1;i;m+ 1):(B.12)
+ This is
+ m+ 1
+ 2mX
+ i=1M(f^p;^fgm+1;i;m+ 1)
+ M(f^p;^fgm+1;i;m+ 1);: (B.13)
+ We now consider the possibilities for 
+ avors: f^fi;^fm+1gcould befg;gg,fg;qg,fg;qg,fq;gg,
+ fq;gg,fq;qg, andfq;qg, whereqstands for a quark 
+ avor,  qstands for an antiquark 
+ avor,
+ and aqtogether with a  qstands for a quark 
+ avor and its corresponding antiquark 
+ avor.
+ Thus we can insert a factor
+ 1 = 
+ f^fi;^fm+1g=fg;gg
+ + 
+ (f^fi;^fm+1g=fg;qg
+ + 
+ (f^fi;^fm+1g=fg;qg
+ + 
+ (f^fi;^fm+1g=fq;gg
+ + 
+ (f^fi;^fm+1g=fq;gg
+ + 
+ (f^fi;^fm+1g=fq;qg
+ + 
+ (f^fi;^fm+1g=fq;qg
+ :(B.14)
+ In the coecients of the fg;qgandfg;qgtheta functions, we can further dene the labeling
+ by interchanging the labels iandm+ 1, so that m+ 1 is the label for the gluon. In the
+ fq;qgterm, we can further dene the labeling by interchanging the labels iandm+ 1, so
+ thatm+ 1 is the label for the antiquark. With these label choices, our contribution is
+ (m+ 1)mX
+ l=1Sl(f^fgm+1)M(f^p;^fgm+1;l;m+ 1)
+ M(f^p;^fgm+1;l;m+ 1); (B.15)
+ { 76 {where
+ Sl(f^fgm+1) =8
+ >>>>><
+ >>>>>:1=2; l2f1;:::;mg;^fl=^fm+1= g
+ 1; l2f1;:::;mg;^fl6= g;^fm+1= g
+ 0; l2f1;:::;mg;^fl= g;^fm+16= g
+ 1; l2f1;:::;mg;^fl=q;^fm+1= q
+ 0; l2f1;:::;mg;^fl= q;^fm+1=q: (B.16)
+ We thus derive the factor ( m+ 1) and the factor 1/2 for a nal state g !g + g splitting.
+ Consider now the contribution ( B.8). We can break the relabeling symmetry by inter-
+ changing the labels jandm+ 1. Then there are m+ 1 equal terms, giving
+ (m+ 1)X
+ l2fa;bgSl(f^fgm+1)M(f^p;^fgm+1;l;m+ 1)
+ M(f^p;^fgm+1;l;m+ 1);(B.17)
+ where
+ Sl(f^fgm+1) = 1l2fa;bg: (B.18)
+ Consider, nally, the interference diagrams, Eq. ( B.10). We separate this into several
+ terms according to the values of iandj,
+ X
+ i;j2fa;bg
+ i6=jm+1X
+ k=1M(f^p;^fgm+1;i;k)
+ M(f^p;^fgm+1;j;k)
+ +X
+ i2fa;bgmX
+ j=1m+1X
+ k=1
+ k6=jM(f^p;^fgm+1;i;k)
+ M(f^p;^fgm+1;j;k)
+ +mX
+ i=1X
+ j2fa;bgm+1X
+ k=1
+ k6=iM(f^p;^fgm+1;i;k)
+ M(f^p;^fgm+1;j;k)
+ +X
+ i2fa;bgmX
+ k=1M(f^p;^fgm+1;i;k)
+ M(f^p;^fgm+1;m+ 1;k) (B.19)
+ +X
+ j2fa;bgmX
+ k=1M(f^p;^fgm+1;m+ 1;k)
+ M(f^p;^fgm+1;j;k)
+ +mX
+ j=1mX
+ k=1
+ k6=jM(f^p;^fgm+1;m+ 1;k)
+ M(f^p;^fgm+1;j;k)
+ +mX
+ i=1mX
+ k=1
+ k6=iM(f^p;^fgm+1;i;k)
+ M(f^p;^fgm+1;m+ 1;k)
+ +mX
+ i;j=1
+ i6=jm+1X
+ k=1
+ k6=i;k6=jM(f^p;^fgm+1;i;k)
+ M(f^p;^fgm+1;j;k):
+ We relabel the indices, treating each term separately. In each case, we interchange k$
+ m+ 1. In the rst term, this gives m+ 1 equal terms from the sum over k. In the second
+ { 77 {and third terms, this gives mequal terms from the sum over k. In the fourth through
+ seventh terms, each term in the sum over kremains as one term. Finally, in the eighth
+ term, there are m 1 equal terms from the sum over k. After relabeling, we have
+ (m+ 1)X
+ i;j2fa;bg
+ i6=jM(f^p;^fgm+1;i;m+ 1)
+ M(f^p;^fgm+1;j;m+ 1)
+ +mX
+ i2fa;bgmX
+ j=1M(f^p;^fgm+1;i;m+ 1)
+ M(f^p;^fgm+1;j;m+ 1)
+ +mmX
+ i=1X
+ j2fa;bgM(f^p;^fgm+1;i;m+ 1)
+ M(f^p;^fgm+1;j;m+ 1)
+ +X
+ i2fa;bgmX
+ k=1M(f^p;^fgm+1;i;m+ 1)
+ M(f^p;^fgm+1;k;m + 1) (B.20)
+ +X
+ j2fa;bgmX
+ k=1M(f^p;^fgm+1;k;m + 1)
+ M(f^p;^fgm+1;j;m+ 1)
+ +mX
+ j=1mX
+ k=1
+ k6=jM(f^p;^fgm+1;k;m + 1)
+ M(f^p;^fgm+1;j;m+ 1)
+ +mX
+ i=1mX
+ k=1
+ k6=iM(f^p;^fgm+1;i;m+ 1)
+ M(f^p;^fgm+1;k;m + 1)
+ + (m 1)mX
+ i;j=1
+ i6=jM(f^p;^fgm+1;i;m+ 1)
+ M(f^p;^fgm+1;j;m+ 1):
+ These terms can be combined, after changing the names of some of the summation
+ indices, and added to the contributions ( B.15) and ( B.17) to give the revised density
+ operator, which we can call 1,
+ 1(f^p;^fgm+1) =
+ (m+ 1)X
+ l2fa;b;1;:::;mgSl(f^fgm+1)M(f^p;^fgm+1;l;m+ 1)
+ M(f^p;^fgm+1;l;m+ 1)
+ + (m+ 1)mX
+ l;k2fa;b;1;:::;mg
+ l6=kM(f^p;^fgm+1;l;m+ 1)
+ M(f^p;^fgm+1;k;m + 1):
+ (B.21)
+ The rst line here contains the direct terms, Eqs. ( B.15) and ( B.17), while the second line
+ is the interference terms, Eq. ( B.20).
+ References
+ [1] G. Marchesini, B. R. Webber, G. Abbiendi, I. G. Knowles, M. H. Seymour and L. Stanco,
+ HERWIG: A Monte Carlo event generator for simulating hadron emission reactions with
+ { 78 {interfering gluons , Comput. Phys. Commun. 67(1992) 465 ; S. Gieseke et al. ,Herwig++ 2.0
+ release note , [arXiv:hep-ph/0609306].
+ [2] T. Sj ostrand, High-energy physics event generation with PYTHIA 5.7 and JETSET 7.4 ,
+ Comput. Phys. Commun. 82(1994) 74; T. Sj ostrand, S. Mrenna and P. Skands, PYTHIA 6.4
+ physics and manual , JHEP 0605 (2006) 026 [arXiv:hep-ph/0603175].
+ [3] T. Sj ostrand, A Model for initial state parton showers , Phys. Lett. B 157(1985) 321.
+ [4] T. D. Gottschalk, Backwards evolved initial state parton showers , Nucl. Phys. B 277(1986)
+ 700 .
+ [5] G. Marchesini and B. R. Webber, Simulation Of QCD jets including soft gluon interference ,
+ Nucl. Phys. B 238(1984) 1; R. K. Ellis, G. Marchesini and B. R. Webber, Soft radiation in
+ parton parton scattering , Nucl. Phys. B 286(1987) 643 [Erratum-ibid. B 294(1987) 1180].
+ [6] S. Frixione and B. R. Webber, Matching NLO QCD computations and parton shower
+ simulations , JHEP 0206 (2002) 029 [arXiv:hep-ph/0204244]; S. Frixione, P. Nason and
+ B. R. Webber, Matching NLO QCD and parton showers in heavy 
+ avour production , JHEP
+ 0308 (2003) 007 [arXiv:hep-ph/0305252].
+ [7] M. Kr amer and D. E. Soper, Next-to-leading order QCD calculations with parton showers. I:
+ Collinear singularities , Phys. Rev. D 69(2004) 054019 [arXiv:hep-ph/0306222]; D. E. Soper,
+ Next-to-leading order QCD calculations with parton showers. II: Soft singularities , Phys. Rev.
+ D69(2004) 054020 [arXiv:hep-ph/0306268]; M. Kr amer, S. Mrenna and D. E. Soper,
+ Next-to-leading order QCD jet production with parton showers and hadronization , Phys. Rev.
+ D73(2006) 014022 [arXiv:hep-ph/0509127].
+ [8] P. Nason, A new method for combining NLO QCD with shower Monte Carlo algorithms ,
+ JHEP 0411 (2004) 040 [arXiv:hep-ph/0409146].
+ [9] S. Catani, F. Krauss, R. Kuhn and B. R. Webber, QCD matrix elements + parton showers ,
+ JHEP 0111 (2001) 063 [arXiv:hep-ph/0109231]; L. L onnblad, Correcting the colour-dipole
+ cascade model with xed order matrix elements , JHEP 0205 (2002) 046
+ [arXiv:hep-ph/0112284]; N. Lavesson and L. L onnblad, W + jets matrix elements and the
+ dipole cascade , JHEP 0507 (2005) 054 [arXiv:hep-ph/0503293]; M. L. Mangano, M. Moretti,
+ F. Piccinini and M. Treccani, Matching matrix elements and shower evolution for top-quark
+ production in hadronic collisions , JHEP 0701 (2007) 013 [arXiv:hep-ph/0611129].
+ [10] Z. Nagy and D. E. Soper, Matching parton showers to NLO computations , JHEP 0510
+ (2005) 024 [arXiv:hep-ph/0503053].
+ [11] J. C. Collins, Spin correlations in Monte Carlo event generators , Nucl. Phys. B 304(1988)
+ 794.
+ [12] P. Richardson, Spin correlations in Monte Carlo simulations , JHEP 0111 (2001) 029
+ [arXiv:hep-ph/0110108].
+ [13] J. C. Collins, D. E. Soper and G. Sterman, Factorization for short distance hadron - hadron
+ scattering , Nucl. Phys. B 261(1985) 104; G. T. Bodwin, Factorization of the Drell-Yan
+ cross-section in perturbation theory , Phys. Rev. D 31, 2616 (1985) [Erratum-ibid. D 34
+ (1986) 3932]; J. C. Collins, D. E. Soper and G. Sterman, Soft gluons and factorization , Nucl.
+ Phys. B 308(1988) 833.
+ { 79 {[14] S. Catani and M. H. Seymour, A general algorithm for calculating jet cross sections in NLO
+ QCD , Nucl. Phys. B 485(1997) 291 [Erratum-ibid. B 510(1998) 503 ]
+ [arXiv:hep-ph/9605323].
+ [15] D. A. Kosower, Antenna factorization of gauge-theory amplitudes , Phys. Rev. D 57(1998)
+ 5410 [arXiv:hep-ph/9710213]; Antenna factorization in strongly-ordered limits , Phys. Rev. D
+ 71(2005) 045016 [arXiv:hep-ph/0311272].
+ [16] G. Somogyi and Z. Tr ocs anyi, A new subtraction scheme for computing QCD jet cross
+ sections at next-to-leading order accuracy , [arXiv:hep-ph/0609041]; A subtraction scheme for
+ computing QCD jet cross sections at NNLO: Regularization of real-virtual emission , JHEP
+ 0701 (2007) 052 [arXiv:hep-ph/0609043].
+ [17] M. L. Mangano and S. J. Parke, Multiparton amplitudes in gauge theories , Phys. Rept. 200
+ (1991) 301 [arXiv:hep-th/0509223].
+ [18] F. A. Berends and W. T. Giele, Recursive calculations for processes with n gluons , Nucl.
+ Phys. B 306(1988) 759; M. L. Mangano and S. J. Parke, Multiparton amplitudes in gauge
+ theories , Phys. Rept. 200(1991) 301 [arXiv:hep-th/0509223].
+ [19] L. J. Dixon, \Calculating scattering amplitudes eciently," in QCD and Beyond ,
+ Proceedings of the Theoretical Advanced Study Institute in Elementary Particle Physics,
+ Boulder, Colorado, June 1995, edited by D. E. Soper (World Scientic, Singapore, 1996),
+ [arXiv:hep-ph/9601359].
+ [20] S. Catani and M. Grazzini, Infrared factorization of tree level QCD amplitudes at the
+ next-to-next-to-leading order and beyond , Nucl. Phys. B 570(2000) 287
+ [arXiv:hep-ph/9908523].
+ [21] J. E. Paton and H. M. Chan, Generalized Veneziano model with isospin , Nucl. Phys. B 10
+ (1969) 516; F. A. Berends and W. Giele, The six gluon process as an example of Weyl-Van
+ Der Waerden spinor Calculus , Nucl. Phys. B 294(1987) 700 ; M. L. Mangano, S. J. Parke
+ and Z. Xu, Duality and multi - gluon scattering , Nucl. Phys. B 298(1988) 653;
+ M. L. Mangano, The color structure of gluon emission , Nucl. Phys. B 309(1988) 461.
+ [22] L. L onnblad, ARIADNE version 4: A program for simulation of QCD cascades implementing
+ the color dipole model , Comput. Phys. Commun. 71(1992) 15.
+ [23] T. Sj ostrand and P. Z. Skands, Transverse-momentum-ordered showers and interleaved
+ multiple interactions , Eur. Phys. J. C 39(2005) 129 [arXiv:hep-ph/0408302].
+ [24] C. W. Bauer and M. D. Schwartz, Event generation from eective eld theory ,
+ [arXiv:hep-ph/0607296].
+ [25] J. C. Collins, Hard-scattering factorization with heavy quarks: A general treatment , Phys.
+ Rev. D 58(1998) 094002 [arXiv:hep-ph/9806259].
+ [26] R. Doria, J. Frenkel and J. C. Taylor, Counter example to nonabelian Bloch-Nordsieck
+ theorem , Nucl. Phys. B 168(1980) 93; C. E. Carneiro, M. Day, J. Frenkel, J. C. Taylor and
+ M. T. Thomaz, Leading noncancelling infrared divergences in perturbative QCD , Nucl. Phys.
+ B183(1981) 445.
+ { 80 {

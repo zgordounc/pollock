@@ -1,0 +1,436 @@
+The evolution of the Ear th-Moon system based on  
+ the dark matter field fluid model 
+  
+ Hongjun, Pan 
+ Department of Chemistry, University of North Texas 
+ Denton, TX 76203, U. S. A 
+  
+ Abstract 
+ The evolution of Earth-Moon system is described by the dark matter field fluid 
+ model proposed in the Meeting of Division of  Particle and Field 2004, American Physical 
+ Society. The current behavior of  the Earth-Moon system agrees  with this m odel very well 
+ and the general pattern of the evolution of  the Moon-Earth system described by this 
+ model agrees with geological and fossil evid ence. The closest distance of the Moon to 
+ Earth was about 259000 km at 4.5 billion years ago, which is far beyond the Roche’s 
+ limit. The result suggests that the tidal friction may not be the primary cause for the 
+ evolution of the Earth-Moon system. The averag e dark matter field fluid constant derived 
+ from Earth-Moon system data is 4.39 × 10-22 s-1m-1. This model predicts that the Mars’s 
+ rotation is also slowing with the an gular acceleration rate about -4.38 × 10-22 rad s-2. 
+  
+ 1. Introduction 
+ The popularly accepted theory for the forma tion of the Earth-Moon system is that 
+ the Moon was formed from debris of a strong impact by a giant planetesimal with the 
+ Earth at the close of the planet-forming period (Hartmann and Davis 1975). Since the formation of the Earth-Moon system, it has been  evolving at all tim e scale. It is well 
+ known that the Moon is receding from us and both the Earth’s rotation and Moon’s rotation are slowing. The popular th eory is that the tidal fric tion causes all those changes. 
+ However, based on tidal friction model and the current Moon-Earth system data, the tidal 
+ friction should be stronger and the recessiona l rate of the Moon should be greater in the 
+ past because the Moon was closer, the distance of the Moon would quickly fall inside the 
+ Roche's limit (for earth, 15500 km) in which the Moon would be torn apart by gravity in 
+  11 to 2 billion years ago. This, however, never happened. Furthermore, geological 
+ evidence indicates that the reces sion of the Moon in the past was slower than the present 
+ rate, i. e., the recession has been accelerating with time. Based on tidal friction models, it must be concluded that tidal friction was ve ry much less in the remote past than we 
+ would deduce on the basis of present-day observations (S tacey 1977).  This was called 
+ “geological time scale difficulty� or “Lunar cr isis� and is one of main arguments by 
+ creationists against the tidal friction theory (Brush 1983). Various models were proposed 
+ in the past to describe the evolution of the Earth-Moon system based on tidal friction mechanism to avoid this difficulty and put th e Moon at quite a comfortable distance from 
+ Earth at 4.5 billion years ago (Hansen 1982, Kagan and Maslova 1994, Ray  et al. 1999, 
+ Slichter 1963). The tidal friction theories explain that the present rate of tidal dissipation 
+ is anomalously high because the tidal force is close to a resona nce in the response 
+ function of ocean (Brush 1983).
+  Kagan gave a detailed review  about those tidal friction 
+ models (Kagan 1997). However, all those m odels are based on many assumptions about 
+ geological (continental position and drifting) and physical conditions  in the past, and 
+ many parameters (such as phase lag angle, multi-mode approximation with time-dependent frequencies of the resonance modes, etc.) have to be introduced and carefully 
+ adjusted to make their predictions close to the geological evidence. Therefore, they are 
+ not so convincing, and are still challenged by cr eationists. In the Meeting of Division of 
+ Particle and Field 2004, American Physical  Society, University  of California at 
+ Riverside, the author proposed a dark matte r field fluid model (Pan 2005), the current 
+ Moon and Earth data agree with this model very  well. This paper will demonstrate that   
+ the past evolution of Moon-Earth system can be described by the da rk matter field fluid 
+ model without any assumptions about past geological and physical  conditions. Although 
+ the subject of the evolution of the Earth-Moon system has been extensively studied analytically or numerically, to the author’s  knowledge, there are no theories similar or 
+ equivalent to this model. It should be noted  that the proposed dark matter field fluid is 
+ more like the cosmic fluid in distinguishing to the galactic halo or clump type of the dark 
+ matter in current cosmological theories. 
+  
+  22. The dark matter field fluid model 
+ In this proposed model, it is assumed that: 
+ 1.  A celestial body rotates and moves in the space, which, for simplicity, is uniformly 
+ filled with the dark matter which is in qui escent state relative to the motion of the 
+ celestial body. The dark matter possesses a fi eld property and a fluid property; it can 
+ interact with the celestial body w ith its fluid and fiel d properties; theref ore, it can have 
+ energy exchange with the celestial body, and affect the motion of the celestial body. 
+ 2.  The fluid property follows the general prin ciple of fluid mechanics. The dark matter 
+ field fluid particles may be so small that they can easily permeate into ordinary “baryonic� matter;  i. e., ordina ry matter objects could be satu rated with such dark matter 
+ field fluid. Thus, the whole celestial body intera cts with the dark matter field fluid, in the 
+ manner of a sponge moving thru water. The natu re of the field propert y of the dark matter 
+ field fluid is unknown. It is here assumed that the interaction of the field associated with 
+ the dark matter field fluid with the celes tial body is proportional to the mass of the 
+ celestial body. The dark matter fiel d fluid is assumed to have a repulsive force against the 
+ gravitational force towards baryonic matter. Th e nature and mechanism of such repulsive 
+ force is unknown. 
+ With the assumptions above, one can study how the dark matter field fluid may 
+ influence the motion of a cel estial body and compare the results with observations. The 
+ common shape of celestial bodies  is spherical. According to  Stokes's law, a rigid non-
+ permeable sphere moving through a quiescent  fluid with a sufficiently low Reynolds 
+ number experiences a resistance force F 
+ rv Fπμ6− =       ( 1 )  
+ where v is the moving velocity, r is the radius of the sphere, and μ is the fluid viscosity 
+ constant. The direction of the resistance forc e in equation (1) is opposite to the direction 
+ of the velocity. For a rigid sphere moving through the dark matter field fluid, due to the 
+ dual properties of the dark matter field fluid and its permeation into the sphere, the force F may not be proportional to th e radius of the sphere. Also, F may be proportional to the 
+ mass of the sphere due to the field interacti on. Therefore, with the combined effects of 
+  3both fluid and field, the force exerted on the sphere by the dark matter field fluid is 
+ assumed to be of the scaled form 
+         ( 2 )  mv r Fn−− =16πη
+ where n is a parameter arising from saturation by dark matter field fluid, the r1-n can be 
+ viewed as the effective radius with the same unit as r, m is the mass of the sphere, and η 
+ is the dark matter field fluid c onstant, which is equivalent to μ. The direction of the force 
+ in equation (2) is opposite to th e velocity. The force described by equation (2) is velocity-
+ dependent and causes negativ e acceleration. According to  Newton's second law of 
+ motion, the equation of mo tion for the sphere is 
+    mv rdtdvmn−− =16πη      ( 3 )  
+ Then  
+         ( 4 )  ) 6 exp(1
+ 0 t r v vn−− =πη
+ where v0 is the initial velocity ( t = 0) of the sphere. If th e sphere revolves around a 
+ massive gravitational center, ther e are three forces in the lin e between the sphere and the 
+ gravitational center: (1) the gravitational for ce, (2) the centripetal acceleration force; and 
+ (3) the repulsive force of the dark matter fi eld fluid.  The drag force in equation (3) 
+ reduces the orbital velocity and causes the sphere to move inward to the gravitational 
+ center. However, if the sum of the centripetal acceleration force and the repulsive force is stronger than the gravitational force, then, the sphere will move outward and recede from 
+ the gravitational center. This is the case of interest here. If the velocity change in equation (3) is sufficiently slow and the re pulsive force is small compared to the 
+ gravitational force and centripetal accelerati on force, then the rate of receding will be 
+ accordingly relatively slow. Therefore, th e gravitational force and the centripetal 
+ acceleration force can be approximately treate d in equilibrium at any time. The pseudo 
+ equilibrium equation is 
+ Rmv
+ RGMm2
+ 2=       ( 5 )  
+ where G is the gravitational constant, M is the mass of the gravitational center, and R is 
+ the radius of the orbit.  Inserting v of equation (4) into equation (5) yields  
+  4   ) 12 exp(1
+ 2
+ 0t r
+ vGMRn−= πη     (6) 
+ or 
+        (7) ) 12 exp(1
+ 0 t r R Rn−= πη
+ where 
+    2
+ 00vGMR=       ( 8 )  
+ R0 is the initial distance to the gravitational center.  Note that R exponentially increases 
+ with time. The increase of orbital energy with the receding comes from the repulsive 
+ force of dark matter field fluid.  Th e recessional rate of the sphere is 
+ R rdtdRn−=112πη      ( 9 )  
+ The acceleration of the recession is 
+    ( R r
+ dtR dn21
+ 22
+ 12−=πη).     (10) 
+ The recessional acceleration is positive and proportional to its distance to the 
+ gravitational center, so the r ecession is faster and faster. 
+ According to the mechanics of fluids, for a rigid non-permeable sphere rotating 
+ about its central axis in the quiescent fluid, the torque T exerted by the fluid on the sphere 
+ is 
+ ω πμ38r T− =       ( 1 1 )  
+ where ω is the angular velocity of the sphere. Th e direction of the torq ue in equation (11) 
+ is opposite to the direction of the rotation. In the case of a sphere ro tating in the quiescent 
+ dark matter field fluid with angular velocity ω, similar to equation (2), the proposed T 
+ exerted on the sphere is 
+ ()ω πη m r Tn318−− =      ( 1 2 )  
+ The direction of the torque in  equation (12) is opposite to the direction of the rotation. 
+ The torque causes the negative angular acceleration 
+    dtdI Tω=       ( 1 3 )  
+ where I is the moment of inertia of the sphere in the dark matter field fluid 
+  5   ()21
+ 52nr m I−=       ( 1 4 )  
+ Therefore, the equation of rotation for the sphere in the dark matter field fluid is 
+    ω πηωnrdtd−− =120      ( 1 5 )  
+ Solving this equation yields 
+        (16) ) 20 exp(1
+ 0 t rn−− =πη ω ω
+ where ω0 is the initial angul ar velocity. One can see that the angular velocity of the 
+ sphere exponentially decreases  with time and the angular de celeration is proportional to 
+ its angular velocity.   
+ For the same celestial sphere, combining equation (9) and eq uation (15) yields 
+ 67 . 135
+ 11
+ − = − =
+ dtdR
+ Rdtdω
+ ω     (17) 
+ The significance of equation (17) is that it contains only observed data without 
+ assumptions and undetermined parameters; therefor e, it is a critical test for this model. 
+ For two different celestial spheres in the same system, combining equation (9) 
+ and equation (15) yields 
+    67 . 135
+ 11
+ 1
+ 12
+ 2
+ 21
+ 1− = − =⎟⎟
+ ⎠⎞
+ ⎜⎜
+ �⎛−n
+ rr
+ dtdR
+ Rdtdω
+ ω
+    (18) 
+ This is another critical test for this model. 
+  
+ 3. The current behavior of the Earth-Moon system agrees with the model 
+  
+  The Earth-Moon system is the simplest gravitational system. The solar system is 
+ complex, the Earth and the Moon experience no t only the interaction of the Sun but also 
+ interactions of other planets. Let us consider the local Earth-Moon gravitational system as 
+ an isolated local gravitational system, i.e., the influence from the Sun and other planets 
+  6on the rotation and orbital motion of the Moon and on the rotation of the Earth is 
+ assumed negligible compared to the forces  exerted by the Moon and Earth on each other. 
+ In addition, the eccentricity of the Moon's or bit is small enough to be ignored. The data 
+ about the Moon and the Earth from references (Dickey et .al., 1994,  and Lang, 1992) are 
+ listed below for the readers' convenience to verify the calculation because the data may 
+ vary slightly with di fferent data sources. 
+ Moon: 
+     Mean radius:    r  = 1738.0 km 
+     Mass:       m = 7.3483 × 1025 gram 
+     Rotation period = 27.321661 days 
+     Angular velocity of Moon = 2.6617 × 10-6 rad s-1 
+     Mean distance to Earth Rm= 384400 km 
+     Mean orbital velocity v = 1.023 km s-1 
+     Orbit eccentricity    e = 0.0549 
+     Angular rotation acceleration rate = -25.88 ±  0.5 arcsec century-2 
+        = (-1.255 ± 0.024) × 10-4 rad century-2
+        = (-1.260 ± 0.024) × 10-23 rad s-2
+     Receding rate from Earth = 3.82 ±  0.07 cm year-1 = (1.21 ±  0.02) × 10-9 m s-1 
+ Earth: 
+     Mean radius:    r  = 6371.0  km 
+     Mass:       m = 5.9742 × 1027 gram 
+     Rotation period = 23 h 56m  04.098904 s = 86164.098904 s 
+     Angular velocity of rotation = 7.292115 × 10-5 rad s-1 
+     Mean distance to the Sun R m= 149,597,870.61 km  
+     Mean orbital velocity v = 29.78 km s-1 
+     Angular acceleration of  Earth = (-5.5 ± 0.5) × 10-22 rad s-2
+ The Moon's angular rotation accele ration rate and increase in mean distance to the Earth 
+ (receding rate) were obtained from the lunar laser ranging of the Apollo Program (Dickey 
+ et .al., 1994). By inserting the data of th e Moon's rotation and rece ssion into equation 
+ (17), the result is 
+  7 039 . 0 54 . 1
+ 10 662 . 2 10 21 . 110 92509 . 3 10 26 . 1
+ 6 98 23
+ ± − =
+ × × ×× × × −
+ − −−
+    (19) 
+ The distance R in equation (19) is from th e Moon's center to the Earth's center and the 
+ number 384400 km  is assumed to be the distance fr om the Moon's surface to the Earth's 
+ surface. Equation (19) is in good agreement with the th eoretical value of -1.67. The result 
+ is in accord with the model used here. The difference (about 7.8%) between the values of 
+ -1.54 and -1.67 may come from several sources: 
+ 1. Moon's orbital is not a perfect circle 
+ 2. Moon is not a perfect rigid sphere. 
+ 3. The effect from Sun and other planets. 
+ 4. Errors in data. 
+ 5. Possible other unknown reasons. 
+ The two parameters n  and η  in equation (9) and equation (15) can be determined 
+ with two data sets.  The third data set can be us ed to further test the model.  If this model 
+ correctly describes the situation at hand, it sh ould give consistent results for different 
+ motions. The values of n and η  calculated from three different  data sets are listed below 
+ (Note, the mean distance of the Moon to th e Earth and mean radii of the Moon and the 
+ Earth are used in the calculation). 
+     The value of n:       n = 0.64 
+     From the Moon's rotation:   η  = 4.27 ×  10-22  s-1 m-1
+     From the Earth's rotation:     η  = 4.26 × 10-22  s-1 m-1
+     From the Moon's recession:  η = 4.64 × 10-22  s-1 m-1
+ One can see that the three values of η are consistent within the range of error in the data. 
+     The average value of  η:   η = (4.39 ± 0.22) × 10-22 s-1 m-1
+ By inserting the data of the Earth's rota tion, the Moon’s recession and the value of n  into 
+ equation (18), the result is 
+ 14 . 0 53 . 163710001738000
+ 10 21 . 1 10 29 . 710 92509 . 3 10 5 . 5) 64 . 0 1 (
+ 9 58 22
+ ± − = ⎟
+ ⎠⎞⎜
+ �⎛
+ × × ×× × × −−
+ − −−
+   (20) 
+ This is also in accord with the model used here. 
+ The dragging force exerted on the Moon's orbital motion by the dark matter field 
+ fluid is -1.11 × 108 N, this is negligibly small compared to the gravitational force between 
+  8the Moon and the Earth ~ 1.90 × 1020 N;  and the torque exerted by the dark matter field 
+ fluid on the Earth’s and the Moon' s rotations is T = -5.49 × 1016 Nm and -1.15 × 1012 Nm, 
+ respectively.  
+  
+ 4. The evolution of Earth-Moon system 
+  
+ Sonett  et al. found that the length of the terrestrial day 900 million years ago was 
+ about 19.2 hours based on the laminated tidal sediments on the Earth (Sonett et al ., 
+ 1996). According to the model presented here, back in that time, the length of the day 
+ was about 19.2 hours, this ag rees very well with Sonett et al. 's result.  Based on the dark 
+ matter field fluid model, and the above result, the closest distance (cen ter to center) of the 
+ Moon to the Earth was about 259000 km or about two-thirds of current distance at 4.5 
+ billion years ago, this is fa r beyond the Roche's lim it. This number agrees closely with 
+ some of earlier Moon-Earth models. The clos est distance of the Moon to the Earth by 
+ Hansen’s models was about 38 Earth radii or 242000 km (Hansen, 1982). According to 
+ this model, the length of day of the Earth wa s about 8 hours at 4.5 b illion years ago. Fig. 
+ 1 shows the evolution of the distance of Moon to the Earth and the length of day of the 
+ Earth with the age of the Ea rth-Moon system described by this model along with data 
+ from Kvale et al. (1999), Sonett et al. (1996) and Scrutton (1978). One can see that those 
+ data fit this model very well in their time range.  
+ Fig. 2 shows the geological  data of solar days year-1 from Wells (1963) and from 
+ Sonett et al. (1996) and the desc ription (solid line) by this dark matter field fluid model 
+ for past 900 million years. One can see that  the model agrees with the geological and 
+ fossil data beautifully.  
+ The important difference of this model w ith early models in describing the early 
+ evolution of the Earth-Moon system is that this  model is based only on current data of the 
+ Earth-Moon system and there are no assumptions about the conditions of earlier Earth 
+ rotation and continental drifting. Based on this  model, the Earth-M oon system has been 
+ smoothly evolving to the current position since it was established and the recessional rate 
+ of the Moon has been gradually increasing, however, this description do es not take it into 
+ account that there might be speci al events happened in the past to cause the suddenly 
+  9significant changes in the motions of the Eart h and the Moon, such as strong impacts by 
+ giant asteroids and comets, etc, because those impacts are very co mmon in the universe. 
+ The general pattern of the evolution of the Earth-Moon system described by this model 
+ agrees with geological evidence. Based on equa tion (9), the recessional rate exponentially 
+ increases with time. One may then imagine th at the recessional rate  will quickly become 
+ very large.  The increase is in fact extremely slow. The Moon's recessional rate will be 
+ 3.04 × 10-9 m s-1 after 10 billion years and 7.64 × 10-9 m s-1 after 20 billion years. 
+ However, whether the Moon's r ecession will continue or at  some time later another 
+ mechanism will take over is not known. It should be understood that the tidal friction 
+ does affect the evolution of the Earth itself such  as the surface crust structure, continental 
+ drifting and evolution of bio-sy stem, etc; it may also play a role in slowing the Earth’s 
+ rotation, however, such role is  not a dominant mechanism.  
+ Unfortunately, there is no data available for the changes of the Earth's orbital 
+ motion and all other members of solar system. According to this model and above results, 
+ the recessional rate of the Earth should be 6.86 × 10-7 m s-1 = 21.6 m year-1 = 2.16 km 
+ century-1, the length of a year increases about 6.8 ms and the change of the temperature is 
+ -1.8 × 10-8 K year-1 with constant radiation level of th e Sun and the stable environment on 
+ the Earth. The length of a year at 1 billion years ago would be 80% of the current length 
+ of the year. However, much evidence (growth-bands of corals and shellfish as well as some other evidences) suggest th at there has been no apparent change in the length of the 
+ year over the billion years and the Earth's orbita l motion is more stable than its rotation in 
+ which it experiences the dragging torque by the da rk matter field fluid.  This suggests that 
+ dark matter field fluid is circulating around Sun with the same  direction and similar speed 
+ of Earth (at least in the Earth's orbital ra nge). Therefore, the Earth's orbital motion 
+ experiences very little or no dragging force from the dark matter field fluid. However, 
+ this is a conjecture, extensive research has to be conducted to verify if  this is the case.  
+  
+ 5. Skeptical description of the evolution of the Mars 
+  
+ The Mars is our nearest ne ighbor which has attracted gr eat attention since ancient 
+ time. The exploration of the Mars has been heating up in recent decades. NASA, Russian 
+  10and Europe Space Agency sent many space crafts to the Mars to collect data and study 
+ this mysterious planet. So far there is still not enough data about  the history of this planet 
+ to describe its evolution. Same as the Earth,  the Mars rotates about its central axis and 
+ revolves around the Sun, howev er, the Mars does not have a massive moon circulating it 
+ and there is no liquid fluid on its surface, ther efore, there is no apparent ocean-like tidal 
+ friction force to slow its rota tion by tidal friction theories. Based on the above result and 
+ current the Mars's data, this model predicts that the Mars’s rotati on also experiences the 
+ dragging torque by the dark matter field fluid and the angular rotati on acceleration of the 
+ Mars should be about -4.38 × 10-22 rad s-2. Figure 3 describes the possible evolution of 
+ the length of day and the solar days/Mars year , the vertical dash line marks the current 
+ age of the Mars with assumption that the Mars  was formed in a similar time period of the 
+ Earth’s formation. Such description is complete ly skeptical due to lack of reliable data. 
+ The research and exploration of the Mars has been expanded dram atically in recent 
+ decades. We shall feel confident that the reliable data about the angular rotation 
+ acceleration of the Mars will be available in th e near future which will provide a vital test 
+ for the predication of this model. However, there are also other factors which may affect the Mars rotation rate such as mass redist ribution due to season change, winds, possible 
+ volcano eruptions and Mars quake s. Therefore the data has to be carefully analyzed. 
+  
+ 5. Discussion about the model 
+  
+ From the above results, one can see that the current Earth-Moon data and the 
+ geological and fossil data agree with the mode l very well and the pa st evolution of the 
+ Earth-Moon system can be described by th e model without intr oducing any additional 
+ parameters; this model reveals the interesting relationship between the rotation and receding (Eq. 17 and Eq. 18) of the same celestial body or different celestial bodies in the same gravitational system, such relationshi p is not known before. Such success can not 
+ be explained by “coincidence� or “luck� because of so many data involved (current 
+ Earth’s and Moon’s data and geological and fossil data) if one thinks that this is a wrong 
+ model, although the chance for the natural ha ppening of such “coincidence� or “luck� 
+ could be greater than wining a jackpot lotter y; otherwise, a new theory from different 
+  11approach can be developed to give the same or better description as this model does.  It is 
+ certain that this model is not perfect and ma y have defects, further development may be 
+ conducted.  
+ James Clark Maxwell said in 1873 “ The vast interplanetary and interstellar 
+ regions will no longer be regarde d as waste places in the universe, which the Creator has 
+ not seen fit to fill with the symbols of th e manifold order of His kingdom. We shall find 
+ them to be already full of this wonderf ul medium; so full, that no human power can 
+ remove it from the smallest portion of space, or produce the slightest flaw in its infinite 
+ continuity. It extends unbr oken from star to star… .�  The medium that Maxwell talked 
+ about is the aether which was proposed as the carrier of light wave propagation. The 
+ Michelson-Morley experiment only proved th at the light wave propagation does not 
+ depend on such medium and did not reject the existence of the medium in the interstellar 
+ space.  In fact, the concept of the interstellar medium has been developed dramatically 
+ recently such as the dark matter, dark energy, cosmic fluid, etc. The d ark matter field 
+ fluid is just a part of such wonderful me dium and “precisely� de scribed by Maxwell. 
+  
+ 6. Conclusion 
+  
+ The evolution of the Earth-Moon system can  be described by the dark matter field 
+ fluid model and the current data of the Eart h and the Moon fit this model very well. At 
+ 4.5 billion years ago, the closest distance of the Moon to the Earth could be about 259000 km, which is far beyond the Roche’s limit and the length of day was about 8 hours. The 
+ general pattern of the evoluti on of the Earth-Moon system described by this model agrees 
+ with geological and fossil evidence. The tidal friction may not be the primary cause for the evolution of the Earth-Moon system. This model predicts that the Mars’s rotation is 
+ also slowing with the angular a cceleration rate about -4.38 × 10
+ -22 rad s-2. 
+  
+  
+  
+  
+  
+  12References 
+  
+ Brush, S. G., 1983. Laurie R. Godfrey (edi tor), Ghost from the Nineteenth century: 
+ Creationist Arguments for a young Earth. Scientists conf ront creationism. W. W. 
+ Norton & Company, New York, London, pp 49. 
+ Dickey,  J. O. et al ., 1994. Science, 265, 482. 
+ Hansen, K. S., 1982. Rev. Geophys. and Space Phys. 20(3) , 457. 
+ Hartmann W. K., Davis, D. R., 1975. Icarus, 24, 504. 
+ Kagan, B. A., Maslova, N. B., 1994. Earth, Moon and Planets 66, 173.  
+ Kagan, B. A., 1997. Prog. Oceanog. 40, 109. 
+ Kvale, E. P.,  Johnson, H. W., Sonett, C. O ., Archer, A. W., and  Zawistoski, A., 1999, J. 
+ Sediment. Res. 69(6), 1154. 
+ Lang, K., 1992. Astrophysical Data: Planets and Stars, Springe r-Verlag, New York. 
+ Pan, H., 2005.  Internat. J. Modern Phys. A, 20(14) , 3135.  
+ Ray, R. D., Bills, B. G., Chao, B. F., 1999. J. Geophys. Res. 104(B8),  17653. 
+ Scrutton, C. T., 1978. Brosche, P., Sunderma nn, J. (Editors.), Tidal Friction and the 
+             Earth’s Rotation. Springer-Verlag, Berlin, pp. 154. 
+ Slichter, L. B., 1963. J. Geophys. Res.  68, 14. 
+ Sonett, C. P., Kvale, E. P., Chan, M. A., Demko, T. M.,  1996. Science, 273, 100. 
+ Stacey,  F.D., 1977.  Physics of the Eart h, second edition. John Willey & Sons. 
+ Wells, J. W.,  1963. Nature, 197, 948. 
+  13Figure 1, Moon's distance and t he length of day of Earth 
+ change with the age of Earth-Moon system
+ The age of Earth- Moon system (109 years)012345Distance (105 km)
+ 12345
+ Length of day (hour)
+ 010203040
+ Distance
+ Length of day
+ Roche's limitab
+ Hansen's resultc
+  
+  
+  The evolution of Moon’s distance and the length of day of the earth with the age 
+ of the Earth-Moon system. Solid lines are calc ulated according to the dark matter field 
+ fluid model. Data sources: the Mo on distances are from Kvale and et a l. and for the 
+ length of day: (a and b) are from Scrutton ( page 186, fig. 8), c is from Sonett and et al.  
+ The dash line marks the current age of the Earth-Moon system.  
+  
+  14Figure 2,  the solar days / ye ar vs. the age of the Earth
+ The age of the Earth (109 years)3.5 3.6 3.7 3.8 3.9 4.0 4.1 4.2 4.3 4.4 4.5 4.6Solar days/year
+ 360380400420440460480
+  
+  
+ The evolution of Solar days of year w ith the age of the Earth-Moon system. The 
+ solid line is calculated according to dark matt er field fluid model. The data are from 
+ Wells (3.9 ~ 4.435 billion years range), Sonett  (3.6 billion years) and current age (4.5 
+ billion years). 
+  15 
+ The skeptical description of the evoluti on of Mars’s length of day and the solar 
+ days/Mars year with the age of the Mars based on the dark matter field fluid model 
+ (assuming that the Mars’s age is about 4.5 billion years). The vertical dash line marks the 
+ current age of Mars. 
+  
+  16

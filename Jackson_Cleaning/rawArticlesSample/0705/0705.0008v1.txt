@@ -1,0 +1,1172 @@
+Preprint typeset in JHEP style - PAPER VERSION NEIP{07{01
+ CPHT-RR015.0307
+ CERN-PH-TH 2007/057
+ Axionic symmetry gaugings in N= 4supergravities
+ and their higher-dimensional origin
+ Jean-Pierre Derendinger|, P. Marios Petropoulos|and Nikolaos Prezas}
+ |Institut de Physique, Universit e de Neuch^ atel
+ Breguet 1, 2000 Neuch^ atel, Switzerland
+ Centre de Physique Th eorique, Ecole Polytechnique, CNRS
+ 91128 Palaiseau, France
+ }CERN PH-TH
+ 1211 Gen eve, Switzerland
+ E-mail: jean-pierre.derendinger@unine.ch, marios@cpht.polytechnique.fr,
+ nikolaos.prezas@cern.ch
+ Abstract: We study the class of four-dimensional N= 4 supergravities obtained by
+ gauging the axionic shift and axionic rescaling symmetries. We formulate these theories
+ using the machinery of embedding tensors, characterize the full gauge algebras and discuss
+ several specic features of this family of gauged supergravities. We exhibit in particular
+ a generalized duality between massive vectors and massive two-forms in four dimensions,
+ inherited from the gauging of the shift symmetry. We show that these theories can be
+ deduced from higher dimensions by a Scherk{Schwarz reduction, where a twist with respect
+ to a non-compact symmetry is required. The four-dimensional generalized duality plays a
+ crucial role in identifying the higher-dimensional ascendent.
+ Unit e mixte UMR 7644.arXiv:0705.0008v1  [hep-th]  30 Apr 2007Contents
+ 1. Introduction 1
+ 2. Reminder on N= 4 gauged supergravities in D= 4 3
+ 2.1 Gauge algebras and the embedding tensor 3
+ 2.2 Lagrangian formulation 6
+ 3. Gauging the N= 4 axionic symmetries 7
+ 3.1 Electric-magnetic duality and electric gaugings 7
+ 3.2 Non-unimodular gaugings 8
+ 3.3 Lagrangian description 10
+ 4. Higher-dimensional origin 13
+ 4.1 Heterotic reduction with duality twist 13
+ 4.2 Contact with N= 4 gauged supergravity 16
+ 5. Conclusions and open problems 18
+ 1. Introduction
+ The eective eld theories describing the low-energy dynamics of typical string and M-
+ theory compactications are plagued with massless scalar elds that hamper any attempt to
+ contact four-dimensional phenomenology. One way of eliminating some of these unwanted
+ massless scalars is the introduction of 
+ uxes in the internal compactication space (see [1]
+ for a review). From the eective eld theory perspective, turning on 
+ uxes corresponds to
+ a \gauging" of the original theory obtained without 
+ uxes. The term gauging refers to the
+ fact that a subgroup of the global duality symmetry of the original theory is promoted to
+ a local gauge symmetry. Alternatively, part of the original Abelian gauge symmetry can
+ be promoted to a non-Abelian one and all the elds, including the scalars, acquire minimal
+ couplings to the gauge elds. The connection with the moduli stabilization issue stems
+ from the fact that for extended supergravity theories, the only way to generate a potential
+ is through the gauging. The resulting theories are known as gauged supergravities (see [2]
+ for a concise review).
+ One can envisage a bottom-up approach to the problem of moduli stabilization where
+ instead of looking for a specic higher-dimensional background whose corresponding low-
+ energy eective theory is phenomenologically viable, one rst constructs a gauged super-
+ gravity theory with the required phenomenological properties and then attempts to engi-
+ neer it from higher dimensions. Such a programme was initiated in [3] and models were
+ proposed there exhibiting full moduli stabilization.
+ { 1 {Evidently such a programme depends crucially on having a good picture of the \land-
+ scape" of possible gauged supergravity theories. Therefore, a problem of paramount impor-
+ tance is to classify and describe all possible gaugings of supergravity in diverse spacetime
+ dimensions and with various amounts of supersymmetry. This problem was tackled in a
+ series of publications [4, 5, 6, 7, 8] where the general method of embedding tensors was
+ developed.
+ Ultimately, however, one would like to know that the eective theory constructed
+ in the bottom-up approach is consistent, i.e. can be embedded in a certain string or M-
+ theory setup. Although for many classes of gauged supergravities their higher-dimensional
+ realization is known, for the generic gauged supergravity there is no recipe { not even
+ guaranteed existence of a higher-dimensional origin. Presumably such an endeavor would
+ require a better understanding of the classes of string backgrounds dubbed non-geometric,
+ whose signicance has recently been investigated in the framework of 
+ ux compactications
+ and supergravity theories.
+ Here, our aim is to contribute in this direction by analyzing a family of four-dimensional
+ N= 4 gauged supergravities and explain how they can be obtained from string theory or
+ higher-dimensional supergravity theories. Gauged supergravity with N= 4 supersymme-
+ try was the arena of [3] since string theories with 16 supercharges are the starting point
+ of a variety of realistic string constructions. Recently the most general theory of this type
+ was explicitly constructed in [9] using the formalism of embedding tensors. We will use
+ this formalism to study in detail the specic class of N= 4 theories obtained by gauging
+ the axionic symmetries, namely the axionic shifts and rescalings . Consistency requires that
+ severalSO(6;6) directions are also gauged. The general structure of the gauge algebra is
+ systematically worked and it exhibits the following characteristic property: it is non-
+ at
+ contrary to what happens in more conventional gaugings.
+ In order to uncover the higher-dimensional origin of these gaugings one needs to per-
+ form a Scherk{Schwarz reduction of heterotic supergravity (or of the common sector in
+ general) on a torus. The crucial ingredient here is a twist by a non-compact duality sym-
+ metry of ten-dimensional supergravity.
+ The identication of the theory obtained from the reduction with the gauged supergrav-
+ ity under consideration is not at all straightforward. It relies heavily on a duality between
+ massive vectors and massive two-forms in four dimensions. This duality is a necessary
+ extension of the more standard duality between a massless two-form and an axion scalar
+ eld in four dimensions : it incorporates the St uckelberg-like terms that are generated by
+ the axionic gauging.
+ The organization of this paper is as follows. Section 2 is devoted to a reminder of
+ gauged [10, 11, 12] N= 4 supergravity in D= 4 [13, 14, 15]. We emphasize the approach
+ of the embedding tensor following Refs. [8, 9, 16]. In Sec. 3 we specialize to the so-called
+ electric gaugings and we analyze a particular class of algebras for which we elaborate on
+ the corresponding gauged supergravity. These theories admit two equivalent formulations
+ related by a duality between massive vectors and massive two-forms in four dimensions. In
+ Sec. 4 we move on to higher dimensions. Our aim is to analyze the ten-dimensional origin
+ of the four-dimensional theory constructed in Sec. 3. We show that it can be obtained
+ { 2 {using a generalized Scherk{Schwarz reduction of heterotic N= 1D= 10 supergravity.
+ Furthermore, we comment on the higher-dimensional origin of other classes of N= 4
+ gaugings. In Sec. 5 we present our conclusions and discuss some open problems.
+ 2. Reminder on N= 4 gauged supergravities in D= 4
+ In this section we review N= 4 gauged supergravity following Ref. [9]. After some general
+ remarks on the possible gauge algebras and the constraints on the gauging parameters we
+ present for reference the most general bosonic Lagrangian.
+ 2.1 Gauge algebras and the embedding tensor
+ Four-dimensional N= 4 supergravity has a very restricted structure. It contains gener-
+ ically the gravity multiplet and nvector multiplets. The bosonic sector of the theory
+ consists of the graviton, n+ 6 vectors and 2 + 6 nscalars. In the ungauged version, the
+ gauge group is Abelian, U(1)6+n, and there is no potential for the scalars.
+ Interactions are induced upon elimination of the auxiliary elds. They aect the scalars
+ whose non-linearities are captured by a universal coset manifold [17, 18]
+ M=SL(2;R)
+ U(1)SO(6;n)
+ SO(6)SO(n): (2.1)
+ All elds are non-minimally coupled to the Abelian vectors. The gauge kinetic terms have
+ scalar-eld-dependent coecients, whereas the action is at most quadratic in the gauge-
+ eld strengths with no explicit dependence on the gauge potentials. For this reason, the
+ SL(2;R)SO(6;n)Sp(12+2n;R) symmetry of the scalar manifold is globally realized as
+ a U-duality symmetry. Although the scalar manifold survives any deformation of the plain
+ theory triggered by gaugings, the U-duality is broken as a consequence of the introduction
+ of non-Abelian eld strengths and minimal couplings, all of which depend explicitly on the
+ gauge potentials.
+ The duality group acts as a symmetry of the eld equations and the Bianchi identities
+ of the gauge elds. In the standard formulation of supergravity only a subgroup of it is
+ realized o-shell as a genuine symmetry of the Lagrangian. This includes the SO(6;n)
+ plus a two-dimensional non-semi-simple subalgebra of SL(2;R) generated by axionic shifts
+ and axionic rescalings. The third transformation in SL(2;R), corresponding to the truly
+ electric-magnetic duality, is an on-shell symmetry which relates dierent Lagrangians as-
+ sociated to dierent choices of symplectic frames.
+ The only known deformation of N= 4 supergravity compatible with supersymmetry
+ is the gauging . This consists in transmuting part of the U(1)6+nlocal symmetry into an
+ non-Abelian gauge symmetry, or equivalently in promoting part of the global U-duality
+ symmetry to a local symmetry, using some of the available vectors. This operation should
+ not alter the total number of propagating degrees of freedom, as required e.g. by super-
+ symmetry.
+ It is possible to parameterize all gaugings of N= 4 supergravity by using the so-called
+ embedding tensor . The latter describes how the gauge algebra is realized in terms of the
+ { 3 {U-duality generators. It captures all possible situations, including those where some of the
+ gauge elds are the magnetic duals of the vectors originally present in the Lagrangian, as
+ well as the option of gauging the duality rotation between electric and magnetic vectors,
+ which, as already stressed, appears only as an on-shell symmetry. In this procedure, one
+ doubles the number of vector degrees of freedom, keeping however unchanged the number
+ of propagating ones thanks to appropriate auxiliary elds. One therefore avoids any choice
+ of symplectic frame until a specic gauging is performed. We will not elaborate on these
+ general properties but summarize the structure of the embedding tensor that we will use
+ in the ensuing. We refer the reader to [8, 9, 16] for further information on this subject.
+ Then+6 electric vector elds AM+; M= 1;:::; 6+nbelong to the fundamental vector
+ representation of SO(6;n). Their magnetic duals AM form also a vector of SO(6;n), but
+ carry opposite charge with respect to the SO(1;1)SL(2;R) that generates the axionic
+ rescalings.
+ TheSL(2;R) algebra is generated by S=S; ;2f+; g, which obey the
+ following commutation relations:
+ [S;S
+ ] = 
+ S S
+  S
+  
+ S (2.2)
+ with+ = 1 =+ . In the vector representation ( S
+ )
+ =
+ 
+ +
+ 
+ and they
+ explicitly read1
+ S++=S  = 
+ 0 0
+ 2 0!
+ ; S + = S+ = 
+  1 0
+ 0 1!
+ ; S  =S++= 
+ 0 2
+ 0 0!
+ :(2.3)
+ The axionaand the dilaton form a complex scalar =a+ie 2, which parameterizes
+ theSL(2;R)=U(1) coset. We dene
+ M=1
+ Im 
+ jj2Re
+ Re1!
+ (2.4)
+ and we denote by Mits inverse. The action of
+ g= 
+ a b
+ c d!
+ 2SL(2;R) (2.5)
+ is linear on M:M!gMgTwhile it acts on as a M obius transformation: !a+b=c+d.
+ Therefore, S++generates the axionic shifts, S+ the axionic rescalings, whereas the
+ electric-magnetic duality is generated by S  . In this basis, 
+ AM+	
+ ;
+ AM 	
+ form
+ a doublet of SL(2;R) with diagonal S+ and correspondingly the rescaling charges are +1
+ and 1.
+ TheSO(6;n) is generated by TMN= TNM,M;N2f1;:::; 6 +ngobeying
+ [TKL;TJM] =LJTKM+KMTLJ KJTLM LMTKJ; (2.6)
+ 1Since with the present conventions for ,
+ 
+ =
+ , we can raise and lower -indices unambiguously
+ as follows: A=AandB=B. This leads to A+= A andA =A+. In particular,
+ S++=S  ,S+ = S+ andS  =S++.
+ { 4 {withLJbeing theSO(6;n) metric2. In the fundamental representation the generators
+ read: (TKL)J
+ I=KIJ
+ L LIJ
+ K.
+ The 6nscalars coming from the nvector multiplets live on the SO(6;n)=(SO(6)
+ SO(n)) coset and can be parameterized by a symmetric matrix Mof elements MMN.
+ Introducing vielbeins V= (Vm
+ M;Va
+ M) withm= 1;:::; 6 anda= 1;:::;n we can write
+ M=VVTand dene the fully antisymmetric tensor
+ MMNPQRS =mnpqrsVm
+ MVn
+ NVp
+ PVq
+ QVr
+ RVs
+ S (2.7)
+ that appears in the scalar potential. We will denote by MMNthe inverse of MMN.
+ The gauging ofN= 4 supergravity proceeds by selecting a subalgebra of SL(2;R)
+ SO(6;n) generated by some linear combination of fS;TKLg. The coecients of this
+ combination are the components of the embedding tensor and are subject to various con-
+ straints discussed in detail in the aforementioned references. In summary, this tensor
+ belongs a priori to the ( 23;Vec) + (2;VecAdj) ofSL(2;R)SO(6;n). However,
+ there are linear constraints resulting from the requirement that the commutator provides
+ an adjoint action and that supersymmetry is preserved3. These reduce the representation
+ content of the embedding tensor to ( 2;Vec)+(2;Ant [3]). Furthermore, there are quadratic
+ constraints guaranteeing the closure of the gauge algebra { Jacobi identity. Putting ev-
+ erything together, one nds that the admissible generators of the gauge algebra are of the
+ form
+ L=1
+ 2
+ fLMNTMN PQPTQL+
+ LS
+ 
+ (2.8)
+ wherefLMN are fully antisymmetric in L;M;N andLsatisfy
+ (i)MNMN= 08;: (2.9)
+ These parameters characterize completely the gauging.
+ The set of consistency conditions is completed as follows:
+ (ii)MN(Mf)NIJ= 0; (2.10)
+ (iii) 
+ IJ+MNMfNIJ
+ = 0 (2.11)
+ and
+ (iv)MNfMI [JfKL ]N=1
+ 2[JfKL ]I+1
+ 6
+ 
+ IfJKL
+  1
+ 2MNMfN[JKL]I 1
+ 6fJKLI; (2.12)
+ where [] and () stand for antisymmetrization and symmetrization with respect to dierent
+ indices belonging to the same family (e.g. [ LN ] =1=2(LN NL )).
+ 2IndicesM;N;::: are lowered and raised with LJandKM(inverse matrix).
+ 3This is actually the minimal set of constraints that one can consistently impose and they also guarantee
+ that a Lagrangian exists propagating the correct number of degrees of freedom, as one learns from general
+ studies on gaugings of maximal supergravities [4, 5, 6, 7, 8].
+ { 5 {Several comments are in order here. A general gauging is manifestly expressed in terms
+ of 2(6 +n) + 2(6+n)(5+n)(4+n)=6parameters subject to four conditions (i,ii,iii,iv). The
+ gauge algebra, as dened by this set of parameters, is characterized by the commutation
+ relations of the subset of independent  L's. These generators are indeed constrained
+ (they satisfy e.g.  (L)MLM= 0 as a consequence of their denition (2.8) and Eqs.
+ (2.9), (2.10), (2.11)) as they should since no more that 6 + nvectors can propagate. The
+ structure constants of the gauge algebra are not directly read o from the fLMN 's, which
+ are not necessarily structure constants of some algebra. They can, however, be expressed in
+ terms of the fLMN 's andM's and describe a variety of situations which capture simple,
+ semi-simple or even non-semi-simple examples. For all of these, MNalways provides an
+ invariant metric although the Cartan{Killing metric of the corresponding gauge algebra
+ can be degenerate.
+ The duality phases of de Roo and Wagemans [19, 20, 21] are also captured by the
+ present formalism when the M's are absent4, as relative orientations of f+LMN with
+ respect tof LMN for each simple component [9]. We will not elaborate any longer on the
+ general aspects of the embedding tensor and the variety of physical possibilities and for
+ further details we will refer the reader to the already quoted literature.
+ 2.2 Lagrangian formulation
+ The bosonic Lagrangian corresponding to the most general N= 4 gauging was presented
+ in [9]. For the sake of completeness we reproduce this result here and provide several
+ comments. The Lagrangian consists of a kinetic term, a topological term, and a potential
+ for the scalars:
+ L=Lkin+Ltop+Lpot: (2.13)
+ The kinetic term reads
+ e 1Lkin=1
+ 2R+1
+ 16DMMNDMMN 1
+ 4(Im)2DD
+  1
+ 4e 2MMNHM
+ HN+1
+ 8aMNHM
+ HN
+  (2.14)
+ with the covariant derivatives dened as
+ DMMN=@MMN+ 2gAP
+ Q
+ P(MMN)Q; (2.15)
+ D=@+gAM 
+ +M+g 
+ AM+
+ +M AM 
+  M
+  igAM+
+  M2(2.16)
+ and the generalized gauge-eld strengths being
+ HM
+ = 2@[AM+
+ ] g^fM
+ NPAN
+ [AP+
+ ]+g
+ 2M
+  NPCNP
+ +g
+ 2M
+ +C++
+ +M
+  C+ 
+ :(2.17)
+ The combinations  MNP and ^fMNP are dened in terms of the gauging parameters
+ fMNP andNas
+ MNP =fMNP [NP]M; (2.18)
+ ^fMNP =fMNP [MP]N 3
+ 2NMP: (2.19)
+ 4For vanishing M's, Eq. (2.12) is the only constraint; it is an ordinary Jacobi identity when =.
+ { 6 {The tensor gauge elds CMN
+ =C[MN]
+  andC
+ =C()
+ are auxiliary and their elim-
+ ination ensures that the correct number of gauge eld degrees of freedom are propagated.
+ For that purpose one needs to introduce a topological term in the Lagrangian
+ e 1Ltop= g
+ 2 
+ +MNPAM 
+ AN+
+ @AP+
+  
+ ^f MNP + 2 NMP
+ AM 
+ AN+
+ @AP 
+ 
+  g
+ 4^fMNR^fR
+ PQAM
+ AN+
+ AP
+ AQ 
+ +g
+ 16+MNP M
+  QRCNP
+ CQR
+ (2.20)
+  1
+ 4 
+  MNPCNP
+ + MC+ 
+ ++MC++
+ 
+ 2@AM 
+  g^fM
+ QRAQ
+ AR 
+ !
+ :
+ Finally, there is a potential for the scalar elds that takes the form
+ e 1Lpot= g2
+ 16 
+ fMNPfQRSM1
+ 3MMQMNRMPS+2
+ 3MQ MMQ
+ NRPS
+  4
+ 9fMNPfQRSMMNPQRS+ 3M
+ N
+ MMMN!
+ : (2.21)
+ The basic feature of this Lagrangian is that it depends explicitly on both the electric
+ gauge potentials AM+
+ and their magnetic duals AM 
+ . Therefore it allows the gauging of
+ any subgroup of the full duality group SL(2;R)SO(6;n), where in principle both electric
+ and magnetic potentials can participate. The eld equations derived from this Lagrangian
+ and the gauge transformations can be found in [9].
+ 3. Gauging the N= 4 axionic symmetries
+ Here we present a class of N= 4 gauged supergravities obtained by making local the
+ axionic shifts and axionic rescalings. This is a subclass of the electric gaugings and we will
+ refer to them as non-unimodular gaugings . Their existence was pointed out in [9] but here
+ we analyze in detail and full generality the properties of the corresponding gauge algebra
+ and discuss some interesting features of their Lagrangian description, such as a duality
+ between massive vectors and massive two-forms.
+ 3.1 Electric-magnetic duality and electric gaugings
+ The most general N= 4 gauging is described in terms of two tensors fLMN andI,
+ ;2f+; gandI;L;M;N2f1;:::; 6 +ng, satisfying four quadratic conditions (i, ii,
+ iii, iv) displayed in Eqs. (2.9){(2.12). This general formalism, dened in an arbitrary sym-
+ plectic frame, captures in particular the gauging of the electric-magnetic duality symmetry
+ generated by S++(see Sec. 2.1).
+ Gaugings with pure fLMN 's have been studied extensively in the literature. They
+ correspond to switching on gauge algebras entirely embedded in SO(6;n), as shown by
+ (2.8). On the other hand, turning on the I's allows one to gauge both SL(2;R) and
+ SO(6;n). This situation has not attracted much attention and only a few examples of the
+ corresponding gauge algebras have been analyzed (see e.g. [9, 35]). Our aim is to study
+ { 7 {systematically a class of such gaugings and show that they correspond to a specic pattern
+ of higher-dimensional reduction which generalizes the Scherk{Schwarz mechanism.
+ We will focus here on electric gaugings, namely gaugings that do not involve the S++
+ generator of SL(2;R). Axionic shifts S  or axionic rescalings S +will however be gauged,
+ accompanied by the appropriate SO(6;n) generators. Hence, this class of gaugings is
+ dened by setting
+  I= 0: (3.1)
+ We will also set
+ f LMN = 0; (3.2)
+ although this is not compulsory for electric gaugings5, while keeping +II6= 0 and
+ f+LMNfLMN6= 0. Furthermore, we will focus on the case n= 6, which is related to
+ pure gravity in ten dimensions, and adopt the o-block-diagonal 6 + 6 metric:
+ = 
+ 0I6
+ I60!
+ : (3.3)
+ The quadratic constraint (iii), Eq. (2.11), is now automatically satised while the
+ constraints (i, ii, iv) { Eqs. (2.9), (2.10), (2.12) { reduce to
+ MNMN= 0; MNMfNIJ= 0; (3.4)
+ MNfMI[JfKL]N=2
+ 3f[IJKL]: (3.5)
+ 3.2 Non-unimodular gaugings
+ We will split the I-indices into ( i;i0) with both iandi0ranging from 1 to 6. This corresponds
+ to the decomposition of the fundamental representation of SO(6;6) into fundamental and
+ contragradient of the diagonal SO(6) subgroup. With this convention, ij=i0j0= 0,
+ whereasii0=i0i=ii0. In this basis the SO(6;6)-invariant inner product takes the form
+ AMBM=AmBm+Am0Bm0and we can write AmAm0;Am0Am.
+ A specic solution with f's and's. Now, a non-trivial solution to Eqs. (3.4) and
+ (3.5) is
+ i=ii0= 0 for all i0; (3.6)
+ fi0ij=fiji0=fji0i= [ij]i0all others vanishing ; (3.7)
+ withiarbitrary real numbers. The existence of the gauging described in Eqs. (3.6) and
+ (3.7) was pointed out in Ref. [9]. Actually, there exist a whole class of gaugings of this type
+ with more components of the tensor fIJKturned on. As discussed in [9], besides Eqs. (3.6)
+ and (3.7) one can turn on fijk. Then, the quadratic constraints reduce to a single equation
+ f[ijkl]= 0: (3.8)
+ 5What is meant by electric gauging is not universally set in the literature. In [9], for example, electric
+ gaugings are dened as those with I=f LMN = 0, which is somewhat too restrictive.
+ { 8 {Since the novel feature of this class of gaugings is the presence of a non-zero parameter,
+ we will restrict ourselves to the simplest example, namely the gauging with fijk= 0.
+ The gauging under consideration will be called \non-unimodular" for reasons that will
+ become clear at the end of Sec. 4.2, or \tracefull" since
+ fj
+ ij= 5
+ 2i: (3.9)
+ This is slightly misleading, however, since the gauge algebra istraceless as a consequence
+ of the full antisymmetry of its genuine structure constants. The latter are notfk
+ ijbut
+ specic combinations of fIJKandIread o from the commutation relations of generators
+ (2.8).
+ The gauge algebra. In the rest of this section, we will characterize the gauge algebra,
+ which will be further studied from a higher-dimensional perspective in the next chapters.
+ Using Eqs. (3.6) and (3.7) in expression (2.8), we obtain:
+  i= i
+ 2S  i; (3.10)
+  i0= 0; (3.11)
+ +i= i
+ 2
+ Tj
+ j+S +
+ i; (3.12)
+ +i0= jTj
+ i0i0: (3.13)
+ The gauge algebra at hand has 18 non-vanishing generators, but only 8 are independent :
+ ;;i0. Their commutation relations follow from Eqs. (2.2) and (2.6):
+ 
+ i0;j0
+ = 0; (3.14)
+ 
+ ;j0
+ = 0; (3.15)
+ [i0;] = i0; (3.16)
+ [;] = : (3.17)
+ The setf;i0gspans an Abelian seven-dimensional Lie subalgebra. Furthermore, the
+ algebra generated by f;gis a non-compact A2;2subalgebra of SL(2;R)SO(6;6).
+ The above algebra is non-
+ at , in contrast to the algebras obtained by standard Scherk{
+ Schwarz reductions. As we will see in later, the gaugings at hand are related to twisted
+ versions of these reductions, which relax therefore the 
+ atness of the gauge algebras. In the
+ particular case where i=1i, the gauge algebra possesses 7 non-vanishing generators.
+ This algebra appears when compactifying from ve to four dimensions (see [35]) with a non-
+ compact twist generated by the ve-dimensional rescaling. The full algebra (3.10){(3.17)
+ will also emerge (see Sec. 4) as a ten-dimensional heterotic reduction with twist. Richer
+ non-Abelian extensions are possible in this case, that eventually lead to non-vanishing fijk
+ as already advertised, and which are not possible when compactifying from ve dimensions.
+ These issues will be extensively analyzed in Sec. 4.2.
+ { 9 {3.3 Lagrangian description
+ It is straightforward to derive the bosonic Lagrangian for the gaugings we have just de-
+ scribed by using the general formulas of the previous section. As a rst step, we will
+ implement (3.1) and (3.2), and later set (3.6) and (3.7). Finally, we will dualize a vector,
+ which acquires a St uckelberg-like mass via the gauging at hand, into a massive two-form
+ eld potential.
+ Electric gaugings  I=f KLM = 0. The kinetic terms read
+ e 1Lkin=1
+ 2R+1
+ 16DMMNDMMN 1
+ 4e4DaDa DD
+  1
+ 4e 2MMNHM
+ HN+1
+ 8aMNHM
+ HN
+ ; (3.18)
+ where now
+ DMMN=@MMN+ 2gAP
+ Q
+ P(MMN)Q(3.19)
+ and
+ HM
+ = 2@[AM
+ ] g^fM
+ NPAN
+ [AP
+ ]+g
+ 2MC (3.20)
+ withC:=C++
+ .
+ Sincef MNP and Mare zero and hence   MNP and ^f MNP are zero as well,
+ we have omitted the \+" index from all coecients. We will use the notation AM
+ 
+ AM+
+ ;AM 
+ XM
+ for the gauge potentials in order to avoid cluttering of the formulas
+ with indices. Furthermore, we dene the linear combinations
+ XMXM
+ ; AMAM
+ : (3.21)
+ The gauge covariant derivatives of the axion and dilaton take the form6
+ Da=@a+X+Aa; (3.22)
+ D=@ 1
+ 2A: (3.23)
+ By turning on the parameters we have gauged a non-Abelian two-dimensional subgroup
+ of theSL(2;R) global axion-dilaton symmetry. The \magnetic" potential Xcorresponds
+ to the gauging of the shift symmetry of the axion a!a+cand acts as a St uckelberg eld,
+ whileAgauges the dilatation symmetry a!e 2a,!+. In terms of the notation
+ of the previous subsection, the corresponding gauge algebra is the one spanned by  and
+  with commutation relation (3.17).
+ The topological term in the Lagrangian for the class of gaugings under consideration
+ becomes
+ e 1Ltop= 1
+ 2
+ MNPXM
+ AN
+ @AP
+  1
+ 4MCGM
+ 
+  1
+ 4^fMNR^fR
+ PQAM
+ AN
+ AP
+ XQ
+ 
+ :(3.24)
+ 6From now on we set the coupling constant gequal to 1 for simplicity.
+ { 10 {We have dened the following gauge eld strenghts
+ FM
+ = 2@[AM
+ ] ^fM
+ NPAN
+ [AP
+ ]; (3.25)
+ GM
+ = 2@[XM
+ ] ^fM
+ QRAQ
+ [XR
+ ]; (3.26)
+ in terms of which one can write HM
+ =FM
+ +1
+ 2MC.
+ Finally, the potential terms are
+ e 1Lpot= 1
+ 16M++
+ 3MNMMN
+ +fMNPfQRS1
+ 3MMQMNRMPS+2
+ 3MQ MMQ
+ NRPS
+ (3.27)
+ withM++= e2.
+ Non-unimodular gaugings. We will now specify the gauge parameters by setting (3.6)
+ and (3.7). With this gauging, the indices iandi0corresponding to the 6and60ofSO(6)
+ SO(6;6) are treated dierently. We rst notice that the magnetic eld strengths Gm0
+ do
+ not appear in the Lagrangian. The gauge eld strengths that appear are
+ Fm
+ = 2@[Am
+ ]; (3.28)
+ Fm0
+ = 2@[Am0
+ ]+
+ 2jAm0
+ [Aj
+ ] m0Aj[Aj
+ ]
+ ; (3.29)
+ Gm
+ = 2@[Xm
+ ]+
+ iAi
+ [Xm
+ ]+iAm
+ [Xi
+ ]
+ ; (3.30)
+ where now
+ XMXM
+ =mXm
+ ; AMAM
+ =mAm
+ : (3.31)
+ One further notices that the Lagrangian actually depends only on the linear combination
+ mGm
+ . This combination can be written in terms of AandXas
+ G= 2@[X]+ 2A[X]: (3.32)
+ Similarly we introduce F=mFm
+ = 2@[A].
+ The natural prescription is to integrate out the auxiliary two-form Cin order to
+ obtain the nal Lagrangian. If we do so, starting from (3.18), (3.24) and (3.27), we obtain
+ e 1L=1
+ 2R+1
+ 16DMMNDMMN 1
+ 4e4DaDa DD
+  1
+ 4e 2MMNFM
+ FN+1
+ 4aMNFM
+ ~FN 1
+ 42e2ZZ
+  1
+ 12X!+e 1Lpot: (3.33)
+ In this expression Z=aF+G+ e 2m0Mm0N~FN, where ~FNis the Hodge{
+ Poincar e dual of FN
+ ; we have also dened 2=mMmnnand we have introduced the
+ Chern{Simons form:
+ !=An
+ Fn+AnFn
+  1
+ 2AAm
+ Am+1
+ 2AAm
+ Am+ cyclic: (3.34)
+ { 11 {The local gauge invariance under axionic shifts enables us to gauge away the axion
+ a= 0. Then, the magnetic potential Xacquires a mass through its St uckelberg coupling
+ to the axion. The nal expression for the gauge-xed Lagrangian is therefore
+ e 1L=1
+ 2R+1
+ 16DMMNDMMN DD 1
+ 4e 2MMNFM
+ FN
+  1
+ 42e2
+ G+ e 2m0Mm0N~FN
+ G+ e 2m0Mm0N~FN
+ 
+  1
+ 12X!+e 1Lpot: (3.35)
+ It captures all the relevant information carried by the axionic-symmetry gauging.
+ St uckelberg mass and dualization. There is a dierent formulation of the theory,
+ which is actually more suggestive of a higher-dimensional origin. Instead of integrating out
+ the auxiliary antisymmetric tensor C, one can promote Cto a propagating eld and
+ integrate out X. Using as previously (3.18), (3.24) and (3.27), this procedure yields the
+ following Lagrangian:
+ e 1~L=1
+ 2R+1
+ 16DMMNDMMN DD
+  1
+ 4e 2MMN
+ FM
+ +1
+ 2MC
+ FN+1
+ 2NC
+  3
+ 8e 4
+ @[C] A[C] 1
+ 3!2
+ +e 1Lpot; (3.36)
+ where the two-form Cacquires now a scalar-eld-dependent mass.
+ The key observation is that the theory described by (3.36) is related to that described
+ by (3.35) by an interesting generalized duality. Recall that a massless two-form potential
+ in four dimensions carries one propagating degree of freedom and can be dualized into a
+ scalar. In the case where the two-form comes from the reduction of the ten-dimensional
+ NS-NS two-form in the gravity multiplet, the dual scalar is the axion. If instead, as it
+ happens here, the two-form is massive, it carries three degrees of freedom and the dual
+ potential is a massive vector. This duality is a particular instance of a generalized duality
+ between massive p-forms and massive ( D p 1)-forms in Ddimensions [22, 23].
+ For the benet of the reader we will present schematically how this generalized duality
+ works, leaving as an exercise its precise implementation between (3.35) and (3.36). Start
+ from a massive gauge eld Xwith Lagrangian
+ L= 1
+ 4g2(@X @X) (@X @X) +1
+ 2m2XX: (3.37)
+ This Lagrangian can be obtained from
+ ~~L= 2C@X+g2CC+1
+ 2m2XX(3.38)
+ by integrating C, which is an auxiliary non-propagating antisymmetric tensor. Instead,
+ we can integrate by parts~~Lso thatXbecomes non-dynamical, while Cacquires a
+ { 12 {dynamics. Integrating out nally Xyields an action for a massive two-form,
+ ~L= 2
+ m2@C@C+g2CC; (3.39)
+ which can be brought to a more familiar form for antisymmetric tensors, by Hodge{
+ Poincar e-dualizing C.
+ Following a similar pattern, one can replace the massive vector XinL(Eq. (3.35))
+ by a two-form. This yields precisely ~L(Eq. (3.36)), therefore demonstrating that the
+ LagrangiansLand ~Ldescribe equivalent physics.
+ 4. Higher-dimensional origin
+ In this section we perform a generalized dimensional reduction of heterotic supergravity to
+ four dimensions and show that the resulting eective theory belongs to the class of N= 4
+ gauged supergravities studied in the previous section. Recall that the usual dimensional
+ reduction of heterotic supergravity, which can be thought of as compactication on a
+ six-torus keeping only the massless modes, results in a four-dimensional theory with 16
+ supercharges, Abelian gauge group U(1)12+pand a global o-shell symmetry SO(6;6 +p)
+ [24]. Six of the Abelian vectors are graviphotons while another six of them come from
+ reducing the NS-NS two-form on the 1-cycles of the torus.
+ One can also reduce some of the vectors present already in ten dimensions and obtain p
+ additional Abelian gauge elds. Usually this is done for the vectors lying in the Cartan torus
+ of the ten-dimensional gauge group, therefore yielding a theory with p= 16. Since our goal
+ here is to make contact with a gauged supergravity with p= 0 we will ignore this possibility
+ and consider the reduction of the gravity-multiplet elds only. It is straightforward to
+ extend the reduction to the Yang{Mills sector and obtain generalizations of the gaugings
+ we discussed so far.
+ 4.1 Heterotic reduction with duality twist
+ Our starting point is the bosonic action of heterotic supergravity in the string frame7
+ S=Z
+ M4dxZ
+ K6dyp
+  Ge 
+ R+GMN@M@N
+  1
+ 12GMM0GNN0GKK0HMNKHM0N0K0
+ :(4.1)
+ We assume a decomposition of the ten-dimensional spacetime in a four-dimensional non-
+ compact part M4parameterized by coordinates xand a six-dimensional internal manifold
+ K6parameterized by yi. The spacetime indices will be decomposed as M= (;i). As usual
+  is the dilaton and H= dBis the three-form eld strength of the NS-NS antisymmetric
+ tensorB. As said, we neglect the ten-dimensional Yang{Mills elds.
+ 7The ten-dimensional spacetime indices M;N;::: of this section should not be confused with the funda-
+ mentalSO(6;6) indices of the previous sections.
+ { 13 {TakingK6to be a 
+ at six-torus and keeping only the y-independent modes yields a
+ theory with 12 Abelian vectors and 38 massless scalars, two of which are the dilaton and
+ the axion. The latter is the dual of the two-form Bobtained by reducing BMN. One
+ way to obtain a more interesting theory is by introducing 
+ uxes in the torus. The most
+ general reduction of this type, where both NS-NS and geometric 
+ uxes were present, was
+ studied in [25].
+ The introduction of geometric 
+ uxes has an alternative interpretation as a reduction
+ with a twist for the spacetime elds [26]. This is actually a particular case of a generalized
+ reduction scheme that usually is referred to as \Scherk{Schwarz" reduction [27]. The char-
+ acteristic property of reductions of this type is that the reduction ansatz can incorporate a
+ dependance on the coordinates of the internal torus. This dependance is not arbitrary how-
+ ever; on a technical level it is dictated by the requirement that the Lagrangian should be
+ independent of the internal coordinates. This is implemented by selecting a prole for the
+ elds whose consistency is guaranteed by some symmetry of the original theory. Such re-
+ ductions in the context of supergravity have been studied in [28, 29, 30, 31, 32, 33, 34, 35, 36]
+ while the reader is referred to [37] for a general discussion on reductions with duality twists.
+ A subtle point that is not usually emphasized is the following. These reduction schemes
+ yield an eective theory for a nite set of modes selected out of the innitude of higher-
+ dimensional modes according to some symmetry principle. Hence, it is not necessarily
+ true that they encompass all low-energy modes and further analysis is required in order to
+ establish that the eective theory obtained through a Scherk{Schwarz reduction is actually
+ alow-energy eective theory.
+ The symmetry we will employ in the present paper is the SO(1;1) scaling symmetry
+ of (4.1), under which the elds transform as
+ ! + 4; GMN!eGMN(x); BMN!eBMN(x): (4.2)
+ This enables us to trade the usual periodic ansatz, which assumes no dependance on the
+ torus coordinates, with the following one
+ (x;y) = (x) + 4iyi; GMN(x;y) = eiyiGMN(x); BMN(x;y) = eiyiBMN(x):(4.3)
+ The parameters iare arbitrary real numbers that dictate the twisting of the elds along
+ the six one-cycles of the torus.
+ The decomposition of the ten-dimensional metric tensor in terms of four-dimensional
+ elds is the usual one
+ G=g+Ai
+ Aj
+ hij; Gi=Aj
+ hij; Gij=hij: (4.4)
+ Heregis the metric on M4,hijare the 21 metric moduli of the six-torus and Ai
+ are the
+ Kaluza{Klein gauge elds. Similarly, the antisymmetric tensor is decomposed as
+ B=b; Bi=bi; Bij=bij: (4.5)
+ We obtain a two-form b, which usually is dualized to an axion, six vectors Bi
+ and 15
+ scalar moduli bij.
+ { 14 {The above decompositions hold for the full ten-dimensional elds that are assumed to
+ have a dependance on yiof the type dictated by the SO(1;1) scaling symmetry. Consistency
+ implies that
+ g(x;y) = ekykg(x); b(x;y) = ekykb(x); hij(x;y) = ekykhij(x);(4.6)
+ bij(x;y) = ekykbij(x); Ai
+ (x;y) =Ai
+ (x); bi(x;y) = ekykbi(x); (4.7)
+ (x;y) =(x) +kyk; (4.8)
+ where the four-dimensional dilaton is dened as =  1
+ 2log det h. They-independent
+ modes on the right-hand sides are the four-dimensional elds for which we would like to
+ derive the eective action. The ansatz is consistent in the sense that the y-dependance is
+ totally eliminated from the action and the integration over yiyields an overall multiplicative
+ factor. Notice that the volume of the internal six-torus is encoded in the metric moduli
+ hij.
+ Let us rst reduce the Einstein{Hilbert part of the action along with the dilaton kinetic
+ term. The most ecient way of performing this reduction is the following. We start from
+ the metric
+ G0
+ MN(x;y) = 
+ 2(y)GMN(x); (4.9)
+ where 
+ (y) = exp(1
+ 2yii), use the relation between Ricci scalars for conformally related
+ metrics, and nally apply the usual reduction formulas for GMN(x). After the above
+ redenition of the dilaton, necessary for absorbing the factor ofp
+ h, the conformal rescaling
+ g!exp
+ 2g, which brings us to the Einstein frame in four dimensions, and a nal
+ rescaling!2, we obtain
+ Sgravity =Z
+ M4dxp g1
+ 2R4+1
+ 8
+ @hij Ak
+ khij
+ @hij+A``hij
+  g
+ @ 1
+ 2Ai
+ i
+ @ 1
+ 2Aj
+ j
+  1
+ 4e 2hijFi
+ Fj 1
+ 2e2ihijj
+ ; (4.10)
+ whereFm
+ =@Am
+  @Am
+ and all elds are exclusively y-dependent.
+ There are several observations in order. First, the metric moduli hijbecome charged
+ under the Kaluza{Klein gauge elds Ai
+ . The charges are given by the vector of twisting
+ coecients i. The dilaton is also coupled in a St uckelberg fashion to Ai
+ . This signals the
+ gauging of a shift symmetry as expected from a reduction where the ansatz was twisted
+ by employing such a symmetry8. Notice, furthermore, that the twisting does not result in
+ a non-Abelian gauge symmetry for the Kaluza{Klein gauge elds. It does however lead to
+ a potential for the dilaton and the metric moduli.
+ The reduction of the NS-NS part of the Lagrangian is more easily performed using the
+ tangent-space components of the antisymmetric three-form [24]. Furthermore, some eld
+ 8Note that the dilaton is shifted under the SO(1;1) scaling.
+ { 15 {redenitions are necessary in order to bring the resulting Lagrangian to a more standard
+ form. One denes vector elds Ynand a two-formBas
+ Yn=bn+bnmAm
+ ; (4.11)
+ B=b+Am
+ [Y]m Am
+ An
+ bmn: (4.12)
+ We get
+ SNS NS=Z
+ M4
+  1
+ 8hmnh`kDbm`Dbnk
+  1
+ 6e 4
+ 3
+ @[B] kAk
+ [B]
+  1
+ 2
+ 
+ 
+ 3
+ @[B] `A[
+ `B]
+  1
+ 2
+ 
+ (4.13)
+  1
+ 4e 2hmn
+ Ym+mB bm`F`
+ 
+ Y
+ n+nB bnkFk
+ +1
+ 16e2i
+ hijhk`b`mhmnbnk 2hikbkmhmnbnrhrj
+ jp gdx;
+ where we have dened
+ Dbn`=@bn`+`Yn nY` mAm
+ bn`; (4.14)
+ Y`=@Y` @Y`+1
+ 2`mn mn
+ `
+ (AmYn YnAm); (4.15)
+ while the Chern{Simons three-form is
+ 
+ =Y`A`
+ +A`
+ Y` 1
+ 2`A`
+ Am
+ Ym+1
+ 2`A`
+ Am
+ Ym+ cyclic: (4.16)
+ We observe that the NS-NS moduli are charged under the Kaluza{Klein gauge elds
+ but have also St uckelberg couplings to the NS-NS gauge potentials. The latter couplings
+ are due to the gauging of the shift symmetries of those moduli induced by the duality twist.
+ A crucial dierence with the case of the ordinary dimensional reduction is that the four-
+ dimensional two-form Bacquires a mass. This prohibits the standard dual formulation
+ in terms of an axion but, according to the discussion of the previous section on dualities
+ between massive elds, suggests that a dual formulation in terms of a massive vector is
+ possible. Let us nally stress that the reduction of the NS-NS sector also contributes to
+ the potential for the hijandbijmoduli (last line of (4.13)).
+ 4.2 Contact with N= 4gauged supergravity
+ We will now show that the eective theory described by the sum of actions (4.10) and
+ (4.13) is nothing but the N= 4 gauged supergravity worked out in Sec. 3. Using the
+ standard parameterization of the moduli matrix MMN
+ MMN= 
+ hmn hmkbkn
+ bmkhknhmn bmkhk`b`n!
+ ; (4.17)
+ { 16 {theN= 4 potential (3.27) obtained for the non-unimodular gauging reads:
+ V=1
+ 16e2i
+ 8hij hijhk`b`mhmnbnk+ 2hikbkmhmnbnrhrj
+ j: (4.18)
+ This is precisely the potential in the eective theory (4.10) plus (4.13). Notice that this
+ identication claries the higher-dimensional interpretation of the gauging parameters :
+ they correspond to the parameters used to twist the boundary conditions by SO(1;1)
+ scalings along the six one-cycles of the torus.
+ It is straightforward to check that the rest of the terms in (4.10) plus (4.13) match
+ exactly those of (3.36) provided we identify the gauge elds Am
+ ;Am0
+ in the gauged-
+ supergravity Lagrangian with the Kaluza{Klein and NS-NS gauge elds Am
+ ;Ymin the
+ heterotic reduction and the antisymmetric tensors as C$2B. This elucidates the
+ higher-dimensional origin of the gauged supergravity of Sec. 3 and conrms the promi-
+ nent role of the generalized duality performed in four dimensions for reaching (3.36). It
+ is amusing that the four-dimensional two-form Bthat comes from the NS-NS antisym-
+ metric tensor in ten dimensions is actually the auxiliary tensor gauge eld required for
+ consistency of the gauging in the formalism of [8].
+ Let us mention at this point that ordinary reductions of the heterotic theory with
+ NS-NS 
+ uxes and geometric 
+ uxes also yield N= 4 gauged supergravities [25]. The
+ correspondence with the embedding-tensor language is as follows: there are no 's turned
+ on and the only non-vanishing parameters are the f+IJKfIJK. Under the decomposition
+ of indicesI= (i;i0), the background NS-NS 
+ uxes ijkand geometric 
+ uxes9
+ k
+ ijare
+ identied with the components of fIJKas
+ fijk= 3ijk; fijk0= 2
+ k
+ ij; (4.19)
+ all other components being zero. The remaining non-trivial quadratic constraint is (iv)
+ (Eq. (2.12)) and it corresponds to the Bianchi identities for the NS-NS 
+ uxes and the
+ Jacobi identity for the geometric 
+ uxes. From this we conclude that the more general class
+ of gaugings we mentioned in Sec. 3.2 with non-zero fijkoriginates from a ten-dimensional
+ reduction with an SO(1;1) duality twist combined with background NS-NS 
+ uxes. The
+ condition (3.8) found then is a consequence of the Bianchi identity resulting from the ansatz
+ (4.3).
+ An interesting observation is in order here. The correspondence between the compo-
+ nentsfijk0and the geometric 
+ uxes 
+ k
+ ijprovides an alternative perspective on the gauging
+ we have performed in Sec. 3.2 and the subsequent heterotic reduction of Sec. 4.1. Indeed, if
+ we interpret the y-dependance of the internal metric (c.f. Eqs. (4.6)) as inducing a geomet-
+ ric 
+ ux, this 
+ ux is automatically \non-unimodular" since 
+ i
+ ij6= 0. In ordinary reductions,
+ the unimodularity condition ensures consistency of the truncation of the higher-dimensional
+ Lagrangian [26, 38]. This well-known obstruction is circumvented in our approach thanks
+ to the compensating duality twist.
+ 9We use the notation of [25].
+ { 17 {5. Conclusions and open problems
+ In this paper we studied in detail the class of N= 4 axionic-symmetry gaugings and
+ established that they can be embedded in heterotic theory. More specically, they arise
+ through a reduction where the boundary conditions for the elds are twisted by an SO(1;1)
+ scaling symmetry. Similar reductions are possible for type II strings yielding N= 8
+ gauged supergravities or N= 4 upon appropriate orbifolding/orientifolding. For M-theory,
+ instead, there is no scaling symmetry of the action and that implies that the Lagrangian
+ cannot be consistently truncated for elds with boundary conditions of this type. However,
+ one can still perform such reductions at the level of the equations of motion and it is
+ expected that the reduced equations of motion correspond to gaugings of the type we
+ studied here. In passing, we also note that since the dilaton becomes a component of
+ the internal geometry when a type IIA background is lifted to M-theory, reductions with
+ dilaton twists should lift to M-theory reductions with purely geometric twists of the type
+ studied in [39, 40].
+ Some obvious extensions of the current work include twisted reductions of the heterotic
+ theory taking into account the ten-dimensional gauge elds or similar type II reductions in
+ the presence of branes and orientifolds. This should yield electric N= 4 gaugings where
+ the gauge algebra is a subgroup of SL(2;R)SO(6;n) forn6.
+ The fact that the formulation of gauged supergravity through the embedding tensor is
+ duality-covariant implies that these theories capture the eective dynamics of backgrounds
+ related by duality transformations. Recently it has become increasingly clear that the
+ majority of these backgrounds are non-geometric and cannot be described using the familiar
+ notions of geometry and ordinary 
+ uxes. From one point of view this demonstrates the
+ power of the eective bottom-up approach, since four-dimensional physics can be derived
+ without the need to delve into the microscopic details of a higher-dimensional setup. On
+ the other hand, one could argue that a better understanding of non-geometric backgrounds
+ may still be obtained through analyzing gauged supergravity.
+ For instance, the \non-geometric" 
+ uxes QandRproposed in [41] as T-dual of the
+ familiar NS-NS and geometric 
+ uxes, are automatically captured for heterotic compacti-
+ cations on a six-torus by the formulation of N= 4 gauged supergravity we have being
+ discussing. Using the notation of [41] our gauging parameters f+IJKdescribe all possible
+ situations through
+ f+ijkHijk; f +ijk0fk
+ ij; f +i0j0kQij
+ k; f +i0j0k0Rijk: (5.1)
+ Besides this set of SO(6;6)-dual 
+ uxes, the most general N= 4 gauging comprises of
+ another set of S-dual 
+ uxes f IJK. It would be extremely interesting to understand the
+ microscopic origin of all those non-geometric 
+ uxes directly in ten dimensions and derive
+ the corresponding gauged supergravities using an appropriate reduction scheme (see [42]
+ for some recent ideas in this direction. Also, the non-geometric 
+ uxes can be interpreted as
+ geometric 
+ uxes in an appropriate generalized geometry [43]). Among others, this should
+ shed some light on the open problem of lifting gauged supergravities with non-trivial duality
+ phases in heterotic string theory.
+ { 18 {A related question concerns the higher-dimensional origin of the gauging constraints
+ (i)-(iv). For example, although some of these constraints have a clear origin as Bianchi
+ identities in the internal space, this is not so for the null condition (i) MM= 0. The
+ reduction we performed depends naturally on six parameters that ll up Min such a way
+ that it is automatically null. It would be interesting to understand how N= 4 gaugings
+ with more general parameters Mcan be obtained from higher dimensions and where the
+ null condition comes from.
+ We conclude by emphasizing that formulations of string and M-theory of the type
+ presented in [44, 45, 46] as well as the mathematical framework of generalized complex
+ geometry [47] may provide the appropriate tools for resolving the above issues.
+ Acknowledgments
+ The authors wish to thank L. Carlevaro, G. Dall'Agata, S. Ferrara and H. Samtleben for
+ stimulating scientic discussions and J. Sch on, M. Trigiante and M. Weidner for very helpful
+ correspondence. This work was supported in part by the EU under the contracts MEXT-
+ CT-2003-509661, MRTN-CT-2004-005104, MRTN-CT-2004-503369 and by the Agence Na-
+ tionale pour la Recherche, France. Marios Petropoulos acknowledges nancial support by
+ the Swiss National Science Foundation.
+ References
+ [1] M. Gra~ na, \Flux compactications in string theory: a comprehensive review," Phys. Rept.
+ 423(2006) 91 [arXiv:hep-th/0509003].
+ [2] M. Trigiante, \Dual gauged supergravities," arXiv:hep-th/0701218.
+ [3] J.-P. Derendinger, C. Kounnas, P.M. Petropoulos and F. Zwirner, \Superpotentials in IIA
+ compactications with general 
+ uxes," Nucl. Phys. B 715, 211 (2005)
+ [arXiv:hep-th/0411276].
+ [4] B. de Wit, H. Samtleben and M. Trigiante, \On Lagrangians and gaugings of maximal
+ supergravities," Nucl. Phys. B 655, 93 (2003) [arXiv:hep-th/0212239].
+ [5] B. de Wit, H. Samtleben and M. Trigiante, \Maximal supergravity from IIB 
+ ux
+ compactications," Phys. Lett. B 583, 338 (2004) [arXiv:hep-th/0311224].
+ [6] B. de Wit, H. Samtleben and M. Trigiante, \Gauging maximal supergravities," Fortsch.
+ Phys. 52, 489 (2004) [arXiv:hep-th/0311225].
+ [7] B. de Wit, H. Samtleben and M. Trigiante, \The maximal D= 5 supergravities," Nucl. Phys.
+ B716, 215 (2005) [arXiv:hep-th/0412173].
+ [8] B. de Wit, H. Samtleben and M. Trigiante, \Magnetic charges in local eld theory," JHEP
+ 0509 , 016 (2005) [arXiv:hep-th/0507289].
+ [9] J. Sch on and M. Weidner, \Gauged N= 4 supergravities," JHEP 0605 (2006) 034
+ [arXiv:hep-th/0602024].
+ [10] D.Z. Freedman and J.H. Schwarz, \ N= 4 supergravity theory with local SU(2)SU(2)
+ invariance," Nucl. Phys. B 137, 333 (1978).
+ { 19 {[11] S.J.J. Gates and B. Zwiebach, \Gauged N= 4 supergravity theory with a new scalar
+ potential," Phys. Lett. 123B, 200 (1983).
+ [12] S.J.J. Gates and B. Zwiebach, \Searching for all N= 4 supergravities with global SO(4),"
+ Nucl. Phys. B 238, 99 (1984).
+ [13] A. Das, \ SO(4) invariant extended supergravity," Phys. Rev. D 15(1977) 2805.
+ [14] E. Cremmer and J. Scherk, \Algebraic simplications in supergravity theories," Nucl. Phys.
+ B127, 259 (1977).
+ [15] E. Cremmer, J. Scherk and S. Ferrara, \ SU(4) invariant supergravity theory," Phys. Lett. 74
+ B, 61 (1978).
+ [16] J.-P. Derendinger, \Supergravity gaugings and moduli superpotentials," Fortsch. Phys. 54,
+ 366 (2006).
+ [17] A.H. Chamseddine, \ N= 4 supergravity coupled to N= 4 matter," Nucl. Phys. B 185, 403
+ (1981).
+ [18] J.P. Derendinger and S. Ferrara, \ N= 1 andN= 2 supergravities coupled to matter:
+ superhiggs eect and geometrical structure," in Supersymmetry and Supergravity '84,
+ Proceedings of the Trieste Spring School, eds. B. de Wit, P. Fayet and P. van Nieuwenhuizen.
+ [19] M. de Roo and P. Wagemans, \Gauge matter coupling in N= 4 supergravity," Nucl. Phys. B
+ 262(1985) 644.
+ [20] P. Wagemans, \Breaking of N= 4 supegravity to N= 1;N= 2 at lambda = 0," Phys. Lett.
+ B206, 241 (1988).
+ [21] P. Wagemans, \Aspects of N= 4 supergravity," Ph.D. Thesis, (Groningen University report
+ RX-1299, 1990).
+ [22] P.K. Townsend, K. Pilch and P. van Nieuwenhuizen, \Selfduality in odd dimensions," Phys.
+ Lett. 136B (1984) 38 [Addendum-ibid. 137B (1984) 443].
+ [23] F. Quevedo, \Duality beyond global symmetries: the fate of the Beld,"
+ arXiv:hep-th/9506081.
+ [24] J. Maharana and J.H. Schwarz, \Noncompact symmetries in string theory," Nucl. Phys. B
+ 390(1993) 3 [arXiv:hep-th/9207016].
+ [25] N. Kaloper and R.C. Myers, \The O(d;d) story of massive supergravity," JHEP 9905 (1999)
+ 010 [arXiv:hep-th/9901045].
+ [26] J. Scherk and J.H. Schwarz, \How to get masses from extra dimensions," Nucl. Phys. B 153,
+ 61 (1979).
+ [27] J. Scherk and J.H. Schwarz, \Spontaneous breaking of supersymmetry through dimensional
+ reduction," Phys. Lett. B 82, 60 (1979).
+ [28] E. Bergshoe, M. de Roo, M.B. Green, G. Papadopoulos and P.K. Townsend, \Duality of
+ type II 7-branes and 8-branes," Nucl. Phys. B 470(1996) 113 [arXiv:hep-th/9601150].
+ [29] P.M. Cowdall, H. Lu, C.N. Pope, K.S. Stelle and P.K. Townsend, \Domain walls in massive
+ supergravities," Nucl. Phys. B 486(1997) 49 [arXiv:hep-th/9608173].
+ [30] E. Bergshoe, M. de Roo and E. Eyras, \Gauged supergravity from dimensional reduction,"
+ Phys. Lett. B 413, 70 (1997) [arXiv:hep-th/9707130].
+ { 20 {[31] I.V. Lavrinenko, H. Lu and C.N. Pope, \Fibre bundles and generalised dimensional
+ reductions," Class. Quant. Grav. 15(1998) 2239 [arXiv:hep-th/9710243].
+ [32] N. Kaloper, R.R. Khuri and R.C. Myers, \On generalized axion reductions," Phys. Lett. B
+ 428(1998) 297 [arXiv:hep-th/9803066].
+ [33] C.M. Hull, \Massive string theories from M-theory and F-theory," JHEP 9811 (1998) 027
+ [arXiv:hep-th/9811021].
+ [34] C.M. Hull and A. Catal-Ozer, \Compactications with S-duality twists," JHEP 0310 , 034
+ (2003) [arXiv:hep-th/0308133].
+ [35] G. Villadoro and F. Zwirner, \The minimal N= 4 no-scale model from generalized
+ dimensional reduction," JHEP 0407 (2004) 055 [arXiv:hep-th/0406185].
+ [36] R.A. Reid-Edwards, \Geometric and non-geometric compactications of IIB supergravity,"
+ arXiv:hep-th/0610263.
+ [37] A. Dabholkar and C. Hull, \Duality twists, orbifolds, and 
+ uxes," JHEP 0309 (2003) 054
+ [arXiv:hep-th/0210209].
+ [38] C.M. Hull and R.A. Reid-Edwards, \Flux compactications of string theory on twisted tori,"
+ arXiv:hep-th/0503114.
+ [39] G. Dall'Agata and N. Prezas, \Scherk{Schwarz reduction of M-theory on G2-manifolds with
+ 
+ uxes," JHEP 0510 (2005) 103 [arXiv:hep-th/0509052].
+ [40] C.M. Hull and R.A. Reid-Edwards, \Flux compactications of M-theory on twisted tori,"
+ JHEP 0610 (2006) 086 [arXiv:hep-th/0603094].
+ [41] J. Shelton, W. Taylor and B. Wecht, \Nongeometric 
+ ux compactications," JHEP 0510
+ (2005) 085 [arXiv:hep-th/0508133].
+ [42] A. Dabholkar and C. Hull, \Generalised T-duality and non-geometric backgrounds," JHEP
+ 0605 (2006) 009 [arXiv:hep-th/0512005].
+ [43] G. Dall'Agata, N. Prezas, H. Samtleben and M. Trigiante, work in progress.
+ [44] C.M. Hull, \A geometry for non-geometric string backgrounds," JHEP 0510 (2005) 065
+ [arXiv:hep-th/0406102].
+ [45] C.M. Hull, \Doubled geometry and T-folds," arXiv:hep-th/0605149.
+ [46] C.M. Hull, \Generalised geometry for M-theory," arXiv:hep-th/0701203.
+ [47] M. Gualtieri, \Generalized complex geometry," arXiv:math.dg/0401221.
+ { 21 {
