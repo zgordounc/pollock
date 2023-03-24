@@ -1,2 +1,5 @@
+*.out
+*.sh
+*.json
 Jackson_Cleaning
-text
+test.py
