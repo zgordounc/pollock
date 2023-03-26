@@ -13,11 +13,11 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Reading JSON file into dataframe    
-dataframe = spark.read.json("../metadata.json")
+# update with your path to metadata.json
+dataframe = spark.read.json("metadata.json")
 
 
 legend = pd.DataFrame({
-    'id' : [],
     'abstract_path' : [],
     'raw_path' : [],
 })
@@ -149,31 +149,28 @@ def spark_download_public_file(x):
     # create destination for txt file by replacing .pdf with .txt
     dest = src[:-3] + 'txt'
 
-    try:
     # check if file exists so we don't download the same file twice
-        if not os.path.exists(dest):
-            # try block is used to keep the program running if it hits an error while downloading
-            try:
-                download_public_file(bucket_name, source_blob_name, destination)
+    if not os.path.exists(dest):
+        # try block is used to keep the program running if it hits an error while downloading
+        try:
+            download_public_file(bucket_name, source_blob_name, destination)
 
-                pdf_2_txt(src=src, dest=dest)
+            pdf_2_txt(src=src, dest=dest)
 
-                os.remove(src)
-            except:
-                print(suffix)
-    
-        if not os.path.exists(abs_dest):
-            with open(abs_dest, 'w') as f:
-                f.write(x.abstract)
+            os.remove(src)
+        except:
+            print(suffix)
 
+    if not os.path.exists(abs_dest):
+        with open(abs_dest, 'w') as f:
+            f.write(x.abstract)
+
+    if os.path.exists(dest) and os.path.exists(abs_dest):
         row = [dest, abs_dest]
         legend.loc[len(legend)] = row
 
 
-
-    except:
-        print(suffix)
-    legend.to_csv('legend.csv', index=False)
+        legend.to_csv('legend.csv', index=False)
 
 # iterates through df to apply spark_download_public_file
 ids.foreach(spark_download_public_file)
