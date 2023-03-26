@@ -173,9 +173,8 @@ def spark_download_public_file(x):
 
     except:
         print(suffix)
-
+    legend.to_csv('legend.csv', index=False)
 
 # iterates through df to apply spark_download_public_file
 ids.foreach(spark_download_public_file)
 
-legend.to_csv('legend.csv', index=False)
