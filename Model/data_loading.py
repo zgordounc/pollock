@@ -18,8 +18,7 @@ def load_data(file_table_pth: str) -> pd.DataFrame:
                 with open(f"/Data_Fetching/abstracts/{row['abstract_path']}") as abstract:
                     df = pd.DataFrame({'id': [row['body'][:-6]], 'body': [body.read()], 'abstract': [abstract.read()]})
                     texts = pd.concat([texts,df])
-                print(i)
-                i += 1
+                    
         except:
             raise Exception(f"File path(s) for ID {row['body'][:-6]} not found, or error in opening...")
 
@@ -32,7 +31,7 @@ def save_dataset(data: pd.Dataframe, name: str) -> str:
     Returns:
         String of compiled CSV path
     """
-    
+
 
 
 
