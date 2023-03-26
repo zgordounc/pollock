@@ -167,9 +167,8 @@ def spark_download_public_file(x):
 
     if os.path.exists(dest) and os.path.exists(abs_dest):
         row = [dest, abs_dest]
+        legend = pd.read_csv('Data_Fetching/legend.csv')
         legend.loc[len(legend)] = row
-
-
         legend.to_csv('Data_Fetching/legend.csv', index=False)
 
 # iterates through df to apply spark_download_public_file
