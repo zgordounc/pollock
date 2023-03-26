@@ -5,16 +5,22 @@ from pyspark.sql import functions as F
 from google.cloud import storage
 import PyPDF2
 import os
+import pandas as pd
 
 # starts the local spark server
 spark = SparkSession.builder \
-    .master("local[1]") \
     .appName("PySpark Read JSON") \
     .getOrCreate()
 
 # Reading JSON file into dataframe    
 dataframe = spark.read.json("metadata.json")
 
+
+legend = pd.DataFrame({
+    'id' : [],
+    'abstract_path' : [],
+    'raw_path' : [],
+})
 
 # extracts the prefix which is a folder name
 @udf
@@ -49,7 +55,7 @@ def extract_suffix(s):
 ids = dataframe\
     .withColumn('abstract_length', F.length('abstract'))\
     .where('abstract_length > 500') \
-    .select('id') \
+    .select('id','abstract') \
     .withColumn('prefix',extract_prefix(dataframe.id)) \
     .withColumn('date', extract_date(dataframe.id)) \
     .withColumn('suffix', extract_suffix(dataframe.id))
@@ -124,8 +130,18 @@ def spark_download_public_file(x):
     if not os.path.exists('articles/'+prefix+'/'+date):
         os.mkdir('articles/'+prefix+'/'+date)
 
+    if not os.path.exists('abstracts'):
+        os.mkdir('abstracts')
+    if not os.path.exists('abstracts/'+prefix):
+        os.mkdir('abstracts/'+prefix)
+    if not os.path.exists('abstracts/'+prefix+'/'+date):
+        os.mkdir('abstracts/'+prefix+'/'+date)
+    
+
     # construct destination file path
     destination = 'articles/'+prefix+'/'+date+'/'+suffix+'v1.pdf'
+    abs_dest = 'abstracts/'+prefix+'/'+date+'/'+suffix+'v1_abstract.txt'
+
 
     # making a copy of destination to be the source file fro converting the pdf to txt
     src = destination
@@ -133,17 +149,28 @@ def spark_download_public_file(x):
     # create destination for txt file by replacing .pdf with .txt
     dest = src[:-3] + 'txt'
 
+    try:
     # check if file exists so we don't download the same file twice
-    if not os.path.exists(dest):
-        # try block is used to keep the program running if it hits an error while downloading
-        try:
-            download_public_file(bucket_name, source_blob_name, destination)
+        if not os.path.exists(dest):
+            # try block is used to keep the program running if it hits an error while downloading
+            try:
+                download_public_file(bucket_name, source_blob_name, destination)
 
-            pdf_2_txt(src=src, dest=dest)
+                pdf_2_txt(src=src, dest=dest)
 
-            os.remove(src)
-        except:
-            print(suffix)
+                os.remove(src)
+            except:
+                print(suffix)
+    
+        if not os.path.exists(abs_dest):
+            with open(abs_dest, 'w') as f:
+                f.write(x.abstract)
+
+        row = [dest, abs_dest]
+        legend.loc[len(legend)] = row
+        
+    except:
+        print(suffix)
 
 
 # iterates through df to apply spark_download_public_file
