@@ -2,7 +2,10 @@
 *.sh
 *.json
 Jackson_Cleaning
+Cleaning/Jackson_Cleaning
 test.py
+Eval/test.py
 *.db
-articles
-abstracts
+Data
+*/articles
+*/abstracts

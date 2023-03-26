@@ -13,7 +13,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Reading JSON file into dataframe    
-dataframe = spark.read.json("metadata.json")
+dataframe = spark.read.json("../metadata.json")
 
 
 legend = pd.DataFrame({
