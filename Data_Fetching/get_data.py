@@ -17,10 +17,6 @@ spark = SparkSession.builder \
 dataframe = spark.read.json("Data_Fetching/metadata.json")
 
 
-legend = pd.DataFrame({
-    'abstract_path' : [],
-    'raw_path' : [],
-})
 
 # extracts the prefix which is a folder name
 @udf
@@ -165,11 +161,6 @@ def spark_download_public_file(x):
         with open(abs_dest, 'w') as f:
             f.write(x.abstract)
 
-    if os.path.exists(dest) and os.path.exists(abs_dest):
-        row = [dest, abs_dest]
-        legend = pd.read_csv('Data_Fetching/legend.csv')
-        legend.loc[len(legend)] = row
-        legend.to_csv('Data_Fetching/legend.csv', index=False)
 
 # iterates through df to apply spark_download_public_file
 ids.foreach(spark_download_public_file)
