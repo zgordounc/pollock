@@ -14,11 +14,12 @@ def load_data(file_table_pth: str) -> pd.DataFrame:
 
     for row in paths.itertuples():
         try:
-            with open(f"/Data_Fetching/articles/{row['raw_path']}") as body:
-                with open(f"/Data_Fetching/abstracts/{row['abstract_path']}") as abstract:
-                    df = pd.DataFrame({'id': [row['body'][:-6]], 'body': [body.read()], 'abstract': [abstract.read()]})
-                    texts = pd.concat([texts,df])
-                    
+            with open(f"/Data_Fetching/articles/{row['raw_path']}") as b:
+                body = b
+            with open(f"/Data_Fetching/abstracts/{row['abstract_path']}") as abstract:
+                df = pd.DataFrame({'id': [row['body'][:-6]], 'body': [body.read()], 'abstract': [abstract.read()]})
+                texts = pd.concat([texts,df])
+
         except:
             raise Exception(f"File path(s) for ID {row['body'][:-6]} not found, or error in opening...")
 

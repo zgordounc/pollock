@@ -14,7 +14,7 @@ spark = SparkSession.builder \
 
 # Reading JSON file into dataframe    
 # update with your path to metadata.json
-dataframe = spark.read.json("metadata.json")
+dataframe = spark.read.json("Data_Fetching/metadata.json")
 
 
 legend = pd.DataFrame({
@@ -139,8 +139,8 @@ def spark_download_public_file(x):
     
 
     # construct destination file path
-    destination = 'articles/'+prefix+'/'+date+'/'+suffix+'v1.pdf'
-    abs_dest = 'abstracts/'+prefix+'/'+date+'/'+suffix+'v1_abstract.txt'
+    destination = 'Data_Fetching/articles/'+prefix+'/'+date+'/'+suffix+'v1.pdf'
+    abs_dest = 'Data_Fetching/abstracts/'+prefix+'/'+date+'/'+suffix+'v1_abstract.txt'
 
 
     # making a copy of destination to be the source file fro converting the pdf to txt
@@ -170,7 +170,7 @@ def spark_download_public_file(x):
         legend.loc[len(legend)] = row
 
 
-        legend.to_csv('legend.csv', index=False)
+        legend.to_csv('Data_Fetching/legend.csv', index=False)
 
 # iterates through df to apply spark_download_public_file
 ids.foreach(spark_download_public_file)
