@@ -7,5 +7,5 @@ test.py
 Eval/test.py
 *.db
 Data
-*/articles
-*/abstracts
+*/articles/*
+*/abstracts/*
