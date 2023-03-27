@@ -119,19 +119,19 @@ def spark_download_public_file(x):
 
     # check if folders exist
     # If the folders do not exist make them
-    if not os.path.exists('articles'):
-        os.mkdir('articles')
-    if not os.path.exists('articles/'+prefix):
-        os.mkdir('articles/'+prefix)
-    if not os.path.exists('articles/'+prefix+'/'+date):
-        os.mkdir('articles/'+prefix+'/'+date)
+    if not os.path.exists('Data_Fetching/articles'):
+        os.mkdir('Data_Fetching/articles')
+    if not os.path.exists('Data_Fetching/articles/'+prefix):
+        os.mkdir('Data_Fetching/articles/'+prefix)
+    if not os.path.exists('Data_Fetching/articles/'+prefix+'/'+date):
+        os.mkdir('Data_Fetching/articles/'+prefix+'/'+date)
 
-    if not os.path.exists('abstracts'):
-        os.mkdir('abstracts')
-    if not os.path.exists('abstracts/'+prefix):
-        os.mkdir('abstracts/'+prefix)
-    if not os.path.exists('abstracts/'+prefix+'/'+date):
-        os.mkdir('abstracts/'+prefix+'/'+date)
+    if not os.path.exists('Data_Fetching/abstracts'):
+        os.mkdir('Data_Fetching/abstracts')
+    if not os.path.exists('Data_Fetching/abstracts/'+prefix):
+        os.mkdir('Data_Fetching/abstracts/'+prefix)
+    if not os.path.exists('Data_Fetching/abstracts/'+prefix+'/'+date):
+        os.mkdir('Data_Fetching/abstracts/'+prefix+'/'+date)
     
 
     # construct destination file path
