@@ -1,6 +1,7 @@
 *.out
 *.sh
 *.json
+.DS_Store
 Jackson_Cleaning
 Cleaning/Jackson_Cleaning
 test.py
