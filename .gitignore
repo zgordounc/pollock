@@ -1,12 +1,17 @@
+#Longleaf Linux Ignored
 *.out
 *.sh
+
+#Large-Data Ignored (metadata, articles)
 *.json
-.DS_Store
-Jackson_Cleaning
-Cleaning/Jackson_Cleaning
-test.py
-Eval/test.py
 *.db
 Data
 */articles/*
 */abstracts/*
+
+#Misc
+Jackson_Cleaning
+Cleaning/Jackson_Cleaning
+test.py
+Eval/test.py
+*.DS_Store
