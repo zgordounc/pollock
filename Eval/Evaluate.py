@@ -25,7 +25,10 @@ class Evaluator:
     def rouge_scores(self):
         if self.r_scores is None:    
             scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
-            self.r_scores = [scorer.score(ref, gen) for ref, gen in zip(self.reference_summaries, self.generated_summaries)]
+            r1 = [scorer.score(ref, gen)['rouge1'].fmeasure for ref, gen in zip(self.reference_summaries, self.generated_summaries)]
+            r2 = [scorer.score(ref, gen)['rouge2'].fmeasure for ref, gen in zip(self.reference_summaries, self.generated_summaries)]
+            rl = [scorer.score(ref, gen)['rougeL'].fmeasure for ref, gen in zip(self.reference_summaries, self.generated_summaries)]
+            self.r_scores = {'rouge1': r1, 'rouge2': r2, 'rougeL': rl}
         return self.r_scores
 
     def bleu_scores(self):
@@ -73,7 +76,9 @@ class Evaluator:
         scores = {}
         # need to seperate rouge scores into rouge1, rouge2, rougeL 
         if rouge:
-            scores["rouge"] = self.rouge_scores()
+            scores["rouge1"] = self.rouge_scores()['rouge1']
+            scores["rouge2"] = self.rouge_scores()['rouge2']
+            scores["rougeL"] = self.rouge_scores()['rougeL']
         if bleu:
             scores["bleu"] = self.bleu_scores()
         if meteor:
