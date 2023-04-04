@@ -25,7 +25,7 @@ def load_data(file_table_pth: str) -> pd.DataFrame:
 
     return texts
 
-def save_dataset(data: pd.Dataframe, name: str) -> str:
+def save_dataset(data: pd.DataFrame, name: str) -> str:
     """
     Arguments:
         Data: Pandas Dataframe that contains data {id, body, abstract}
