@@ -82,60 +82,60 @@ class SummarizationModel:
             eval_dataset=self.val_dataset,
         )
 
-# Function to preprocess the data
-# returns a dictionary with the input_ids, attention_mask, global_attention_mask, and labels
-def process_data_to_model_inputs(batch):
-    # tokenize the inputs and labels
-    inputs = tokenizer(
-        batch["body"],
-        padding="max_length",
-        truncation=True,
-        max_length=max_input_length,
-    )
-    outputs = tokenizer(
-        batch["abstract"],
-        padding="max_length",
-        truncation=True,
-        max_length=max_output_length,
-    )
+    # Function to preprocess the data
+    # returns a dictionary with the input_ids, attention_mask, global_attention_mask, and labels
+    def process_data_to_model_inputs(self,batch):
+        # tokenize the inputs and labels
+        inputs = self.tokenizer(
+            batch["body"],
+            padding="max_length",
+            truncation=True,
+            max_length=self.max_input_length,
+        )
+        outputs = self.selftokenizer(
+            batch["abstract"],
+            padding="max_length",
+            truncation=True,
+            max_length=self.max_output_length,
+        )
 
-    batch["input_ids"] = inputs.input_ids
-    batch["attention_mask"] = inputs.attention_mask
+        batch["input_ids"] = inputs.input_ids
+        batch["attention_mask"] = inputs.attention_mask
 
-    # create 0 global_attention_mask lists
-    batch["global_attention_mask"] = len(batch["input_ids"]) * [
-        [0 for _ in range(len(batch["input_ids"][0]))]
-    ]
+        # create 0 global_attention_mask lists
+        batch["global_attention_mask"] = len(batch["input_ids"]) * [
+            [0 for _ in range(len(batch["input_ids"][0]))]
+        ]
 
-    # since above lists are references, the following line changes the 0 index for all samples
-    batch["global_attention_mask"][0][0] = 1
-    batch["labels"] = outputs.input_ids
+        # since above lists are references, the following line changes the 0 index for all samples
+        batch["global_attention_mask"][0][0] = 1
+        batch["labels"] = outputs.input_ids
 
-    # We have to make sure that the PAD token is ignored
-    batch["labels"] = [
-        [-100 if token == tokenizer.pad_token_id else token for token in labels]
-        for labels in batch["labels"]
-    ]
+        # We have to make sure that the PAD token is ignored
+        batch["labels"] = [
+            [-100 if token == self.tokenizer.pad_token_id else token for token in labels]
+            for labels in batch["labels"]
+        ]
 
-    return batch
+        return batch
 
-def compute_metrics(pred):
-    labels_ids = pred.label_ids
-    pred_ids = pred.predictions
+    def compute_metrics(self,pred):
+        labels_ids = pred.label_ids
+        pred_ids = pred.predictions
 
-    pred_str = tokenizer.batch_decode(pred_ids, skip_special_tokens=True)
-    labels_ids[labels_ids == -100] = tokenizer.pad_token_id
-    label_str = tokenizer.batch_decode(labels_ids, skip_special_tokens=True)
+        pred_str = self.tokenizer.batch_decode(pred_ids, skip_special_tokens=True)
+        labels_ids[labels_ids == -100] = self.tokenizer.pad_token_id
+        label_str = self.tokenizer.batch_decode(labels_ids, skip_special_tokens=True)
 
-    rouge_output = rouge.compute(
-        predictions=pred_str, references=label_str, rouge_types=["rouge2"]
-    )["rouge2"].mid
+        rouge_output = self.rouge.compute(
+            predictions=pred_str, references=label_str, rouge_types=["rouge2"]
+        )["rouge2"].mid
 
-    return {
-        "rouge2_precision": round(rouge_output.precision, 4),
-        "rouge2_recall": round(rouge_output.recall, 4),
-        "rouge2_fmeasure": round(rouge_output.fmeasure, 4),
-    }
+        return {
+            "rouge2_precision": round(rouge_output.precision, 4),
+            "rouge2_recall": round(rouge_output.recall, 4),
+            "rouge2_fmeasure": round(rouge_output.fmeasure, 4),
+        }
 
     def preprocess_datasets(self):
         self.train_dataset = self.train_dataset.map(
